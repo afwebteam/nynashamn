@@ -1,0 +1,43 @@
+$blue-color: #312aeb;
+$red-color: #c6538c;
+$white-color: #fff;
+
+.af-startpageBigImage {
+    background-image: url('https://use-nynashamn-ext.sitevision.se/images/18.a5f223f171ac2fcd6d7b55/1588851890439/landscape-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Layout */
+
+.af-menu {
+    display:inline;
+    padding-left:0; 
+    margin-left:0; 
+    list-style:none;
+
+    &--item {
+
+        & a {
+            padding: 5px 10px;
+            text-decoration: none;
+        }
+    }
+
+    .af-activeMenuItem {
+        background-color: $blue-color;
+        color: $white-color;
+    }
+}
+
+.af-center {
+    text-align: center;
+}
+
+.af-borderRadius {
+    border-radius: 20px;
+}
+
+.af-activeMenuItem {
+    color: #cecece !important;
+}

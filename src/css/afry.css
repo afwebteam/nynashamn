@@ -1,0 +1,15 @@
+.af-startpageBigImage {
+    background-image: url('/images/18.a5f223f171ac2fcd6d7b55/1588851890439/landscape-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Layout */
+.af-center {
+    text-align: center;
+}
+
+.af-borderRadius {
+    border-radius: 20px;
+}

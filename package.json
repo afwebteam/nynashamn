@@ -1,0 +1,32 @@
+{
+    "name": "nynashamn",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/afwebteam/nynashamn.git"
+    },
+    "keywords": [
+        "ÅF",
+        "JavaScript"
+    ],
+    "author": "Anders Israelsson",
+    "license": "UNLICENSED",
+    "bugs": {
+        "url": "https://github.com/afwebteam/nynashamn/issues"
+    },
+    "homepage": "https://github.com/afwebteam/nynashamn",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-clean": "^0.4.0",
+        "gulp-connect": "^5.7.0",
+        "gulp-eslint": "^6.0.0",
+        "gulp-replace": "^1.0.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sftp": "^0.1.5"
+    },
+    "dependencies": {}
+}
