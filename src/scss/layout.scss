@@ -1,15 +1,26 @@
-$blue-color: #312aeb;
-$red-color: #c6538c;
-$white-color: #fff;
+@import 'variables';
 
+/* Startpage */
 .af-startpageBigImage {
-    background-image: url('https://use-nynashamn-ext.sitevision.se/images/18.a5f223f171ac2fcd6d7b55/1588851890439/landscape-4.jpg');
+    background-image: url($startpageBigImage);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* Layout */
+.af-wave {
 
+    position: relative;
+ 
+    svg {
+        width: 100%;
+        position: absolute;
+        top: -280px;
+        left: 0;
+        right: 0;
+    }
+}
+
+/* Menu */
 .af-menu {
     display:inline;
     padding-left:0; 
@@ -30,14 +41,83 @@ $white-color: #fff;
     }
 }
 
+/* Form */
+.af-textInputField {
+    height:50px;
+    text-indent: 25px;
+    border: none;
+}
+
+div[role=search] {
+    position: relative;
+}
+
+/* Buttons */
+.af-searchButton {
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    height: 46px;
+    width: 46px;
+    background-color: $nynas-grey-color;
+    border: none;
+}
+
+/* Layout */
 .af-center {
     text-align: center;
 }
 
 .af-borderRadius {
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
-.af-activeMenuItem {
-    color: #cecece !important;
+.af-shortcuts {
+    padding: 25px;
+
+    &--item {
+        list-style-type: none;
+        margin: 0;
+        display: inline-block;
+        background-color: $white-color;
+        padding: 5px 20px;
+        margin-right: 15px;
+    }
+}
+
+/* Puffar */
+.af-puffContainer {
+
+    display: flex;
+    align-items: center;
+
+    &--item {
+        border: 1px solid #cecece;
+
+        > div {
+            margin-top: 45%;
+        }
+    }
+
+    div {
+        text-align: center;
+    }
+
+    .af-regularPuff {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+    }
+
+    .af-bigPuff {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        transform: translateY(-40%);
+    }
+}
+
+.af-orangeColor {
+    background-color: $orange-color;
 }
