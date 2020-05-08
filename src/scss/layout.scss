@@ -92,7 +92,6 @@ div[role=search] {
     align-items: center;
 
     &--item {
-        border: 1px solid #cecece;
 
         > div {
             margin-top: 45%;
@@ -101,6 +100,7 @@ div[role=search] {
 
     div {
         text-align: center;
+        overflow: hidden;
     }
 
     .af-regularPuff {
@@ -115,9 +115,24 @@ div[role=search] {
         height: 200px;
         border-radius: 50%;
         transform: translateY(-40%);
-    }
-}
+        background-image: url($startpageFreeJobImage);
+        background-size: 150px 150px;
+        background-repeat: no-repeat;
+        background-position: top center;
 
-.af-orangeColor {
-    background-color: $orange-color;
+        > div {
+            margin-top: 70%;
+            background-color: $green-color;
+            overflow: hidden;
+            height: 30%;
+        }
+    }
+
+    .af-orangeColor {
+        background-color: $orange-color;
+    }
+    
+    .af-blueColor {
+        background-color: $blue-color;
+    }
 }
