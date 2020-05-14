@@ -1,5 +1,7 @@
+$domain: 'https://use-nynashamn-ext.sitevision.se';
+
 // COLORS
-$blue-color: #312aeb;
+$blue-color: #0000ff;
 $red-color: #c6538c;
 $white-color: #fff;
 $orange-color: #fcba03;
@@ -8,7 +10,33 @@ $green-color: green;
 
 $nynas-black-color: #414042;
 $nynas-grey-color: #EDEBE9;
+$nynas-darkgrey-color: #403E41;
+$nynas-darkblue-color: #002F6C;
+$nynas-lightblue-color: #53BDD6;
+$nynas-green-color: #58A618;
+$nynas-lightgreen-color: #E6EFD9;
 
 // IMAGES
-$startpageBigImage: 'https://use-nynashamn-ext.sitevision.se/images/18.a5f223f171ac2fcd6d7b55/1588851890439/landscape-4.jpg';
-$startpageFreeJobImage: 'http://use-nynashamn-ext.sitevision.se/images/18.2ee7eb0171ac15bcfc78b19/1588942860953/head-659652_1280.png';
+$startpageBigImage: $domain + '/images/18.6719b35d171ac1e3c542451a/1589378872626/startpage-background.png';
+$startpageFreeJobImage: $domain + '/images/18.6719b35d171ac1e3c5424152/1589375164499/lediga-jobb.png';
+
+$startpageEtjansterImage: $domain + '/images/18.6719b35d171ac1e3c5424165/1589375355020/etj%C3%A4nster.svg';
+$startpageServicecenterImage: $domain + '/images/18.6719b35d171ac1e3c5424188/1589375624321/kontakt.svg';
+
+// ICONS
+$searchIcon: $domain + '/images/18.6719b35d171ac1e3c54242bf/1589376316677/s%C3%B6k.svg';
+$messageIcon: $domain + '/images/18.2ee7eb0171ac15bcfcda267/1589446001801/meddelande.svg';
+$eventsIcon: $domain + '/images/18.2ee7eb0171ac15bcfcda35f/1589446301525/events.svg';
+$activeIcon: $domain + '/images/18.2ee7eb0171ac15bcfcdbd95/1589454065133/aktuellt.svg';
+$arrowDownIcon: $domain + '/images/18.2ee7eb0171ac15bcfcdaa11/1589448167835/pilNer.svg';
+$externalLinkIcon: $domain + '/images/18.2ee7eb0171ac15bcfcdad5e/1589449117007/externLink.svg';
+
+// FONTS
+$museoWoff: '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
+$museoWoff2: '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
+
+$museoWoffBold: '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
+$museoWoff2Bold: '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
+
+$museoWoffBoldest: '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
+$museoWoff2Boldest: '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
