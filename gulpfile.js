@@ -18,6 +18,7 @@
         connect = require('gulp-connect'),
         replace = require('gulp-replace'),
         clean = require('gulp-clean'),
+        concat = require('gulp-concat'),
         sass = require('gulp-sass'),
         fs = require('fs'),
 
@@ -32,6 +33,7 @@
                     ],
                     cascade: false
                 }))
+                .pipe(concat('layout.css'))
                 .pipe(dest('./dist'));
         },
 
@@ -94,7 +96,6 @@
         addWatcher,
         connectServer
     );
-
 
 })();
 

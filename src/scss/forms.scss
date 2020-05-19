@@ -1,0 +1,23 @@
+@import 'variables';
+
+/* Form */
+.af-textInputField {
+    height:50px;
+    text-align: center;
+    border: none;
+}
+
+div[role=search] {
+    position: relative;
+}
+
+.af-hiddenSearchForm {
+    display: none;
+    position: relative;
+
+    & form {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

@@ -1,0 +1,63 @@
+@import 'variables';
+
+/* Buttons */
+.af-searchButton {
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    height: 46px;
+    width: 46px;
+    background-color: $nynas-grey-color;
+    border: none;
+    background-size: 30px;
+    background-position: center;
+}
+
+.sv-decoration-generell-bla-knapp--external {
+    background-color: $nynas-darkblue-color;
+    padding: 15px 50px 15px 20px;
+    display: inline-block;
+    color: $white-color;
+    margin: 15px 0;
+    border-radius: 10px;
+
+    background-repeat: no-repeat;
+    background-position: 90% 44%;
+    background-size: 25px 25px;
+    background-image: url($externalLinkIcon);
+
+    & p.normal {
+
+        & a {
+            color: #fff;
+            font-family: museo,sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+    }
+}
+
+.sv-decoration-generell-bla-knapp--intern {
+    background-color: $nynas-darkblue-color;
+    padding: 15px 50px 15px 20px;
+    display: inline-block;
+    color: $white-color;
+    margin: 15px 0;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: 95% 44%;
+    background-size: 25px 25px;
+    background-image: url($internalLinkIcon);
+
+    & p.normal {
+
+        & a {
+            color: #fff;
+            font-family: museo,sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+    }
+}

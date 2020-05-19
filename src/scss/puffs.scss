@@ -1,0 +1,70 @@
+@import 'variables';
+
+
+/* Puffar */
+.af-puffContainer {
+
+    display: flex;
+    align-items: flex-end;
+    margin-top: -70px;
+
+    &--item {
+
+        & .af-puffText {
+            margin-top: 15px;
+        }
+    }
+
+    div {
+        text-align: center;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .af-etjanster {
+        background-image: url($startpageEtjansterImage);
+        background-repeat: no-repeat;
+        background-size: 80px 80px;
+        background-position: center;
+    }
+
+    .af-servicecenter {
+        background-image: url($startpageServicecenterImage);
+        background-repeat: no-repeat;
+        background-size: 80px 80px;
+        background-position: center;
+    }
+
+    .af-regularPuff {
+        height: 186px;
+        width: 186px;
+        border-radius: 50%;
+        /* transform: translateY(-50%); */
+    }
+
+    .af-bigPuff {
+        width: 266px;
+        height: 266px;
+        border-radius: 50%;
+        /* transform: translateY(-50%); */
+        background-image: url($startpageFreeJobImage);
+        background-size: 266px 266px;
+        background-repeat: no-repeat;
+        background-position: top center;
+
+        > div {
+            margin-top: 70%;
+            background-color: $nynas-lightgreen-color;
+            overflow: hidden;
+            height: 30%;
+        }
+    }
+
+    .af-orangeColor {
+        background-color: $orange-color;
+    }
+    
+    .af-blueColor {
+        background-color: $blue-color;
+    }
+}

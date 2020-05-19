@@ -1,26 +1,5 @@
 @import 'variables';
 
-/* Fonts */
-@font-face {
-    font-family: "Museo";
-    src: url($museoWoff2) format("woff2"),
-         url($museoWoff) format("woff");
-}
-
-@font-face {
-    font-family: "Museo";
-    src: url($museoWoff2Bold) format('woff2'),
-         url($museoWoffBold) format('woff');
-   font-weight: 500;
-}
-
-@font-face {
-    font-family: "Museo";
-    src: url($museoWoff2Boldest) format('woff2'),
-         url($museoWoffBoldest) format('woff');
-   font-weight: 700;
-}
-
 /* Icons */
 .af-searchIcon {
     background-image: url($searchIcon);
@@ -52,379 +31,40 @@
     background-position: left;
 }
 
-/* Startpage */
-.af-startpageBigImage {
-    background-image: url($startpageBigImage);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.af-wave {
-
-    position: relative;
-
-    &--shape {
-        background-image: url($domain + "/images/18.6719b35d171ac1e3c5418b8d/1589182390043/wave.svg");
-        padding: 10% 0 0 0;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-size: 100% auto;
-    }
-}
-
-.af-startpageMessages {
-    display: flex;
-    justify-content: space-around;
-
-    &--message {
-        max-width: 28%;
-        padding: 1em;
-    }
-}
-
-.af-amountEvents-4 .af-startpageEvents {
-    display: flex;
-    margin-bottom: 20px;
-
-    &--event {
-        flex: 1 1 50%;
-        position: relative;
-        height: 510px;
-
-        & .af-image {
-            background-image: url($startpageBigImage);
-            background-size: cover;
-            height: 100%;
-        }
-    }
-
-    &--eventText {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 1em;
-
-        &Content {
-            display: inline-block;
-            width: 86%;
-            margin-left: 15%;
-
-            & > p {
-                margin-top: 5px;
-            }
-        }
-
-        &Date {
-            width: 76px;
-            height: 76px;
-            position: absolute;
-            top: 30px;
-
-            > div {
-                background-color: $white-color;
-                float: left;
-                width: 60px;
-                height: 60px;
-                text-align: center;
-                border-radius: 50%;
-
-                & .af-month {
-                    font-size: 17px;
-                }
-
-                & .af-date {
-                    font-size: 25px;
-                    font-weight: 700;
-                }
-            }
-
-            & p {
-                margin: 0;
-            }
-
-            & p:first-of-type {
-                margin-top: 4px;
-            }
-        }
-    }
-
-    & .af-borderLeft10px {
-        border-left: 10px solid #fff;
-    }
-
-    & .af-borderRight10px {
-        border-right: 10px solid #fff;
-    }
-
-    & .af-borderTop10px {
-        border-top: 10px solid #fff;
-    }
-
-    & .af-borderBottom10px {
-        border-bottom: 10px solid #fff;
-    }
-
-    & .af-green {
-        background-color: $nynas-lightgreen-color;
-    }
-}
-
-.af-amountEvents-3 .af-startpageEvents {
-
-    display: flex;
-    margin-bottom: 10px;
-    height: 800px;
-
-    &--bigEvent, &--smallerEvent {
-        max-width: 50%;
-        width: 50%;
-    }
-
-    &--smallerEvent {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &--bigEvent {
-        position: relative;
-
-        & .af-image {
-            background-image: url($startpageBigImage);
-            background-size: cover;
-            height: 100%;
-        }
-    }
-
-    &--event {
-        flex: 1 1 50%;
-        position: relative;
-
-        & .af-image {
-            background-image: url($startpageBigImage);
-            background-size: cover;
-            height: 100%;
-        }
-    }
-
-    &--eventText {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 1em;
-
-        &Content {
-            width: 86%;
-            margin-left: 15%;
-
-            & > p {
-                margin-top: 5px;
-            }
-        }
-
-        &Date {
-
-            width: 76px;
-            height: 76px;
-            position: absolute;
-            top: 30px;
-
-            > div {
-                background-color: $white-color;
-                float: left;
-                width: 60px;
-                height: 60px;
-                text-align: center;
-                border-radius: 50%;
-            }
-
-            & p {
-                margin: 0;
-            }
-
-            & p:first-of-type {
-                margin-top: 4px;
-            }
-        }
-
-        & .af-month {
-            font-size: 17px;
-        }
-
-        & .af-date {
-            font-size: 25px;
-            font-weight: 700;
-        }
-    }
-
-    & .af-borderLeft10px {
-        border-left: 10px solid #fff;
-    }
-
-    & .af-borderRight10px {
-        border-right: 10px solid #fff;
-    }
-
-    & .af-borderTop10px {
-        border-top: 10px solid #fff;
-    }
-
-    & .af-borderBottom10px {
-        border-bottom: 10px solid #fff;
-    }
-
-    & .af-orange {
-        background-color: $orange-color;
-    }
-
-    & .af-blue {
-        background-color: $blue-color;
-    }
-
-    & .af-green {
-        background-color: $nynas-lightgreen-color;
-    }
-}
-
-.af-popularShortcuts {
-    display: flex;
-    justify-content: space-around;
-
-    &--item {
-
-        &Style {
-            width: 210px;
-            height: 210px;
-            border-radius: 50%;
-            border-radius: 50%;
-            background-repeat: no-repeat;
-            background-size: 80px 80px;
-            background-position: center;
-        }
-
-        &Name {
-            margin-top: 18px;
-
-            & a {
-                text-decoration: none;
-            }
-        }
-    }
-}
-
-/* Menu */
-.af-menu {
-    display:inline;
-    padding-left:0; 
-    margin-left:0; 
-    list-style:none;
-
-    &--item {
-
-        margin: 0 10px;
-
-        & a {
-            padding: 15px 28px 20px 28px;
-            text-decoration: none;
-            border-radius: 10px 10px 0 0;
-        }
-    }
-
-    .af-activeMenuItem {
-        background-color: $nynas-darkblue-color;
-        color: $white-color;
-    }
-}
-
-.af-subMenu {
-    display:inline;
-    padding-left:0; 
-    margin-left:0; 
-    list-style:none;
-
-    &--item {
-
-        margin: 0 10px;
-
-        & a {
-            text-decoration: none;
-            padding: 20px 10px 5px 10px;;
-        }
-    }
-
-    .af-activeMenuItem {
-        /* padding: 20px 10px 5px 10px; */
-        /* background-color: $white-color; */
-        /* border-radius: 0 0 10px 10px; */
-        border-bottom: 4px solid $nynas-darkblue-color;
-    }
-}
-
-/* Form */
-.af-textInputField {
-    height:50px;
-    text-indent: 25px;
-    border: none;
-}
-
-div[role=search] {
-    position: relative;
-}
-
-/* Buttons */
-.af-searchButton {
-    position: absolute;
-    top: 3px;
-    right: 2px;
-    height: 46px;
-    width: 46px;
-    background-color: $nynas-grey-color;
-    border: none;
-}
-
-.sv-decoration-generell-bla-knapp--external {
-    background-color: $nynas-darkblue-color;
-    padding: 15px 50px 15px 20px;
-    display: inline-block;
-    color: $white-color;
-    margin: 15px 0;
-    border-radius: 10px;
-
-    background-repeat: no-repeat;
-    background-position: 90% 44%;
-    background-size: 25px 25px;
-    background-image: url($externalLinkIcon);
-
-    & p.normal {
-
-        & a {
-            color: #fff;
-            font-family: museo,sans-serif;
-            font-size: 20px;
-            font-weight: 500;
-            text-decoration: none;
-        }
-    }
-}
-
-.sv-decoration-generell-bla-knapp--intern {
-    background-color: $nynas-darkblue-color;
-    padding: 5px 25px 5px 10px;
-    display: inline-block;
-    color: $white-color;
-    margin: 15px 0;
-
-    * {
-        color: #fff;
-    }
-}
-
 /* Layout */
+a.normal,
+.normal a,
+a.sv-font-ingress,
+.sv-font-ingress a {
+    text-decoration: none;
+    border-bottom: $linkBorderStyle;
+}
+
+a[href*="/download/"] {
+    margin-right: 5px; 
+}
+
+a[href*="/download/"]:after {
+    content: ' ';
+    background-image: url($attachedFile);
+    background-repeat: no-repeat;
+    width: 20px;
+    display: inline-block;
+    border: none;
+    margin-left: 10px;
+}
+
 .af-center {
     text-align: center;
+}
+
+.af-relative {
+    position: relative;
+}
+
+.af-pageWidth {
+    max-width: 850px;
+    margin: 0 auto;
 }
 
 .af-flex {
@@ -457,6 +97,10 @@ p.sv-portlet-image-caption {
 
 .af-tableOfContent {
 
+    background-color: $nynas-grey-color;
+    margin: 50px 0;
+    padding: 50px;
+
     & li {
         margin: 10px 0;
         padding-left: 50px;
@@ -464,79 +108,19 @@ p.sv-portlet-image-caption {
         background-image: url($arrowDownIcon);
         background-repeat: no-repeat;
         background-position: left;
+
+        & a {
+            text-decoration: none;
+            border: none;
+        }
+
+        & a:hover {
+            border-bottom: $linkBorderStyle;
+        }
     }
 
 }
 
-/* Puffar */
-.af-puffContainer {
-
-    display: flex;
-    align-items: flex-end;
-    margin-top: -70px;
-
-    &--item {
-
-        & .af-puffText {
-            margin-top: 15px;
-        }
-    }
-
-    div {
-        text-align: center;
-        overflow: hidden;
-        z-index: 1;
-    }
-
-
-
-    .af-etjanster {
-        background-image: url($startpageEtjansterImage);
-        background-repeat: no-repeat;
-        background-size: 80px 80px;
-        background-position: center;
-    }
-
-    .af-servicecenter {
-        background-image: url($startpageServicecenterImage);
-        background-repeat: no-repeat;
-        background-size: 80px 80px;
-        background-position: center;
-    }
-
-    .af-regularPuff {
-        height: 186px;
-        width: 186px;
-        border-radius: 50%;
-        /* transform: translateY(-50%); */
-    }
-
-    .af-bigPuff {
-        width: 266px;
-        height: 266px;
-        border-radius: 50%;
-        /* transform: translateY(-50%); */
-        background-image: url($startpageFreeJobImage);
-        background-size: 266px 266px;
-        background-repeat: no-repeat;
-        background-position: top center;
-
-        > div {
-            margin-top: 70%;
-            background-color: $nynas-lightgreen-color;
-            overflow: hidden;
-            height: 30%;
-        }
-    }
-
-    .af-orangeColor {
-        background-color: $orange-color;
-    }
-    
-    .af-blueColor {
-        background-color: $blue-color;
-    }
-}
 
 .af-greenColor {
     background-color: $nynas-green-color;
@@ -589,4 +173,8 @@ nav.af-center {
     & > * {
         max-width: 31%;
     }
+}
+
+.sv-text-portlet.af-searchIcon:hover {
+    cursor: pointer;
 }

@@ -1,0 +1,49 @@
+@import 'variables';
+
+/* Menu */
+.af-menu {
+    display:inline;
+    padding-left:0; 
+    margin-left:0; 
+    list-style:none;
+
+    &--item {
+
+        margin: 0 10px;
+
+        & a {
+            padding: 15px 28px 20px 28px;
+            text-decoration: none;
+            border-radius: 10px 10px 0 0;
+        }
+    }
+
+    .af-activeMenuItem {
+        background-color: $nynas-darkblue-color;
+        color: $white-color;
+    }
+}
+
+.af-subMenu {
+    display:inline;
+    padding-left:0; 
+    margin-left:0; 
+    list-style:none;
+
+    &--item {
+
+        margin: 0 10px;
+
+        & a {
+            text-decoration: none;
+            padding: 20px 10px 5px 10px;;
+        }
+    }
+
+    .af-activeMenuItem {
+        /* padding: 20px 10px 5px 10px; */
+        /* background-color: $white-color; */
+        /* border-radius: 0 0 10px 10px; */
+        border-bottom: 4px solid $nynas-darkblue-color;
+    }
+}

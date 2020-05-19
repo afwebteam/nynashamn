@@ -1,0 +1,276 @@
+@import 'variables';
+
+/* Startpage */
+
+.af-startpageMessages {
+    display: flex;
+    justify-content: space-around;
+
+    &--message {
+        max-width: 28%;
+        padding: 1em;
+    }
+}
+
+.af-startpageBigImage {
+    background-image: url($startpageBigImage);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.af-wave {
+
+    position: relative;
+
+    &--shape {
+        background-image: url($startpageWave);
+        padding: 10% 0 0 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: 100% auto;
+    }
+
+    &-grey--shape {
+        background-image: url($landingpageWave);
+        padding: 7% 0 0 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: 100% auto;
+    }
+}
+
+.af-amountEvents-4 .af-startpageEvents {
+    display: flex;
+    margin-bottom: 20px;
+
+    &--event {
+        flex: 1 1 50%;
+        position: relative;
+        height: 510px;
+
+        & .af-image {
+            background-size: cover;
+            height: 100%;
+        }
+    }
+
+    &--eventText {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 1em;
+
+        &Content {
+            display: inline-block;
+            width: 86%;
+            margin-left: 15%;
+
+            & > p {
+                margin-top: 5px;
+            }
+        }
+
+        &Date {
+            width: 76px;
+            height: 76px;
+            position: absolute;
+            top: 30px;
+
+            > div {
+                background-color: $white-color;
+                float: left;
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                border-radius: 50%;
+
+                & .af-month {
+                    font-size: 17px;
+                }
+
+                & .af-date {
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+            }
+
+            & p {
+                margin: 0;
+            }
+
+            & p:first-of-type {
+                margin-top: 4px;
+            }
+        }
+    }
+
+    & .af-borderLeft10px {
+        border-left: 10px solid #fff;
+    }
+
+    & .af-borderRight10px {
+        border-right: 10px solid #fff;
+    }
+
+    & .af-borderTop10px {
+        border-top: 10px solid #fff;
+    }
+
+    & .af-borderBottom10px {
+        border-bottom: 10px solid #fff;
+    }
+
+    & .af-green {
+        background-color: $nynas-lightgreen-color;
+    }
+}
+
+.af-amountEvents-3 .af-startpageEvents {
+
+    display: flex;
+    margin-bottom: 10px;
+    height: 800px;
+
+    &--bigEvent, &--smallerEvent {
+        max-width: 50%;
+        width: 50%;
+    }
+
+    &--smallerEvent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &--bigEvent {
+        position: relative;
+
+        & .af-image {
+            background-size: cover;
+            height: 100%;
+        }
+    }
+
+    &--event {
+        flex: 1 1 50%;
+        position: relative;
+
+        & .af-image {
+            background-size: cover;
+            height: 100%;
+        }
+    }
+
+    &--eventText {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 1em;
+
+        &Content {
+            width: 86%;
+            margin-left: 15%;
+
+            & > p {
+                margin-top: 5px;
+            }
+        }
+
+        &Date {
+
+            width: 76px;
+            height: 76px;
+            position: absolute;
+            top: 30px;
+
+            > div {
+                background-color: $white-color;
+                float: left;
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                border-radius: 50%;
+            }
+
+            & p {
+                margin: 0;
+            }
+
+            & p:first-of-type {
+                margin-top: 4px;
+            }
+        }
+
+        & .af-month {
+            font-size: 17px;
+        }
+
+        & .af-date {
+            font-size: 25px;
+            font-weight: 700;
+        }
+    }
+
+    & .af-borderLeft10px {
+        border-left: 10px solid #fff;
+    }
+
+    & .af-borderRight10px {
+        border-right: 10px solid #fff;
+    }
+
+    & .af-borderTop10px {
+        border-top: 10px solid #fff;
+    }
+
+    & .af-borderBottom10px {
+        border-bottom: 10px solid #fff;
+    }
+
+    & .af-orange {
+        background-color: $orange-color;
+    }
+
+    & .af-blue {
+        background-color: $blue-color;
+    }
+
+    & .af-green {
+        background-color: $nynas-lightgreen-color;
+    }
+}
+
+.af-popularShortcuts {
+    display: flex;
+    justify-content: space-around;
+
+    &--item {
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &Style {
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-size: 80px 80px;
+            background-position: center;
+        }
+
+        &Name {
+            margin-top: 18px;
+
+            & a {
+                text-decoration: none;
+            }
+        }
+    }
+}
