@@ -6,6 +6,23 @@
     display: flex;
     justify-content: space-around;
 
+    & ul.sv-channel {
+        display: flex;
+        justify-content: space-around;
+
+        & li {
+            max-width: 28%;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 10px;
+            margin-bottom: 0;
+
+            & a {
+                text-decoration: none;
+            }
+        }
+    }
+
     &--message {
         max-width: 28%;
         padding: 1em;

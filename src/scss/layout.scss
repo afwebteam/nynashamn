@@ -178,3 +178,150 @@ nav.af-center {
 .sv-text-portlet.af-searchIcon:hover {
     cursor: pointer;
 }
+
+/* Dekorationer */
+.sv-decoration-generell-bla-knapp--external {
+    background-color: $nynas-darkblue-color;
+    padding: 15px 50px 15px 20px;
+    display: inline-block;
+    color: $white-color;
+    margin: 15px 0;
+    border-radius: 10px;
+    position: relative;
+
+    &:after {
+        content: ' ';
+        background-repeat: no-repeat;
+        background-position: 90% 44%;
+        background-size: 25px 25px;
+        background-image: url($externalLinkIcon);
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    & p.normal {
+
+        & a {
+            color: #fff;
+            font-family: museo,sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+    }
+}
+
+.sv-decoration-generell-bla-knapp--intern {
+    background-color: $nynas-darkblue-color;
+    padding: 15px 50px 15px 20px;
+    display: inline-block;
+    color: $white-color;
+    margin: 15px 0;
+    border-radius: 10px;
+    position: relative;
+
+    &:after {
+        content: ' ';
+        background-repeat: no-repeat;
+        background-position: 95% 44%;
+        background-size: 25px 25px;
+        background-image: url($internalLinkIcon);
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        width: 25px;
+        height: 25px;
+
+    }
+
+    & p.normal {
+
+        & a {
+            color: #fff;
+            font-family: museo,sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+    }
+}
+
+.sv-decoration-generell-faktaruta {
+
+    & h2, h3, .sv-font-stor-svart {
+        background-color: $nynas-darkblue-color;
+        padding: 25px 50px;
+        margin-bottom: 5px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        color: $white-color;
+    }
+
+    & h2:before, h3:before, .sv-font-stor-svart:before {
+        content: ' ';
+        margin-right: 25px;
+        background-image: url($factBox);
+        width: 35px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    & p.normal {
+        background-color: $nynas-grey-color;
+        padding: 25px 50px;
+    }
+    
+}
+
+.af-related-information {
+
+    & h2, h3, .sv-font-stor-svart {
+        background-color: $nynas-darkblue-color;
+        padding: 25px 50px;
+        margin-bottom: 5px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        color: $white-color;
+    }
+
+    & h2:before, h3:before, .sv-font-stor-svart:before {
+        content: ' ';
+        margin-right: 25px;
+        background-image: url($relatedInfo);
+        width: 35px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 25px;
+    }
+
+    & ul {
+        background-color: $nynas-grey-color;
+        padding: 25px 50px;
+
+        & li {
+            margin: 15px 0;
+        }
+
+        & .sv-decoration-generell-bla-knapp--external, .sv-decoration-generell-bla-knapp--intern  {
+
+            &:after {
+                top: 8px;
+            }
+
+            padding: 10px 50px 10px 20px;
+
+            & a {
+                color: $white-color;
+            }
+        }
+
+        & a[href*="/download/"]:after {
+            height: 18px;
+        }
+    }
+}

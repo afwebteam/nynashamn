@@ -4,7 +4,8 @@ svDocReady(function () {
 
     'use strict';
 
-    var jq = jQuery;
+    var jq = jQuery,
+        relatedFileLinks;
 
     jq('.sv-text-portlet.af-searchIcon').on('click', function (e) {
         jq('.af-hiddenSearchForm').toggle();
@@ -25,5 +26,22 @@ svDocReady(function () {
         url = link.prop('href');
         document.location.href = url;
     });
+
+    function addFileInfoToFiles(aCollection) {
+
+        jq.each(aCollection, function (i, e) {
+
+            var target = jq(e),
+                title = target.attr('title'),
+                currentText = target.text(),
+                newText;
+
+            newText = currentText + ' (' + title + ')';
+            target.text(newText);
+        });
+    }
+
+    relatedFileLinks = jq('.af-related-information a[href*="/download/"]');
+    addFileInfoToFiles(relatedFileLinks);
 });
 
