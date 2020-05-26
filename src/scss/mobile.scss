@@ -1,0 +1,235 @@
+@import 'variables';
+
+@media screen and (max-width: 740px) {
+
+    .af-MobileNone {
+        display: none;
+    }
+
+    .af-mobile-width100 {
+
+        padding: 0;
+
+        & > div {
+            width: 100%;
+
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0 10px 0;
+
+            &:first-of-type {
+                background-color: $nynas-grey-color;
+            }
+        }
+
+        & img {
+            width: 70% !important;
+        }
+
+        .af-searchIcon {
+            padding-right: 32px;
+            background-size: 18px;
+            background-position: right top;
+            margin: auto 0;
+        }
+
+        .sv-font-toppmeny {
+            font-size: 18px;
+        }
+    }
+
+    .af-wave {
+
+        &--shape {
+            top: -35px;
+        }
+    }
+
+    .af-MobileMenu {
+
+        &:before {
+            content: ' ';
+            background-image: url($hamburgerIcon);
+            background-size: 18px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 20px;
+            height: 14px;
+        }
+
+        & p.sv-font-toppmeny {
+            display: inline-block;
+        }
+
+    }
+
+    .af-desktopNone {
+        display: block;
+    }
+
+    .af-startpageBigImage {
+        background-image: none !important;
+        padding: 0;
+
+        & > .af-center {
+            padding: 0;
+
+            & .sv-script-portlet.af-borderRadius {
+                border-radius: 0;
+                padding: 25px;
+                text-align: left;
+            }
+        }
+    }
+
+    .af-shortcuts {
+        padding: 0;
+    
+        &--item {
+            margin-bottom: 10px;
+        }
+    }
+
+    .af-puff {
+        padding: 0 !important;
+
+        &Container {
+
+            margin-top: 30px !important;
+        
+            &--item {
+        
+                & .af-etjanster, .af-servicecenter {
+                    background-size: 50px 50px !important;
+                }
+        
+                & .af-bigPuff {
+                    background-size: 80px 80px !important;
+                }
+        
+                & .af-regularPuff, .af-bigPuff {
+                    height: 80px !important;
+                    width: 80px !important;
+                }
+        
+                & .af-puffText {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .af-startpageMessages {
+
+        & ul.sv-channel {
+
+            flex-direction: column;
+
+            & li {
+                max-width: 100% !important;
+                margin-bottom: 15px !important;
+            }
+        }
+    }
+
+    .af-amountEvents-4 {
+
+        & .af-startpageEvents {
+            margin-bottom: 0 !important;
+            display: block !important;
+
+            &--event {
+                width: 100%;
+                margin-bottom: 15px;
+                height: 440px !important;
+
+                & .af-image {
+                    background-size: contain !important;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            &--eventTextContent {
+
+                & p {
+                    display: none;
+                }
+            }
+
+            & .af-borderRight10px {
+                border: none !important;
+            }
+
+            & .af-borderLeft10px {
+                border: none !important;
+            }
+
+            & .af-borderTop10px {
+                border: none !important;
+            }
+        
+            & .af-borderBottom10px {
+                border: none !important;
+            }
+        }
+    }
+
+    .af-startpage-current {
+
+        & ul.sv-channel {
+
+            & li {
+                width: 100%;
+                flex-basis: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+    } 
+
+    .af-flexRow {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        flex-direction: column;
+
+        & > * {
+            max-width: 100% !important;
+        }
+
+        & .sv-text-portlet-content {
+            text-align: center;
+        }
+    }
+
+    .sv-font-sidfot-rubrik {
+        font-size: 20px;
+        margin-top: 35px;
+    }
+
+    .normal {
+        font-size: 13px;
+    }
+
+    .sv-font-brodtext-fet {
+        font-size: 13px;
+    }
+
+    .af-socialIcons {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .af-popularShortcuts {
+        flex-direction: column;
+
+        &--item {
+            max-width: 50%;
+            margin: 10px auto;
+        }
+
+        &--itemStyle {
+            width: 80px !important;
+            height: 80px !important;
+            background-size: 40px 40px !important;
+        }
+    }
+}

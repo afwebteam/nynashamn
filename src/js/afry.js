@@ -13,6 +13,23 @@ svDocReady(function () {
     });
 
     // Link whole puff...
+    jq('.af-startpage-current .sv-channel-item').on('click', function (e) {
+
+        var target = jq(e.target),
+            link,
+            url;
+
+        if (!target.is('.sv-channel-item')) {
+            target = target.closest('.sv-channel-item');
+        }
+
+        link = target.find('a');
+        url = link.prop('href');
+        document.location.href = url;
+
+    });
+
+    // Link whole puff...
     jq('.af-popularShortcuts--item').on('click', function (e) {
 
         var target = jq(e.target),

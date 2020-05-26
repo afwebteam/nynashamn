@@ -6,9 +6,12 @@
     display: flex;
     justify-content: space-around;
 
-    & ul.sv-channel {
+    &--list {
         display: flex;
         justify-content: space-around;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
 
         & li {
             max-width: 28%;
@@ -16,9 +19,32 @@
             background-color: #fff;
             border-radius: 10px;
             margin-bottom: 0;
+            position: relative;
 
             & a {
                 text-decoration: none;
+            }
+
+            .af-startpageMessages--listItem--externalLink .af-linkIcon {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 25px;
+                height: 25px;
+                background-size: 20px;
+                background-repeat: no-repeat;
+                background-image: url($externalLinkIconGrey);
+            }
+
+            .af-startpageMessages--listItem--internalLink .af-linkIcon {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 25px;
+                height: 25px;
+                background-repeat: no-repeat;
+                background-size: 20px;
+                background-image: url($internalLinkIconGrey);
             }
         }
     }
@@ -344,16 +370,12 @@
             & .sv-font-brodtext-fet {
                 display: block;
                 margin-bottom: 5px;
-            }
-
-            & .normal {
-
+                text-decoration: none;
             }
         }
-    }
 
-    &--readMore {
-        position: absolute;
-        bottom: 10px;
+        & li:hover {
+            cursor: pointer;
+        }
     }
 }
