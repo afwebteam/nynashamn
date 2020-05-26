@@ -111,5 +111,30 @@ svDocReady(function () {
         addAccordionFunctions(accordionContainer);
     } catch (e) { }
 
+    jq('.sv-search-facets-header').on('click', function (e) {
+        var target = jq(e.target),
+            facets = jq('.sv-search-facet-backgroundColor'),
+            text = target.find('.af-accordionText'),
+            isExpanded;
+
+        if (!target.is('.sv-search-facets-header')) {
+            target = target.closest('.sv-search-facets-header');
+        }
+
+        isExpanded = (target.attr('aria-expanded') === 'true');
+
+        if (isExpanded) {
+            target.attr('aria-expanded', false);
+            facets.hide();
+            target.removeClass('af-open');
+            text.text('Visa');
+        } else {
+            target.attr('aria-expanded', true);
+            target.addClass('af-open');
+            facets.show();
+            text.text('Dölj');
+        }
+    });
+
 });
 
