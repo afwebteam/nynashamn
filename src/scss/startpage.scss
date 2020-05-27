@@ -4,7 +4,7 @@
 
 .af-startpageMessages {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 
     &--list {
         display: flex;
@@ -14,12 +14,13 @@
         padding: 0;
 
         & li {
-            max-width: 28%;
-            padding: 1em;
+            max-width: 390px;
+            padding: 15px;
             background-color: #fff;
             border-radius: 10px;
             margin-bottom: 0;
             position: relative;
+            margin: 10px;
 
             & a {
                 text-decoration: none;
@@ -59,6 +60,25 @@
     background-image: url($startpageBigImage);
     background-repeat: no-repeat;
     background-size: cover;
+
+    & .sv-searchform-portlet {
+
+        & .af-searchIcon {
+            position: absolute;
+            top: 3px;
+            right: 0;
+            height: 51px;
+            width: 60px;
+            background-color: #EDEBE9;
+            border: none;
+            background-size: 25px;
+            background-position: center;
+        }
+    }
+
+    & p {
+        margin: 0 0 15px 0;
+    }
 }
 
 .af-wave {
@@ -88,7 +108,7 @@
 
 .af-amountEvents-4 .af-startpageEvents {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     &--event {
         flex: 1 1 50%;
@@ -96,14 +116,15 @@
         height: 510px;
 
         & .af-image {
-            background-size: cover;
+            background-size: contain;
             height: 100%;
+            background-repeat: no-repeat;
         }
     }
 
     &--eventText {
         position: absolute;
-        bottom: 0;
+        bottom: 12px;
         left: 0;
         right: 0;
         padding: 1em;
@@ -291,7 +312,7 @@
 .af-amountEvents-3, .af-amountEvents-4 {
 
     & .af-events--readMore {
-        margin-top: 32px;
+        margin: 40px 0 50px 0;
     }
 
 }

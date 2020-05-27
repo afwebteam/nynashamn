@@ -50,6 +50,7 @@ $clockIcon: $domain + '/images/18.fe28bf21723114cc4d1ed5/1590133639274/klocka.sv
 $hamburgerIcon: $domain + '/images/18.39f98b4f1722babea8decf3/1590390894695/hambyrgare.svg';
 
 // FONTS
+/*
 $museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
 $museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
 
@@ -58,6 +59,22 @@ $museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/
 
 $museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
 $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
+*/
+
+$museoSans100: $domain + '/download/18.71262abb1722c35351612026/1590570244874/exljbris%20-%20MuseoSans-100.otf';
+$museoSansItalic100: $domain + '/download/18.71262abb1722c35351612027/1590570244887/exljbris%20-%20MuseoSans-100Italic.otf';
+
+$museoSans300: $domain + '/download/18.71262abb1722c35351612028/1590570244900/exljbris%20-%20MuseoSans-300.otf';
+$museoSansItalic300: $domain + '/download/18.71262abb1722c35351612029/1590570244914/exljbris%20-%20MuseoSans-300Italic.otf';
+
+$museoSans500: $domain + '/download/18.71262abb1722c3535161202a/1590570244928/exljbris%20-%20MuseoSans-500.otf';
+$museoSansItalic500: $domain + '/download/18.71262abb1722c3535161202b/1590570244941/exljbris%20-%20MuseoSans-500Italic.otf';
+
+$museoSans700: $domain + '/download/18.71262abb1722c3535161202c/1590570244954/exljbris%20-%20MuseoSans-700.otf';
+$museoSansItalic700: $domain + '/download/18.71262abb1722c3535161202d/1590570244967/exljbris%20-%20MuseoSans-700Italic.otf';
+
+$museoSans900: $domain + '/download/18.71262abb1722c3535161202e/1590570244981/exljbris%20-%20MuseoSans-900.otf';
+$museoSansItalic900: $domain + '/download/18.71262abb1722c3535161202f/1590570244993/exljbris%20-%20MuseoSans-900Italic.otf';
 
 // LINKS
 $linkBorderStyle: 3px solid $nynas-darkblue-color;

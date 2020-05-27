@@ -84,6 +84,8 @@ p.sv-portlet-image-caption {
 
 .af-shortcuts {
     padding: 25px;
+    margin: 0;
+    padding: 0;
 
     &--item {
         list-style-type: none;
@@ -159,7 +161,7 @@ nav.af-center {
     justify-content: space-around;
 
     & > * {
-        max-width: 31%;
+        max-width: 33%;
     }
 }
 
