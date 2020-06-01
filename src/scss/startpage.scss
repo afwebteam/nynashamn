@@ -113,37 +113,39 @@
     &--event {
         flex: 1 1 50%;
         position: relative;
-        height: 510px;
+
+        & a {
+            text-decoration: none;
+        }
 
         & .af-image {
-            background-size: contain;
-            height: 100%;
+            background-size: cover;
             background-repeat: no-repeat;
+            padding-top: 56.25%;
         }
     }
 
     &--eventText {
-        position: absolute;
-        bottom: 12px;
-        left: 0;
-        right: 0;
-        padding: 1em;
+        padding: 18px;
+        display: flex;
+        align-items: center;
 
         &Content {
-            display: inline-block;
-            width: 86%;
-            margin-left: 15%;
+            margin-left: 15px;
 
-            & > p {
-                margin-top: 5px;
+            & div {
+                font-weight: 700;
+
+                & > p {
+                    margin-top: 5px;
+                    font-weight: 100;
+                }
             }
         }
 
         &Date {
-            width: 76px;
-            height: 76px;
-            position: absolute;
-            top: 30px;
+            /* width: 76px; */
+            /* height: 76px; */
 
             > div {
                 background-color: $white-color;
