@@ -47,3 +47,18 @@
         border-bottom: 4px solid $nynas-darkblue-color;
     }
 }
+
+.af-mobileMainMenu {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color: $white-color;
+    display: none;
+    font-family: museo;
+    font-size: 18;
+
+    &--item {
+        padding: 15px 10px;
+        border-bottom: 1px solid $white-color;
+    }
+}

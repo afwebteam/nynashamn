@@ -1,6 +1,6 @@
 @import 'variables';
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 880px) {
 
     .af-MobileNone {
         display: none;
@@ -41,7 +41,7 @@
     .af-wave {
 
         &--shape {
-            top: -35px;
+            top: -40px;
         }
     }
 
@@ -69,9 +69,11 @@
 
     .af-startpageBigImage {
         background-image: none !important;
-        padding: 0;
+        padding: 0 !important;
 
         & > .af-center {
+            position: relative !important;
+            top: unset !important;
             padding: 0;
 
             & .sv-script-portlet.af-borderRadius {
@@ -135,6 +137,62 @@
                 max-width: 100% !important;
                 margin-bottom: 15px !important;
             }
+        }
+    }
+
+    .af-amountEvents-3 {
+
+        & .af-startpageEvents {
+            margin-bottom: 0 !important;
+            flex-direction: column;
+            height: unset !important;
+
+            & .af-startpageEvents--event {
+                margin-bottom: 15px;
+            }
+
+            & .af-startpageEvents--smallerEvent {
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
+                width: 100%;
+            }
+
+            &--eventText {
+                position: unset !important;
+                display: flex !important;
+
+                &Date {
+                    position: unset !important;
+                }
+
+                &Content {
+
+                    & p {
+                        display: none;
+                    }
+                }
+            }
+
+            & .af-image {
+                padding-top: 56.25%;
+            }
+        }
+
+        & .af-borderRight10px {
+            border: none !important;
+        }
+
+        & .af-borderLeft10px {
+            border: none !important;
+        }
+
+        & .af-borderTop10px {
+            border: none !important;
+        }
+    
+        & .af-borderBottom10px {
+            border: none !important;
         }
     }
 
@@ -240,16 +298,18 @@
     }
 
     .af-socialIcons {
-        width: 40%;
-        margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
 
     .af-popularShortcuts {
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
 
         &--item {
-            max-width: 50%;
-            margin: 10px auto;
+            max-width: 31%;
+            flex-basis: 31%;
+            margin: 15px auto;
             display: flex;
             flex-direction: column;
             align-items: center;

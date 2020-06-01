@@ -136,5 +136,12 @@ svDocReady(function () {
         }
     });
 
+    jq('.af-MobileMenu').on('click', function (e) {
+
+        var theMenu = jq('.af-mobileMainMenu');
+
+        theMenu.toggle();
+    });
+
 });
 

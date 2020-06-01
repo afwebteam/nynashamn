@@ -26,6 +26,7 @@
                 text-decoration: none;
             }
 
+            /*
             .af-startpageMessages--listItem--externalLink .af-linkIcon {
                 position: absolute;
                 top: 10px;
@@ -47,6 +48,7 @@
                 background-size: 20px;
                 background-image: url($internalLinkIconGrey);
             }
+            */
         }
     }
 
@@ -60,8 +62,22 @@
     background-image: url($startpageBigImage);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 56.25%;
+    position: relative;
+
+    & > .af-center {
+        position: absolute;
+        top: 230px;
+        left: 0;
+        right: 0;
+    }
 
     & .sv-searchform-portlet {
+
+        position: absolute;
+        top: 130px;
+        left: 0;
+        right: 0;
 
         & .af-searchIcon {
             position: absolute;
@@ -229,6 +245,10 @@
             background-size: cover;
             height: 100%;
         }
+
+        & a {
+            text-decoration: none;
+        }
     }
 
     &--eventText {
@@ -322,6 +342,7 @@
 .af-popularShortcuts {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
     &--item {
 
@@ -332,7 +353,6 @@
         &Style {
             width: 210px;
             height: 210px;
-            border-radius: 50%;
             border-radius: 50%;
             background-repeat: no-repeat;
             background-size: 80px 80px;
