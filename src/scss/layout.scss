@@ -109,8 +109,8 @@ p.sv-portlet-image-caption {
 .af-tableOfContent {
 
     background-color: $nynas-grey-color;
-    margin: 50px 0;
-    padding: 50px;
+    margin: 60px 0;
+    padding: 60px;
 
     & li {
         margin: 10px 0;
@@ -295,6 +295,11 @@ nav.af-center {
 
         & li {
             margin: 15px 0;
+        }
+
+        & li.af-liBlock {
+            display: block;
+            margin: 0;
         }
 
         & .sv-decoration-generell-bla-knapp--external, .sv-decoration-generell-bla-knapp--intern  {
