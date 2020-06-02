@@ -52,13 +52,282 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
+    background-color: $nynas-darkblue-color;
     color: $white-color;
     display: none;
     font-family: museo;
     font-size: 18;
 
+    & .activeMenuItem {
+        text-decoration: underline;
+        text-decoration-color: $nynas-darkblue-color;
+    }
+
     &--item {
-        padding: 15px 10px;
+        padding: 0;
         border-bottom: 1px solid $white-color;
+        background-color: $nynas-darkblue-color;
+        position: relative;
+
+        &.open {
+            padding: 0;
+            border-bottom: none;
+        }
+
+        &.hasChildren {
+            & > .af-menuIcon {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 45px;
+                height: 45px;
+                background-image: url($plusSignIconWhite);
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: center;
+            }
+        }
+
+        &.hasChildren.open {
+            & > .af-menuIcon {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 45px;
+                height: 45px;
+                background-image: url($plusSignIconWhite);
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: center;
+                transform: rotate(45deg);
+            }
+        }
+
+        & a {
+            color: $white-color;
+            text-decoration: none;
+            margin-left: 30px;
+            padding: 15px 0;
+            display: block;
+        }
+    }
+}
+
+.af-mobileMainMenu--level2 {
+    background-color: $nynas-grey-color;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-top: 1px solid $white-color;
+    display: none;
+
+    &Item {
+        padding: 0;
+        border-bottom: 1px solid $white-color;
+        position: relative;
+
+        &.open {
+            padding: 0;
+            border-bottom: none;
+        }
+
+        &.hasChildren {
+            & > .af-menuIcon {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 45px;
+                height: 45px;
+                background-image: url($plusSignIcon);
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: center;
+            }
+        }
+
+        &.hasChildren.open {
+            & > .af-menuIcon {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 45px;
+                height: 45px;
+                background-image: url($plusSignIcon);
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: center;
+                transform: rotate(45deg);
+            }
+        }
+
+        & a {
+            font-family: museo;
+            font-size: 14px;
+            color: $nynas-black-color;
+        }
+    }
+}
+
+.af-mobileMainMenu--level3 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-top: 1px solid $white-color;
+    display: none;
+
+    &Item {
+        padding: 0;
+        border-bottom: 1px solid $white-color;
+        position: relative;
+
+        &.open {
+            padding:0;
+            border-bottom: none;
+        }
+
+        &.hasChildren {
+            & > .af-menuIcon {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 45px;
+                height: 45px;
+                background-image: url($plusSignIcon);
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: center;
+            }
+        }
+
+        &.hasChildren.open {
+            & > .af-menuIcon {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 45px;
+                height: 45px;
+                background-image: url($plusSignIcon);
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: center;
+                transform: rotate(45deg);
+            }
+        }
+        
+        & a {
+            font-family: museo;
+            font-size: 14px;
+            color: $nynas-black-color;
+            margin-left: 50px;
+        }
+        
+    }
+}
+
+.af-mobileMainMenu--level4 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-top: 1px solid $white-color;
+    display: none;
+
+    &Item {
+        padding: 0;
+        border-bottom: 1px solid $white-color;
+        position: relative;
+
+        &.open {
+            padding: 0;
+            border-bottom: none;
+        }
+
+        &.hasChildren {
+            & > .af-menuIcon {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 45px;
+                height: 45px;
+                background-image: url($plusSignIcon);
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: center;
+            }
+        }
+
+        &.hasChildren.open {
+            & > .af-menuIcon {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 45px;
+                height: 45px;
+                background-image: url($plusSignIcon);
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: center;
+                transform: rotate(45deg);
+            }
+        }
+        
+        & a {
+            font-family: museo;
+            font-size: 14px;
+            color: $nynas-black-color;
+            margin-left: 70px;
+        }
+    }
+}
+
+.af-mobileMainMenu--level5 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-top: 1px solid $white-color;
+    display: none;
+
+    &Item {
+        padding: 0;
+        border-bottom: 1px solid $white-color;
+        position: relative;
+
+        &.hasChildren {
+            padding: 0;
+            border-bottom: none;
+
+            & > .af-menuIcon {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 45px;
+                height: 45px;
+                background-image: url($plusSignIcon);
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: center;
+            }
+        }
+
+        &.hasChildren.open {
+            & > .af-menuIcon {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 45px;
+                height: 45px;
+                background-image: url($plusSignIcon);
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: center;
+                transform: rotate(45deg);
+            }
+        }
+        
+        & a {
+            font-family: museo;
+            font-size: 14px;
+            color: $nynas-black-color;
+            margin-left: 90px;
+        }
     }
 }

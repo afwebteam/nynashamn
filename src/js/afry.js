@@ -143,5 +143,20 @@ svDocReady(function () {
         theMenu.toggle();
     });
 
+    // Mobile menu
+    jq('.af-menuIcon').on('click', function (e) {
+
+        var target = jq(e.target),
+            container = target.closest('li'),
+            sublevel = container.find('ul').first(),
+            thisIcon = container.find('.af-menuIcon');
+
+        container.toggleClass('open');
+        sublevel.toggle();
+
+        console.log(container);
+
+    });
+
 });
 
