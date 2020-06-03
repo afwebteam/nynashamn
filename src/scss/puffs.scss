@@ -87,4 +87,33 @@
         border-top-right-radius: 10px;
         color: #fff;
     }
+
+    & .af-contactModule-content {
+        background-color: $nynas-grey-color;
+        padding: 50px;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+
+        & .af-contactModule--middle {
+            margin-bottom: 25px;
+            flex-basis: 100%;
+            width: 100%;
+        }
+
+        & .af-contactModule--left {
+            flex-basis: 50%;
+            width: 50%;
+        }
+
+        & .af-contactModule--right {
+            flex-basis: 50%;
+            width: 50%;
+        }
+
+        & .sv-font-brodtext-fet {
+            margin-top: 10px;
+            display: inline-block;
+        }
+    }
 }
