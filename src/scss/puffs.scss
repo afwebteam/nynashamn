@@ -104,6 +104,9 @@
         & .af-contactModule--left {
             flex-basis: 50%;
             width: 50%;
+            .sv-text-portlet-content > .normal:first-child > .sv-font-brodtext-fet { 
+                margin: 0; 
+            }
         }
 
         & .af-contactModule--right {
@@ -112,7 +115,7 @@
         }
 
         & .sv-font-brodtext-fet {
-            margin-top: 10px;
+            margin-top: 15px;
             display: inline-block;
         }
     }
