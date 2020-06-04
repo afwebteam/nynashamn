@@ -88,6 +88,19 @@
         color: #fff;
     }
 
+    & h2:before,
+    & h3:before,
+    & .sv-font-stor-svart:before {
+        content: ' ';
+        margin-right: 25px;
+        background-image: url($startpageServicecenterImage);
+        width: 35px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 25px;
+    }
+
     & .af-contactModule-content {
         background-color: $nynas-grey-color;
         padding: 50px;

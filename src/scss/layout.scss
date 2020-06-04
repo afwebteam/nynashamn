@@ -118,7 +118,8 @@ p.sv-portlet-image-caption {
 
         background-image: url($arrowDownIcon);
         background-repeat: no-repeat;
-        background-position: left;
+        background-position: left 2px;
+        background-size: 22px;
 
         & a {
             text-decoration: none;
@@ -368,7 +369,7 @@ nav.af-center {
     & table {
 
         border-radius: 10px;
-        margin: 15px 0;
+        margin: 40px 0;
         border-collapse: collapse;
         overflow: hidden;
 
@@ -418,6 +419,10 @@ nav.af-center {
         text-decoration: underline;
     }
 
+    & .sv-font-sidfot-rubrik:hover {
+        cursor: pointer;
+    }
+
     & .sv-font-sidfot-rubrik:before {
         content: ' ';
         margin-right: 15px;
@@ -425,22 +430,15 @@ nav.af-center {
         background-image: url($speachBubbleIcon);
         display: inline-block;
         background-repeat: no-repeat;
+        height: 21px;
     }
 
-    & .sv-comments2-main-header h3 {
-        display: none;
-    }
+    & .env-modal-dialog__dialog {
+        max-width: 850px;
 
-    & .sv-comments2-main-header .dropdown.sv-cog {
-        padding-right: 50px;
-    }
-
-    & .sv-comments2-comments {
-        padding: 0 35px;
-    }
-
-    & .sv-image-container.sv-comments2-form {
-        display: none;
+        & .env-modal-dialog__content {
+            padding: 50px;
+        }
     }
 }
 

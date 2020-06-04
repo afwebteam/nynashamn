@@ -148,14 +148,14 @@ svDocReady(function () {
 
         var target = jq(e.target),
             container = target.closest('li'),
-            sublevel = container.find('ul').first(),
-            thisIcon = container.find('.af-menuIcon');
+            sublevel = container.find('ul').first();
 
         container.toggleClass('open');
         sublevel.toggle();
+    });
 
-        console.log(container);
-
+    jq('.sv-decoration-generell-kommentarer p.sv-font-sidfot-rubrik').on('click', function (e) {
+        jq('.af-commentOfPageDialog').envDialog('toggle');
     });
 
 });

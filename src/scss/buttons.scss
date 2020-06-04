@@ -12,3 +12,90 @@
     background-size: 30px;
     background-position: center;
 }
+
+.sv-print-portlet {
+
+    & a {
+        position: relative;
+    }
+
+    & a:after {
+        content: ' ';
+        background-image: url($printIcon);
+        background-repeat: no-repeat;
+        display: inline-block;
+        padding: 12px 0;
+        position: absolute;
+        width: 30px;
+        margin-left: 10px;  
+    }
+}
+
+.sv-decoration-contentpage-share-social {
+
+    & a {
+        position: relative;
+    }
+
+    & a:after {
+        content: ' ';
+        background-image: url($shareIcon);
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: absolute;
+        width: 130px;
+        margin-left: 10px;
+        background-size: 120px 38px;
+        height: 38px;
+        top: -8px;
+    }
+}
+
+.af-generell-prevNext {
+    margin: 40px 0;
+
+    &--links {
+        display: flex;
+        justify-content: space-between;
+
+        &-prev {
+            position: relative;
+
+            & a {
+                margin-left: 40px;
+            }
+        }
+
+        &-prev:before {
+            content: ' ';
+            background-image: url($prevNodeIcon);
+            background-size: 25px;
+            background-repeat: no-repeat;
+            margin-right: 15px;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            position: absolute;
+        }
+
+        &-next {
+            position: relative;
+
+            & a {
+                margin-right: 40px;
+            }
+        }
+
+        &-next:after {
+            content: ' ';
+            background-image: url($nextNodeIcon);
+            background-size: 25px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            right: 0;
+            position: absolute;
+        }
+    }
+}
