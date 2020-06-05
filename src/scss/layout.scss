@@ -344,15 +344,25 @@ nav.af-center {
        display: none;
     }
 
-    & .af-open {
-        background-image: url($hideIcon) !important;
+    & .af-closed {
+        position: relative;
     }
 
-    & .af-closed {
+    & .af-closed:after {
+        content: ' ';
         background-image: url($plusSignIcon);
         background-repeat: no-repeat;
-        background-position: right 30px center;
+        background-position: center;
         background-size: 25px;
+        position: absolute;
+        right: 20px;
+        width: 30px;
+        transition: all 0.3s ease;
+    }
+
+    & .af-open:after {
+        transform: rotate(45deg);
+        transition: all 0.3s ease;
     }
 
     & .af-accordionText {

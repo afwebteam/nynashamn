@@ -728,15 +728,25 @@ nav.af-center .af-searchIcon {
   display: none;
 }
 
-.sv-decoration-generell-dragspel .af-open {
-  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f9610750f/1589965052805/do%CC%88lj.svg") !important;
+.sv-decoration-generell-dragspel .af-closed {
+  position: relative;
 }
 
-.sv-decoration-generell-dragspel .af-closed {
+.sv-decoration-generell-dragspel .af-closed:after {
+  content: ' ';
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
-  background-position: right 30px center;
+  background-position: center;
   background-size: 25px;
+  position: absolute;
+  right: 20px;
+  width: 30px;
+  transition: all 0.3s ease;
+}
+
+.sv-decoration-generell-dragspel .af-open:after {
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
 }
 
 .sv-decoration-generell-dragspel .af-accordionText {
@@ -939,6 +949,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
+  transition: all 0.3s ease;
 }
 
 .af-mobileMainMenu--item.hasChildren.open > .af-menuIcon {
@@ -952,6 +963,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   background-size: 25px;
   background-position: center;
   transform: rotate(45deg);
+  transition: all 0.3s ease;
 }
 
 .af-mobileMainMenu--item a {
@@ -992,6 +1004,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
+  transition: all 0.3s ease;
 }
 
 .af-mobileMainMenu--level2Item.hasChildren.open > .af-menuIcon {
@@ -1005,6 +1018,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   background-size: 25px;
   background-position: center;
   transform: rotate(45deg);
+  transition: all 0.3s ease;
 }
 
 .af-mobileMainMenu--level2Item a {
@@ -1042,6 +1056,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
+  transition: all 0.3s ease;
 }
 
 .af-mobileMainMenu--level3Item.hasChildren.open > .af-menuIcon {
@@ -1055,6 +1070,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   background-size: 25px;
   background-position: center;
   transform: rotate(45deg);
+  transition: all 0.3s ease;
 }
 
 .af-mobileMainMenu--level3Item a {
@@ -1093,6 +1109,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
+  transition: all 0.3s ease;
 }
 
 .af-mobileMainMenu--level4Item.hasChildren.open > .af-menuIcon {
@@ -1106,6 +1123,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   background-size: 25px;
   background-position: center;
   transform: rotate(45deg);
+  transition: all 0.3s ease;
 }
 
 .af-mobileMainMenu--level4Item a {
@@ -1144,6 +1162,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
+  transition: all 0.3s ease;
 }
 
 .af-mobileMainMenu--level5Item.hasChildren.open > .af-menuIcon {
@@ -1157,6 +1176,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   background-size: 25px;
   background-position: center;
   transform: rotate(45deg);
+  transition: all 0.3s ease;
 }
 
 .af-mobileMainMenu--level5Item a {

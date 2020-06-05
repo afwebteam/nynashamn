@@ -227,5 +227,39 @@ svDocReady(function () {
         }
     });
 
+    // Link the whole area on the function links at the top of the page
+    jq('header .af-center img.sv-svg').each(function (index, item) {
+
+        var img = jq(item),
+            imgPortlet = img.closest('.sv-image-portlet'),
+            textImgContainer = imgPortlet.closest('.af-center'),
+            a = imgPortlet.find('a'),
+            link;
+
+        if (a && a.prop('href')) {
+            link = a.prop('href');
+
+            if (link) {
+
+                textImgContainer.hover(function () {
+                    textImgContainer.css('cursor', 'pointer');
+                }, function () {
+
+                });
+
+                textImgContainer.on('click', function (e) {
+
+                    if (link.indexOf('#Kontaktcenter') > 0) {
+                        jq('html, body').animate({ scrollTop: jq('#Kontaktcenter').offset().top }, 800);
+
+                        //jq('#Kontaktcenter').get(0).scrollIntoView();
+                    } else {
+                        document.location.href = link;
+                    }
+                });
+            }
+        }
+    });
+
 });
 
