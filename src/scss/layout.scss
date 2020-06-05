@@ -444,6 +444,7 @@ nav.af-center {
             & h4.env-text {
                 color: $nynas-black-color;
                 padding: 0;
+                display: none;
             }
         }
 
@@ -461,6 +462,7 @@ nav.af-center {
     }
 }
 
-.af-desktopNone {
+.af-desktopNone,
+.af-hidden {
     display: none;
 }

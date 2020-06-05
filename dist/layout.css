@@ -824,6 +824,7 @@ nav.af-center .af-searchIcon {
 .sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__header h4.env-text {
   color: #414042;
   padding: 0;
+  display: none;
 }
 
 .sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__content {
@@ -838,7 +839,8 @@ nav.af-center .af-searchIcon {
   color: #c6538c;
 }
 
-.af-desktopNone {
+.af-desktopNone,
+.af-hidden {
   display: none;
 }
 
