@@ -1,5 +1,7 @@
 /* global svDocReady */
 
+var AF = AF || {};
+
 svDocReady(function () {
 
     'use strict';
@@ -7,6 +9,15 @@ svDocReady(function () {
     var jq = jQuery,
         relatedFileLinks,
         accordionContainer;
+
+    AF.isEmptyString = function (aString) {
+
+        if (!aString || aString === '') {
+            return true;
+        }
+
+        return false;
+    };
 
     jq('.sv-text-portlet.af-searchIcon').on('click', function (e) {
         jq('.af-hiddenSearchForm').toggle();
@@ -156,6 +167,64 @@ svDocReady(function () {
 
     jq('.sv-decoration-generell-kommentarer p.sv-font-sidfot-rubrik').on('click', function (e) {
         jq('.af-commentOfPageDialog').envDialog('toggle');
+    });
+
+    // Feedback form
+    jq('.af-commentOfPageDialog .af-feedbackSubmit').on('click', function (e) {
+
+        var target = jq(e.target),
+            container = target.closest('.env-modal-dialog__content'),
+            form = container.find('form'),
+            inputs = container.find('input, textarea'),
+            actionURL = form.prop('action'),
+            actionMethod = form.prop('method'),
+            valid = true,
+
+            name, mail, message, spam;
+
+        container.find('.env-form-element--danger').removeClass('env-form-element--danger');
+        jq.each(inputs, function (i, e) {
+            var input = jq(e),
+                inputValue = input.val();
+
+            if (input.is('textarea')) {
+
+                if (AF.isEmptyString(inputValue)) {
+                    valid = false;
+                    input.closest('.env-form-element').addClass('env-form-element--danger');
+                } else {
+                    message = inputValue;
+                }
+
+            } else if (input.prop('name') === 'name2' && inputValue !== '') {
+                // Probably spam robot
+                valid = false;
+                spam = inputValue;
+            } else if (input.prop('name') === 'name') {
+                name = inputValue;
+            } else if (input.prop('name') === 'mail') {
+                mail = inputValue;
+            }
+        });
+
+        if (valid) {
+            jq.ajax({
+                url: actionURL,
+                method: actionMethod,
+                data: {
+                    spam: spam,
+                    name: name,
+                    mail: mail,
+                    message: message,
+                    ajax: true
+                },
+                success: function (data) {
+                    if (data && data.indexOf('success') > -1) {
+                        jq('.af-commentOfPageDialog').envDialog('hide');
+                    }
+                }
+            });
+        }
     });
 
 });
