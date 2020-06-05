@@ -518,4 +518,65 @@
             }
         }
     }
+
+    // Landing page
+    .af-wave {
+
+        & .af-landingpage--bigImage {
+            background-image: none !important;
+            padding: 0;
+            height: auto;
+
+            & .af-landingpage--pageName {
+                background-color: $white-color;
+                position: relative;
+                top: 0;
+            }
+
+            & .af-landingpage--shortcuts {
+                display: flex;
+                flex-direction: column;
+
+                & .af-landingpage--shortcuts-list {
+                    margin: 25px 0;
+
+                    & li {
+                        margin: 5px 0;
+                    }
+                }
+            }
+
+            & .af-landingpage--shortcuts.af-borderRadius {
+                border-radius: 0;
+                position: relative;
+                top: 0;
+            }
+        }
+
+        & .af-wave-grey--shape {
+            background-image: url($startpageWave);
+        }
+    }
+
+    .af-landingpage {
+
+        &Row {
+            padding: 60px 25px;
+            flex-direction: column;
+
+            & .af-landingpageRow--left, .af-landingpageRow--right {
+                width: 100%;
+            }
+        }
+
+        &Color {
+            &:nth-child(odd) {
+                background-color: $white-color;
+            }
+    
+            &:nth-child(even) {
+                background-color: $nynas-grey-color;
+            }
+        }
+    }
 }

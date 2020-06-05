@@ -1526,6 +1526,47 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__content .env-form .mandatory {
     color: #c6538c;
   }
+  .af-wave .af-landingpage--bigImage {
+    background-image: none !important;
+    padding: 0;
+    height: auto;
+  }
+  .af-wave .af-landingpage--bigImage .af-landingpage--pageName {
+    background-color: #fff;
+    position: relative;
+    top: 0;
+  }
+  .af-wave .af-landingpage--bigImage .af-landingpage--shortcuts {
+    display: flex;
+    flex-direction: column;
+  }
+  .af-wave .af-landingpage--bigImage .af-landingpage--shortcuts .af-landingpage--shortcuts-list {
+    margin: 25px 0;
+  }
+  .af-wave .af-landingpage--bigImage .af-landingpage--shortcuts .af-landingpage--shortcuts-list li {
+    margin: 5px 0;
+  }
+  .af-wave .af-landingpage--bigImage .af-landingpage--shortcuts.af-borderRadius {
+    border-radius: 0;
+    position: relative;
+    top: 0;
+  }
+  .af-wave .af-wave-grey--shape {
+    background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c5418b8d/1589182390043/wave.svg");
+  }
+  .af-landingpageRow {
+    padding: 60px 25px;
+    flex-direction: column;
+  }
+  .af-landingpageRow .af-landingpageRow--left, .af-landingpageRow .af-landingpageRow--right {
+    width: 100%;
+  }
+  .af-landingpageColor:nth-child(odd) {
+    background-color: #fff;
+  }
+  .af-landingpageColor:nth-child(even) {
+    background-color: #EDEBE9;
+  }
 }
 
 /* OVERRIDES */
