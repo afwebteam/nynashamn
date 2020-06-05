@@ -466,4 +466,56 @@
     .sv-grid-850 .sv-image-portlet {
         margin: 30px 0;
     }
+
+    .sv-decoration-generell-kommentarer {
+    
+        & .sv-font-sidfot-rubrik:before {
+            content: ' ';
+            margin-right: 15px;
+            width: 30px;
+            background-image: url($speachBubbleIcon);
+            display: inline-block;
+            background-repeat: no-repeat;
+            height: 21px;
+        }
+    
+        & .env-modal-dialog__dialog {
+            margin: 4% 4%;
+
+            & * {
+                font-family: museo, sans-serif;
+            }
+    
+            & .env-modal-dialog__header {
+    
+                & h4.env-text {
+                    font-size: 25px;
+                }
+            }
+
+            & p.env-text {
+                font-size: 18px;
+            }
+
+            & .env-form-element__label {
+                font-size: 18px;
+            }
+
+            & .env-form-input {
+                padding: .2em;
+            }
+    
+            & .env-modal-dialog__content {
+                padding: 50px;
+    
+                & .env-form {
+                    margin: 25px 0;
+    
+                    & .mandatory {
+                        color: $red-color;
+                    }
+                }
+            }
+        }
+    }
 }

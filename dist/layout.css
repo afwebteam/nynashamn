@@ -1488,6 +1488,42 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .sv-grid-850 .sv-image-portlet {
     margin: 30px 0;
   }
+  .sv-decoration-generell-kommentarer .sv-font-sidfot-rubrik:before {
+    content: ' ';
+    margin-right: 15px;
+    width: 30px;
+    background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f96107cbd/1589978216557/pratbubbla.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 21px;
+  }
+  .sv-decoration-generell-kommentarer .env-modal-dialog__dialog {
+    margin: 4% 4%;
+  }
+  .sv-decoration-generell-kommentarer .env-modal-dialog__dialog * {
+    font-family: museo, sans-serif;
+  }
+  .sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__header h4.env-text {
+    font-size: 25px;
+  }
+  .sv-decoration-generell-kommentarer .env-modal-dialog__dialog p.env-text {
+    font-size: 18px;
+  }
+  .sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-form-element__label {
+    font-size: 18px;
+  }
+  .sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-form-input {
+    padding: .2em;
+  }
+  .sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__content {
+    padding: 50px;
+  }
+  .sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__content .env-form {
+    margin: 25px 0;
+  }
+  .sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__content .env-form .mandatory {
+    color: #c6538c;
+  }
 }
 
 /* OVERRIDES */
