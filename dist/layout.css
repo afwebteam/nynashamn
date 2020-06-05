@@ -813,10 +813,29 @@ nav.af-center .af-searchIcon {
 
 .sv-decoration-generell-kommentarer .env-modal-dialog__dialog {
   max-width: 850px;
+  margin: 4% auto;
+}
+
+.sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__header {
+  background-color: #fff;
+  color: #414042;
+}
+
+.sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__header h4.env-text {
+  color: #414042;
+  padding: 0;
 }
 
 .sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__content {
   padding: 50px;
+}
+
+.sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__content .env-form {
+  margin: 25px 0;
+}
+
+.sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__content .env-form .mandatory {
+  color: #c6538c;
 }
 
 .af-desktopNone {

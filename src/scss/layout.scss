@@ -435,9 +435,28 @@ nav.af-center {
 
     & .env-modal-dialog__dialog {
         max-width: 850px;
+        margin: 4% auto;
+
+        & .env-modal-dialog__header {
+            background-color: $white-color;
+            color: $nynas-black-color;
+
+            & h4.env-text {
+                color: $nynas-black-color;
+                padding: 0;
+            }
+        }
 
         & .env-modal-dialog__content {
             padding: 50px;
+
+            & .env-form {
+                margin: 25px 0;
+
+                & .mandatory {
+                    color: $red-color;
+                }
+            }
         }
     }
 }
