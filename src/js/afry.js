@@ -90,9 +90,17 @@ svDocReady(function () {
 
                 item.on('click', function (e) {
                     var target = jq(e.target),
-                        content = target.next('.normal'),
-                        text = target.find('.af-accordionText'),
-                        isExpanded = (item.attr('aria-expanded') === 'true');
+                        content,
+                        text,
+                        isExpanded;
+
+                    if (target.is('.af-accordionText')) {
+                        target = target.closest('p');
+                    }
+
+                    content = target.next('.normal');
+                    text = target.find('.af-accordionText');
+                    isExpanded = (item.attr('aria-expanded') === 'true');
 
                     if (isExpanded) {
                         item.attr('aria-expanded', false);
@@ -248,6 +256,8 @@ svDocReady(function () {
                 });
 
                 textImgContainer.on('click', function (e) {
+
+                    e.preventDefault();
 
                     if (link.indexOf('#Kontaktcenter') > 0) {
                         jq('html, body').animate({ scrollTop: jq('#Kontaktcenter').offset().top }, 800);
