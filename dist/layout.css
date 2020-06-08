@@ -854,6 +854,25 @@ nav.af-center .af-searchIcon {
   display: none;
 }
 
+/* Search */
+.sv-search-result .sv-search-hit {
+  padding: 30px 0 20px 0;
+  border-bottom: 1px solid #414042;
+}
+
+.sv-search-result .sv-search-hit .summary {
+  margin: 10px 0;
+}
+
+.sv-search-result .sv-search-hit .infoText span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.sv-search-result .sv-search-hit:first-of-type {
+  border-top: 1px solid #414042;
+}
+
 /*
 $museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
 $museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
@@ -1450,7 +1469,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     background-size: 25px;
   }
   .sv-multilevellink-portlet {
-    padding: 30px 12px !important;
+    padding: 30px 10px !important;
   }
   h1.heading {
     font-size: 25px;
@@ -1586,6 +1605,37 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .af-landingpageColor:nth-child(even) {
     background-color: #EDEBE9;
+  }
+  .sv-grid-850.sv-fluid-grid, .sv-grid-850.sv-fixed-fluid-grid {
+    width: 100%;
+  }
+  .af-MobileMenu--active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #002F6C;
+  }
+  .af-mobileTabs {
+    margin: 0;
+    padding: 30px 0 0 0;
+    margin-top: -10px;
+    background-color: #fff;
+    display: none;
+  }
+  .af-mobileTabs .sv-font-toppmeny {
+    font-size: 18px;
+  }
+  .af-mobileTabs .sv-font-toppmeny-aktiv {
+    font-size: 18px;
+    padding: 15px 28px 9px 28px !important;
+    border-bottom: 1px solid #414042;
+  }
+  .af-mobileTabs .af-menu {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  .af-mobileTabs .af-menu .af-menu--item a {
+    padding: 15px 28px 10px 28px;
   }
 }
 

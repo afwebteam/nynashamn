@@ -476,3 +476,28 @@ nav.af-center {
 .af-hidden {
     display: none;
 }
+
+/* Search */
+.sv-search-result {
+
+    & .sv-search-hit {
+        padding: 30px 0 20px 0;
+        border-bottom: 1px solid $nynas-black-color;
+
+        & .summary {
+            margin: 10px 0;
+        }
+
+        & .infoText {
+
+            & span {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    & .sv-search-hit:first-of-type {
+        border-top: 1px solid $nynas-black-color;
+    }
+}

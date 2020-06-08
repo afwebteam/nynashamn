@@ -157,9 +157,17 @@ svDocReady(function () {
 
     jq('.af-MobileMenu').on('click', function (e) {
 
-        var theMenu = jq('.af-mobileMainMenu');
+        var target = jq(e.target),
+            tabs = jq('.af-mobileTabs'),
+            theMenu = jq('.af-mobileMainMenu');
+
+        if (target.is('p')) {
+            target = target.closest('.af-MobileMenu');
+        }
 
         theMenu.toggle();
+        tabs.toggle();
+        target.toggleClass('af-MobileMenu--active');
     });
 
     // Mobile menu
@@ -269,6 +277,16 @@ svDocReady(function () {
                 });
             }
         }
+    });
+
+    // Search
+    jq('.af-hideWithJS').css('display', 'none');
+    jq('.af-loadMoreSearchResult a').on('click', function (e) {
+
+        e.preventDefault();
+
+        console.log('click');
+
     });
 
 });
