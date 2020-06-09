@@ -166,10 +166,32 @@ svDocReady(function () {
 
         var target = jq(e.target),
             tabs = jq('.af-mobileTabs'),
-            theMenu = jq('.af-mobileMainMenu');
+            theMenu = jq('.af-mobileMainMenu'),
+            activeMenuItem,
+            allLists,
+            allItems;
 
         if (target.is('p')) {
             target = target.closest('.af-MobileMenu');
+        }
+
+        activeMenuItem = theMenu.find('.activeMenuItem');
+
+        if (activeMenuItem && activeMenuItem.length > 0) {
+            allLists = activeMenuItem.parents('ul');
+            allItems = activeMenuItem.parents('li');
+
+            jq.each(allLists, function (i, e) {
+                var menu = jq(e);
+                if (!menu.is('.af-mobileMainMenu')) {
+                    menu.css('display', 'block');
+                }
+            });
+
+            jq.each(allItems, function (i, e) {
+                var item = jq(e);
+                item.addClass('open');
+            });
         }
 
         theMenu.toggle();
@@ -353,7 +375,13 @@ svDocReady(function () {
     jq('.sv-searchform-portlet .af-textInputField').on('focus', function (e) {
 
         var target = jq(e.target),
-            div = target.closest('div');
+            div = target.closest('div'),
+            form = div.closest('form');
+
+        form.addClass('af-upscale');
+        setTimeout(function () {
+            form.removeClass('af-upscale');
+        }, 200);
 
         div.addClass('af-rotate');
         setTimeout(function () {
