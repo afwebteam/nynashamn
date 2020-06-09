@@ -1883,21 +1883,27 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   right: 0;
 }
 
-.af-startpageBigImage .sv-searchform-portlet .af-searchIcon {
-  background-image: none;
-  height: 51px;
-}
-
-.af-startpageBigImage .sv-searchform-portlet .af-searchIcon:after {
+.af-startpageBigImage .sv-searchform-portlet div[role=search]:after {
   content: ' ';
   position: absolute;
   top: 3px;
   right: 0;
   height: 51px;
-  width: 60px;
+  width: 47px;
   background-size: 25px;
   background-position: center;
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c54242bf/1589376316677/s%C3%B6k.svg");
+  background-repeat: no-repeat;
+}
+
+.af-startpageBigImage .sv-searchform-portlet .af-rotate:after {
+  transform: rotate(20deg);
+  transition: transform .2s ease-in-out;
+}
+
+.af-startpageBigImage .sv-searchform-portlet .af-searchIcon {
+  background-image: none;
+  height: 51px;
 }
 
 .af-startpageBigImage p {

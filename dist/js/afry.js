@@ -349,4 +349,15 @@ svDocReady(function () {
             }
         });
     });
+
+    jq('.sv-searchform-portlet .af-textInputField').on('focus', function (e) {
+
+        var target = jq(e.target),
+            div = target.closest('div');
+
+        div.addClass('af-rotate');
+        setTimeout(function () {
+            div.removeClass('af-rotate');
+        }, 500);
+    });
 });
