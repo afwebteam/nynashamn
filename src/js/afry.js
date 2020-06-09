@@ -1,4 +1,4 @@
-/* global svDocReady */
+/* global svDocReady, afQuery, afStartAtHit, afSearchTerm */
 
 var AF = AF || {};
 
@@ -20,7 +20,14 @@ svDocReady(function () {
     };
 
     jq('.sv-text-portlet.af-searchIcon').on('click', function (e) {
-        jq('.af-hiddenSearchForm').toggle();
+
+        var field = jq('.sv-searchform-portlet .af-textInputField');
+
+        if (field && field.length > 0) {
+            field.focus();
+        } else {
+            jq('.af-hiddenSearchForm').toggle();
+        }
     });
 
     // Link whole puff...
@@ -280,14 +287,66 @@ svDocReady(function () {
     });
 
     // Search
+    function getParameterValue(anURL, aParameter) {
+
+        var url = new URL(anURL),
+            value = url.searchParams.get(aParameter);
+
+        return value;
+    }
+
+    function replaceUrlParam(url, paramName, paramValue) {
+        if (paramValue == null) {
+            paramValue = '';
+        }
+        var pattern = new RegExp('\\b(' + paramName + '=).*?(&|#|$)');
+        if (url.search(pattern) >= 0) {
+            return url.replace(pattern, '$1' + paramValue + '$2');
+        }
+        url = url.replace(/[?#]$/, '');
+        return url + (url.indexOf('?') > 0 ? '&' : '?') + paramName + '=' + paramValue;
+    }
+
     jq('.af-hideWithJS').css('display', 'none');
     jq('.af-loadMoreSearchResult a').on('click', function (e) {
 
+        var target = jq(e.target),
+            loadMoreURL = target.prop('href'),
+            completeLoadMoreURL = loadMoreURL + afQuery;
+
         e.preventDefault();
 
-        console.log('click');
+        if (!afStartAtHit && !afSearchTerm) {
+            afStartAtHit = getParameterValue(completeLoadMoreURL, 'startAtHit');
+            afSearchTerm = getParameterValue(completeLoadMoreURL, 'query');
+        } else {
+            afStartAtHit = parseInt(afStartAtHit) + 10;
+            completeLoadMoreURL = replaceUrlParam(completeLoadMoreURL, 'startAtHit', afStartAtHit);
+        }
 
+        jq.ajax({
+            url: completeLoadMoreURL,
+            dataType: 'html',
+            success: function (data) {
+
+                var resultList = jq('.sv-search-result'),
+                    dataAsHtml = jq(data),
+                    newHits;
+
+                if (dataAsHtml) {
+                    newHits = dataAsHtml.find('.sv-search-hit');
+
+                    jq.each(newHits, function (index, hit) {
+                        resultList.append(hit);
+                    });
+
+                    if (newHits.length < 10) {
+                        jq('.af-loadMoreSearchResult').remove();
+                    }
+                } else {
+                    jq('.af-loadMoreSearchResult').remove();
+                }
+            }
+        });
     });
-
 });
-

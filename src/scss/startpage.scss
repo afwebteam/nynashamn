@@ -80,15 +80,20 @@
         right: 0;
 
         & .af-searchIcon {
+            background-image: none;
+            height: 51px;
+        }
+
+        & .af-searchIcon:after {
+            content: ' ';
             position: absolute;
             top: 3px;
             right: 0;
             height: 51px;
             width: 60px;
-            background-color: #EDEBE9;
-            border: none;
             background-size: 25px;
             background-position: center;
+            background-image: url($searchIcon);
         }
     }
 
