@@ -90,11 +90,12 @@
             background-position: center;
             background-image: url($searchIcon);
             background-repeat: no-repeat;
+            transition: transform .3s ease-in-out;
         }
 
         & .af-rotate:after {
             transform: rotate(20deg);
-            transition: transform .2s ease-in-out;
+            transition: transform .3s ease-in-out;
         }
 
         & .af-upscale {

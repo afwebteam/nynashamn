@@ -1897,11 +1897,12 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   background-position: center;
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
   background-repeat: no-repeat;
+  transition: transform .3s ease-in-out;
 }
 
 .af-startpageBigImage .sv-searchform-portlet .af-rotate:after {
   transform: rotate(20deg);
-  transition: transform .2s ease-in-out;
+  transition: transform .3s ease-in-out;
 }
 
 .af-startpageBigImage .sv-searchform-portlet .af-upscale {
