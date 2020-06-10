@@ -39,6 +39,7 @@ svDocReady(function () {
     jq('.sv-text-portlet.af-searchIcon').on('click', function (e) {
 
         var field = jq('.sv-searchform-portlet .af-textInputField'),
+            form = field.closest('form'),
             hiddenSearchForm,
             hiddenSearchFormField;
 
@@ -50,6 +51,12 @@ svDocReady(function () {
                 hiddenSearchForm.toggle();
                 hiddenSearchFormField.focus();
             } else {
+
+                form.addClass('af-upscale');
+                setTimeout(function () {
+                    form.removeClass('af-upscale');
+                }, 200);
+
                 field.focus();
             }
 
@@ -408,13 +415,7 @@ svDocReady(function () {
     jq('.sv-searchform-portlet .af-textInputField').on('focus', function (e) {
 
         var target = jq(e.target),
-            div = target.closest('div'),
-            form = div.closest('form');
-
-        form.addClass('af-upscale');
-        setTimeout(function () {
-            form.removeClass('af-upscale');
-        }, 200);
+            div = target.closest('div');
 
         div.addClass('af-rotate');
         setTimeout(function () {
