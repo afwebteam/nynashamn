@@ -193,12 +193,44 @@ div[role=search] {
 .af-hiddenSearchForm {
   display: none;
   position: relative;
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgba(83, 189, 214, 0.4);
 }
 
 .af-hiddenSearchForm form {
+  width: 850px;
+  margin: 0 auto;
+}
+
+.af-hiddenSearchForm form input[name=query] {
+  height: 55px;
+  text-align: center;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.af-hiddenSearchForm form .af-searchIcon {
+  background-image: none;
+}
+
+.af-hiddenSearchForm form .af-searchButton {
+  height: 51px;
+}
+
+.af-hiddenSearchForm form div[role=search]:after {
+  content: ' ';
   position: absolute;
+  top: 3px;
   right: 0;
-  top: 0;
+  height: 51px;
+  width: 47px;
+  background-size: 25px;
+  background-position: center;
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
+  background-repeat: no-repeat;
+  transition: transform .3s ease-in-out;
 }
 
 .sv-facetedsearch-portlet {
@@ -1637,6 +1669,60 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .af-mobileTabs .af-menu .af-menu--item a {
     padding: 15px 28px 10px 28px;
+  }
+  .af-hiddenSearchForm {
+    display: none;
+    text-align: center;
+    background-color: #002F6C;
+    max-width: 850px;
+    padding: 8px 13px 10px 10px;
+  }
+  .af-hiddenSearchForm form {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .af-hiddenSearchForm form input[name=query] {
+    height: 55px;
+    text-align: left;
+    text-indent: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+  .af-hiddenSearchForm form input[name=submitButton] {
+    height: 57px;
+    top: 0px;
+    right: -5px;
+    border-radius: 0;
+    overflow: hidden;
+    width: 80px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 1px solid #414042;
+  }
+  .af-hiddenSearchForm form .af-searchIcon {
+    background-image: none;
+  }
+  .af-hiddenSearchForm form .af-searchButton {
+    height: 51px;
+  }
+  .af-hiddenSearchForm form div[role=search]:after {
+    content: ' ';
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    height: 51px;
+    width: 47px;
+    background-size: 25px;
+    background-position: center;
+    background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
+    background-repeat: no-repeat;
+    transition: transform .3s ease-in-out;
+  }
+  .sv-autocomplete-search-result {
+    max-width: 850px !important;
+    width: 100% !important;
+    left: 10px !important;
   }
 }
 

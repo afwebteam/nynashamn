@@ -15,11 +15,44 @@ div[role=search] {
 .af-hiddenSearchForm {
     display: none;
     position: relative;
+    text-align: center;
+    padding: 20px 0;
+    background-color:rgba(83,189,214,0.4);
 
     & form {
-        position: absolute;
-        right: 0;
-        top: 0;
+
+        width: 850px;
+        margin: 0 auto;
+
+        & input[name=query] {
+            height: 55px;
+            text-align: center;
+            border: none;
+            outline: none;
+            width: 100%;
+        }
+
+        & .af-searchIcon {
+            background-image: none;
+        }
+
+        & .af-searchButton {
+            height: 51px; 
+        }
+
+        & div[role=search]:after {
+            content: ' ';
+            position: absolute;
+            top: 3px;
+            right: 0;
+            height: 51px;
+            width: 47px;
+            background-size: 25px;
+            background-position: center;
+            background-image: url($searchIcon);
+            background-repeat: no-repeat;
+            transition: transform .3s ease-in-out;
+        }
     }
 }
 

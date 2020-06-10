@@ -8,7 +8,9 @@ svDocReady(function () {
 
     var jq = jQuery,
         relatedFileLinks,
-        accordionContainer;
+        accordionContainer,
+        mql = window.matchMedia('screen and (max-width: 880px)'),
+        isMobile;
 
     AF.isEmptyString = function (aString) {
 
@@ -19,14 +21,45 @@ svDocReady(function () {
         return false;
     };
 
+    AF.isMobileView = function () {
+        return isMobile;
+    };
+
+    AF.setIsMobileView = function (anIsMobile) {
+        isMobile = anIsMobile;
+    };
+
+    function mediaQueryChecker(aMql) {
+        AF.setIsMobileView(aMql.matches);
+    }
+
+    AF.setIsMobileView(mql.matches);
+    mql.addListener(mediaQueryChecker);
+
     jq('.sv-text-portlet.af-searchIcon').on('click', function (e) {
 
-        var field = jq('.sv-searchform-portlet .af-textInputField');
+        var field = jq('.sv-searchform-portlet .af-textInputField'),
+            hiddenSearchForm,
+            hiddenSearchFormField;
 
         if (field && field.length > 0) {
-            field.focus();
+            if (AF.isMobileView()) {
+                hiddenSearchForm = jq('.af-hiddenSearchForm');
+                hiddenSearchFormField = hiddenSearchForm.find('input[name="query"]');
+
+                hiddenSearchForm.toggle();
+                hiddenSearchFormField.focus();
+            } else {
+                field.focus();
+            }
+
         } else {
-            jq('.af-hiddenSearchForm').toggle();
+            hiddenSearchForm = jq('.af-hiddenSearchForm');
+            hiddenSearchFormField = hiddenSearchForm.find('input[name="query"]');
+
+            hiddenSearchForm.toggle();
+            hiddenSearchFormField.focus();
+
         }
     });
 
