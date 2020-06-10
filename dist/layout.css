@@ -183,6 +183,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   height: 55px;
   text-align: center;
   border: none;
+  outline: none;
 }
 
 div[role=search] {
@@ -402,7 +403,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 */
 /* Icons */
 .af-searchIcon {
-  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c54242bf/1589376316677/s%C3%B6k.svg");
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -1647,6 +1648,8 @@ p.normal {
 .sv-autocomplete-search-result {
   width: 854px;
   max-width: 854px !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
 }
 
 .sv-autocomplete-search-result .sv-autocomplete-result-item {
@@ -1892,7 +1895,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   width: 47px;
   background-size: 25px;
   background-position: center;
-  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c54242bf/1589376316677/s%C3%B6k.svg");
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
   background-repeat: no-repeat;
 }
 
