@@ -48,7 +48,8 @@ svDocReady(function () {
                 hiddenSearchForm = jq('.af-hiddenSearchForm');
                 hiddenSearchFormField = hiddenSearchForm.find('input[name="query"]');
 
-                hiddenSearchForm.toggle();
+                //hiddenSearchForm.toggle();
+                hiddenSearchForm.slideToggle();
                 hiddenSearchFormField.focus();
             } else {
 
@@ -64,7 +65,8 @@ svDocReady(function () {
             hiddenSearchForm = jq('.af-hiddenSearchForm');
             hiddenSearchFormField = hiddenSearchForm.find('input[name="query"]');
 
-            hiddenSearchForm.toggle();
+            //hiddenSearchForm.toggle();
+            hiddenSearchForm.slideToggle();
             hiddenSearchFormField.focus();
 
         }
@@ -234,7 +236,8 @@ svDocReady(function () {
             });
         }
 
-        theMenu.toggle();
+        //theMenu.toggle();
+        theMenu.slideToggle();
         tabs.toggle();
         target.toggleClass('af-MobileMenu--active');
     });
