@@ -102,6 +102,39 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   position: absolute;
 }
 
+.af-commentOfPageDialog button.env-button--primary {
+  background-color: #002F6C;
+  border-color: #002F6C;
+  font-weight: 500;
+}
+
+.af-commentOfPageDialog button.env-button--primary:hover {
+  background-color: rgba(0, 47, 108, 0.7);
+}
+
+.af-commentOfPageDialog button.env-button--primary:active {
+  background-color: #001734;
+}
+
+.af-commentOfPageDialog button.env-button--link {
+  position: relative;
+  font-weight: 500;
+}
+
+.af-commentOfPageDialog button.env-button--link:after {
+  content: ' ';
+  display: inline-block;
+  margin-left: 15px;
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  transform: rotate(45deg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
 /*
 $museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
 $museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
@@ -856,11 +889,13 @@ nav.af-center .af-searchIcon {
 .sv-decoration-generell-kommentarer .env-modal-dialog__dialog {
   max-width: 850px;
   margin: 4% auto;
+  line-height: 28px;
 }
 
 .sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__header {
-  background-color: #fff;
   color: #414042;
+  background-color: #EDEBEA;
+  text-align: right;
 }
 
 .sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__header h4.env-text {
@@ -871,14 +906,36 @@ nav.af-center .af-searchIcon {
 
 .sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__content {
   padding: 50px;
+  background-color: #EDEBEA;
+}
+
+.sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__content .env-modal-dialog__body p.env-text:first-of-type {
+  font-weight: 500;
+}
+
+.sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__content .env-modal-dialog__body p.env-text {
+  margin-bottom: 25px;
 }
 
 .sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__content .env-form {
   margin: 25px 0;
 }
 
+.sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__content .env-form .env-form-element {
+  margin-bottom: 40px;
+}
+
 .sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__content .env-form .mandatory {
   color: #c6538c;
+}
+
+.sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__content .env-modal-dialog__footer {
+  text-align: center;
+  background-color: #EDEBEA;
+}
+
+.sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__content .sv-font-brodtext-liten {
+  text-align: center;
 }
 
 .af-desktopNone,

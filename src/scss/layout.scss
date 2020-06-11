@@ -446,10 +446,12 @@ nav.af-center {
     & .env-modal-dialog__dialog {
         max-width: 850px;
         margin: 4% auto;
+        line-height: 28px;
 
         & .env-modal-dialog__header {
-            background-color: $white-color;
             color: $nynas-black-color;
+            background-color: $nynas-comments-bg;
+            text-align: right;
 
             & h4.env-text {
                 color: $nynas-black-color;
@@ -460,13 +462,38 @@ nav.af-center {
 
         & .env-modal-dialog__content {
             padding: 50px;
+            background-color: $nynas-comments-bg;
+
+            & .env-modal-dialog__body {
+
+                & p.env-text:first-of-type {
+                    font-weight: 500;
+                }
+
+                & p.env-text {
+                    margin-bottom: 25px;
+                }
+            }
 
             & .env-form {
                 margin: 25px 0;
 
+                & .env-form-element {
+                    margin-bottom: 40px;
+                }
+
                 & .mandatory {
                     color: $red-color;
                 }
+            }
+
+            & .env-modal-dialog__footer {
+                text-align: center;
+                background-color: $nynas-comments-bg;
+            }
+
+            & .sv-font-brodtext-liten {
+                text-align: center;
             }
         }
     }

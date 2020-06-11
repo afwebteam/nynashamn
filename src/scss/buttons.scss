@@ -99,3 +99,39 @@
         }
     }
 }
+
+.af-commentOfPageDialog {
+
+    & button.env-button--primary {
+        background-color: $nynas-darkblue-color;
+        border-color: $nynas-darkblue-color;
+        font-weight: 500;
+    }
+
+    & button.env-button--primary:hover {
+        background-color:rgba(0, 47, 108, 0.7);
+    }
+
+    & button.env-button--primary:active {
+        background-color:$nynas-comments-hit;
+    }
+
+    & button.env-button--link {
+        position: relative;
+        font-weight: 500;
+
+        &:after {
+            content: ' ';
+            display: inline-block;
+            margin-left: 15px;
+            background-image: url($plusSignIcon);
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            transform: rotate(45deg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 22px 22px;
+        }
+    }
+}
