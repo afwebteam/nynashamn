@@ -348,7 +348,7 @@
     .af-related-information .sv-font-stor-svart,
     .af-contactModule .sv-font-stor-svart,
     .sv-decoration-generell-faktaruta .sv-font-stor-svart {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .af-related-information h2:before,
@@ -360,7 +360,8 @@
     .sv-decoration-generell-faktaruta .sv-font-stor-svart:before {
         margin-right: 5px !important;
         background-position: center 5px;
-        background-size: 25px;
+        background-size: 15px;
+        height: 20px !important;
     }
 
     .sv-multilevellink-portlet {
@@ -424,6 +425,10 @@
                     & th {
                         padding: 15px 10px;
                         word-wrap: break-word !important;
+
+                        & * {
+                            font-size: 20px !important;
+                        }
                     }
                 }
             }
@@ -447,11 +452,17 @@
 
     .sv-decoration-generell-dragspel {
 
-        & .af-accordionText {
-            top: 23px;
+        & p.sv-font-stor-svart, h2, h3 {
+            font-size: 20px;
         }
 
-        & .af-closed {
+        & .af-accordionText {
+            top: 23px;
+            right: 60px;
+            font-size: 13px;
+        }
+
+        & .af-closed:after {
             background-size: 20px;
         }
     }
@@ -680,5 +691,42 @@
         max-width: 850px !important;
         width: 100% !important;
         left: 10px !important;
+    }
+
+
+    .sv-decoration-generell-bla-knapp--external {
+        padding: 15px 35px 15px 20px;
+
+        &:after {
+            background-size: 15px 15px;
+            background-position: center;
+            top: 10px;
+            right: 5px;
+        }
+
+        & p.normal {
+
+            & a {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .sv-decoration-generell-bla-knapp--intern {
+        padding: 15px 35px 15px 20px;
+
+        &:after {
+            background-size: 15px 15px;
+            background-position: center;
+            top: 10px;
+            right: 5px;
+        }
+
+        & p.normal {
+
+            & a {
+                font-size: 15px;
+            }
+        }
     }
 }

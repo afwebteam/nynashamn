@@ -246,16 +246,17 @@ nav.af-center {
         background-color: $nynas-darkblue-color;
         padding: 25px 50px;
         margin-bottom: 5px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        font-size: 25px;
         color: $white-color;
     }
 
     & h2:before, h3:before, .sv-font-stor-svart:before {
         content: ' ';
-        margin-right: 25px;
+        margin-right: 11px;
         background-image: url($factBox);
-        width: 35px;
+        width: 25px;
         display: inline-block;
         background-repeat: no-repeat;
         background-position: center;
@@ -264,6 +265,8 @@ nav.af-center {
     & p.normal {
         background-color: $nynas-grey-color;
         padding: 25px 50px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
     }
     
 }
@@ -274,25 +277,28 @@ nav.af-center {
         background-color: $nynas-darkblue-color;
         padding: 25px 50px;
         margin-bottom: 5px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        font-size: 25px;
         color: $white-color;
     }
 
     & h2:before, h3:before, .sv-font-stor-svart:before {
         content: ' ';
-        margin-right: 25px;
+        margin-right: 11px;
         background-image: url($relatedInfo);
-        width: 35px;
+        width: 25px;
         display: inline-block;
         background-repeat: no-repeat;
         background-position: center;
-        height: 25px;
+        height: 20px;
     }
 
     & ul {
         background-color: $nynas-grey-color;
         padding: 25px 50px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
 
         & li {
             margin: 15px 0;
@@ -329,6 +335,8 @@ nav.af-center {
         padding: 20px 54px;
         margin-bottom: 15px;
         position: relative;
+        font-size: 25px;
+        font-weight: 700;
     }
 
     & p.sv-font-stor-svart:hover, h2:hover, h3:hover {
@@ -378,7 +386,7 @@ nav.af-center {
 
     & table {
 
-        border-radius: 10px;
+        border-radius: 6px;
         margin: 40px 0;
         border-collapse: collapse;
         overflow: hidden;
@@ -395,6 +403,7 @@ nav.af-center {
 
             & * {
                 color: $white-color !important;
+                font-family: museo,sans-serif !important;
             }
         }
 

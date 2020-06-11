@@ -89,6 +89,24 @@ svDocReady(function () {
 
     });
 
+    jq('.sv-decoration-generell-bla-knapp--external, .sv-decoration-generell-bla-knapp--intern').hover(function (e) {
+        var target = jq(e.target);
+
+        target.css('cursor', 'pointer');
+
+    }, function () { });
+
+    jq('.sv-decoration-generell-bla-knapp--external, .sv-decoration-generell-bla-knapp--intern').on('click', function (e) {
+        var target = jq(e.target),
+            possibleLink = target.find('a'),
+            href;
+
+        if (possibleLink && possibleLink.length > 0) {
+            href = possibleLink.prop('href');
+            document.location.href = href;
+        }
+    });
+
     // Link whole puff...
     jq('.af-popularShortcuts--item').on('click', function (e) {
 
@@ -153,13 +171,13 @@ svDocReady(function () {
 
                     if (isExpanded) {
                         item.attr('aria-expanded', false);
-                        content.hide();
+                        content.slideUp();
                         item.removeClass('af-open');
                         text.text('Visa');
                     } else {
                         item.attr('aria-expanded', true);
                         item.addClass('af-open');
-                        content.show();
+                        content.slideDown();
                         text.text('Dölj');
                     }
 
