@@ -498,6 +498,8 @@
             }
     
             & .env-modal-dialog__header {
+
+                padding: .25em 1.7em;
     
                 & h4.env-text {
                     font-size: 25px;
@@ -517,7 +519,7 @@
             }
     
             & .env-modal-dialog__content {
-                padding: 50px;
+                padding: 20px 30px 40px 30px;
     
                 & .env-form {
                     margin: 25px 0;

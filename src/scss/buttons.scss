@@ -110,6 +110,7 @@
 
     & button.env-button--primary:hover {
         background-color:rgba(0, 47, 108, 0.7);
+        border: 1px solid transparent;
     }
 
     & button.env-button--primary:active {

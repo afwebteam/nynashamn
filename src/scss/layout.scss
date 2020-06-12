@@ -470,7 +470,7 @@ nav.af-center {
         }
 
         & .env-modal-dialog__content {
-            padding: 50px;
+            padding: 30px 50px 40px 50px;
             background-color: $nynas-comments-bg;
 
             & .env-modal-dialog__body {
@@ -488,7 +488,7 @@ nav.af-center {
                 margin: 25px 0;
 
                 & .env-form-element {
-                    margin-bottom: 40px;
+                    margin-bottom: 20px;
                 }
 
                 & .mandatory {
