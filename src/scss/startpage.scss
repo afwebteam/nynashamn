@@ -171,7 +171,7 @@
 
                 & > p {
                     margin-top: 5px;
-                    font-weight: 100;
+                    font-weight: 300;
                 }
             }
         }
@@ -190,6 +190,7 @@
 
                 & .af-month {
                     font-size: 17px;
+                    font-weight: 700;
                 }
 
                 & .af-date {
@@ -279,15 +280,20 @@
             width: 86%;
             margin-left: 15%;
 
-            & > p {
+            & div {
+                font-weight: 700;
+            }
+
+            & p {
                 margin-top: 5px;
+                font-weight: 300;
             }
         }
 
         &Date {
 
-            width: 76px;
-            height: 76px;
+            width: 80px;
+            height: 80px;
             position: absolute;
             top: 30px;
 
@@ -311,6 +317,7 @@
 
         & .af-month {
             font-size: 17px;
+            font-weight: 700;
         }
 
         & .af-date {

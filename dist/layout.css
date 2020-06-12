@@ -217,6 +217,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   height: 55px;
   text-align: center;
   border: none;
+  font-weight: 700;
 }
 
 div[role=search] {
@@ -399,14 +400,21 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-landingpage--shortcuts-list li {
   display: inline-block;
   background-color: #fff;
-  margin-left: 2px;
-  border-radius: 10px;
+  border-radius: 6px;
+  margin-right: 15px;
+  margin-top: 15px;
 }
 
 .af-landingpage--shortcuts-list li a {
+  padding: 10px 15px;
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
   text-decoration: none;
-  font-size: 12px;
-  padding: 8px 8px 8px 8px;
+}
+
+.af-landingpage--shortcuts-list li a:hover {
+  text-decoration: underline;
 }
 
 .af-landingpageColor:nth-child(even) {
@@ -421,12 +429,17 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   display: flex;
   justify-content: center;
   padding: 60px 0;
-  max-width: 850px;
+  max-width: 1120px;
   margin: 0 auto;
 }
 
 .af-landingpageRow--left {
   width: 40%;
+}
+
+.af-landingpageRow--left .sv-font-stor-svart {
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .af-landingpageRow--right {
@@ -449,7 +462,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-landingpageRow--rightList li a {
   color: #fff;
-  padding: 8px 15px;
+  padding: 10px 15px;
   display: block;
   font-weight: 500;
   font-size: 15px;
@@ -507,6 +520,11 @@ a.sv-font-ingress,
   text-decoration-color: #002F6C;
 }
 
+.sv-font-ingress {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 a[href*="/download/"] {
   margin-right: 5px;
 }
@@ -546,7 +564,7 @@ p.sv-portlet-image-caption {
 }
 
 .af-borderRadius {
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 .af-shortcuts {
@@ -555,17 +573,23 @@ p.sv-portlet-image-caption {
   padding: 0;
 }
 
+.af-shortcuts-title {
+  font-weight: 700;
+}
+
 .af-shortcuts--item {
   list-style-type: none;
   margin: 0;
   display: inline-block;
   background-color: #fff;
-  padding: 5px 20px;
   margin-right: 15px;
 }
 
 .af-shortcuts--item a {
   text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  padding: 10px 15px;
 }
 
 .af-shortcuts--item a:hover {
@@ -643,7 +667,7 @@ nav.af-center .af-searchIcon {
   padding: 15px 50px 15px 20px;
   display: inline-block;
   color: #fff;
-  margin: 15px 0;
+  margin: 60px 0;
   border-radius: 10px;
   position: relative;
 }
@@ -674,7 +698,7 @@ nav.af-center .af-searchIcon {
   padding: 15px 50px 15px 20px;
   display: inline-block;
   color: #fff;
-  margin: 15px 0;
+  margin: 60px 0;
   border-radius: 10px;
   position: relative;
 }
@@ -698,6 +722,10 @@ nav.af-center .af-searchIcon {
   font-size: 20px;
   font-weight: 500;
   text-decoration: none;
+}
+
+.sv-decoration-generell-faktaruta {
+  margin: 60px 0;
 }
 
 .sv-decoration-generell-faktaruta h2, .sv-decoration-generell-faktaruta h3, .sv-decoration-generell-faktaruta .sv-font-stor-svart {
@@ -725,6 +753,10 @@ nav.af-center .af-searchIcon {
   padding: 25px 50px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+}
+
+.af-related-information {
+  margin: 60px 0;
 }
 
 .af-related-information h2, .af-related-information h3, .af-related-information .sv-font-stor-svart {
@@ -833,7 +865,7 @@ nav.af-center .af-searchIcon {
 
 .sv-decoration-generell-tabell table {
   border-radius: 6px;
-  margin: 40px 0;
+  margin: 20px 0 60px 0;
   border-collapse: collapse;
   overflow: hidden;
 }
@@ -852,6 +884,7 @@ nav.af-center .af-searchIcon {
 .sv-decoration-generell-tabell table thead tr th * {
   color: #fff !important;
   font-family: museo,sans-serif !important;
+  font-size: 25px !important;
 }
 
 .sv-decoration-generell-tabell table tbody tr:nth-of-type(odd) {
@@ -972,6 +1005,14 @@ nav.af-center .af-searchIcon {
   border-top: 1px solid #414042;
 }
 
+.af-breadcrumb {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 60px;
+  padding-left: 88px;
+  padding-top: 60px;
+}
+
 /*
 $museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
 $museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
@@ -1033,7 +1074,8 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   color: #fff;
   display: none;
   font-family: museo;
-  font-size: 18;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .af-mobileMainMenu .activeMenuItem {
@@ -1062,7 +1104,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   height: 45px;
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f9610132c0/1590497157690/plus-vit.svg");
   background-repeat: no-repeat;
-  background-size: 25px;
+  background-size: 20px;
   background-position: center;
   transition: all 0.3s ease;
 }
@@ -1075,7 +1117,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   height: 45px;
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f9610132c0/1590497157690/plus-vit.svg");
   background-repeat: no-repeat;
-  background-size: 25px;
+  background-size: 20px;
   background-position: center;
   transform: rotate(45deg);
   transition: all 0.3s ease;
@@ -1089,7 +1131,8 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   display: block;
 }
 
-.af-mobileMainMenu--level2 {
+.af-mobileMainMenu--level2,
+.af-mobileMainMenu--level3 {
   background-color: #EDEBE9;
   margin: 0;
   padding: 0;
@@ -1098,69 +1141,20 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   display: none;
 }
 
-.af-mobileMainMenu--level2Item {
-  padding: 0;
-  border-bottom: 1px solid #fff;
-  position: relative;
-}
-
-.af-mobileMainMenu--level2Item.open {
-  padding: 0;
-  border-bottom: none;
-}
-
-.af-mobileMainMenu--level2Item.hasChildren > .af-menuIcon {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 45px;
-  height: 45px;
-  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
-  background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: center;
-  transition: all 0.3s ease;
-}
-
-.af-mobileMainMenu--level2Item.hasChildren.open > .af-menuIcon {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 45px;
-  height: 45px;
-  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
-  background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: center;
-  transform: rotate(45deg);
-  transition: all 0.3s ease;
-}
-
-.af-mobileMainMenu--level2Item a {
-  font-family: museo;
-  font-size: 14px;
-  color: #414042;
-}
-
-.af-mobileMainMenu--level3 {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  border-top: 1px solid #fff;
-  display: none;
-}
-
+.af-mobileMainMenu--level2Item,
 .af-mobileMainMenu--level3Item {
   padding: 0;
   border-bottom: 1px solid #fff;
   position: relative;
 }
 
+.af-mobileMainMenu--level2Item.open,
 .af-mobileMainMenu--level3Item.open {
   padding: 0;
   border-bottom: none;
 }
 
+.af-mobileMainMenu--level2Item.hasChildren > .af-menuIcon,
 .af-mobileMainMenu--level3Item.hasChildren > .af-menuIcon {
   position: absolute;
   top: 5px;
@@ -1169,11 +1163,12 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   height: 45px;
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
-  background-size: 25px;
+  background-size: 20px;
   background-position: center;
   transition: all 0.3s ease;
 }
 
+.af-mobileMainMenu--level2Item.hasChildren.open > .af-menuIcon,
 .af-mobileMainMenu--level3Item.hasChildren.open > .af-menuIcon {
   position: absolute;
   top: 5px;
@@ -1182,19 +1177,79 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   height: 45px;
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
-  background-size: 25px;
+  background-size: 20px;
   background-position: center;
   transform: rotate(45deg);
   transition: all 0.3s ease;
 }
 
+.af-mobileMainMenu--level2Item a,
 .af-mobileMainMenu--level3Item a {
   font-family: museo;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 500;
   color: #414042;
-  margin-left: 50px;
 }
 
+/*
+.af-mobileMainMenu--level3 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-top: 1px solid $white-color;
+    display: none;
+
+    &Item {
+        padding: 0;
+        border-bottom: 1px solid $white-color;
+        position: relative;
+
+        &.open {
+            padding:0;
+            border-bottom: none;
+        }
+
+        &.hasChildren {
+            & > .af-menuIcon {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 45px;
+                height: 45px;
+                background-image: url($plusSignIcon);
+                background-repeat: no-repeat;
+                background-size: 20px;
+                background-position: center;
+                transition: all 0.3s ease;
+            }
+        }
+
+        &.hasChildren.open {
+            & > .af-menuIcon {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 45px;
+                height: 45px;
+                background-image: url($plusSignIcon);
+                background-repeat: no-repeat;
+                background-size: 20px;
+                background-position: center;
+                transform: rotate(45deg);
+                transition: all 0.3s ease;
+            }
+        }
+        
+        & a {
+            font-family: museo;
+            font-size: 14px;
+            color: $nynas-black-color;
+            margin-left: 50px;
+        }
+        
+    }
+}
+*/
 .af-mobileMainMenu--level4 {
   margin: 0;
   padding: 0;
@@ -1222,7 +1277,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   height: 45px;
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
-  background-size: 25px;
+  background-size: 20px;
   background-position: center;
   transition: all 0.3s ease;
 }
@@ -1235,7 +1290,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   height: 45px;
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
-  background-size: 25px;
+  background-size: 20px;
   background-position: center;
   transform: rotate(45deg);
   transition: all 0.3s ease;
@@ -1243,9 +1298,10 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-mobileMainMenu--level4Item a {
   font-family: museo;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 500;
   color: #414042;
-  margin-left: 70px;
+  margin-left: 50px;
 }
 
 .af-mobileMainMenu--level5 {
@@ -1275,7 +1331,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   height: 45px;
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
-  background-size: 25px;
+  background-size: 20px;
   background-position: center;
   transition: all 0.3s ease;
 }
@@ -1288,7 +1344,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   height: 45px;
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
-  background-size: 25px;
+  background-size: 20px;
   background-position: center;
   transform: rotate(45deg);
   transition: all 0.3s ease;
@@ -1296,7 +1352,62 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-mobileMainMenu--level5Item a {
   font-family: museo;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #414042;
+  margin-left: 70px;
+}
+
+.af-mobileMainMenu--level6 {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-top: 1px solid #fff;
+  display: none;
+}
+
+.af-mobileMainMenu--level6Item {
+  padding: 0;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+
+.af-mobileMainMenu--level6Item.hasChildren {
+  padding: 0;
+  border-bottom: none;
+}
+
+.af-mobileMainMenu--level6Item.hasChildren > .af-menuIcon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 45px;
+  height: 45px;
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+.af-mobileMainMenu--level6Item.hasChildren.open > .af-menuIcon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 45px;
+  height: 45px;
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.af-mobileMainMenu--level6Item a {
+  font-family: museo;
+  font-size: 15px;
+  font-weight: 500;
   color: #414042;
   margin-left: 90px;
 }
@@ -1361,6 +1472,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     background-image: none !important;
     padding: 0 !important;
   }
+  .af-startpageBigImage p {
+    margin: 0 0 25px 25px !important;
+  }
   .af-startpageBigImage > .af-center {
     position: relative !important;
     top: unset !important;
@@ -1373,11 +1487,11 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     max-width: 100%;
   }
   .af-shortcuts-title {
-    margin-left: 25px !important;
+    margin-left: 20px !important;
   }
   .af-shortcuts {
     padding: 0 0 20px 0;
-    margin-left: 25px !important;
+    margin-left: 20px !important;
   }
   .af-shortcuts--item {
     margin-bottom: 15px;
@@ -1428,6 +1542,12 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .af-amountEvents-3 .af-startpageEvents--eventTextDate {
     position: unset !important;
+    width: unset !important;
+    height: unset !important;
+  }
+  .af-amountEvents-3 .af-startpageEvents--eventTextContent {
+    margin: auto 30px !important;
+    width: unset !important;
   }
   .af-amountEvents-3 .af-startpageEvents--eventTextContent p {
     display: none;
@@ -1477,7 +1597,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     border: none !important;
   }
   .af-startpage-current ul.sv-channel {
-    margin: 0 15px;
+    margin: 0 20px;
   }
   .af-startpage-current ul.sv-channel li {
     width: 100%;
@@ -1492,8 +1612,8 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     font-size: 15px;
   }
   .af-flexRow {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
     flex-direction: column;
   }
   .af-flexRow > * {
@@ -1513,6 +1633,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-popularShortcuts {
     /* flex-direction: column; */
     flex-wrap: wrap;
+    padding: 0 20px;
   }
   .af-popularShortcuts--item {
     max-width: 31%;
@@ -1521,6 +1642,12 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .af-popularShortcuts--item:nth-child(4) {
+    margin-right: 10px;
+  }
+  .af-popularShortcuts--item:nth-child(5) {
+    margin-left: 10px;
   }
   .af-popularShortcuts--itemStyle {
     width: 80px !important;
@@ -1535,6 +1662,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .sv-decoration-generell-gra-platta .af-startpageMessages .af-startpageMessages--list {
     flex-direction: column;
+    padding: 0 10px;
   }
   .sv-decoration-generell-gra-platta .af-startpageMessages .af-startpageMessages--listItem {
     max-width: 100%;
@@ -1565,8 +1693,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     background-size: 15px;
     height: 20px !important;
   }
-  .sv-multilevellink-portlet {
-    padding: 30px 10px !important;
+  .sv-multilevellink-portlet,
+  .af-breadcrumb {
+    padding: 30px 20px !important;
   }
   h1.heading {
     font-size: 25px;
@@ -1592,7 +1721,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .sv-grid-850.sv-fluid-grid > div,
   .sv-grid-850.sv-fixed-fluid-grid > div {
-    padding: 0 10px;
+    padding: 0 20px;
   }
   .af-tableOfContent {
     padding: 15px;
@@ -1682,10 +1811,12 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     background-color: #fff;
     position: relative;
     top: 0;
+    padding: 20px 20px;
   }
   .af-wave .af-landingpage--bigImage .af-landingpage--shortcuts {
     display: flex;
     flex-direction: column;
+    padding: 30px 20px;
   }
   .af-wave .af-landingpage--bigImage .af-landingpage--shortcuts .af-landingpage--shortcuts-list {
     margin: 25px 0;
@@ -1702,7 +1833,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c5418b8d/1589182390043/wave.svg");
   }
   .af-landingpageRow {
-    padding: 60px 25px;
+    padding: 60px 20px;
     flex-direction: column;
   }
   .af-landingpageRow .af-landingpageRow--left, .af-landingpageRow .af-landingpageRow--right {
@@ -1741,6 +1872,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     justify-content: center;
     margin: 0;
     padding-bottom: 10px;
+  }
+  .af-mobileTabs .af-menu .af-menu--item {
+    margin: 0;
   }
   .af-mobileTabs .af-menu .af-menu--item a {
     padding: 15px 28px 10px 28px;
@@ -1865,6 +1999,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-puffContainer--item .af-puffText {
   margin-top: 15px;
+  font-weight: 700;
 }
 
 .af-puffContainer a {
@@ -2167,7 +2302,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-amountEvents-4 .af-startpageEvents--eventTextContent div > p {
   margin-top: 5px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .af-amountEvents-4 .af-startpageEvents--eventTextDate {
@@ -2186,6 +2321,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-amountEvents-4 .af-startpageEvents--eventTextDate > div .af-month {
   font-size: 17px;
+  font-weight: 700;
 }
 
 .af-amountEvents-4 .af-startpageEvents--eventTextDate > div .af-date {
@@ -2273,13 +2409,18 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   margin-left: 15%;
 }
 
-.af-amountEvents-3 .af-startpageEvents--eventTextContent > p {
+.af-amountEvents-3 .af-startpageEvents--eventTextContent div {
+  font-weight: 700;
+}
+
+.af-amountEvents-3 .af-startpageEvents--eventTextContent p {
   margin-top: 5px;
+  font-weight: 300;
 }
 
 .af-amountEvents-3 .af-startpageEvents--eventTextDate {
-  width: 76px;
-  height: 76px;
+  width: 80px;
+  height: 80px;
   position: absolute;
   top: 30px;
 }
@@ -2303,6 +2444,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-amountEvents-3 .af-startpageEvents--eventText .af-month {
   font-size: 17px;
+  font-weight: 700;
 }
 
 .af-amountEvents-3 .af-startpageEvents--eventText .af-date {
