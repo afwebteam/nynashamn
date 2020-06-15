@@ -33,6 +33,10 @@
             margin: auto 0;
         }
 
+        .af-searchIcon:after {
+            height: 24px;
+        }
+
         .sv-font-toppmeny {
             font-size: 18px;
         }
@@ -662,7 +666,7 @@
     .af-hiddenSearchForm {
         display: none;
         text-align: center;
-        background-color: $nynas-darkblue-color;
+        background-color: $nynas-search-bg;
         max-width: 850px;
         padding: 8px 13px 10px 10px;
     
@@ -675,8 +679,12 @@
                 text-align: left;
                 text-indent: 10px;
                 border: none;
-                outline: none;
                 width: 100%;
+            }
+
+            & input:focus {
+                outline: 2px solid $nynas-search-bg;
+                outline-offset: 8px;
             }
 
             & input[name=submitButton] {

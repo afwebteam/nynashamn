@@ -17,7 +17,7 @@ div[role=search] {
     position: relative;
     text-align: center;
     padding: 20px 0;
-    background-color:rgba(83,189,214,0.4);
+    background-color: $nynas-search-bg;
 
     & form {
 
@@ -30,10 +30,12 @@ div[role=search] {
             border: none;
             outline: none;
             width: 100%;
+            font-weight: 700;
         }
 
         & .af-searchIcon {
             background-image: none;
+            position: absolute;
         }
 
         & .af-searchButton {

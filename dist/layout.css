@@ -229,7 +229,7 @@ div[role=search] {
   position: relative;
   text-align: center;
   padding: 20px 0;
-  background-color: rgba(83, 189, 214, 0.4);
+  background-color: #53BDD6;
 }
 
 .af-hiddenSearchForm form {
@@ -243,10 +243,12 @@ div[role=search] {
   border: none;
   outline: none;
   width: 100%;
+  font-weight: 700;
 }
 
 .af-hiddenSearchForm form .af-searchIcon {
   background-image: none;
+  position: absolute;
 }
 
 .af-hiddenSearchForm form .af-searchButton {
@@ -417,6 +419,15 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   text-decoration: underline;
 }
 
+.af-landingpage--shortcuts-list li a:active {
+  text-decoration: none;
+  background-color: #53BDD6;
+}
+
+.af-landingpage--shortcuts-list li:hover {
+  background-color: rgba(83, 189, 214, 0.2);
+}
+
 .af-landingpageColor:nth-child(even) {
   background-color: #fff;
 }
@@ -455,7 +466,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-landingpageRow--rightList li {
   display: inline-block;
   background-color: #002F6C;
-  border-radius: 10px;
+  border-radius: 6px;
   margin-right: 15px;
   margin-top: 15px;
 }
@@ -481,9 +492,20 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 */
 /* Icons */
 .af-searchIcon {
+  position: relative;
+}
+
+.af-searchIcon:after {
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
   background-repeat: no-repeat;
   background-position: right;
+  content: ' ';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .af-messageIcon {
@@ -598,6 +620,15 @@ p.sv-portlet-image-caption {
   text-decoration-color: #002F6C;
 }
 
+.af-shortcuts--item a:active {
+  text-decoration: none;
+  background-color: #53BDD6;
+}
+
+.af-shortcuts--item:hover {
+  background-color: #53BDD6;
+}
+
 .af-tableOfContent {
   background-color: #EDEBE9;
   margin: 60px 0;
@@ -645,7 +676,20 @@ nav.af-center .af-searchIcon {
   position: absolute;
   top: 20px;
   right: 30px;
+}
+
+nav.af-center .af-searchIcon a {
+  text-decoration: none;
   padding-right: 40px;
+}
+
+nav.af-center .af-searchIcon a:focus {
+  outline-offset: 17px;
+}
+
+nav.af-center .af-searchIcon a.active {
+  border-bottom: 3px solid #002F6C;
+  padding-bottom: 3px;
 }
 
 .af-flexRow {
@@ -1011,6 +1055,11 @@ nav.af-center .af-searchIcon {
   padding-bottom: 60px;
   padding-left: 88px;
   padding-top: 60px;
+}
+
+a:focus,
+input:focus {
+  outline: 2px solid #53BDD6;
 }
 
 /*
@@ -1447,6 +1496,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     background-position: right top;
     margin: auto 0;
   }
+  .af-mobile-width100 .af-searchIcon:after {
+    height: 24px;
+  }
   .af-mobile-width100 .sv-font-toppmeny {
     font-size: 18px;
   }
@@ -1882,7 +1934,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-hiddenSearchForm {
     display: none;
     text-align: center;
-    background-color: #002F6C;
+    background-color: #53BDD6;
     max-width: 850px;
     padding: 8px 13px 10px 10px;
   }
@@ -1895,8 +1947,11 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     text-align: left;
     text-indent: 10px;
     border: none;
-    outline: none;
     width: 100%;
+  }
+  .af-hiddenSearchForm form input:focus {
+    outline: 2px solid #53BDD6;
+    outline-offset: 8px;
   }
   .af-hiddenSearchForm form input[name=submitButton] {
     height: 57px;
@@ -2236,6 +2291,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-startpageBigImage .sv-searchform-portlet .af-searchIcon {
   background-image: none;
   height: 51px;
+  position: absolute;
 }
 
 .af-startpageBigImage p {

@@ -38,10 +38,14 @@ svDocReady(function () {
 
     jq('.sv-text-portlet.af-searchIcon').on('click', function (e) {
 
-        var field = jq('.sv-searchform-portlet .af-textInputField'),
+        var target = jq(e.target),
+            field = jq('.sv-searchform-portlet .af-textInputField'),
             form = field.closest('form'),
             hiddenSearchForm,
             hiddenSearchFormField;
+
+        e.preventDefault();
+        target.toggleClass('active');
 
         if (field && field.length > 0) {
             if (AF.isMobileView()) {

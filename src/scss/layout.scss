@@ -2,9 +2,20 @@
 
 /* Icons */
 .af-searchIcon {
-    background-image: url($searchIcon);
-    background-repeat: no-repeat;
-    background-position: right;
+    position: relative;
+
+    &:after {
+        background-image: url($searchIcon);
+        background-repeat: no-repeat;
+        background-position: right;
+        content: ' ';
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
 
 .af-messageIcon {
@@ -114,6 +125,15 @@ p.sv-portlet-image-caption {
             text-decoration: underline;
             text-decoration-color: $nynas-darkblue-color; 
         }
+
+        & a:active {
+            text-decoration: none;
+            background-color: $nynas-lightblue-color;
+        }
+
+        &:hover {
+            background-color: $nynas-lightblue-color;
+        }
     }
 }
 
@@ -164,7 +184,20 @@ nav.af-center {
         position: absolute;
         top: 20px;
         right: 30px;
-        padding-right: 40px;
+
+        & a {
+            text-decoration: none;
+            padding-right: 40px;
+        }
+
+        & a:focus {
+            outline-offset: 17px;
+        }
+
+        & a.active {
+            border-bottom: $linkBorderStyle;
+            padding-bottom: 3px;
+        }
     }
 }
 
@@ -560,4 +593,9 @@ nav.af-center {
     padding-bottom: 60px;
     padding-left: 88px;
     padding-top: 60px;
+}
+
+a:focus,
+input:focus {
+    outline: 2px solid $nynas-search-bg;
 }

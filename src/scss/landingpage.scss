@@ -49,6 +49,15 @@
                 & a:hover {
                     text-decoration: underline;
                 }
+
+                & a:active {
+                    text-decoration: none;
+                    background-color: $nynas-lightblue-color;
+                }
+
+                &:hover {
+                    background-color: $nynas-lightblue-color-rgba;
+                }
             }
         }
     }
@@ -91,7 +100,7 @@
 
                     display: inline-block;
                     background-color: $nynas-darkblue-color;
-                    border-radius: 10px;
+                    border-radius: 6px;
                     margin-right: 15px;
                     margin-top: 15px;
 
