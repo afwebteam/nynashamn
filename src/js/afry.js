@@ -447,4 +447,139 @@ svDocReady(function () {
             div.removeClass('af-rotate');
         }, 500);
     });
+
+    // Current filter
+    jq('.af-currentFilter .af-accordionText').on('click', function (e) {
+
+        var target = jq(e.target),
+            pElem = target.closest('p'),
+            isExpanded = (pElem.attr('aria-expanded') === 'true'),
+            content = jq('.af-currentFilter--dateFilter--inner');
+
+        if (isExpanded) {
+            content.slideUp(200);
+            pElem.attr('aria-expanded', false);
+            pElem.removeClass('af-open');
+        } else {
+            content.slideDown(200);
+            pElem.attr('aria-expanded', true);
+            pElem.addClass('af-open');
+        }
+    });
+
+    function loopAreas(anUL, anValue, setActive) {
+
+        jq.each(anUL.find('li'), function (index, elem) {
+
+            var target = jq(elem).find('a'),
+                targetText = target.text();
+
+            if (targetText === anValue) {
+
+                if (setActive) {
+                    target.addClass('active');
+                } else {
+                    target.removeClass('active');
+                }
+            }
+
+        });
+    }
+
+    jq('.af-currentFilter .af-currentFilter--result--area a').on('click', function (e) {
+
+        var target = jq(e.target),
+            isActive = target.hasClass('active'),
+            portletURL = target.data('portleturl'),
+            paramValue = target.text(),
+            resultTarget = jq('.af-currentFilter--result ul'),
+
+            topAreaFilter = jq('ul.af-currentFilter--areas');
+
+        e.preventDefault();
+
+        if (isActive) {
+            target.removeClass('active');
+
+            jq.ajax({
+                url: portletURL,
+                data: {
+                    omrade: ''
+                },
+                dataType: 'html',
+                success: function (data) {
+                    resultTarget.slideUp('slow', function () {
+                        resultTarget.html(data);
+                        resultTarget.slideDown('slow');
+                    });
+
+                    loopAreas(topAreaFilter, '', false);
+                }
+            });
+        } else {
+            target.addClass('active');
+
+            jq.ajax({
+                url: portletURL,
+                data: {
+                    omrade: paramValue
+                },
+                dataType: 'html',
+                success: function (data) {
+                    resultTarget.slideUp('slow', function () {
+                        resultTarget.html(data);
+                        resultTarget.slideDown('slow');
+                    });
+
+                    loopAreas(topAreaFilter, paramValue, true);
+                }
+            });
+        }
+
+    });
+
+    jq('.af-currentFilter .af-currentFilter--areas a').on('click', function (e) {
+
+        var target = jq(e.target),
+            isActive = target.hasClass('active'),
+            portletURL = target.data('portleturl'),
+            paramValue = target.text(),
+            resultTarget = jq('.af-currentFilter--result ul');
+
+        e.preventDefault();
+
+        if (isActive) {
+            target.removeClass('active');
+
+            jq.ajax({
+                url: portletURL,
+                data: {
+                    omrade: ''
+                },
+                dataType: 'html',
+                success: function (data) {
+                    resultTarget.slideUp('slow', function () {
+                        resultTarget.html(data);
+                        resultTarget.slideDown('slow');
+                    });
+                }
+            });
+        } else {
+            target.addClass('active');
+
+            jq.ajax({
+                url: portletURL,
+                data: {
+                    omrade: paramValue
+                },
+                dataType: 'html',
+                success: function (data) {
+                    resultTarget.slideUp('slow', function () {
+                        resultTarget.html(data);
+                        resultTarget.slideDown('slow');
+                    });
+                }
+            });
+        }
+    });
 });
