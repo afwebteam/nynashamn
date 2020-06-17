@@ -839,4 +839,27 @@
             }
         }
     }
+    
+    .af-cookies {
+        &--wrapper {
+            position: relative;
+            padding: 25px;
+
+            & p {
+                font-size: 15px;
+            }
+    
+            & button {
+                position: unset;
+                margin: 8px 0;
+                font-size: 12px;
+                margin: 15px auto 0 auto;
+                display: block;
+            }
+    
+            & button:hover {
+                cursor: pointer;
+            }
+        }
+    }
 }
