@@ -565,8 +565,8 @@ svDocReady(function () {
                 }
             });
         } else {
+            jq('.af-currentFilter--areas .active').removeClass('active');
             target.addClass('active');
-
             jq.ajax({
                 url: portletURL,
                 data: {
@@ -581,5 +581,147 @@ svDocReady(function () {
                 }
             });
         }
+    });
+
+    jq('.af-currentFilter--dateFilter--inner--year--title').on('click', function (e) {
+
+        var target = jq(e.target),
+            list = jq('.af-currentFilter--dateFilter--inner--year--list'),
+            isExpanded = (list.attr('aria-expanded') === 'true');
+
+        if (isExpanded) {
+            list.slideUp();
+            target.removeClass('af-open');
+            list.attr('aria-expanded', false);
+        } else {
+            list.slideDown();
+            target.addClass('af-open');
+            list.attr('aria-expanded', true);
+        }
+
+    });
+
+    jq('.af-currentFilter--dateFilter--inner--month--title').on('click', function (e) {
+        var target = jq(e.target),
+            list = jq('.af-currentFilter--dateFilter--inner--month--list'),
+            isExpanded = (list.attr('aria-expanded') === 'true');
+
+        if (isExpanded) {
+            list.slideUp();
+            target.removeClass('af-open');
+            list.attr('aria-expanded', false);
+        } else {
+            list.css('display', 'flex').slideDown();
+            target.addClass('af-open');
+            list.attr('aria-expanded', true);
+        }
+    });
+
+    jq('.af-currentFilter--dateFilter--inner--year--listItem a').on('click', function (e) {
+
+        var target = jq(e.target),
+            list = target.closest('ul'),
+            value = target.text(),
+            monthValue = jq('.af-currentFilter--dateFilter--inner--month--list .active'),
+            allNews = jq('.af-currentFilter--result li');
+
+        e.preventDefault();
+        jq('.af-currentFilter--dateFilter--inner--year--listItem .active').removeClass('active');
+        target.addClass('active');
+
+        if (monthValue && monthValue.length > 0) {
+            monthValue = monthValue.data('monthvalue');
+        } else {
+            monthValue = null;
+        }
+
+        jq.each(allNews, function (index, elem) {
+            var theElem = jq(elem),
+                yearData = theElem.data('year'),
+                monthData = theElem.data('month');
+
+            if (yearData === parseInt(value)) {
+
+                if (monthValue) {
+
+                    if (monthValue === monthData) {
+                        theElem.show();
+                    } else {
+                        theElem.hide();
+                    }
+
+                } else {
+                    theElem.show();
+                }
+            } else {
+                theElem.hide();
+            }
+        });
+
+        jq('.af-currentFilter--dateFilter--inner--year--title.af-open').removeClass('af-open');
+        list.slideUp();
+    });
+
+    jq('.af-currentFilter--dateFilter--inner--month--list').on('click', function (e) {
+
+        var target = jq(e.target),
+            list = target.closest('ul'),
+            value = target.data('monthvalue'),
+            yearValue = jq('.af-currentFilter--dateFilter--inner--year--listItem .active'),
+            allNews = jq('.af-currentFilter--result li');
+
+        e.preventDefault();
+        jq('.af-currentFilter--dateFilter--inner--month--list .active').removeClass('active');
+        target.addClass('active');
+
+        if (yearValue && yearValue.length > 0) {
+            yearValue = yearValue.text();
+        } else {
+            yearValue = null;
+        }
+
+        jq.each(allNews, function (index, elem) {
+            var theElem = jq(elem),
+                yearData = theElem.data('year'),
+                monthData = theElem.data('month');
+
+            if (monthData === value) {
+
+                if (yearValue) {
+
+                    if (yearData === parseInt(yearValue)) {
+                        theElem.show();
+                    } else {
+                        theElem.hide();
+                    }
+
+                } else {
+                    theElem.show();
+                }
+            } else {
+                theElem.hide();
+            }
+        });
+
+        jq('.af-currentFilter--dateFilter--inner--month--title.af-open').removeClass('af-open');
+        list.slideUp();
+    });
+
+    jq('.af-currentFilter--dateFilter--inner--clear a').on('click', function (e) {
+
+        var allNews = jq('.af-currentFilter--result li');
+
+        e.preventDefault();
+
+        jq('.af-currentFilter--dateFilter--inner--month--list .active').removeClass('active');
+        jq('.af-currentFilter--dateFilter--inner--year--listItem .active').removeClass('active');
+
+        jq.each(allNews, function (index, elem) {
+            var theElem = jq(elem);
+
+            theElem.show();
+        });
+
+
     });
 });

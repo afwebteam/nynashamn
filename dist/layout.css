@@ -436,12 +436,135 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   z-index: 99;
 }
 
+.af-currentFilter .af-accordionText:hover {
+  cursor: pointer;
+}
+
 .af-currentFilter--dateFilter--inner {
   background-color: #EDEBEA;
-  padding: 60px;
+  padding: 50px 70px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   display: none;
+}
+
+.af-currentFilter--dateFilter--inner--clear {
+  display: inline-block;
+  padding: 15px 20px 15px 20px;
+  margin-top: 10px;
+}
+
+.af-currentFilter--dateFilter--inner--clear a {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.af-currentFilter--dateFilter--inner--year, .af-currentFilter--dateFilter--inner--month {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 290px;
+}
+
+.af-currentFilter--dateFilter--inner--year--title, .af-currentFilter--dateFilter--inner--month--title {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px 150px 15px 20px;
+  background-color: #002F6C;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  color: #fff;
+  position: relative;
+}
+
+.af-currentFilter--dateFilter--inner--year--title:hover, .af-currentFilter--dateFilter--inner--month--title:hover {
+  cursor: pointer;
+}
+
+.af-currentFilter--dateFilter--inner--year--title:after, .af-currentFilter--dateFilter--inner--month--title:after {
+  content: ' ';
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f9610132c0/1590497157690/plus-vit.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+}
+
+.af-currentFilter--dateFilter--inner--year--title.af-open:after, .af-currentFilter--dateFilter--inner--month--title.af-open:after {
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.af-currentFilter--dateFilter--inner--year--list, .af-currentFilter--dateFilter--inner--month--list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #fff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  display: none;
+}
+
+.af-currentFilter--dateFilter--inner--year--listItem, .af-currentFilter--dateFilter--inner--month--listItem {
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid #414042;
+}
+
+.af-currentFilter--dateFilter--inner--year--listItem a, .af-currentFilter--dateFilter--inner--month--listItem a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.af-currentFilter--dateFilter--inner--year--listItem .active, .af-currentFilter--dateFilter--inner--month--listItem .active {
+  text-decoration: underline;
+}
+
+.af-currentFilter--dateFilter--inner--year--listItem:last-of-type, .af-currentFilter--dateFilter--inner--month--listItem:last-of-type {
+  border-bottom: none;
+}
+
+.af-currentFilter--dateFilter--inner--year .af-currentFilter--dateFilter--inner--month--list, .af-currentFilter--dateFilter--inner--month .af-currentFilter--dateFilter--inner--month--list {
+  display: none;
+  flex-wrap: wrap;
+}
+
+.af-currentFilter--dateFilter--inner--year .af-currentFilter--dateFilter--inner--month--list .af-currentFilter--dateFilter--inner--month--listItem, .af-currentFilter--dateFilter--inner--month .af-currentFilter--dateFilter--inner--month--list .af-currentFilter--dateFilter--inner--month--listItem {
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  border: none;
+}
+
+.af-currentFilter--dateFilter--inner--year .af-currentFilter--dateFilter--inner--month--list .af-currentFilter--dateFilter--inner--month--listItem:nth-of-type(3n + 1), .af-currentFilter--dateFilter--inner--month .af-currentFilter--dateFilter--inner--month--list .af-currentFilter--dateFilter--inner--month--listItem:nth-of-type(3n + 1) {
+  border-bottom: 1px solid #414042;
+  border-right: 1px solid #414042;
+}
+
+.af-currentFilter--dateFilter--inner--year .af-currentFilter--dateFilter--inner--month--list .af-currentFilter--dateFilter--inner--month--listItem:nth-of-type(3n + 2), .af-currentFilter--dateFilter--inner--month .af-currentFilter--dateFilter--inner--month--list .af-currentFilter--dateFilter--inner--month--listItem:nth-of-type(3n + 2) {
+  border-bottom: 1px solid #414042;
+  border-right: 1px solid #414042;
+}
+
+.af-currentFilter--dateFilter--inner--year .af-currentFilter--dateFilter--inner--month--list .af-currentFilter--dateFilter--inner--month--listItem:nth-of-type(3n + 3), .af-currentFilter--dateFilter--inner--month .af-currentFilter--dateFilter--inner--month--list .af-currentFilter--dateFilter--inner--month--listItem:nth-of-type(3n + 3) {
+  border-bottom: 1px solid #414042;
+}
+
+.af-currentFilter--dateFilter--inner--year .af-currentFilter--dateFilter--inner--month--list .af-currentFilter--dateFilter--inner--month--listItem:nth-of-type(10), .af-currentFilter--dateFilter--inner--month .af-currentFilter--dateFilter--inner--month--list .af-currentFilter--dateFilter--inner--month--listItem:nth-of-type(10) {
+  border-bottom: none;
+}
+
+.af-currentFilter--dateFilter--inner--year .af-currentFilter--dateFilter--inner--month--list .af-currentFilter--dateFilter--inner--month--listItem:nth-of-type(11), .af-currentFilter--dateFilter--inner--month .af-currentFilter--dateFilter--inner--month--list .af-currentFilter--dateFilter--inner--month--listItem:nth-of-type(11) {
+  border-bottom: none;
+}
+
+.af-currentFilter--dateFilter--inner--year .af-currentFilter--dateFilter--inner--month--list .af-currentFilter--dateFilter--inner--month--listItem:nth-of-type(12), .af-currentFilter--dateFilter--inner--month .af-currentFilter--dateFilter--inner--month--list .af-currentFilter--dateFilter--inner--month--listItem:nth-of-type(12) {
+  border-bottom: none;
 }
 
 .af-currentFilter--result {
@@ -2148,6 +2271,49 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .sv-decoration-generell-bla-knapp--intern p.normal a {
     font-size: 15px;
+  }
+  .af-currentFilter--areas {
+    flex-direction: column;
+  }
+  .af-currentFilter--areas li {
+    margin: 20px 0;
+  }
+  .af-currentFilter--result ul li .af-currentFilter--result--title {
+    font-size: 18px;
+  }
+  .af-currentFilter--result ul li .af-currentFilter--result--area {
+    font-size: 12px;
+  }
+  .af-currentFilter--dateFilter .sv-font-stor-svart {
+    font-size: 15px;
+  }
+  .af-currentFilter--dateFilter .sv-font-stor-svart .af-accordionText {
+    font-size: 13px;
+  }
+  .af-currentFilter--dateFilter .sv-font-stor-svart:after {
+    background-size: 18px;
+    top: 22px;
+  }
+  .af-currentFilter--dateFilter--inner--year, .af-currentFilter--dateFilter--inner--month {
+    display: block;
+    max-width: 100%;
+  }
+  .af-currentFilter--dateFilter--inner--year--title, .af-currentFilter--dateFilter--inner--month--title {
+    font-size: 15px;
+    width: 100%;
+    padding: 15px 0;
+    text-indent: 15px;
+  }
+  .af-currentFilter--dateFilter--inner--year--title:after, .af-currentFilter--dateFilter--inner--month--title:after {
+    background-size: 18px;
+    top: 14px;
+  }
+  .af-currentFilter--dateFilter--inner--clear {
+    display: block;
+  }
+  .af-currentFilter--dateFilter--inner--clear a {
+    font-size: 15px;
+    float: right;
   }
 }
 
