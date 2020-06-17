@@ -508,10 +508,13 @@ svDocReady(function () {
                 },
                 dataType: 'html',
                 success: function (data) {
+                    resultTarget.html(data);
+                    /*
                     resultTarget.slideUp('slow', function () {
                         resultTarget.html(data);
                         resultTarget.slideDown('slow');
                     });
+                    */
 
                     loopAreas(topAreaFilter, '', false);
                 }
@@ -526,10 +529,13 @@ svDocReady(function () {
                 },
                 dataType: 'html',
                 success: function (data) {
+                    resultTarget.html(data);
+                    /*
                     resultTarget.slideUp('slow', function () {
                         resultTarget.html(data);
                         resultTarget.slideDown('slow');
                     });
+                    */
 
                     loopAreas(topAreaFilter, paramValue, true);
                 }
@@ -558,10 +564,14 @@ svDocReady(function () {
                 },
                 dataType: 'html',
                 success: function (data) {
+
+                    resultTarget.html(data);
+                    /*
                     resultTarget.slideUp('slow', function () {
                         resultTarget.html(data);
                         resultTarget.slideDown('slow');
                     });
+                    */
                 }
             });
         } else {
@@ -574,10 +584,15 @@ svDocReady(function () {
                 },
                 dataType: 'html',
                 success: function (data) {
+
+                    resultTarget.html(data);
+
+                    /*
                     resultTarget.slideUp('slow', function () {
                         resultTarget.html(data);
                         resultTarget.slideDown('slow');
                     });
+                    */
                 }
             });
         }
