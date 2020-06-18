@@ -657,6 +657,106 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   cursor: pointer;
 }
 
+.af-importantMessage.af-Notis {
+  background-color: #53BDD6;
+}
+
+.af-importantMessage.af-Notis .af-importantMessage--icon {
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.1a666647172a20f55b1bba7/1592399205209/warning.svg");
+}
+
+.af-importantMessage.af-Fara {
+  background-color: #E97C1D;
+}
+
+.af-importantMessage.af-Fara .af-importantMessage--icon {
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.1a666647172a20f55b1bba7/1592399205209/warning.svg");
+}
+
+.af-importantMessage.af-smallMessage .af-importantMessage--wrapper {
+  padding: 20px 0;
+  max-width: 650px;
+}
+
+.af-importantMessage.af-smallMessage .af-importantMessage--icon {
+  width: 32px;
+  height: 30px;
+}
+
+.af-importantMessage.af-smallMessage .af-importantMessage--contentTitle {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.af-importantMessage.af-smallMessage .af-importantMessage--contentText {
+  display: none;
+}
+
+.af-importantMessage--content {
+  display: inline-block;
+  margin-left: 25px;
+  width: 90%;
+}
+
+.af-importantMessage--icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.af-importantMessage--contentTitle {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.af-importantMessage--wrapper-outer {
+  margin: 0 auto;
+  max-width: 1366px;
+  position: relative;
+}
+
+.af-importantMessage--hide {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 30px;
+}
+
+.af-importantMessage--hide.af-open:after {
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.af-importantMessage--hide:hover {
+  cursor: pointer;
+}
+
+.af-importantMessage--hide:after {
+  position: absolute;
+  top: 1px;
+  right: 2px;
+  content: ' ';
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+  width: 20px;
+  transition: all 0.3s ease;
+}
+
+.af-importantMessage--wrapper {
+  margin: 0 auto;
+  max-width: 850px;
+  padding: 45px 0;
+}
+
 /*
 $museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
 $museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
@@ -2368,6 +2468,39 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .af-cookies--wrapper button:hover {
     cursor: pointer;
+  }
+  .af-importantMessage.af-smallMessage .af-importantMessage--wrapper {
+    padding: 40px 20px;
+    display: flex;
+  }
+  .af-importantMessage.af-smallMessage .af-importantMessage--contentTitle {
+    font-size: 20px;
+  }
+  .af-importantMessage.af-smallMessage .af-importantMessage--icon {
+    width: 30px;
+    height: 25px;
+  }
+  .af-importantMessage--wrapper {
+    display: flex;
+    padding: 40px 20px;
+  }
+  .af-importantMessage--hide {
+    font-size: 13px;
+    top: 15px;
+  }
+  .af-importantMessage--hide:after {
+    background-size: 16px;
+    height: 16px;
+    width: 16px;
+    top: -1px;
+    right: 7px;
+  }
+  .af-importantMessage--contentTitle {
+    font-size: 20px;
+    max-width: 90%;
+  }
+  .af-importantMessage--contentText {
+    font-size: 15px;
   }
 }
 

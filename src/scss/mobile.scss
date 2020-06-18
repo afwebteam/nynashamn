@@ -862,4 +862,51 @@
             }
         }
     }
+
+    .af-importantMessage {
+
+        &.af-smallMessage {
+
+            & .af-importantMessage--wrapper {
+                padding: 40px 20px;
+                display: flex;
+            }
+
+            & .af-importantMessage--contentTitle {
+                font-size: 20px;
+            }
+
+            & .af-importantMessage--icon {
+                width: 30px;
+                height: 25px;
+            }
+        }
+
+        &--wrapper {
+            display: flex;
+            padding: 40px 20px;
+        }
+
+        &--hide {
+            font-size: 13px;
+            top: 15px;
+        }
+
+        &--hide:after {
+            background-size: 16px;
+            height: 16px;
+            width: 16px;   
+            top: -1px;
+            right: 7px; 
+        }
+
+        &--contentTitle {
+            font-size: 20px;
+            max-width: 90%;
+        }
+
+        &--contentText {
+            font-size: 15px;
+        }
+    }
 }

@@ -295,3 +295,109 @@
         }
     }
 }
+
+.af-importantMessage {
+
+    &.af-Notis {
+        background-color: $nynas-lightblue-color;
+
+        & .af-importantMessage--icon {
+            background-image: url($warningIcon);
+        }
+    }
+
+    &.af-Fara {
+        background-color: $nynas-outline-color;
+
+        & .af-importantMessage--icon {
+            background-image: url($warningIcon);
+        }
+    }
+
+    &.af-smallMessage {
+
+        & .af-importantMessage--wrapper {
+            padding: 20px 0;
+            max-width: 650px;
+        }
+
+        & .af-importantMessage--icon {
+            width: 32px;
+            height: 30px;
+        }
+
+        & .af-importantMessage--contentTitle {
+            font-size: 25px;
+            margin-bottom: 0;
+        }
+
+        & .af-importantMessage--contentText {
+            display: none;
+        }
+    }
+
+    &--content {
+        display: inline-block;
+        margin-left: 25px;
+        width: 90%;
+    }
+
+    &--icon {
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &--contentTitle {
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 18px;
+    }
+
+    &--wrapper-outer {
+        margin: 0 auto;
+        max-width: 1366px;
+        position: relative;
+    }
+
+    &--hide {
+        position: absolute;
+        top: 25px;
+        right: 0;
+        font-size: 18px;
+        font-weight: 500;
+        padding-right: 30px;
+    }
+
+    &--hide.af-open:after {
+        transform: rotate(45deg);
+        transition: all 0.3s ease;
+    }
+
+    &--hide:hover {
+        cursor: pointer;
+    }
+
+    &--hide:after {
+        position: absolute;
+        top: 1px;
+        right: 2px;
+        content: ' ';
+        background-image: url($plusSignIcon);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 20px;
+        width: 20px;
+        transition: all 0.3s ease;
+    }
+
+    &--wrapper {
+        margin: 0 auto;
+        max-width: 850px;
+        padding: 45px 0;
+    }
+}

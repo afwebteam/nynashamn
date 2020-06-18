@@ -736,7 +736,25 @@ svDocReady(function () {
 
             theElem.show();
         });
+    });
 
+    // Important message
+    jq('.af-importantMessage--hide').on('click', function (e) {
 
+        var target = jq(e.target),
+            importantMessageContainer = jq('.af-importantMessage'),
+            isSmall = importantMessageContainer.hasClass('af-smallMessage');
+
+        if (isSmall) {
+            target.addClass('af-open');
+            target.text('Dölj');
+            importantMessageContainer.removeClass('af-smallMessage');
+        } else {
+            target.removeClass('af-open');
+            target.text('Visa');
+            importantMessageContainer.addClass('af-smallMessage');
+        }
+
+        console.log('flfds');
     });
 });
