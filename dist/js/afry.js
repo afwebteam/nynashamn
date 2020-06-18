@@ -749,12 +749,12 @@ svDocReady(function () {
             target.addClass('af-open');
             target.text('Dölj');
             importantMessageContainer.removeClass('af-smallMessage');
+            sessionStorage.setItem('afImportantMessageMinimized', false);
         } else {
             target.removeClass('af-open');
             target.text('Visa');
             importantMessageContainer.addClass('af-smallMessage');
+            sessionStorage.setItem('afImportantMessageMinimized', true);
         }
-
-        console.log('flfds');
     });
 });
