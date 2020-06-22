@@ -29,6 +29,88 @@ svDocReady(function () {
         isMobile = anIsMobile;
     };
 
+    // If useMonth amount month will be used, else amount days
+    function monthDiff(dateFrom, dateTo) {
+        return dateTo.getMonth() - dateFrom.getMonth() +
+            (12 * (dateTo.getFullYear() - dateFrom.getFullYear()));
+    }
+
+    AF.isOldArticle = function (aContainer, amount, useMonth, aTargetClass) {
+
+        var container = jq(aContainer),
+            children = container.find('li');
+
+        if (!aContainer || !amount) {
+            return;
+        }
+
+        jq.each(children, function (index, elem) {
+
+            var target = jq(elem),
+                targetText = target.find('.' + aTargetClass),
+                year = target.data('year'),
+                month = target.data('month'),
+                day = target.data('day'),
+                dateObj = new Date(year, month - 1, day),
+                targetDate,
+
+                diffTime,
+                diffDays,
+                diffMonths;
+
+            if (useMonth) {
+                targetDate = new Date(year, dateObj.getMonth() - amount, day);
+            } else {
+                targetDate = new Date(year, dateObj.getMonth(), dateObj.getDate() - amount);
+            }
+
+            diffTime = Math.abs(dateObj - targetDate);
+            diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            diffMonths = monthDiff(targetDate, dateObj);
+
+            console.log(diffDays);
+            console.log(diffMonths);
+            console.log(targetDate);
+
+            if (useMonth && diffMonths > 2) {
+
+                targetText.append(
+                    jq('<span/>', {
+                        text: ' ',
+                        class: 'af-oldArticle-before'
+                    })
+                );
+
+
+                targetText.append(
+                    jq('<span/>', {
+                        text: 'Artikeln är äldre än tre månader',
+                        class: 'af-oldArticle'
+                    })
+                );
+
+            } else if (!useMonth && diffDays > 2) {
+
+                targetText.append(
+                    jq('<span/>', {
+                        text: ' ',
+                        class: 'af-oldArticle-before'
+                    })
+                );
+
+                targetText.append(
+                    jq('<span/>', {
+                        text: 'Artikeln är äldre än tre månader',
+                        class: 'af-oldArticle'
+                    })
+                );
+            }
+        });
+
+    };
+
+    AF.isOldArticle('.af-currentFilter .af-currentFilter--result ul', 3, false, 'af-currentFilter--result--pubDate');
+
     function mediaQueryChecker(aMql) {
         AF.setIsMobileView(aMql.matches);
     }

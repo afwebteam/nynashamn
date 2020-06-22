@@ -74,6 +74,20 @@
         cursor: pointer;
     }
 
+    & .af-oldArticle {
+        font-size: 15px;
+        background-color: $nynas-grey-color;
+        padding: 4px;
+        border-radius: 6px;
+    }
+
+    & .af-oldArticle-before:before {
+            font-size: 15px;
+            padding: 4px;
+            margin: 0 30px;
+            content: '\2022';
+    }
+
     &--dateFilter {
 
         &--inner {
