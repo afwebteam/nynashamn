@@ -10,7 +10,8 @@ svDocReady(function () {
         relatedFileLinks,
         accordionContainer,
         mql = window.matchMedia('screen and (max-width: 880px)'),
-        isMobile;
+        isMobile,
+        afPublishedDate;
 
     AF.isEmptyString = function (aString) {
 
@@ -35,10 +36,56 @@ svDocReady(function () {
             (12 * (dateTo.getFullYear() - dateFrom.getFullYear()));
     }
 
+    function addDateInfo(anElem) {
+
+        anElem.append(
+            jq('<span/>', {
+                text: ' ',
+                class: 'af-oldArticle-before'
+            })
+        );
+
+        anElem.append(
+            jq('<span/>', {
+                text: 'Artikeln är äldre än tre månader',
+                class: 'af-oldArticle'
+            })
+        );
+    }
+
+    AF.isOldArticleSingleElem = function (anElem, useMonth, amount) {
+
+        var target = jq(anElem),
+            year = target.data('year'),
+            month = target.data('month'),
+            day = target.data('day'),
+            dateObj = new Date(year, month - 1, day),
+            now = new Date(),
+            diffTime,
+            diffDays,
+            diffMonths;
+
+        if (!anElem || !amount) {
+            return;
+        }
+
+        diffTime = Math.abs(now - dateObj);
+        diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        diffMonths = monthDiff(dateObj, now);
+
+        if (useMonth && diffMonths >= amount) {
+            addDateInfo(target);
+        } else if (!useMonth && diffDays >= amount) {
+            addDateInfo(target);
+        }
+
+    };
+
     AF.isOldArticle = function (aContainer, amount, useMonth, aTargetClass) {
 
         var container = jq(aContainer),
-            children = container.find('li');
+            children = container.find('li'),
+            now = new Date();
 
         if (!aContainer || !amount) {
             return;
@@ -52,64 +99,23 @@ svDocReady(function () {
                 month = target.data('month'),
                 day = target.data('day'),
                 dateObj = new Date(year, month - 1, day),
-                targetDate,
-
                 diffTime,
                 diffDays,
                 diffMonths;
 
-            if (useMonth) {
-                targetDate = new Date(year, dateObj.getMonth() - amount, day);
-            } else {
-                targetDate = new Date(year, dateObj.getMonth(), dateObj.getDate() - amount);
-            }
-
-            diffTime = Math.abs(dateObj - targetDate);
+            diffTime = Math.abs(now - dateObj);
             diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-            diffMonths = monthDiff(targetDate, dateObj);
+            diffMonths = monthDiff(dateObj, now);
 
-            console.log(diffDays);
-            console.log(diffMonths);
-            console.log(targetDate);
-
-            if (useMonth && diffMonths > 2) {
-
-                targetText.append(
-                    jq('<span/>', {
-                        text: ' ',
-                        class: 'af-oldArticle-before'
-                    })
-                );
-
-
-                targetText.append(
-                    jq('<span/>', {
-                        text: 'Artikeln är äldre än tre månader',
-                        class: 'af-oldArticle'
-                    })
-                );
-
-            } else if (!useMonth && diffDays > 2) {
-
-                targetText.append(
-                    jq('<span/>', {
-                        text: ' ',
-                        class: 'af-oldArticle-before'
-                    })
-                );
-
-                targetText.append(
-                    jq('<span/>', {
-                        text: 'Artikeln är äldre än tre månader',
-                        class: 'af-oldArticle'
-                    })
-                );
+            if (useMonth && diffMonths >= amount) {
+                addDateInfo(targetText);
+            } else if (!useMonth && diffDays >= amount) {
+                addDateInfo(targetText);
             }
         });
-
     };
 
-    AF.isOldArticle('.af-currentFilter .af-currentFilter--result ul', 3, false, 'af-currentFilter--result--pubDate');
+    AF.isOldArticle('.af-currentFilter .af-currentFilter--result ul', 3, true, 'af-currentFilter--result--pubDate');
 
     function mediaQueryChecker(aMql) {
         AF.setIsMobileView(aMql.matches);
@@ -839,4 +845,9 @@ svDocReady(function () {
             sessionStorage.setItem('afImportantMessageMinimized', true);
         }
     });
+
+    afPublishedDate = jq('.af-publishedDate');
+    if (afPublishedDate && afPublishedDate.length > 0) {
+        AF.isOldArticleSingleElem(afPublishedDate, true, 3);
+    }
 });
