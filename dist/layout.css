@@ -990,7 +990,7 @@ a[href*="/download/"]:after {
 }
 
 p.sv-portlet-image-caption {
-  font-size: 11px;
+  font-size: 14px;
   font-family: museo,sans-serif;
   font-weight: 500;
   margin-top: 15px;
@@ -1463,14 +1463,22 @@ nav.af-center .af-searchIcon a.active {
 .af-breadcrumb {
   margin: 0;
   padding: 0;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   padding-left: 88px;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 a:focus,
 input:focus {
   outline: 2px solid #53BDD6;
+}
+
+.sv-image-portlet {
+  margin: 0 0 60px 0;
+}
+
+.sv-text-portlet + .sv-image-portlet {
+  margin-top: 60px;
 }
 
 /*
@@ -2707,7 +2715,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-startpageMessages--list li {
   max-width: 390px;
-  padding: 15px;
+  padding: 15px 25px 25px 25px;
   background-color: #fff;
   border-radius: 10px;
   margin-bottom: 0;
@@ -3058,8 +3066,8 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-popularShortcuts--itemStyle {
-  width: 210px;
-  height: 210px;
+  width: 186px;
+  height: 186px;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-size: 80px 80px;
