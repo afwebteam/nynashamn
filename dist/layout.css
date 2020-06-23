@@ -1504,12 +1504,8 @@ input:focus {
   outline: 2px solid #53BDD6;
 }
 
-.sv-image-portlet {
-  margin: 0 0 60px 0;
-}
-
-.sv-text-portlet + .sv-image-portlet {
-  margin-top: 60px;
+.af-oldNewsChecker .sv-text-portlet + .sv-image-portlet {
+  margin: 60px 0;
 }
 
 /*
