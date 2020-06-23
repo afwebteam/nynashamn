@@ -3111,6 +3111,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-popularShortcuts--itemName a {
   text-decoration: none;
+  font-weight: 700;
 }
 
 .af-startpage-current .sv-text-portlet a {
