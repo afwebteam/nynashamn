@@ -123,6 +123,10 @@
                 & .af-bigPuff {
                     background-size: 80px 80px !important;
                 }
+
+                & .af-regularPuff {
+                    background-size: 50px 50px !important;
+                }
         
                 & .af-regularPuff, .af-bigPuff {
                     height: 80px !important;
@@ -319,6 +323,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            &Name {
+                font-size: 14px;
+            }
         }
 
         &--item:nth-child(4){
@@ -918,4 +926,8 @@
 
     .af-flexOrderedBy :nth-child(2) { order: 2; }
     .af-flexOrderedBy :nth-child(4) { order: 1; }
+
+    header {
+        margin-bottom: 10px !important;
+    }
 }

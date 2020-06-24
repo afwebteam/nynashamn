@@ -2008,6 +2008,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-puffContainer--item .af-bigPuff {
     background-size: 80px 80px !important;
   }
+  .af-puffContainer--item .af-regularPuff {
+    background-size: 50px 50px !important;
+  }
   .af-puffContainer--item .af-regularPuff, .af-puffContainer--item .af-bigPuff {
     height: 80px !important;
     width: 80px !important;
@@ -2142,6 +2145,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .af-popularShortcuts--itemName {
+    font-size: 14px;
   }
   .af-popularShortcuts--item:nth-child(4) {
     margin-right: 10px;
@@ -2562,6 +2568,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .af-flexOrderedBy :nth-child(4) {
     order: 1;
+  }
+  header {
+    margin-bottom: 10px !important;
   }
 }
 
