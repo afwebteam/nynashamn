@@ -2637,6 +2637,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   width: 186px;
   border-radius: 50%;
   /* transform: translateY(-50%); */
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+  background-position: center;
 }
 
 .af-puffContainer .af-bigPuff {
