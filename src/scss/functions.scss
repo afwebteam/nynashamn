@@ -313,6 +313,10 @@
 
 .af-importantMessage {
 
+    & * {
+        color: #000;
+    }
+
     &.af-Notis {
         background-color: $nynas-lightblue-color;
 
