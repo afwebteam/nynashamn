@@ -634,3 +634,34 @@ input:focus {
 .af-oldNewsChecker .sv-text-portlet + .sv-image-portlet {
     margin: 60px 0;
 }
+
+.af-tags {
+    margin: 25px 0 0 0;
+
+    .af-tag {
+        font-size: 16px;
+        font-weight: 500;
+        background-color: $nynas-grey-color;
+        display: inline-block;
+        padding: 5px 5px 5px 30px;
+        border-radius: 6px;
+        position: relative;
+
+        & a {
+            text-decoration: none;
+        }
+    }
+
+    .af-tag:before {
+        content: ' ';
+        display: inline-block;
+        background-image: url($tagIcon);
+        position: absolute;
+        top: 6px;
+        left: 10px;
+        width: 20px;
+        height: 20px;
+        background-size: 15px;
+        background-repeat: no-repeat;
+    }
+}

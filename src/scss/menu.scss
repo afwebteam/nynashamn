@@ -52,9 +52,13 @@
     background-color: $nynas-darkblue-color;
     color: $white-color;
     display: none;
-    font-family: museo;
+    font-family: museo,sans-serif;
     font-size: 18px;
     font-weight: 700;
+
+    & a {
+        font-family: museo,sans-serif;
+    }
 
     & .activeMenuItem {
         text-decoration: underline;
@@ -164,7 +168,7 @@
         }
 
         & a {
-            font-family: museo;
+            font-family: museo,sans-serif;
             font-size: 15px;
             font-weight: 500;
             color: $nynas-black-color;
@@ -281,7 +285,7 @@
         }
         
         & a {
-            font-family: museo;
+            font-family: museo,sans-serif;
             font-size: 15px;
             font-weight: 500;
             color: $nynas-black-color;
@@ -337,7 +341,7 @@
         }
         
         & a {
-            font-family: museo;
+            font-family: museo,sans-serif;
             font-size: 15px;
             font-weight: 500;
             color: $nynas-black-color;
@@ -393,7 +397,7 @@
         }
         
         & a {
-            font-family: museo;
+            font-family: museo,sans-serif;
             font-size: 15px;
             font-weight: 500;
             color: $nynas-black-color;
