@@ -995,7 +995,7 @@ a[href*="/download/"]:after {
 }
 
 p.sv-portlet-image-caption {
-  font-size: 14px;
+  font-size: 15px;
   font-family: museo,sans-serif;
   font-weight: 500;
   margin-top: 15px;
@@ -1196,6 +1196,7 @@ nav.af-center .af-searchIcon a.active {
   border-top-right-radius: 6px;
   font-size: 25px;
   color: #fff;
+  font-weight: 700;
 }
 
 .sv-decoration-generell-faktaruta h2:before, .sv-decoration-generell-faktaruta h3:before, .sv-decoration-generell-faktaruta .sv-font-stor-svart:before {
@@ -1227,6 +1228,7 @@ nav.af-center .af-searchIcon a.active {
   border-top-right-radius: 6px;
   font-size: 25px;
   color: #fff;
+  font-weight: 700;
 }
 
 .af-related-information h2:before, .af-related-information h3:before, .af-related-information .sv-font-stor-svart:before {
@@ -1535,7 +1537,7 @@ input:focus {
 .af-tags .af-tag:before {
   content: ' ';
   display: inline-block;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48cGF0aCBkPSJNMCAyNTIuMTE4VjQ4QzAgMjEuNDkgMjEuNDkgMCA0OCAwaDIwNC4xMThhNDggNDggMCAwMTMzLjk0MSAxNC4wNTlsMjExLjg4MiAyMTEuODgyYzE4Ljc0NSAxOC43NDUgMTguNzQ1IDQ5LjEzNyAwIDY3Ljg4MkwyOTMuODIzIDQ5Ny45NDFjLTE4Ljc0NSAxOC43NDUtNDkuMTM3IDE4Ljc0NS02Ny44ODIgMEwxNC4wNTkgMjg2LjA1OUE0OCA0OCAwIDAxMCAyNTIuMTE4ek0xMTIgNjRjLTI2LjUxIDAtNDggMjEuNDktNDggNDhzMjEuNDkgNDggNDggNDggNDgtMjEuNDkgNDgtNDgtMjEuNDktNDgtNDgtNDh6IiBmaWxsPSIjNjk2MTU4Ii8+PC9zdmc+");
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.553838ea17305720c321587/1593711825242/etikett.svg");
   position: absolute;
   top: 6px;
   left: 10px;
@@ -1543,6 +1545,10 @@ input:focus {
   height: 20px;
   background-size: 15px;
   background-repeat: no-repeat;
+}
+
+.af-event-dates {
+  margin: 0 0 25px 0;
 }
 
 /*
@@ -2225,7 +2231,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-related-information .sv-font-stor-svart,
   .af-contactModule .sv-font-stor-svart,
   .sv-decoration-generell-faktaruta .sv-font-stor-svart {
-    font-size: 20px;
+    font-size: 20px !important;
   }
   .af-related-information h2:before,
   .af-related-information h3:before,
@@ -2625,6 +2631,15 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     background-size: 10px;
     background-repeat: no-repeat;
   }
+  .af-related-information ul li {
+    margin: 10px 0;
+  }
+  .af-related-information ul .sv-decoration-generell-bla-knapp--intern {
+    padding: 8px 50px 12px 20px !important;
+  }
+  .af-related-information ul .sv-decoration-generell-bla-knapp--external {
+    padding: 8px 50px 12px 20px !important;
+  }
 }
 
 /* OVERRIDES */
@@ -2742,6 +2757,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   color: #fff;
+  font-weight: 700;
 }
 
 .af-contactModule h2:before,

@@ -88,7 +88,7 @@ a[href*="/download/"]:after {
 }
 
 p.sv-portlet-image-caption {
-    font-size: 14px;
+    font-size: 15px;
     font-family: museo,sans-serif;
     font-weight: 500;
     margin-top: 15px;
@@ -296,6 +296,7 @@ nav.af-center {
         border-top-right-radius: 6px;
         font-size: 25px;
         color: $white-color;
+        font-weight: 700;
     }
 
     & h2:before, h3:before, .sv-font-stor-svart:before {
@@ -329,6 +330,7 @@ nav.af-center {
         border-top-right-radius: 6px;
         font-size: 25px;
         color: $white-color;
+        font-weight: 700;
     }
 
     & h2:before, h3:before, .sv-font-stor-svart:before {
@@ -665,4 +667,8 @@ input:focus {
         background-size: 15px;
         background-repeat: no-repeat;
     }
+}
+
+.af-event-dates {
+    margin: 0 0 25px 0;
 }

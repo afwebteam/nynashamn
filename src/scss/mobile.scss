@@ -379,7 +379,7 @@
     .af-related-information .sv-font-stor-svart,
     .af-contactModule .sv-font-stor-svart,
     .sv-decoration-generell-faktaruta .sv-font-stor-svart {
-        font-size: 20px;
+        font-size: 20px !important;
     }
 
     .af-related-information h2:before,
@@ -946,6 +946,24 @@
             height: 12px;
             background-size: 10px;
             background-repeat: no-repeat;
+        }
+    }
+
+    .af-related-information {
+
+        & ul {
+
+            & li {
+                margin: 10px 0;
+            }
+
+            & .sv-decoration-generell-bla-knapp--intern {
+                padding: 8px 50px 12px 20px !important;
+            }
+
+            & .sv-decoration-generell-bla-knapp--external {
+                padding: 8px 50px 12px 20px !important;
+            }
         }
     }
 }
