@@ -1401,7 +1401,8 @@ nav.af-center .af-searchIcon a.active {
   text-align: right;
 }
 
-.sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__header h4.env-text {
+.sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__header h4.env-text,
+.sv-decoration-generell-kommentarer .env-modal-dialog__dialog .env-modal-dialog__header span.env-text {
   color: #414042;
   padding: 0;
   display: none;

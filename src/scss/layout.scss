@@ -511,7 +511,8 @@ nav.af-center {
             background-color: $nynas-comments-bg;
             text-align: right;
 
-            & h4.env-text {
+            & h4.env-text,
+              span.env-text {
                 color: $nynas-black-color;
                 padding: 0;
                 display: none;
