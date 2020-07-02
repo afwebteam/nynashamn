@@ -313,7 +313,7 @@ div[role=search] {
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f9610132c0/1590497157690/plus-vit.svg");
   background-repeat: no-repeat;
   background-position: right 30px center;
-  background-size: 25px;
+  background-size: 20px;
 }
 
 .sv-facetedsearch-portlet .sv-search-facets-header {
@@ -328,10 +328,10 @@ div[role=search] {
 
 .sv-facetedsearch-portlet .sv-search-facets-header .af-accordionText {
   position: absolute;
-  right: 80px;
-  top: 35px;
+  right: 65px;
+  top: 28px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .sv-facetedsearch-portlet .sv-search-facets-header:hover {
@@ -2640,6 +2640,17 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-related-information ul .sv-decoration-generell-bla-knapp--external {
     padding: 8px 50px 12px 20px !important;
   }
+  .sv-facetedsearch-portlet .sv-font-stor-svart {
+    font-size: 20px;
+  }
+  .sv-facetedsearch-portlet .af-accordionText {
+    font-size: 13px !important;
+    top: 30px !important;
+    right: 55px !important;
+  }
+  .sv-facetedsearch-portlet .af-closed {
+    background-size: 14px !important;
+  }
 }
 
 /* OVERRIDES */
@@ -2656,6 +2667,10 @@ p.normal {
 
 .sv-autocomplete-search-result .sv-autocomplete-result-item {
   padding: 10px 20px !important;
+}
+
+.sv-buddy-icon, .sv-corner-all {
+  border-radius: 0 !important;
 }
 
 /*

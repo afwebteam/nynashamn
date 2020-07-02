@@ -966,4 +966,21 @@
             }
         }
     }
+
+    .sv-facetedsearch-portlet {
+
+        & .sv-font-stor-svart {
+            font-size: 20px;
+        }
+
+        & .af-accordionText {
+            font-size: 13px !important;
+            top: 30px !important;
+            right: 55px !important;
+        }
+
+        & .af-closed {
+            background-size: 14px !important;
+        }
+    }
 }

@@ -101,7 +101,7 @@ div[role=search] {
             background-image: url($plusSignIconWhite);
             background-repeat: no-repeat;
             background-position: right 30px center;
-            background-size: 25px;
+            background-size: 20px;
         }
 
         &-header {
@@ -115,10 +115,10 @@ div[role=search] {
 
             & .af-accordionText {
                 position: absolute;
-                right: 80px;
-                top: 35px;
+                right: 65px;
+                top: 28px;
                 font-weight: 500;
-                font-size: 18px;
+                font-size: 20px;
             }    
         }
 
