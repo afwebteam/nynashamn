@@ -585,6 +585,10 @@
 
                 padding: 30px 20px;
 
+                & p.sv-font-brodtext-fet {
+                    font-size: 20px;
+                }
+
                 & .af-landingpage--shortcuts-list {
                     margin: 25px 0;
 
@@ -614,6 +618,17 @@
 
             & .af-landingpageRow--left, .af-landingpageRow--right {
                 width: 100%;
+            }
+
+            & .af-landingpageRow--left {
+
+                & .sv-font-stor-svart {
+                    padding-left: 0;
+                }
+
+                & .normal {
+                    padding-left: 0;
+                }
             }
         }
 
