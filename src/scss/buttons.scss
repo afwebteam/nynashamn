@@ -33,10 +33,97 @@
 
 .sv-decoration-contentpage-share-social {
 
+    margin-left: 10px;
+
     & a {
         position: relative;
     }
 
+    & p.normal {
+        text-decoration: underline;
+        -webkit-text-decoration-color: $nynas-darkblue-color;
+        text-decoration-color: $nynas-darkblue-color;
+    }
+
+    & .sv-html-portlet {
+        display: inline-block;
+    }
+    
+    & .af-share-container {
+        display: flex;
+        background-color: $nynas-darkblue-color;
+        padding: 8px 6px;
+        border-radius: 6px;
+        margin-top: -7px;
+
+        & .af-share-facebook,
+        & .af-share-linkedIn,
+        & .af-share-twitter,
+        & .af-share-mail {
+            margin-right: 10px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 20px;
+            width: 25px;
+            height: 22px;
+        }
+
+        & span {
+            display: none;
+        }
+
+        & .af-share-facebook:hover,
+        & .af-share-linkedIn:hover,
+        & .af-share-twitter:hover,
+        & .af-share-mail:hover {
+            cursor: pointer;
+        }
+
+        & .af-share-facebook {
+            background-image: url($facebookIcon);
+            background-size: 12px;
+
+            & a {
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+            }
+        }
+
+        & .af-share-linkedIn {
+            background-image: url($linkedInIcon);
+
+            & a {
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+            }
+        }
+
+        & .af-share-twitter {
+            background-image: url($twitterIcon);
+
+            & a {
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+            }
+        }
+
+        & .af-share-mail {
+            background-image: url($mailIcon);
+
+            & a {
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+            }
+        }
+    }
+
+
+
+    /*
     & a:after {
         content: ' ';
         background-image: url($shareIcon);
@@ -49,6 +136,7 @@
         height: 38px;
         top: -8px;
     }
+    */
 }
 
 .af-generell-prevNext {

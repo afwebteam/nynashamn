@@ -36,21 +36,108 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   margin-left: 10px;
 }
 
+.sv-decoration-contentpage-share-social {
+  margin-left: 10px;
+  /*
+    & a:after {
+        content: ' ';
+        background-image: url($shareIcon);
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: absolute;
+        width: 130px;
+        margin-left: 10px;
+        background-size: 120px 38px;
+        height: 38px;
+        top: -8px;
+    }
+    */
+}
+
 .sv-decoration-contentpage-share-social a {
   position: relative;
 }
 
-.sv-decoration-contentpage-share-social a:after {
-  content: ' ';
-  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.fe28bf21723114cc4d18e0e/1591267866467/Dela.png");
-  background-repeat: no-repeat;
+.sv-decoration-contentpage-share-social p.normal {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #002F6C;
+  text-decoration-color: #002F6C;
+}
+
+.sv-decoration-contentpage-share-social .sv-html-portlet {
   display: inline-block;
-  position: absolute;
-  width: 130px;
-  margin-left: 10px;
-  background-size: 120px 38px;
-  height: 38px;
-  top: -8px;
+}
+
+.sv-decoration-contentpage-share-social .af-share-container {
+  display: flex;
+  background-color: #002F6C;
+  padding: 8px 6px;
+  border-radius: 6px;
+  margin-top: -7px;
+}
+
+.sv-decoration-contentpage-share-social .af-share-container .af-share-facebook,
+.sv-decoration-contentpage-share-social .af-share-container .af-share-linkedIn,
+.sv-decoration-contentpage-share-social .af-share-container .af-share-twitter,
+.sv-decoration-contentpage-share-social .af-share-container .af-share-mail {
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  width: 25px;
+  height: 22px;
+}
+
+.sv-decoration-contentpage-share-social .af-share-container span {
+  display: none;
+}
+
+.sv-decoration-contentpage-share-social .af-share-container .af-share-facebook:hover,
+.sv-decoration-contentpage-share-social .af-share-container .af-share-linkedIn:hover,
+.sv-decoration-contentpage-share-social .af-share-container .af-share-twitter:hover,
+.sv-decoration-contentpage-share-social .af-share-container .af-share-mail:hover {
+  cursor: pointer;
+}
+
+.sv-decoration-contentpage-share-social .af-share-container .af-share-facebook {
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.2647a0fc173056ff08415ee/1593775348367/Facebook.svg");
+  background-size: 12px;
+}
+
+.sv-decoration-contentpage-share-social .af-share-container .af-share-facebook a {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+
+.sv-decoration-contentpage-share-social .af-share-container .af-share-linkedIn {
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.2647a0fc173056ff08415ef/1593775434296/linkedIn.svg");
+}
+
+.sv-decoration-contentpage-share-social .af-share-container .af-share-linkedIn a {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+
+.sv-decoration-contentpage-share-social .af-share-container .af-share-twitter {
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.2647a0fc173056ff08415f0/1593775468502/twitter.svg");
+}
+
+.sv-decoration-contentpage-share-social .af-share-container .af-share-twitter a {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+
+.sv-decoration-contentpage-share-social .af-share-container .af-share-mail {
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.2647a0fc173056ff08415f1/1593775482126/mail.svg");
+}
+
+.sv-decoration-contentpage-share-social .af-share-container .af-share-mail a {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
 }
 
 .af-generell-prevNext {
