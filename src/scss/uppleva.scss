@@ -1,0 +1,30 @@
+@import 'variables';
+
+.af-uppleva-site {
+
+    & .af-menu {
+
+        & .af-activeMenuItem {
+            background-color: $nynas-green-color;
+        }
+    }
+
+    & .af-startpageBigImage {
+        background-image: url($experienceStartpageBigImage);
+    }
+
+    & .af-flexRow {
+
+        & > div {
+            display: flex;
+
+            & > * {
+                max-width: 50%;
+            }
+        }
+
+        & > * {
+            max-width: 50%;
+        }
+    }
+}
