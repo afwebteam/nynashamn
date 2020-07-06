@@ -27,4 +27,23 @@
             max-width: 50%;
         }
     }
+
+    .af-uppleva-events {
+        max-width: 1366px;
+        margin: 0 auto;
+        padding: 30px 80px;
+    
+        & .sv-font-stor-svart {
+            font-weight: 700;
+        }
+    
+        & .af-uppleva-events-filter {
+    
+        }
+    }
+
+    & h1 {
+        font-size: 50px;
+        font-weight: 300;
+    }
 }
