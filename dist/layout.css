@@ -447,6 +447,22 @@ div[role=search] {
   margin-right: 25px;
 }
 
+.sv-form-portlet label {
+  margin: 60px 0 12px 0;
+  display: inline-block;
+}
+
+.sv-form-portlet .sv-formFieldRow .sv-formField input[type=submit] {
+  float: right;
+  background-color: #002F6C;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-family: museo,sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
 /*
 $museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
 $museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
@@ -3377,24 +3393,29 @@ $museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/
 $museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
 $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
 */
+.af-uppleva-site .sv-font-stor-svart {
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+.af-uppleva-site .af-puff .af-flexRow > div {
+  display: flex;
+}
+
+.af-uppleva-site .af-puff .af-flexRow > * {
+  max-width: 50%;
+}
+
+.af-uppleva-site .af-puff .af-flexRow img {
+  max-height: 679px;
+}
+
 .af-uppleva-site .af-menu .af-activeMenuItem {
   background-color: #58A618;
 }
 
 .af-uppleva-site .af-startpageBigImage {
-  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.553838ea17305720c32238d/1593887667347/shutterstock_1006893700.png");
-}
-
-.af-uppleva-site .af-flexRow > div {
-  display: flex;
-}
-
-.af-uppleva-site .af-flexRow > div > * {
-  max-width: 50%;
-}
-
-.af-uppleva-site .af-flexRow > * {
-  max-width: 50%;
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c542451a/1589378872626/startpage-background.png");
 }
 
 .af-uppleva-site .af-uppleva-events {

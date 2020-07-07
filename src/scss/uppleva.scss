@@ -2,6 +2,29 @@
 
 .af-uppleva-site {
 
+    & .sv-font-stor-svart {
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+
+    & .af-puff {
+
+        & .af-flexRow {
+
+            & > div {
+                display: flex;
+            }
+    
+            & > * {
+                max-width: 50%;
+            }
+
+            & img {
+                max-height: 679px;
+            }
+        }
+    }
+
     & .af-menu {
 
         & .af-activeMenuItem {
@@ -10,22 +33,7 @@
     }
 
     & .af-startpageBigImage {
-        background-image: url($experienceStartpageBigImage);
-    }
-
-    & .af-flexRow {
-
-        & > div {
-            display: flex;
-
-            & > * {
-                max-width: 50%;
-            }
-        }
-
-        & > * {
-            max-width: 50%;
-        }
+        background-image: url($startpageBigImage);
     }
 
     .af-uppleva-events {
