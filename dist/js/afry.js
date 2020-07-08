@@ -115,6 +115,14 @@ svDocReady(function () {
         });
     };
 
+    AF.preventBouncingEffect = function () {
+        document.ontouchmove = function (event) {
+            event.preventDefault();
+        };
+    };
+
+    AF.preventBouncingEffect();
+
     AF.isOldArticle('.af-currentFilter .af-currentFilter--result ul', 3, true, 'af-currentFilter--result--pubDate');
 
     function mediaQueryChecker(aMql) {

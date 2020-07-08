@@ -6,7 +6,7 @@
 
     &--bigImage {
         padding: 40px 0;
-        height: 500px;
+        height: 440px;
     }
 
     &--pageName {
@@ -15,6 +15,11 @@
         top:100px;
         left: 0;
         padding: 20px 25px;
+
+        & h1 {
+            padding: 0;
+            margin: 0;
+        }
     }
 
     &--shortcuts {
@@ -81,6 +86,7 @@
 
         &--left {
             width: 40%;
+            padding-right: 50px;
 
             & .sv-font-stor-svart {
                 font-size: 25px;

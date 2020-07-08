@@ -618,6 +618,7 @@
 
             & .af-landingpageRow--left, .af-landingpageRow--right {
                 width: 100%;
+                padding-right: 0;
             }
 
             & .af-landingpageRow--left {
@@ -756,6 +757,7 @@
 
     .sv-decoration-generell-bla-knapp--external {
         padding: 15px 35px 15px 20px;
+        margin: 40px 0;
 
         &:after {
             background-size: 15px 15px;
@@ -774,6 +776,7 @@
 
     .sv-decoration-generell-bla-knapp--intern {
         padding: 15px 35px 15px 20px;
+        margin: 40px 0;
 
         &:after {
             background-size: 15px 15px;
