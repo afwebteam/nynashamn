@@ -1066,6 +1066,11 @@ a.sv-font-ingress,
   text-decoration-color: #002F6C;
 }
 
+.af-pagewidth-1366px {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
 .sv-font-ingress {
   padding-bottom: 0;
   margin-bottom: 0;
@@ -3403,11 +3408,17 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-uppleva-site .af-puff .af-flexRow > * {
-  max-width: 50%;
+  max-width: 49%;
 }
 
 .af-uppleva-site .af-puff .af-flexRow img {
   max-height: 679px;
+}
+
+.af-uppleva-site .af-puff .sv-font-lankstig {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .af-uppleva-site .af-menu .af-activeMenuItem {

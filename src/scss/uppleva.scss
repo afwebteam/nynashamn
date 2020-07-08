@@ -16,12 +16,18 @@
             }
     
             & > * {
-                max-width: 50%;
+                max-width: 49%;
             }
 
             & img {
                 max-height: 679px;
             }
+        }
+
+        & .sv-font-lankstig {
+            margin: 0;
+            font-size: 45px;
+            font-weight: 700;
         }
     }
 
