@@ -342,7 +342,25 @@ svDocReady(function () {
             allItems = activeMenuItem.parents('li');
 
             jq.each(allLists, function (i, e) {
-                var menu = jq(e);
+                var menu = jq(e),
+                    siblings;
+
+                // Get all siblings
+                if (i === 1) {
+                    siblings = menu.siblings('ul');
+                    console.log(siblings);
+
+                    jq.each(siblings, function (i, e) {
+
+                        var sibling = jq(e);
+
+                        if (!sibling.is('.af-mobileMainMenu')) {
+                            sibling.css('display', 'block');
+                        }
+
+                    });
+                }
+
                 if (!menu.is('.af-mobileMainMenu')) {
                     menu.css('display', 'block');
                 }
