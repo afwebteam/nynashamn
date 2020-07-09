@@ -365,7 +365,7 @@ svDocReady(function () {
 
         var target = jq(e.target),
             container = target.closest('li'),
-            sublevel = container.find('ul').first();
+            sublevel = container.find('> ul');
 
         container.toggleClass('open');
         sublevel.toggle();
