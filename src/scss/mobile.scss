@@ -2,6 +2,14 @@
 
 @media screen and (max-width: 880px) {
 
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+    }
+
     .af-MobileNone {
         display: none;
     }

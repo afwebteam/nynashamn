@@ -2127,6 +2127,12 @@ $museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/158937681741
 $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
 */
 @media screen and (max-width: 880px) {
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
   .af-MobileNone {
     display: none;
   }
