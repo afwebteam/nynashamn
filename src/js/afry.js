@@ -239,13 +239,22 @@ svDocReady(function () {
 
     function addAccordionFunctions(accordionContainers) {
 
+        // Do not run in edit mode...
+        var location = document.location.href;
+
+        if (location.indexOf('/edit/') > -1) {
+            return;
+        }
+
         jq.each(accordionContainers, function (i, e) {
 
             var container = jq(e),
-                items = container.find('.sv-font-stor-svart, h2, h3');
+                items = container.find('h2'),
+                h3s = container.find('h3.subheading3');
 
             jq.each(items, function (index, elem) {
-                var item = jq(elem),
+                var
+                    item = jq(elem),
                     span = jq('<span/>', {
                         class: 'af-accordionText',
                         text: 'Visa'
@@ -257,15 +266,20 @@ svDocReady(function () {
 
                 item.on('click', function (e) {
                     var target = jq(e.target),
+                        itemContainer = target.closest('.sv-text-portlet'),
                         content,
                         text,
-                        isExpanded;
+                        isExpanded,
+                        h3s,
+                        h3,
+                        h3Siblings;
 
                     if (target.is('.af-accordionText')) {
                         target = target.closest('p');
                     }
 
-                    content = target.next('.normal');
+                    content = itemContainer.next('div');
+                    h3s = content.find('h3.subheading3');
                     text = target.find('.af-accordionText');
                     isExpanded = (item.attr('aria-expanded') === 'true');
 
@@ -282,7 +296,90 @@ svDocReady(function () {
                     }
 
                 });
+
+
+                /*
+                item.on('click', function (e) {
+                    var target = jq(e.target),
+                        content,
+                        text,
+                        isExpanded;
+         
+                    if (target.is('.af-accordionText')) {
+                        target = target.closest('p');
+                    }
+         
+                    content = target.next('.normal');
+                    text = target.find('.af-accordionText');
+                    isExpanded = (item.attr('aria-expanded') === 'true');
+         
+                    if (isExpanded) {
+                        item.attr('aria-expanded', false);
+                        content.slideUp();
+                        item.removeClass('af-open');
+                        text.text('Visa');
+                    } else {
+                        item.attr('aria-expanded', true);
+                        item.addClass('af-open');
+                        content.slideDown();
+                        text.text('Dölj');
+                    }
+         
+                });
+                */
             });
+
+            if (h3s && h3s.length > 0) {
+
+                jq.each(h3s, function (i, e) {
+
+                    var
+                        item = jq(e),
+                        span = jq('<span/>', {
+                            class: 'af-accordionText',
+                            text: 'Visa'
+                        }),
+                        h3Siblings = item.nextUntil('h3.subheading3');
+
+                    item.attr('aria-expanded', false);
+                    item.addClass('af-closed');
+                    item.append(span);
+
+                    item.on('click', function (e) {
+
+                        var target = jq(e.target),
+                            content,
+                            text,
+                            isExpanded;
+
+                        if (target.is('.af-accordionText')) {
+                            target = target.closest('p');
+                        }
+
+                        content = target.next('.normal');
+                        text = target.find('.af-accordionText');
+                        isExpanded = (item.attr('aria-expanded') === 'true');
+
+                        if (isExpanded) {
+                            item.attr('aria-expanded', false);
+                            content.slideUp();
+                            item.removeClass('af-open');
+                            text.text('Visa');
+                        } else {
+                            item.attr('aria-expanded', true);
+                            item.addClass('af-open');
+                            content.slideDown();
+                            text.text('Dölj');
+                        }
+
+                    });
+
+                    jq.each(h3Siblings, function (j, f) {
+                        var sib = jq(f);
+                        sib.addClass('boxStyle');
+                    });
+                });
+            }
         });
     }
 

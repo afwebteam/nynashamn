@@ -431,7 +431,7 @@ nav.af-center {
 
 .sv-decoration-generell-dragspel {
 
-    & p.sv-font-stor-svart, h2, h3 {
+    & h2, .subheading3 {
         background-color: $nynas-grey-color;
         padding: 20px 54px;
         margin-bottom: 15px;
@@ -440,10 +440,33 @@ nav.af-center {
         font-weight: 700;
     }
 
-    & p.sv-font-stor-svart:hover, h2:hover, h3:hover {
+    & .subheading3 {
+        background-color: $nynas-grey-color;
+        padding: 20px 54px;
+        margin-bottom: 15px;
+        position: relative;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    & .sv-text-portlet + div.sv-layout {
+        display: none;
+    }
+
+    & h2:hover, .subheading3:hover {
         cursor: pointer;
     }
 
+    & > div.sv-vertical.sv-layout {
+        padding:  66px 58px 56px 58px;
+        border: 1px solid $nynas-grey-color;
+        margin-top: -15px;
+        margin-bottom: 15px;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+        display: none;
+    }
+
+    /*
     & p.normal {
        padding:  66px 58px 56px 58px;
        border: 1px solid $nynas-grey-color;
@@ -452,6 +475,7 @@ nav.af-center {
        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
        display: none;
     }
+    */
 
     & .af-closed {
         position: relative;
@@ -480,6 +504,15 @@ nav.af-center {
         top: 30px;
         font-weight: 500;
         font-size: 18px;
+    }
+
+    & .boxStyle {
+        padding: 66px 58px 56px 58px;
+        border: 1px solid #EDEBE9;
+        margin-top: -15px;
+        margin-bottom: 15px;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+        display: none;
     }
 }
 
