@@ -39,6 +39,7 @@ svDocReady(function () {
             function (el) {
                 if (el.offsetWidth > docWidth) {
                     console.log(el);
+                    alert(el);
                 }
             }
         );
