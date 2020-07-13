@@ -30,6 +30,20 @@ svDocReady(function () {
         isMobile = anIsMobile;
     };
 
+    AF.debugElementSize = function () {
+
+        var docWidth = document.documentElement.offsetWidth;
+
+        [].forEach.call(
+            document.querySelectorAll('*'),
+            function (el) {
+                if (el.offsetWidth > docWidth) {
+                    console.log(el);
+                }
+            }
+        );
+    };
+
     // If useMonth amount month will be used, else amount days
     function monthDiff(dateFrom, dateTo) {
         return dateTo.getMonth() - dateFrom.getMonth() +
@@ -151,6 +165,8 @@ svDocReady(function () {
                 //hiddenSearchForm.toggle();
                 hiddenSearchForm.slideToggle();
                 hiddenSearchFormField.focus();
+
+                AF.debugElementSize();
             } else {
 
                 form.addClass('af-upscale');
