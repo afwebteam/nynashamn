@@ -2670,7 +2670,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     text-align: left;
     text-indent: 10px;
     border: none;
-    width: 100%;
+    width: 90%;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -2681,7 +2681,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .af-hiddenSearchForm form input[name=submitButton] {
     height: 57px;
-    top: 0px;
+    top: 0;
     right: -5px;
     border-radius: 0;
     overflow: hidden;
