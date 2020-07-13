@@ -714,7 +714,8 @@
             width: 100%;
     
             & input[name=query] {
-                height: 55px;
+                height: 100%;
+                box-sizing: content-box;
                 text-align: left;
                 text-indent: 10px;
                 border: none;
@@ -730,7 +731,8 @@
             }
 
             & input[name=submitButton] {
-                height: 57px;
+                height: 100%;
+                box-sizing: content-box;
                 top: 0;
                 right: 15px;
                 border-radius: 0;
@@ -752,7 +754,11 @@
             & .af-searchButton {
                 height: 51px; 
             }
-    
+
+            & div[role=search] {
+                height: 57px;
+            }
+
             & div[role=search]:after {
                 content: ' ';
                 position: absolute;
