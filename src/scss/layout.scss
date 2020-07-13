@@ -55,6 +55,12 @@ h2 + h3 {
     margin-top: 20px !important;
 }
 
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 footer { 
     
     & .sv-font-sidfot-rubrik {
