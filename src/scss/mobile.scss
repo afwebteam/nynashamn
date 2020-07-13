@@ -705,7 +705,7 @@
         text-align: center;
         background-color: $nynas-search-bg;
         max-width: 850px;
-        padding: 8px 13px 10px 10px;
+        padding: 8px 0px 10px 0px;
         overflow: hidden;
     
         & form {
@@ -717,7 +717,7 @@
                 text-align: left;
                 text-indent: 10px;
                 border: none;
-                width: 90%;
+                width: 85%;
                 -webkit-appearance: none;
                 -moz-appearance: none;
                 appearance: none;
@@ -731,7 +731,7 @@
             & input[name=submitButton] {
                 height: 57px;
                 top: 0;
-                right: 10px;
+                right: 15px;
                 border-radius: 0;
                 overflow: hidden;
                 width: 80px;
@@ -756,7 +756,7 @@
                 content: ' ';
                 position: absolute;
                 top: 0;
-                right: 22px;
+                right: 28px;
                 height: 57px;
                 width: 47px;
                 background-size: 25px;

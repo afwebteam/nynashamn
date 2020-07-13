@@ -2658,7 +2658,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     text-align: center;
     background-color: #53BDD6;
     max-width: 850px;
-    padding: 8px 13px 10px 10px;
+    padding: 8px 0px 10px 0px;
     overflow: hidden;
   }
   .af-hiddenSearchForm form {
@@ -2670,7 +2670,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     text-align: left;
     text-indent: 10px;
     border: none;
-    width: 90%;
+    width: 85%;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -2682,7 +2682,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-hiddenSearchForm form input[name=submitButton] {
     height: 57px;
     top: 0;
-    right: 10px;
+    right: 15px;
     border-radius: 0;
     overflow: hidden;
     width: 80px;
@@ -2703,7 +2703,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     content: ' ';
     position: absolute;
     top: 0;
-    right: 22px;
+    right: 28px;
     height: 57px;
     width: 47px;
     background-size: 25px;
