@@ -956,6 +956,8 @@
     .af-flexOrderedBy {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        overflow: hidden;
     }
 
     .af-flexOrderedBy :nth-child(2) { order: 2; }

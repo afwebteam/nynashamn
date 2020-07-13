@@ -2836,6 +2836,8 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-flexOrderedBy {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    overflow: hidden;
   }
   .af-flexOrderedBy :nth-child(2) {
     order: 2;
