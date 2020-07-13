@@ -706,6 +706,7 @@
         background-color: $nynas-search-bg;
         max-width: 850px;
         padding: 8px 13px 10px 10px;
+        overflow: hidden;
     
         & form {
             margin: 0 auto;

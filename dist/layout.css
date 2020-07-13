@@ -2659,6 +2659,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     background-color: #53BDD6;
     max-width: 850px;
     padding: 8px 13px 10px 10px;
+    overflow: hidden;
   }
   .af-hiddenSearchForm form {
     margin: 0 auto;
