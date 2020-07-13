@@ -2190,7 +2190,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     padding-right: 32px;
     background-size: 18px;
     background-position: right top;
-    margin: auto 0;
+    margin: 10px 0;
   }
   .af-mobile-width100 .af-searchIcon:after {
     height: 24px;
@@ -2665,6 +2665,8 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     border: none;
     width: 100%;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
   .af-hiddenSearchForm form input:focus {
     outline: 2px solid #53BDD6;

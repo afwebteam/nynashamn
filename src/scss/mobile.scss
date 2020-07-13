@@ -38,7 +38,7 @@
             padding-right: 32px;
             background-size: 18px;
             background-position: right top;
-            margin: auto 0;
+            margin: 10px 0;
         }
 
         .af-searchIcon:after {
@@ -718,6 +718,8 @@
                 border: none;
                 width: 100%;
                 -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
             }
 
             & input:focus {
