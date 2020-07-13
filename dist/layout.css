@@ -2685,22 +2685,20 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     height: 100%;
     box-sizing: content-box;
     top: 0;
-    right: 15px;
+    right: 30px;
     border-radius: 0;
     overflow: hidden;
-    width: 80px;
+    width: 50px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-left: 1px solid #414042;
   }
   .af-hiddenSearchForm form input[name=submitButton]:after {
     background-position: center;
+    right: 20px;
   }
   .af-hiddenSearchForm form .af-searchIcon {
     background-image: none;
-  }
-  .af-hiddenSearchForm form .af-searchButton {
-    height: 51px;
   }
   .af-hiddenSearchForm form div[role=search] {
     height: 57px;
@@ -2710,7 +2708,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     position: absolute;
     top: 0;
     right: 28px;
-    height: 57px;
+    height: 100%;
     width: 47px;
     background-size: 25px;
     background-position: center;

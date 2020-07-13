@@ -734,10 +734,10 @@
                 height: 100%;
                 box-sizing: content-box;
                 top: 0;
-                right: 15px;
+                right: 30px;
                 border-radius: 0;
                 overflow: hidden;
-                width: 80px;
+                width: 50px;
                 border-top-right-radius: 10px;
                 border-bottom-right-radius: 10px;
                 border-left: 1px solid $nynas-black-color;
@@ -745,14 +745,11 @@
 
             & input[name=submitButton]:after {
                 background-position: center;
+                right: 20px;
             }
     
             & .af-searchIcon {
                 background-image: none;
-            }
-    
-            & .af-searchButton {
-                height: 51px; 
             }
 
             & div[role=search] {
@@ -764,7 +761,7 @@
                 position: absolute;
                 top: 0;
                 right: 28px;
-                height: 57px;
+                height: 100%;
                 width: 47px;
                 background-size: 25px;
                 background-position: center;
