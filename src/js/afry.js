@@ -167,7 +167,7 @@ svDocReady(function () {
                 hiddenSearchForm.slideToggle();
                 hiddenSearchFormField.focus();
 
-                AF.debugElementSize();
+                //AF.debugElementSize();
             } else {
 
                 form.addClass('af-upscale');
