@@ -2682,13 +2682,16 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-hiddenSearchForm form input[name=submitButton] {
     height: 57px;
     top: 0;
-    right: 2px;
+    right: 10px;
     border-radius: 0;
     overflow: hidden;
     width: 80px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-left: 1px solid #414042;
+  }
+  .af-hiddenSearchForm form input[name=submitButton]:after {
+    background-position: center;
   }
   .af-hiddenSearchForm form .af-searchIcon {
     background-image: none;
@@ -2699,15 +2702,15 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-hiddenSearchForm form div[role=search]:after {
     content: ' ';
     position: absolute;
-    top: 3px;
-    right: 10px;
-    height: 51px;
+    top: 0;
+    right: 22px;
+    height: 57px;
     width: 47px;
     background-size: 25px;
     background-position: center;
     background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
     background-repeat: no-repeat;
-    transition: transform .3s ease-in-out;
+    /* transition: transform .3s ease-in-out; */
   }
   .sv-autocomplete-search-result {
     max-width: 850px !important;

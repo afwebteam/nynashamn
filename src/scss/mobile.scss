@@ -731,13 +731,17 @@
             & input[name=submitButton] {
                 height: 57px;
                 top: 0;
-                right: 2px;
+                right: 10px;
                 border-radius: 0;
                 overflow: hidden;
                 width: 80px;
                 border-top-right-radius: 10px;
                 border-bottom-right-radius: 10px;
                 border-left: 1px solid $nynas-black-color;
+            }
+
+            & input[name=submitButton]:after {
+                background-position: center;
             }
     
             & .af-searchIcon {
@@ -751,15 +755,15 @@
             & div[role=search]:after {
                 content: ' ';
                 position: absolute;
-                top: 3px;
-                right: 10px;
-                height: 51px;
+                top: 0;
+                right: 22px;
+                height: 57px;
                 width: 47px;
                 background-size: 25px;
                 background-position: center;
                 background-image: url($searchIcon);
                 background-repeat: no-repeat;
-                transition: transform .3s ease-in-out;
+                /* transition: transform .3s ease-in-out; */
             }
         }
     }
