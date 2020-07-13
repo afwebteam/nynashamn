@@ -1668,9 +1668,9 @@ nav.af-center .af-searchIcon a.active {
 .af-breadcrumb {
   margin: 0;
   padding: 0;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   padding-left: 88px;
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
 .af-publishedDate {
@@ -2664,6 +2664,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     text-indent: 10px;
     border: none;
     width: 100%;
+    -webkit-appearance: none;
   }
   .af-hiddenSearchForm form input:focus {
     outline: 2px solid #53BDD6;
