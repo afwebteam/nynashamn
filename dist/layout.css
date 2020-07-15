@@ -2648,7 +2648,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     text-align: center;
     background-color: #53BDD6;
     max-width: 850px;
-    padding: 8px 0px 10px 0px;
+    padding: 8px 20px 10px 18px;
     overflow: hidden;
   }
   .af-hiddenSearchForm form {
@@ -2656,12 +2656,12 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     width: 100%;
   }
   .af-hiddenSearchForm form input[name=query] {
-    height: 100%;
+    height: 54px;
     box-sizing: content-box;
     text-align: left;
     text-indent: 10px;
     border: none;
-    width: 80%;
+    width: 100%;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -2673,10 +2673,10 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     font-size: 16px;
   }
   .af-hiddenSearchForm form input[name=submitButton] {
-    height: 100%;
+    height: 54px;
     box-sizing: content-box;
     top: 0;
-    right: 30px;
+    right: -8px;
     border-radius: 0;
     font-size: 16px;
     overflow: hidden;
@@ -2692,14 +2692,11 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-hiddenSearchForm form .af-searchIcon {
     background-image: none;
   }
-  .af-hiddenSearchForm form div[role=search] {
-    height: 57px;
-  }
   .af-hiddenSearchForm form div[role=search]:after {
     content: ' ';
     position: absolute;
     top: 0;
-    right: 28px;
+    right: -6px;
     height: 60px;
     width: 47px;
     background-size: 25px;
