@@ -366,6 +366,7 @@ svDocReady(function () {
 
                         var target = jq(e.target),
                             content,
+                            container,
                             text,
                             isExpanded;
 
@@ -373,9 +374,12 @@ svDocReady(function () {
                             target = target.closest('p');
                         }
 
-                        content = target.next('.normal');
+                        container = target.closest('div.sv-text-portlet');
+                        content = container.next('div.sv-layout');
                         text = target.find('.af-accordionText');
                         isExpanded = (item.attr('aria-expanded') === 'true');
+
+                        content.addClass('boxStyle');
 
                         if (isExpanded) {
                             item.attr('aria-expanded', false);
