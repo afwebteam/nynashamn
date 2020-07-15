@@ -2654,56 +2654,64 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-hiddenSearchForm form {
     margin: 0 auto;
     width: 100%;
-  }
-  .af-hiddenSearchForm form input[name=query] {
-    height: 54px;
-    box-sizing: content-box;
-    text-align: left;
-    text-indent: 10px;
-    border: none;
-    width: 100%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    font-size: 16px;
-  }
-  .af-hiddenSearchForm form input:focus {
-    outline: 2px solid #53BDD6;
-    outline-offset: 8px;
-    font-size: 16px;
-  }
-  .af-hiddenSearchForm form input[name=submitButton] {
-    height: 54px;
-    box-sizing: content-box;
-    top: 0;
-    right: -8px;
-    border-radius: 0;
-    font-size: 16px;
-    overflow: hidden;
-    width: 40px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-left: 1px solid #414042;
-  }
-  .af-hiddenSearchForm form input[name=submitButton]:after {
-    background-position: center;
-    right: 20px;
-  }
-  .af-hiddenSearchForm form .af-searchIcon {
-    background-image: none;
-  }
-  .af-hiddenSearchForm form div[role=search]:after {
-    content: ' ';
-    position: absolute;
-    top: 0;
-    right: -6px;
-    height: 60px;
-    width: 47px;
-    background-size: 25px;
-    background-position: center;
-    background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
-    background-repeat: no-repeat;
-    /* transition: transform .3s ease-in-out; */
+    /*
+            & input[name=query] {
+                height: 54px;
+                box-sizing: content-box;
+                text-align: left;
+                text-indent: 10px;
+                border: none;
+                width: 100%;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                font-size: 16px;
+            }
+
+            & input:focus {
+                outline: 2px solid $nynas-search-bg;
+                outline-offset: 8px;
+                font-size: 16px;
+            }
+
+            & input[name=submitButton] {
+                height: 54px;
+                box-sizing: content-box;
+                top: 0;
+                right: -8px;
+                border-radius: 0;
+                font-size: 16px;
+                overflow: hidden;
+                width: 40px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-left: 1px solid $nynas-black-color;
+            }
+
+            & input[name=submitButton]:after {
+                background-position: center;
+                right: 20px;
+            }
+    
+    
+            & .af-searchIcon {
+                background-image: none;
+            }
+            
+            
+            & div[role=search]:after {
+                content: ' ';
+                position: absolute;
+                top: 0;
+                right: -6px;
+                height: 60px;
+                width: 47px;
+                background-size: 25px;
+                background-position: center;
+                background-image: url($searchIcon);
+                background-repeat: no-repeat;
+            }
+            */
   }
   .sv-autocomplete-search-result {
     max-width: 850px !important;
