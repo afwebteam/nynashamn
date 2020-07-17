@@ -1072,6 +1072,12 @@ a.sv-font-ingress,
   text-decoration-color: #002F6C;
 }
 
+ul, ol {
+  font-weight: 300;
+  font-family: museo,sans-serif;
+  font-size: 20px;
+}
+
 h2 + h3 {
   margin-top: 20px !important;
 }
@@ -1515,6 +1521,10 @@ nav.af-center .af-searchIcon a.active {
   margin-bottom: 15px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
   display: none;
+}
+
+.sv-decoration-generell-dragspel .sv-text-portlet-content p:first-of-type {
+  margin: 0;
 }
 
 .sv-decoration-generell-tabell table {
@@ -2164,6 +2174,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     overflow: auto;
     overflow-x: hidden;
   }
+  ul, ol {
+    font-size: 15px;
+  }
   .af-MobileNone {
     display: none;
   }
@@ -2510,6 +2523,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .sv-decoration-generell-dragspel .af-closed:after {
     background-size: 20px;
+    top: 20px;
   }
   .sv-decoration-contentpage-share-social a {
     top: 5px;

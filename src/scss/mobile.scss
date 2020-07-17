@@ -11,6 +11,10 @@
         overflow-x: hidden;
     }
 
+    ul, ol {
+        font-size: 15px;
+    }
+
     .af-MobileNone {
         display: none;
     }
@@ -509,6 +513,7 @@
 
         & .af-closed:after {
             background-size: 20px;
+            top: 20px;
         }
     }
 
