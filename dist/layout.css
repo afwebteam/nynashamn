@@ -2175,6 +2175,30 @@ $museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/158937681741
 $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
 */
 @media screen and (max-width: 880px) {
+  .af-uppleva-site .af-event-detailpage .af-breadcrumb {
+    position: unset !important;
+  }
+  .af-uppleva-site .af-event-detailpage .af-event-detailpage--bigImage {
+    background-size: contain;
+    padding-top: 56.6%;
+    height: auto;
+  }
+  .af-uppleva-site .af-uppleva-site h1.heading {
+    font-size: 25px !important;
+  }
+}
+
+/*
+$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
+$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
+
+$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
+$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
+
+$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
+$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
+*/
+@media screen and (max-width: 880px) {
   html,
   body {
     height: 100%;
@@ -3544,6 +3568,20 @@ $museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/
 $museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
 $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
 */
+.af-tillvaxt-site .af-menu .af-activeMenuItem {
+  background-color: #2D5F55;
+}
+
+/*
+$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
+$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
+
+$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
+$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
+
+$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
+$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
+*/
 .af-uppleva-site .sv-font-stor-svart {
   font-size: 35px;
   margin-bottom: 40px;
@@ -3588,6 +3626,81 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-uppleva-site h1 {
   font-size: 50px;
   font-weight: 300;
+}
+
+.af-uppleva-site .af-event-detailpage {
+  position: relative;
+}
+
+.af-uppleva-site .af-event-detailpage--bigImage {
+  height: 860px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.af-uppleva-site .af-event-detailpage .af-breadcrumb {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.af-uppleva-site .af-uppleva-site h1.heading {
+  font-size: 35px;
+  font-weight: 300;
+  margin: 60px 0 50px 0;
+}
+
+.af-uppleva-site .sv-decoration-generell-gron-platta h2 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.af-uppleva-site .sv-decoration-generell-gron-platta h2:before {
+  content: '';
+  display: inline-block;
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f96107cbd/1589978216557/pratbubbla.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  background-position: bottom;
+  background-size: 20px;
+}
+
+.af-uppleva-site .sv-decoration-generell-gron-platta .sv-text-portlet-content .sv-font-brodtext-fet {
+  margin-top: 25px;
+}
+
+.af-uppleva-site .sv-decoration-generell-gron-platta .sv-text-portlet-content .sv-font-brodtext-fet:first-of-type {
+  margin-top: 0;
+}
+
+.af-uppleva-site .sv-decoration-generell-gron-platta .sv-text-portlet-content .sv-font-brodtext-fet + .normal {
+  margin-top: 0;
+}
+
+.af-uppleva-site .sv-decoration-contentpage-share-social .af-share-container {
+  background-color: #E6EFD9;
+}
+
+.af-uppleva-site .sv-decoration-contentpage-share-social .af-share-container .af-share-facebook {
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.a5f223f171ac2fcd6d2b447/1589549364769/facebook.svg");
+}
+
+.af-uppleva-site .sv-decoration-contentpage-share-social .af-share-container .af-share-linkedIn {
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.a5f223f171ac2fcd6d2b448/1589549385445/linkedIn.svg");
+}
+
+.af-uppleva-site .sv-decoration-contentpage-share-social .af-share-container .af-share-twitter {
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.a5f223f171ac2fcd6d2b449/1589549410361/twitter.svg");
+}
+
+.af-uppleva-site .sv-decoration-contentpage-share-social .af-share-container .af-share-mail {
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.553838ea17305720c32b197/1595269750051/mail-grey.svg");
 }
 
 /*

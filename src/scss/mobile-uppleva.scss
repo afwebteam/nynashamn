@@ -1,0 +1,27 @@
+@import 'variables';
+
+@media screen and (max-width: 880px) {
+
+    .af-uppleva-site { 
+
+        & .af-event-detailpage {
+
+            & .af-breadcrumb {
+                position: unset !important;
+            }
+
+            & .af-event-detailpage--bigImage {
+                background-size: contain;
+                padding-top: 56.6%;
+                height: auto;
+            }
+        }
+
+        & .af-uppleva-site {
+
+            & h1.heading {
+                font-size: 25px !important;
+            }
+        } 
+    }
+}

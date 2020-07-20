@@ -1,0 +1,11 @@
+@import 'variables';
+
+.af-tillvaxt-site {
+
+    & .af-menu {
+
+        & .af-activeMenuItem {
+            background-color: $nynas-darkgreen-color;
+        }
+    }
+}

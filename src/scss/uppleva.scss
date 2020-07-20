@@ -60,4 +60,92 @@
         font-size: 50px;
         font-weight: 300;
     }
+
+    & .af-event-detailpage {
+
+        position: relative;
+
+        &--bigImage {
+            height: 860px;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+        }
+
+        & .af-breadcrumb {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: $white-color;
+            padding: 20px;
+            border-radius: 6px;
+        }
+    }
+
+    & .af-uppleva-site {
+
+        & h1.heading {
+            font-size: 35px;
+            font-weight: 300;
+            margin: 60px 0 50px 0;
+        }
+    }
+
+    & .sv-decoration-generell-gron-platta {
+
+        & h2 {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        & h2:before {
+            content: '';
+            display: inline-block;
+            background-image: url($speachBubbleIcon);
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+            margin-right: 15px;
+            background-position: bottom;
+            background-size: 20px;
+        }
+
+        & .sv-text-portlet-content {
+
+            & .sv-font-brodtext-fet {
+                margin-top: 25px;
+            }
+
+            & .sv-font-brodtext-fet:first-of-type {
+                margin-top: 0;
+            }
+
+            & .sv-font-brodtext-fet + .normal {
+                margin-top: 0;
+            }
+        }
+    }
+
+    & .sv-decoration-contentpage-share-social {
+
+        & .af-share-container {
+            background-color: $nynas-lightgreen-color;
+
+            & .af-share-facebook {
+                background-image: url($facebookGreyIcon);
+            }
+
+            & .af-share-linkedIn {
+                background-image: url($linkedInGreyIcon);
+            }
+
+            & .af-share-twitter {
+                background-image: url($twitterGreyIcon);
+            }
+
+            & .af-share-mail {
+                background-image: url($mailGreyIcon);
+            }
+        }
+    } 
 }
