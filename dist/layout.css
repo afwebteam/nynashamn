@@ -483,7 +483,10 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   padding: 0;
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+}
+
+.af-currentFilter--areas li {
+  margin-right: 20px;
 }
 
 .af-currentFilter--areas li a {
@@ -498,15 +501,15 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-currentFilter--areas li a.active {
   background-color: #002F6C;
   color: #fff;
+  outline: none;
 }
 
 .af-currentFilter .sv-font-stor-svart {
   background-color: #002F6C;
-  padding: 25px 50px;
+  padding: 20px 50px;
   margin-top: 60px;
   font-size: 25px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  border-radius: 6px;
   color: #fff;
   position: relative;
 }
@@ -532,7 +535,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-currentFilter .af-accordionText {
   position: absolute;
   right: 30px;
-  top: 30px;
+  top: 25px;
   padding-right: 50px;
   font-weight: 500;
   font-size: 18px;
@@ -647,6 +650,10 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   border-bottom: none;
 }
 
+.af-currentFilter--dateFilter--inner--year .af-currentFilter--dateFilter--inner--month--title, .af-currentFilter--dateFilter--inner--month .af-currentFilter--dateFilter--inner--month--title {
+  width: 120px;
+}
+
 .af-currentFilter--dateFilter--inner--year .af-currentFilter--dateFilter--inner--month--list, .af-currentFilter--dateFilter--inner--month .af-currentFilter--dateFilter--inner--month--list {
   display: none;
   flex-wrap: wrap;
@@ -696,7 +703,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-currentFilter--result ul li {
   border-bottom: 1px solid #707070;
-  padding: 40px 0;
+  padding: 50px 0;
 }
 
 .af-currentFilter--result ul li .af-currentFilter--result--title {
@@ -714,6 +721,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   font-weight: 500;
   position: relative;
   padding-left: 22px;
+  text-indent: 12px;
 }
 
 .af-currentFilter--result ul li .af-currentFilter--result--pubDate:before {
@@ -2782,10 +2790,11 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .af-currentFilter--dateFilter .sv-font-stor-svart .af-accordionText {
     font-size: 13px;
+    top: 23px;
   }
   .af-currentFilter--dateFilter .sv-font-stor-svart:after {
     background-size: 18px;
-    top: 22px;
+    top: 15px;
   }
   .af-currentFilter--dateFilter--inner--year, .af-currentFilter--dateFilter--inner--month {
     display: block;
@@ -2793,7 +2802,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .af-currentFilter--dateFilter--inner--year--title, .af-currentFilter--dateFilter--inner--month--title {
     font-size: 15px;
-    width: 100%;
+    width: 100% !important;
     padding: 15px 0;
     text-indent: 15px;
   }

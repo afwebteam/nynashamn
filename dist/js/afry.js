@@ -681,7 +681,7 @@ svDocReady(function () {
     });
 
     // Current filter
-    jq('.af-currentFilter .af-accordionText').on('click', function (e) {
+    jq('.af-currentFilter .af-currentFilter--dateFilter .sv-font-stor-svart').on('click', function (e) {
 
         var target = jq(e.target),
             pElem = target.closest('p'),
@@ -782,17 +782,24 @@ svDocReady(function () {
             isActive = target.hasClass('active'),
             portletURL = target.data('portleturl'),
             paramValue = target.text(),
-            resultTarget = jq('.af-currentFilter--result ul');
+            resultTarget = jq('.af-currentFilter--result ul'),
+            allAreasElem,
+            allAreas = [];
 
         e.preventDefault();
 
         if (isActive) {
             target.removeClass('active');
 
+            allAreasElem = jq('.af-currentFilter .af-currentFilter--areas .active');
+            jq.each(allAreasElem, function (index, elem) {
+                allAreas.push(jq(elem).text());
+            });
+
             jq.ajax({
                 url: portletURL,
                 data: {
-                    omrade: ''
+                    omrade: (allAreas.length > 0 ? allAreas : '')
                 },
                 dataType: 'html',
                 success: function (data) {
@@ -807,12 +814,18 @@ svDocReady(function () {
                 }
             });
         } else {
-            jq('.af-currentFilter--areas .active').removeClass('active');
+            //jq('.af-currentFilter--areas .active').removeClass('active');
             target.addClass('active');
+
+            allAreasElem = jq('.af-currentFilter .af-currentFilter--areas .active');
+            jq.each(allAreasElem, function (index, elem) {
+                allAreas.push(jq(elem).text());
+            });
+
             jq.ajax({
                 url: portletURL,
                 data: {
-                    omrade: paramValue
+                    omrade: allAreas
                 },
                 dataType: 'html',
                 success: function (data) {
@@ -870,17 +883,16 @@ svDocReady(function () {
             list = target.closest('ul'),
             value = target.text(),
             monthValue = jq('.af-currentFilter--dateFilter--inner--month--list .active'),
-            allNews = jq('.af-currentFilter--result li');
+            allNews = jq('.af-currentFilter--result li'),
+            monthValues = [];
 
         e.preventDefault();
         jq('.af-currentFilter--dateFilter--inner--year--listItem .active').removeClass('active');
         target.addClass('active');
 
-        if (monthValue && monthValue.length > 0) {
-            monthValue = monthValue.data('monthvalue');
-        } else {
-            monthValue = null;
-        }
+        jq.each(monthValue, function (index, elem) {
+            monthValues.push(jq(elem).data('monthvalue'));
+        });
 
         jq.each(allNews, function (index, elem) {
             var theElem = jq(elem),
@@ -889,9 +901,9 @@ svDocReady(function () {
 
             if (yearData === parseInt(value)) {
 
-                if (monthValue) {
+                if (monthValues.length > 0) {
 
-                    if (monthValue === monthData) {
+                    if (monthValues.indexOf(monthData) > -1) {
                         theElem.show();
                     } else {
                         theElem.hide();
@@ -905,8 +917,8 @@ svDocReady(function () {
             }
         });
 
-        jq('.af-currentFilter--dateFilter--inner--year--title.af-open').removeClass('af-open');
-        list.slideUp();
+        //jq('.af-currentFilter--dateFilter--inner--year--title.af-open').removeClass('af-open');
+        //list.slideUp();
     });
 
     jq('.af-currentFilter--dateFilter--inner--month--list').on('click', function (e) {
@@ -915,11 +927,23 @@ svDocReady(function () {
             list = target.closest('ul'),
             value = target.data('monthvalue'),
             yearValue = jq('.af-currentFilter--dateFilter--inner--year--listItem .active'),
-            allNews = jq('.af-currentFilter--result li');
+            allNews = jq('.af-currentFilter--result li'),
+            monthValuesElems,
+            monthValues = [];
 
         e.preventDefault();
-        jq('.af-currentFilter--dateFilter--inner--month--list .active').removeClass('active');
-        target.addClass('active');
+        //jq('.af-currentFilter--dateFilter--inner--month--list .active').removeClass('active');
+
+        if (target.hasClass('active')) {
+            target.removeClass('active');
+        } else {
+            target.addClass('active');
+        }
+
+        monthValuesElems = jq('.af-currentFilter--dateFilter--inner--month--listItem .active');
+        jq.each(monthValuesElems, function (index, elem) {
+            monthValues.push(jq(elem).data('monthvalue'));
+        });
 
         if (yearValue && yearValue.length > 0) {
             yearValue = yearValue.text();
@@ -932,7 +956,7 @@ svDocReady(function () {
                 yearData = theElem.data('year'),
                 monthData = theElem.data('month');
 
-            if (monthData === value) {
+            if (monthValues.indexOf(monthData) > -1) {
 
                 if (yearValue) {
 
@@ -950,8 +974,8 @@ svDocReady(function () {
             }
         });
 
-        jq('.af-currentFilter--dateFilter--inner--month--title.af-open').removeClass('af-open');
-        list.slideUp();
+        //jq('.af-currentFilter--dateFilter--inner--month--title.af-open').removeClass('af-open');
+        //list.slideUp();
     });
 
     jq('.af-currentFilter--dateFilter--inner--clear a').on('click', function (e) {
