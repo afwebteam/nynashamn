@@ -61,6 +61,10 @@ h2 + h3 {
     margin-top: 20px !important;
 }
 
+.sv-use-margins p.normal + h3 {
+    margin-top: 30px;
+}
+
 input {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -531,7 +535,7 @@ nav.af-center {
     & table {
 
         border-radius: 6px;
-        margin: 20px 0 60px 0;
+        margin: 20px 0 0 0;
         border-collapse: collapse;
         overflow: hidden;
 
