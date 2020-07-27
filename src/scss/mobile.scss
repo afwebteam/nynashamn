@@ -1036,13 +1036,42 @@
 
         & .af-accordionText {
             font-size: 13px !important;
-            top: 30px !important;
+            top: 30px !important;   
             right: 55px !important;
         }
 
         & .af-closed {
             background-size: 14px !important;
         }
+
+        & input[name=submitButton] {
+            background-size: 15px;
+            padding: 0 35px 0 25px;
+        }
+
+        & .af-margin {
+            margin: 20px 0 40px 0;
+        }
+
+        & .sv-search-facets {
+
+            & .sv-search-facet-backgroundColor {
+                padding: 30px;
+
+                & .sv-search-facet-name {
+                    margin-bottom: 20px;
+                }
+
+                & .sv-search-facet-item {
+                    width: 100%;
+
+                    & a {
+                        width: 80%;
+                        display: inline-block;
+                    }
+                }
+            }
+        } 
     }
 
     footer {
@@ -1051,6 +1080,20 @@
 
             & > div {
                 height: auto !important;
+            }
+        }
+    }
+
+    .sv-search-result {
+
+        & .sv-search-hit {
+
+            padding: 40px 0 40px 0;
+
+            & .sv-linkicon {
+                width: 14px;
+                height: 14px;
+                margin-left: 10px;
             }
         }
     }

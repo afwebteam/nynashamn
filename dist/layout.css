@@ -360,6 +360,10 @@ div[role=search] {
   position: relative;
 }
 
+.sv-facetedsearch-portlet .af-margin {
+  margin: 20px 0 60px 0;
+}
+
 .sv-facetedsearch-portlet input[name=query] {
   width: 100%;
   padding: 16px 0;
@@ -376,17 +380,17 @@ div[role=search] {
   right: -2px;
   height: 100%;
   color: #fff;
-  padding: 0 55px 0 25px;
+  padding: 0 45px 0 25px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961012242/1590480111317/sok-vit.svg");
   background-repeat: no-repeat;
   background-position: right 10px center;
-  background-size: 30px;
+  background-size: 20px;
 }
 
 .sv-facetedsearch-portlet .sv-search-facets {
-  margin: 25px 0;
+  margin-bottom: 60px;
   overflow: hidden;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -1331,6 +1335,10 @@ nav.af-center .af-searchIcon a.active {
   height: 25px;
 }
 
+.sv-decoration-generell-bla-knapp--external p.normal {
+  margin: -2px 0 0 0;
+}
+
 .sv-decoration-generell-bla-knapp--external p.normal a {
   color: #fff;
   font-family: museo,sans-serif;
@@ -1354,12 +1362,16 @@ nav.af-center .af-searchIcon a.active {
   background-repeat: no-repeat;
   background-position: 95% 44%;
   background-size: 25px 25px;
-  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c543c940/1589824564961/Pil%20frama%CC%8At.svg");
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.4bceb9e21738d812472fbab/1595877899398/pil-ner.svg");
   position: absolute;
   top: 12px;
   right: 10px;
   width: 25px;
   height: 25px;
+}
+
+.sv-decoration-generell-bla-knapp--intern p.normal {
+  margin: -2px 0 0 0;
 }
 
 .sv-decoration-generell-bla-knapp--intern p.normal a {
@@ -1665,12 +1677,23 @@ nav.af-center .af-searchIcon a.active {
 
 /* Search */
 .sv-search-result .sv-search-hit {
-  padding: 30px 0 20px 0;
+  padding: 60px 0 60px 0;
   border-bottom: 1px solid #414042;
+}
+
+.sv-search-result .sv-search-hit .subheading {
+  margin-bottom: 30px;
+  display: inline-block;
 }
 
 .sv-search-result .sv-search-hit .summary {
   margin: 10px 0;
+}
+
+.sv-search-result .sv-search-hit .sv-linkicon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
 }
 
 .sv-search-result .sv-search-hit .infoText span {
@@ -2943,8 +2966,36 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .sv-facetedsearch-portlet .af-closed {
     background-size: 14px !important;
   }
+  .sv-facetedsearch-portlet input[name=submitButton] {
+    background-size: 15px;
+    padding: 0 35px 0 25px;
+  }
+  .sv-facetedsearch-portlet .af-margin {
+    margin: 20px 0 40px 0;
+  }
+  .sv-facetedsearch-portlet .sv-search-facets .sv-search-facet-backgroundColor {
+    padding: 30px;
+  }
+  .sv-facetedsearch-portlet .sv-search-facets .sv-search-facet-backgroundColor .sv-search-facet-name {
+    margin-bottom: 20px;
+  }
+  .sv-facetedsearch-portlet .sv-search-facets .sv-search-facet-backgroundColor .sv-search-facet-item {
+    width: 100%;
+  }
+  .sv-facetedsearch-portlet .sv-search-facets .sv-search-facet-backgroundColor .sv-search-facet-item a {
+    width: 80%;
+    display: inline-block;
+  }
   footer > div > div {
     height: auto !important;
+  }
+  .sv-search-result .sv-search-hit {
+    padding: 40px 0 40px 0;
+  }
+  .sv-search-result .sv-search-hit .sv-linkicon {
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
   }
 }
 
