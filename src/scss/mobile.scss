@@ -1056,7 +1056,8 @@
         & .sv-search-facets {
 
             & .sv-search-facet-backgroundColor {
-                padding: 30px;
+                padding: 20px;
+                flex-direction: column;
 
                 & .sv-search-facet-name {
                     margin-bottom: 20px;
@@ -1064,6 +1065,7 @@
 
                 & .sv-search-facet-item {
                     width: 100%;
+                    white-space: nowrap;
 
                     & a {
                         width: 80%;

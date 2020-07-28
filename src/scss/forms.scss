@@ -132,17 +132,24 @@ div[role=search] {
 
         & .sv-search-facet-backgroundColor {
             background-color: $nynas-grey-color;
-            padding: 70px;
+            padding: 50px;
+            display: flex;
+            justify-content: space-around;
+
+            & .af-facet-count {
+                float: right;
+            }
+        }
+
+        & .sv-search-facet {
+            
         }
 
         & .sv-search-facet-items {
-            display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            column-count: 2;
+
 
             & .sv-search-facet-item {
-                width: 50%;
+                width: 100%;
 
                 & a {
                     margin-right: 25px;
