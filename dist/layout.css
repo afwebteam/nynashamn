@@ -9,6 +9,21 @@ $museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/158937681741
 $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
 */
 /* Buttons */
+.af-blueButton {
+  padding: 10px 15px;
+  border: none;
+  background-color: #002F6C;
+  color: #fff;
+  font-family: museo,sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.af-blueButton:hover {
+  cursor: pointer;
+}
+
 .af-searchButton {
   position: absolute;
   top: 3px;
@@ -886,6 +901,161 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   margin: 0 auto;
   max-width: 850px;
   padding: 45px 0;
+}
+
+.af-event-calendar h1 {
+  display: none;
+}
+
+.af-event-calendar .af-event-calendar-dateRow, .af-event-calendar .af-event-calendar-categoryRow {
+  padding: 20px;
+  background-color: #EDEBE9;
+}
+
+.af-event-calendar .af-event-calendar-dateRow .af-event-calendar-dateRow--filter,
+.af-event-calendar .af-event-calendar-dateRow .af-event-calendar-categoryRow--filter, .af-event-calendar .af-event-calendar-categoryRow .af-event-calendar-dateRow--filter,
+.af-event-calendar .af-event-calendar-categoryRow .af-event-calendar-categoryRow--filter {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.af-event-calendar .af-event-calendar-dateRow .af-event-calendar-dateRow--filter, .af-event-calendar .af-event-calendar-categoryRow .af-event-calendar-dateRow--filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.af-event-calendar .af-event-calendar-dateRow .af-event-calendar-dateRow--filter .form-element:nth-child(even), .af-event-calendar .af-event-calendar-categoryRow .af-event-calendar-dateRow--filter .form-element:nth-child(even) {
+  margin-left: 10px;
+}
+
+.af-event-calendar .af-event-calendar-dateRow .af-event-calendar-dateRow--filter .form-element:nth-child(odd), .af-event-calendar .af-event-calendar-categoryRow .af-event-calendar-dateRow--filter .form-element:nth-child(odd) {
+  margin-right: 10px;
+}
+
+.af-event-calendar .af-event-calendar-dateRow .form-element, .af-event-calendar .af-event-calendar-categoryRow .form-element {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.af-event-calendar .af-event-calendar-dateRow .form-element input, .af-event-calendar .af-event-calendar-categoryRow .form-element input {
+  border: none;
+  width: 200px;
+  outline: none;
+}
+
+.af-event-calendar .af-event-calendar-dateRow .form-element input:hover, .af-event-calendar .af-event-calendar-categoryRow .form-element input:hover {
+  cursor: pointer;
+}
+
+.af-event-calendar .af-event-calendar-dateRow .form-element:after, .af-event-calendar .af-event-calendar-categoryRow .form-element:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.2ee7eb0171ac15bcfcda35f/1589446301525/events.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+}
+
+.af-event-calendar .af-event-calendar-dateRow p, .af-event-calendar .af-event-calendar-categoryRow p {
+  margin: unset;
+  margin-bottom: 15px;
+}
+
+.af-event-calendar .af-event-calendar-dateRow .af-event-calendar-categoryRow--filter-tags, .af-event-calendar .af-event-calendar-categoryRow .af-event-calendar-categoryRow--filter-tags {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.af-event-calendar .af-event-calendar-dateRow .af-event-calendar-categoryRow--filter-tags .af-event-calendar-categoryRow--filter-tag, .af-event-calendar .af-event-calendar-categoryRow .af-event-calendar-categoryRow--filter-tags .af-event-calendar-categoryRow--filter-tag {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+.af-event-calendar .af-event-calendar-dateRow .af-event-calendar-categoryRow--filter-tags .af-event-calendar-categoryRow--filter-tag:hover, .af-event-calendar .af-event-calendar-categoryRow .af-event-calendar-categoryRow--filter-tags .af-event-calendar-categoryRow--filter-tag:hover {
+  cursor: pointer;
+}
+
+.af-event-calendar .af-event-calendar-clearFilter {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.af-event-calendar .af-event-calendar-dateRow {
+  margin-bottom: 10px;
+}
+
+.af-event-calendar .af-event-calendar-results {
+  max-width: 1366px;
+  margin: 0 auto 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.af-event-calendar .af-event-calendar-results .af-event-calendar-result {
+  /* flex-grow: 1; */
+  width: 33%;
+  margin-bottom: 5px;
+}
+
+.af-event-calendar .af-event-calendar-results .af-event-calendar-result .af-event-calendar-result-img {
+  height: 254px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.af-event-calendar .af-event-calendar-results .af-event-calendar-result .af-event-calendar-info {
+  padding: 30px 20px;
+  background-color: #E6EFD9;
+  height: 50px;
+  margin-top: -1px;
+  display: flex;
+  height: auto;
+}
+
+.af-event-calendar .af-event-calendar-results .af-event-calendar-result .af-event-calendar-info .af-event-calendar-result-name {
+  font-weight: 700;
+  font-size: 20px;
+  max-width: 78%;
+  margin-left: 10px;
+}
+
+.af-event-calendar .af-event-calendar-results .af-event-calendar-result .af-event-calendar-info .af-event-calendar-result-date {
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  width: 78px;
+  height: 78px;
+}
+
+.af-event-calendar .af-event-calendar-results .af-event-calendar-result .af-event-calendar-info .af-date {
+  font-weight: 700;
+  font-size: 17px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.af-event-calendar .af-event-calendar-results .af-event-calendar-result .af-event-calendar-info .af-month {
+  font-weight: 300;
+  font-size: 17px;
+  margin: 0;
 }
 
 /*

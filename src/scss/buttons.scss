@@ -1,6 +1,21 @@
 @import 'variables';
 
 /* Buttons */
+.af-blueButton {
+    padding: 10px 15px;
+    border: none;
+    background-color: $nynas-darkblue-color;
+    color: $white-color;
+    font-family: museo,sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+.af-blueButton:hover {
+    cursor: pointer;
+}
+
 .af-searchButton {
     position: absolute;
     top: 3px;
