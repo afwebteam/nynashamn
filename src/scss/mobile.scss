@@ -1099,4 +1099,14 @@
             }
         }
     }
+
+    .sv-print-portlet {
+
+        & a:after {
+            width: 24px;
+            margin-left: 5px;
+            background-size: 16px;
+            background-position: bottom;
+        }
+    } 
 }
