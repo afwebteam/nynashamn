@@ -1018,4 +1018,99 @@ svDocReady(function () {
     if (afPublishedDate && afPublishedDate.length > 0) {
         AF.isOldArticleSingleElem(afPublishedDate, true, 3);
     }
+
+    jq('.af-event-calendar-categoryRow--filter .af-accordionText').on('click', function (e) {
+
+        var target = jq(e.target),
+            p = target.closest('p'),
+            list = p.next('ul'),
+            isExpanded = (p.attr('aria-expanded') === 'true');
+
+        if (isExpanded) {
+            p.attr('aria-expanded', false);
+            list.slideUp();
+            p.removeClass('af-open');
+            target.text('Visa');
+        } else {
+            p.attr('aria-expanded', true);
+            p.addClass('af-open');
+            list.slideDown();
+            target.text('Dölj');
+        }
+    });
+
+    jq('.af-event-calendar-categoryRow--filter-tags a').on('click', function (e) {
+
+        var target = jq(e.target),
+            list = target.closest('ul'),
+            tagValue = target.text(),
+            portletURL = list.data('portleturl');
+
+        e.preventDefault();
+        jq('.af-event-calendar-categoryRow--filter-tag .active').removeClass('active');
+        target.addClass('active');
+
+        console.log('portletURL' + portletURL);
+
+        jq.ajax({
+            url: portletURL,
+            data: {
+                tag: tagValue
+            },
+            type: 'get',
+            success: function (data) {
+                jq('.af-event-calendar-results').html(data);
+            }
+
+        });
+    });
+
+    jq('.af-event-calendar-clearFilter button').on('click', function (e) {
+
+        var portletURL = jq('.af-event-calendar-categoryRow--filter-tags').data('portleturl'),
+            fromInput = jq('input[name="af-events-from-date"]'),
+            toInput = jq('input[name="af-events-to-date"]'),
+            tagList = jq('.af-event-calendar-categoryRow--filter-tags');
+
+        fromInput.val('Välj datum');
+        toInput.val('Välj datum');
+        tagList.find('.active').removeClass('active');
+
+        jq.ajax({
+            url: portletURL,
+            data: {
+                tag: 'Alla'
+            },
+            type: 'get',
+            success: function (data) {
+                jq('.af-event-calendar-results').html(data);
+            }
+        });
+    });
+
+    jq('.af-loadMoreEvents .sv-decoration-generell-bla-knapp--intern a').on('click', function (e) {
+
+        var target = jq(e.target),
+            portletURL = jq('.af-event-calendar-categoryRow--filter-tags').data('portleturl'),
+            startAtHit = target.data('startathit');
+
+        e.preventDefault();
+
+        jq.ajax({
+            url: portletURL,
+            data: {
+                startAtHit: startAtHit
+            },
+            type: 'get',
+            success: function (data) {
+                var existingEvents = jq('.af-event-calendar-results').html();
+                target.data('startathit', startAtHit + 6);
+                jq('.af-event-calendar-results').html(existingEvents + data);
+
+                if (data.length < 10) {
+                    jq('.af-event-calendar .af-loadMoreEvents').remove();
+                }
+            }
+        });
+    });
 });

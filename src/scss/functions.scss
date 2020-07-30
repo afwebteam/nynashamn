@@ -433,6 +433,10 @@
         display: none;
     }
 
+    & a {
+        text-decoration: none;
+    }
+
     & .af-event-calendar-dateRow, & .af-event-calendar-categoryRow {
 
         padding: 20px;
@@ -442,6 +446,26 @@
         & .af-event-calendar-categoryRow--filter {
             max-width: 850px;
             margin: 0 auto;
+            position: relative;
+
+            & .af-closed:after {
+                content: ' ';
+                background-image: url($plusSignIcon);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 18px;
+                position: absolute;
+                right: 0;
+                top: 4px;
+                height: 18px;
+                width: 18px;
+                transition: all 0.3s ease;
+            }
+    
+            & .af-open:after {
+                transform: rotate(45deg);
+                transition: all 0.3s ease;
+            }
         }
 
         & .af-event-calendar-dateRow--filter {
@@ -481,7 +505,7 @@
             position: absolute;
             top: 11px;
             right: 10px;
-            background-image: url($eventsIcon);
+            background-image: url($datepickerIcon);
             background-repeat: no-repeat;
             background-size: 30px;
             background-position: center;
@@ -494,6 +518,20 @@
             margin-bottom: 15px;
         }
 
+        & .af-accordionText {
+            position: absolute;
+            right: 0;
+            top: 2px;
+            font-size: 18px;
+            font-weight: 500;
+            padding-right: 25px;
+            z-index: 9;
+        }
+
+        & .af-accordionText:hover {
+            cursor: pointer;
+        }
+
         & .af-event-calendar-categoryRow--filter-tags {
             margin: 0;
             padding: 0;
@@ -504,15 +542,21 @@
             & .af-event-calendar-categoryRow--filter-tag {
                 margin-right: 20px;
                 margin-bottom: 20px;
-                background-color: $white-color;
-                font-weight: 500;
-                font-size: 15px;
-                padding: 10px 15px;
-                border-radius: 6px;
-            }
 
-            & .af-event-calendar-categoryRow--filter-tag:hover {
-                cursor: pointer;
+                & a {
+                    background-color: $white-color;
+                    font-weight: 500;
+                    font-size: 15px;
+                    padding: 10px 15px;
+                    border-radius: 6px;
+                    border: 1px solid $nynas-darkgrey-color;
+                    outline: none;
+                }
+
+                & .active {
+                    background-color: $nynas-darkblue-color;
+                    color: $white-color;
+                }
             }
         }
     }
@@ -534,15 +578,16 @@
 
     & .af-event-calendar-results {
         max-width: 1366px;
-        margin: 0 auto 40px auto;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
 
         & .af-event-calendar-result {
             /* flex-grow: 1; */
             width: 33%;
             margin-bottom: 5px;
+            margin-right: 4px;
 
             & .af-event-calendar-result-img {
                 height: 254px;
@@ -587,5 +632,11 @@
                 }
             }
         }
+    }
+
+    & .af-loadMoreEvents {
+        max-width: 1366px;
+        text-align: center;
+        margin: 0 auto;
     }
 }
