@@ -1044,7 +1044,9 @@ svDocReady(function () {
         var target = jq(e.target),
             list = target.closest('ul'),
             tagValue = target.text(),
-            portletURL = list.data('portleturl');
+            portletURL = list.data('portleturl'),
+            fromDate = jQuery('input[name="af-events-from-date"]').val(),
+            toDate = jQuery('input[name="af-events-to-date"]').val();
 
         e.preventDefault();
         jq('.af-event-calendar-categoryRow--filter-tag .active').removeClass('active');
@@ -1055,7 +1057,9 @@ svDocReady(function () {
         jq.ajax({
             url: portletURL,
             data: {
-                tag: tagValue
+                tag: tagValue,
+                from: fromDate,
+                to: toDate
             },
             type: 'get',
             success: function (data) {
@@ -1092,14 +1096,18 @@ svDocReady(function () {
 
         var target = jq(e.target),
             portletURL = jq('.af-event-calendar-categoryRow--filter-tags').data('portleturl'),
-            startAtHit = target.data('startathit');
+            startAtHit = target.data('startathit'),
+            fromDate = jQuery('input[name="af-events-from-date"]').val(),
+            toDate = jQuery('input[name="af-events-to-date"]').val();
 
         e.preventDefault();
 
         jq.ajax({
             url: portletURL,
             data: {
-                startAtHit: startAtHit
+                startAtHit: startAtHit,
+                from: fromDate,
+                to: toDate
             },
             type: 'get',
             success: function (data) {
@@ -1108,7 +1116,7 @@ svDocReady(function () {
                 jq('.af-event-calendar-results').html(existingEvents + data);
 
                 if (data.length < 10) {
-                    jq('.af-event-calendar .af-loadMoreEvents').remove();
+                    jq('.af-event-calendar .af-loadMoreEvents').hide();
                 }
             }
         });
