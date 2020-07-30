@@ -415,15 +415,17 @@ svDocReady(function () {
         addAccordionFunctions(accordionContainer);
     } catch (e) { }
 
-    jq('.sv-search-facets-header').on('click', function (e) {
+    jq('.sv-facetedsearch-portlet').on('click', '.sv-search-facets-header', function (e) {
         var target = jq(e.target),
             facets = jq('.sv-search-facet-backgroundColor'),
-            text = target.find('.af-accordionText'),
+            text,
             isExpanded;
 
         if (!target.is('.sv-search-facets-header')) {
             target = target.closest('.sv-search-facets-header');
         }
+
+        text = target.find('.af-accordionText');
 
         isExpanded = (target.attr('aria-expanded') === 'true');
 
