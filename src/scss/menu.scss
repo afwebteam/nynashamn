@@ -73,7 +73,7 @@
 
         &.open {
             padding: 0;
-            border-bottom: none;
+            border-bottom: 1px solid $white-color;
         }
 
         &.hasChildren {
@@ -133,7 +133,7 @@
 
         &.open {
             padding: 0;
-            border-bottom: none;
+            border-bottom: 1px solid $white-color;
         }
 
         &.hasChildren {
@@ -176,7 +176,6 @@
     }
 }
 
-/*
 .af-mobileMainMenu--level3 {
     margin: 0;
     padding: 0;
@@ -191,7 +190,7 @@
 
         &.open {
             padding:0;
-            border-bottom: none;
+            border-bottom: 1px solid $white-color;
         }
 
         &.hasChildren {
@@ -229,12 +228,12 @@
             font-family: museo;
             font-size: 14px;
             color: $nynas-black-color;
-            margin-left: 50px;
+            margin-left: 40px;
         }
         
     }
 }
-*/
+
 
 .af-mobileMainMenu--level4 {
     margin: 0;
