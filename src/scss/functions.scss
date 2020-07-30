@@ -640,3 +640,15 @@
         margin: 0 auto;
     }
 }
+
+.af-404icon {
+    float: right;
+    background-color: $nynas-darkblue-color;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url($error404PageIcon);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
