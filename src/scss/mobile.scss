@@ -395,6 +395,18 @@
         font-size: 20px !important;
     }
 
+    .af-contactModule {
+
+        & .af-contactModule-content {
+
+            & .af-contactModule--left, & .af-contactModule--right {
+                width: 100% !important;
+                flex-basis: 100% !important;
+            }
+        }
+
+    }
+
     .af-related-information h2:before,
     .af-related-information h3:before,
     .af-related-information .sv-font-stor-svart:before,

@@ -1013,7 +1013,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-event-calendar .af-event-calendar-dateRow p, .af-event-calendar .af-event-calendar-categoryRow p {
   margin: unset;
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
 .af-event-calendar .af-event-calendar-dateRow .af-accordionText, .af-event-calendar .af-event-calendar-categoryRow .af-accordionText {
@@ -1036,6 +1036,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   list-style-type: none;
   flex-wrap: wrap;
   display: flex;
+  padding-top: 25px;
 }
 
 .af-event-calendar .af-event-calendar-dateRow .af-event-calendar-categoryRow--filter-tags .af-event-calendar-categoryRow--filter-tag, .af-event-calendar .af-event-calendar-categoryRow .af-event-calendar-categoryRow--filter-tags .af-event-calendar-categoryRow--filter-tag {
@@ -1073,20 +1074,20 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .af-event-calendar .af-event-calendar-results .af-event-calendar-result {
   /* flex-grow: 1; */
-  width: 33%;
+  width: 32.5%;
   margin-bottom: 5px;
   margin-right: 4px;
 }
 
 .af-event-calendar .af-event-calendar-results .af-event-calendar-result .af-event-calendar-result-img {
-  height: 254px;
   background-size: contain;
   background-repeat: no-repeat;
+  padding-top: 56.25%;
 }
 
 .af-event-calendar .af-event-calendar-results .af-event-calendar-result .af-event-calendar-info {
@@ -2464,6 +2465,42 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-uppleva-site .af-uppleva-site h1.heading {
     font-size: 25px !important;
   }
+  .af-uppleva-site .af-event-calendar .af-event-calendar-dateRow {
+    padding: 20px 2px;
+  }
+  .af-uppleva-site .af-event-calendar .af-event-calendar-dateRow .af-event-calendar-dateRow--filter {
+    display: block;
+  }
+  .af-uppleva-site .af-event-calendar .af-event-calendar-dateRow .af-event-calendar-dateRow--filter .form-element {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 30px 0;
+  }
+  .af-uppleva-site .af-event-calendar .af-event-calendar-categoryRow .af-event-calendar-categoryRow--filter p.sv-font-brodtext-fet {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  .af-uppleva-site .af-event-calendar .af-event-calendar-categoryRow .af-event-calendar-categoryRow--filter .af-event-calendar-categoryRow--filter-tags {
+    padding-top: 30px;
+  }
+  .af-uppleva-site .af-event-calendar .af-event-calendar-categoryRow .af-event-calendar-categoryRow--filter .af-event-calendar-categoryRow--filter-tags .af-event-calendar-categoryRow--filter-tag {
+    margin-bottom: 40px;
+  }
+  .af-uppleva-site .af-event-calendar .af-event-calendar-categoryRow .af-event-calendar-categoryRow--filter .af-accordionText {
+    font-size: 13px;
+    top: 4px;
+  }
+  .af-uppleva-site .af-event-calendar .af-event-calendar-categoryRow .af-event-calendar-categoryRow--filter .af-closed:after {
+    background-size: 13px;
+    top: 3px;
+  }
+  .af-uppleva-site .af-event-calendar .af-event-calendar-clearFilter .form-element {
+    padding-left: 25px;
+  }
+  .af-uppleva-site .af-event-calendar .af-event-calendar-results .af-event-calendar-result {
+    width: 100%;
+  }
 }
 
 /*
@@ -2754,6 +2791,10 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-contactModule .sv-font-stor-svart,
   .sv-decoration-generell-faktaruta .sv-font-stor-svart {
     font-size: 20px !important;
+  }
+  .af-contactModule .af-contactModule-content .af-contactModule--left, .af-contactModule .af-contactModule-content .af-contactModule--right {
+    width: 100% !important;
+    flex-basis: 100% !important;
   }
   .af-related-information h2:before,
   .af-related-information h3:before,

@@ -22,6 +22,69 @@
             & h1.heading {
                 font-size: 25px !important;
             }
-        } 
+        }
+
+        .af-event-calendar {
+
+            & .af-event-calendar-dateRow {
+
+                padding: 20px 2px;
+
+                & .af-event-calendar-dateRow--filter {
+                    display: block;
+
+                    & .form-element {
+                        margin: 0;
+                        margin-bottom: 10px;
+                        padding: 30px 0;
+                    }
+                }
+            }
+
+            & .af-event-calendar-categoryRow {
+
+                & .af-event-calendar-categoryRow--filter {
+
+                    & p.sv-font-brodtext-fet {
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin-bottom: 0;
+                    }
+
+                    & .af-event-calendar-categoryRow--filter-tags {
+
+                        padding-top: 30px;
+
+                        & .af-event-calendar-categoryRow--filter-tag {
+                            margin-bottom: 40px;
+                        }
+                    }
+
+                    & .af-accordionText {
+                        font-size: 13px;
+                        top: 4px;
+                    }
+
+                    & .af-closed:after {
+                        background-size: 13px;
+                        top: 3px;
+                    }
+                }
+            }
+
+            & .af-event-calendar-clearFilter {
+
+                & .form-element {
+                    padding-left: 25px;
+                }
+            }
+
+            & .af-event-calendar-results {
+
+                & .af-event-calendar-result {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
