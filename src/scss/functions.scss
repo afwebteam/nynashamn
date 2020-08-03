@@ -472,6 +472,25 @@
             display: flex;
             justify-content: space-between;
 
+            & .form-element {
+                position: relative;
+                padding: 30px 20px;
+
+                & label {
+                    position: absolute;
+                    left: 20px;
+                    z-index: 9;
+                    top: 20px;
+                }
+
+                & input {
+                    position: absolute;
+                    left: 0;
+                    padding-left: 90px;
+                    top: 20px;
+                }
+            }
+
             & .form-element:nth-child(even) {
                 margin-left: 10px;
             }
