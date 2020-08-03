@@ -1104,6 +1104,13 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   font-size: 20px;
   max-width: 78%;
   margin-left: 10px;
+  margin-top: 5px;
+}
+
+.af-event-calendar .af-event-calendar-results .af-event-calendar-result .af-event-calendar-info .af-event-calendar-result-name .af-event-calendar-result-cats {
+  font-size: 17px;
+  font-weight: 300;
+  margin-top: 10px;
 }
 
 .af-event-calendar .af-event-calendar-results .af-event-calendar-result .af-event-calendar-info .af-event-calendar-result-date {

@@ -624,6 +624,13 @@
                     font-size: 20px;
                     max-width: 78%;
                     margin-left: 10px;
+                    margin-top: 5px;
+
+                    & .af-event-calendar-result-cats {
+                        font-size: 17px;
+                        font-weight: 300;
+                        margin-top: 10px;
+                    }
                 }
 
                 & .af-event-calendar-result-date {
