@@ -1,3 +1,5 @@
+@import 'variables';
+
 /* OVERRIDES */
 p.normal {
     margin: 25px 0 0 0;
@@ -20,4 +22,44 @@ p.normal {
 
 .sv-responsive .sv-image-portlet img {
     margin-bottom: 25px;
+}
+
+.datepicker {
+    width: 340px;
+}
+
+/*
+.datepicker--content {
+    padding: 40px;
+}
+*/
+
+.datepicker--nav-title {
+    font-weight: 700;
+    font-size: 20px;
+
+    & i {
+        color: $nynas-black-color;
+    }
+}
+
+.datepicker--day-name {
+    color: $nynas-black-color;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.datepicker--nav {
+    border: none;
+    padding: 15px 0;
+}
+
+.datepicker.active {
+    padding: 40px;
+}
+
+.datepicker--cell.-current- {
+    background-color: $nynas-lightgreen-color;
+    color: $nynas-black-color;
 }
