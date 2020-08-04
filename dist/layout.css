@@ -4129,6 +4129,12 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.553838ea17305720c32b197/1595269750051/mail-grey.svg");
 }
 
+.af-uppleva-site .sv-search-facets-header.sv-font-stor-svart {
+  font-weight: 300;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
 /*
 $museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
 $museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';

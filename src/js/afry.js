@@ -633,7 +633,9 @@ svDocReady(function () {
 
         var target = jq(e.target),
             loadMoreURL = target.prop('href'),
-            completeLoadMoreURL = loadMoreURL + afQuery;
+            completeLoadMoreURL = loadMoreURL + afQuery,
+            resultList = jq('.sv-search-result'),
+            scrollPosition = resultList.find('li').last().offset().top;
 
         e.preventDefault();
 
@@ -650,7 +652,7 @@ svDocReady(function () {
             dataType: 'html',
             success: function (data) {
 
-                var resultList = jq('.sv-search-result'),
+                var
                     dataAsHtml = jq(data),
                     newHits;
 
@@ -660,6 +662,8 @@ svDocReady(function () {
                     jq.each(newHits, function (index, hit) {
                         resultList.append(hit);
                     });
+
+                    jq(window).scrollTop(scrollPosition);
 
                     if (newHits.length < 10) {
                         jq('.af-loadMoreSearchResult').remove();
