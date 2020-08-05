@@ -3944,14 +3944,14 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-startpageBigImage > .af-center {
   position: absolute;
-  top: 290px;
+  top: 210px;
   left: 0;
   right: 0;
 }
 
 .af-startpageBigImage .sv-searchform-portlet {
   position: absolute;
-  top: 200px;
+  top: 120px;
   left: 0;
   right: 0;
 }
