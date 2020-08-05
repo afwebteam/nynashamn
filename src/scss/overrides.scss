@@ -28,11 +28,27 @@ p.normal {
     width: 333px;
 }
 
-/*
-.datepicker--content {
-    padding: 40px;
+input::-webkit-input-placeholder {
+    color: $nynas-black-color;
 }
-*/
+input:-moz-placeholder {
+   color: $nynas-black-color;
+   opacity: 1;
+}
+input::-moz-placeholder {
+   color: $nynas-black-color;
+   opacity: 1;
+}
+input:-ms-input-placeholder {
+   color: $nynas-black-color;
+}
+input::-ms-input-placeholder {
+   color: $nynas-black-color;
+}
+
+input::placeholder {
+   color: $nynas-black-color;
+}
 
 .datepicker--nav-title {
     font-weight: 700;

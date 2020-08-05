@@ -1058,8 +1058,6 @@ svDocReady(function () {
         jq('.af-event-calendar-categoryRow--filter-tag .active').removeClass('active');
         target.addClass('active');
 
-        console.log('portletURL' + portletURL);
-
         jq.ajax({
             url: portletURL,
             data: {
@@ -1126,5 +1124,292 @@ svDocReady(function () {
                 }
             }
         });
+    });
+
+
+
+
+    jq('.af-findSchool-row--filter .af-accordionText').on('click', function (e) {
+
+        var target = jq(e.target),
+            p = target.closest('p'),
+            list = p.next('ul'),
+            isExpanded = (p.attr('aria-expanded') === 'true');
+
+        if (isExpanded) {
+            p.attr('aria-expanded', false);
+            list.slideUp();
+            p.removeClass('af-open');
+            target.text('Visa');
+        } else {
+            p.attr('aria-expanded', true);
+            p.addClass('af-open');
+            list.slideDown();
+            target.text('Dölj');
+        }
+    });
+
+    function updateFilterItems(aContainer, anItems, aResult) {
+
+        var items = jq(aContainer).find(anItems),
+            size = items.length;
+
+        jq(aResult).text(size + ' träffar');
+    }
+
+    jq('.af-findSchool input[name="af-school-name"]').on('keyup', function (e) {
+
+        var target = jq(e.target),
+            inputText = target.val(),
+            allSchools;
+
+        if (inputText.length > 2) {
+
+            allSchools = jq('.af-findSchool .af-findSchool-school');
+
+            jq.each(allSchools, function (index, elem) {
+                var theElem = jq(elem),
+                    text = theElem.text();
+
+                if (text.toLowerCase().indexOf(inputText.toLowerCase()) > -1) {
+                    theElem.show();
+                } else {
+                    theElem.hide();
+                }
+            });
+        } else {
+            allSchools = jq('.af-findSchool .af-findSchool-school');
+
+            jq.each(allSchools, function (index, elem) {
+                var theElem = jq(elem);
+                theElem.show();
+            });
+        }
+
+        updateFilterItems('.af-findSchool-schools', '.af-findSchool-school:visible', '.af-findSchool-result .af-findSchool-result-width p.normal');
+    });
+
+    jq('.af-findSchool-row--filter-areas a').on('click', function (e) {
+
+        var target = jq(e.target),
+            list = target.closest('ul'),
+            allButton = list.find('li').first().find('a'),
+            inputField = jq('input[name="af-school-name"]'),
+            text = target.text(),
+            ajaxURL = list.data('portleturl'),
+
+            areas,
+            productions,
+            forms,
+            areaArr = [],
+            productionArr = [],
+            formArr = [];
+
+        e.preventDefault();
+
+        if (text === 'Alla') {
+            list.find('.active').removeClass('active');
+            target.addClass('active');
+        } else {
+
+            if (allButton.hasClass('active')) {
+                allButton.removeClass('active');
+            }
+
+            if (target.hasClass('active')) {
+                target.removeClass('active');
+            } else {
+                target.addClass('active');
+            }
+        }
+
+        areas = jq('.af-findSchool-row--filter-areas .active');
+        productions = jq('.af-findSchool-row--filter-productions .active');
+        forms = jq('.af-findSchool-row--filter-forms .active');
+
+        jq.each(areas, function (i, e) {
+            areaArr.push(jq(e).text());
+        });
+
+        jq.each(productions, function (i, e) {
+            productionArr.push(jq(e).text());
+        });
+
+        jq.each(forms, function (i, e) {
+            formArr.push(jq(e).text());
+        });
+
+        jq.ajax({
+            url: ajaxURL,
+            data: {
+                areas: JSON.stringify(areaArr),
+                productions: JSON.stringify(productionArr),
+                forms: JSON.stringify(formArr)
+            },
+            success: function (data) {
+                jq('.af-findSchool-result').html(data);
+                inputField.val('');
+            }
+        });
+    });
+
+    jq('.af-findSchool-row--filter-productions a').on('click', function (e) {
+
+        var target = jq(e.target),
+            list = target.closest('ul'),
+            allButton = list.find('li').first().find('a'),
+            inputField = jq('input[name="af-school-name"]'),
+            text = target.text(),
+            ajaxURL = list.data('portleturl'),
+
+            areas,
+            productions,
+            forms,
+            areaArr = [],
+            productionArr = [],
+            formArr = [];
+
+        e.preventDefault();
+
+        if (text === 'Alla') {
+            list.find('.active').removeClass('active');
+            target.addClass('active');
+        } else {
+
+            if (allButton.hasClass('active')) {
+                allButton.removeClass('active');
+            }
+
+            if (target.hasClass('active')) {
+                target.removeClass('active');
+            } else {
+                target.addClass('active');
+            }
+        }
+
+        areas = jq('.af-findSchool-row--filter-areas .active');
+        productions = jq('.af-findSchool-row--filter-productions .active');
+        forms = jq('.af-findSchool-row--filter-forms .active');
+
+        jq.each(areas, function (i, e) {
+            areaArr.push(jq(e).text());
+        });
+
+        jq.each(productions, function (i, e) {
+            productionArr.push(jq(e).text());
+        });
+
+        jq.each(forms, function (i, e) {
+            formArr.push(jq(e).text());
+        });
+
+        jq.ajax({
+            url: ajaxURL,
+            data: {
+                areas: JSON.stringify(areaArr),
+                productions: JSON.stringify(productionArr),
+                forms: JSON.stringify(formArr)
+            },
+            success: function (data) {
+                jq('.af-findSchool-result').html(data);
+                inputField.val('');
+            }
+        });
+    });
+
+    jq('.af-findSchool-row--filter-forms a').on('click', function (e) {
+
+        var target = jq(e.target),
+            list = target.closest('ul'),
+            allButton = list.find('li').first().find('a'),
+            inputField = jq('input[name="af-school-name"]'),
+            text = target.text(),
+            ajaxURL = list.data('portleturl'),
+
+            areas,
+            productions,
+            forms,
+            areaArr = [],
+            productionArr = [],
+            formArr = [];
+
+        e.preventDefault();
+
+        if (text === 'Alla') {
+            list.find('.active').removeClass('active');
+            target.addClass('active');
+        } else {
+
+            if (allButton.hasClass('active')) {
+                allButton.removeClass('active');
+            }
+
+            if (target.hasClass('active')) {
+                target.removeClass('active');
+            } else {
+                target.addClass('active');
+            }
+        }
+
+        areas = jq('.af-findSchool-row--filter-areas .active');
+        productions = jq('.af-findSchool-row--filter-productions .active');
+        forms = jq('.af-findSchool-row--filter-forms .active');
+
+        jq.each(areas, function (i, e) {
+            areaArr.push(jq(e).text());
+        });
+
+        jq.each(productions, function (i, e) {
+            productionArr.push(jq(e).text());
+        });
+
+        jq.each(forms, function (i, e) {
+            formArr.push(jq(e).text());
+        });
+
+        jq.ajax({
+            url: ajaxURL,
+            data: {
+                areas: JSON.stringify(areaArr),
+                productions: JSON.stringify(productionArr),
+                forms: JSON.stringify(formArr)
+            },
+            success: function (data) {
+                jq('.af-findSchool-result').html(data);
+                inputField.val('');
+            }
+        });
+    });
+
+    jq('.af-findSchool .af-clear-filter').on('click', function (e) {
+
+        var ajaxURL = jq('.af-findSchool-row--filter-areas').data('portleturl'),
+            areaList = jq('.af-findSchool-row--filter-areas'),
+            productionList = jq('.af-findSchool-row--filter-productions'),
+            formList = jq('.af-findSchool-row--filter-forms');
+
+        jq.ajax({
+            url: ajaxURL,
+            data: {
+                areas: JSON.stringify([]),
+                productions: JSON.stringify([]),
+                forms: JSON.stringify([])
+            },
+            success: function (data) {
+                jq('.af-findSchool-result').html(data);
+                jq('input[name="af-school-name"]').val('');
+                areaList.find('.active').removeClass('active');
+                productionList.find('.active').removeClass('active');
+                formList.find('.active').removeClass('active');
+
+                areaList.find('li').first().find('a').addClass('active');
+                productionList.find('li').first().find('a').addClass('active');
+                formList.find('li').first().find('a').addClass('active');
+            }
+        });
+    });
+
+    jq('.af-findSchool .af-showMap').on('click', function () {
+        jq('.af-findSchool-map').toggle();
     });
 });

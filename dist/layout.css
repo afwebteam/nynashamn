@@ -248,6 +248,305 @@ $museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/
 $museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
 $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
 */
+.af-findSchool {
+  margin-bottom: 40px;
+}
+
+.af-findSchool .af-findSchool-row {
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #EDEBE9;
+}
+
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .form-element {
+  position: relative;
+}
+
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .form-element label {
+  display: none;
+}
+
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .form-element input {
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  text-indent: 15px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .form-element button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 20px;
+  border: none;
+  background-color: #002F6C;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-productions,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+  display: flex;
+  padding-top: 25px;
+}
+
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-area,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-production,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-form,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-productions .af-findSchool-row--filter-area,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-productions .af-findSchool-row--filter-production,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-productions .af-findSchool-row--filter-form,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms .af-findSchool-row--filter-area,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms .af-findSchool-row--filter-production,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms .af-findSchool-row--filter-form {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-area a,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-production a,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-form a,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-productions .af-findSchool-row--filter-area a,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-productions .af-findSchool-row--filter-production a,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-productions .af-findSchool-row--filter-form a,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms .af-findSchool-row--filter-area a,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms .af-findSchool-row--filter-production a,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms .af-findSchool-row--filter-form a {
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #403E41;
+  outline: none;
+  text-decoration: none;
+}
+
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-area .active,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-production .active,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-form .active,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-productions .af-findSchool-row--filter-area .active,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-productions .af-findSchool-row--filter-production .active,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-productions .af-findSchool-row--filter-form .active,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms .af-findSchool-row--filter-area .active,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms .af-findSchool-row--filter-production .active,
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms .af-findSchool-row--filter-form .active {
+  background-color: #002F6C;
+  color: #fff;
+}
+
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .sv-font-brodtext-fet {
+  position: relative;
+  margin: unset;
+}
+
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-accordionText {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 25px;
+  z-index: 9;
+}
+
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-accordionText:hover {
+  cursor: pointer;
+}
+
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-closed:after {
+  content: ' ';
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+  position: absolute;
+  right: 0;
+  top: 4px;
+  height: 18px;
+  width: 18px;
+  transition: all 0.3s ease;
+}
+
+.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-open:after {
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.af-findSchool .af-findSchool-filterActions {
+  max-width: 850px;
+  margin: 30px auto 40px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.af-findSchool .af-findSchool-filterActions .af-showMap {
+  position: relative;
+  padding-right: 40px;
+}
+
+.af-findSchool .af-findSchool-filterActions .af-showMap:after {
+  content: '';
+  position: absolute;
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549cf/1596623711584/Karta_vit.svg");
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: right;
+  width: 20px;
+  height: 20px;
+  top: 8px;
+  right: 12px;
+}
+
+.af-findSchool .af-findSchool-map {
+  max-width: 1192px;
+  margin: 0 auto;
+  display: none;
+}
+
+.af-findSchool .af-findSchool-result {
+  background-color: #EDEBE9;
+}
+
+.af-findSchool .af-findSchool-result .af-findSchool-result-width {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.af-findSchool .af-findSchool-result .af-findSchool-result-width p.normal {
+  margin: unset;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.af-findSchool .af-findSchool-schools {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.af-findSchool .af-findSchool-schools .af-findSchool-school {
+  width: calc(33% - 7px);
+  margin: 0 10px 10px 0;
+}
+
+.af-findSchool .af-findSchool-schools .af-findSchool-school a {
+  text-decoration: none;
+}
+
+.af-findSchool .af-findSchool-schools .af-findSchool-school:nth-child(3n) {
+  margin-right: 0;
+}
+
+.af-findSchool .af-findSchool-schools .af-findSchool-school .af-findSchool-school-img {
+  padding-top: 56.25%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.af-findSchool .af-findSchool-schools .af-findSchool-school .af-findSchool-school-info {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.af-findSchool .af-findSchool-schools .af-findSchool-school .af-findSchool-school-info * {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.af-findSchool .af-findSchool-schools .af-findSchool-school .af-findSchool-school-info span {
+  font-weight: 300;
+}
+
+.af-findSchool .af-findSchool-schools .af-findSchool-school .af-findSchool-school-info .af-findSchool-school-info-name {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.af-findSchool .af-findSchool-schools .af-findSchool-school .af-findSchool-school-info .af-findSchool-school-info-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.af-findSchool .af-findSchool-schools .af-findSchool-school .af-findSchool-school-info .af-findSchool-school-info-bottom .af-findSchool-school-info-address {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.af-findSchool .af-findSchool-schools .af-findSchool-school .af-findSchool-school-info .af-findSchool-school-info-bottom .af-findSchool-school-info-map {
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #002F6C;
+  text-decoration-color: #002F6C;
+}
+
+@media screen and (max-width: 880px) {
+  .af-findSchool .sv-font-brodtext-fet.af-closed {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .af-findSchool .af-accordionText {
+    font-size: 13px !important;
+  }
+  .af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-closed:after {
+    width: 13px;
+    height: 13px;
+  }
+  .af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-area {
+    margin-bottom: 40px;
+  }
+  .af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-productions .af-findSchool-row--filter-production {
+    margin-bottom: 40px;
+  }
+  .af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms .af-findSchool-row--filter-form {
+    margin-bottom: 40px;
+  }
+  .af-findSchool .af-findSchool-filterActions {
+    padding: 0 30px;
+  }
+  .af-findSchool .af-findSchool-result .af-findSchool-result-width {
+    padding: 20px;
+  }
+  .af-findSchool .af-findSchool-result .af-findSchool-result-width p.normal {
+    display: none;
+  }
+  .af-findSchool .af-findSchool-result .af-findSchool-result-width .af-findSchool-schools .af-findSchool-school {
+    width: 100%;
+  }
+}
+
+/*
+$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
+$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
+
+$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
+$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
+
+$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
+$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
+*/
 /* Fonts */
 /*
 @font-face {
@@ -2053,6 +2352,10 @@ input:focus {
   margin-top: -25px;
 }
 
+header .af-center p.sv-font-liten-morkgra:hover {
+  text-decoration: underline;
+}
+
 /*
 $museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
 $museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
@@ -2076,7 +2379,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-menu--item a {
-  padding: 15px 28px 20px 28px;
+  padding: 20px 28px 20px 28px;
   text-decoration: none;
   border-radius: 10px 10px 0 0;
 }
@@ -3316,6 +3619,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     height: 100px;
     background-size: 40px;
   }
+  .pagecontent .af-pageWidth h1.heading {
+    margin-left: 20px;
+  }
 }
 
 /*
@@ -3356,11 +3662,27 @@ p.normal {
   width: 333px;
 }
 
-/*
-.datepicker--content {
-    padding: 40px;
+input::-webkit-input-placeholder {
+  color: #414042;
 }
-*/
+
+input::-moz-placeholder {
+  color: #414042;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  color: #414042;
+}
+
+input::-ms-input-placeholder {
+  color: #414042;
+}
+
+input::placeholder {
+  color: #414042;
+}
+
 .datepicker--nav-title {
   font-weight: 700;
   font-size: 20px;
