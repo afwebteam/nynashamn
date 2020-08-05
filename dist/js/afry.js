@@ -577,6 +577,7 @@ svDocReady(function () {
         var img = jq(item),
             imgPortlet = img.closest('.sv-image-portlet'),
             textImgContainer = imgPortlet.closest('.af-center'),
+            p = textImgContainer.find('.sv-font-liten-morkgra'),
             a = imgPortlet.find('a'),
             link;
 
@@ -587,8 +588,9 @@ svDocReady(function () {
 
                 textImgContainer.hover(function () {
                     textImgContainer.css('cursor', 'pointer');
+                    p.css('text-decoration', 'underline');
                 }, function () {
-
+                    p.css('text-decoration', 'none');
                 });
 
                 textImgContainer.on('click', function (e) {
