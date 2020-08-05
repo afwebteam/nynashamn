@@ -1054,16 +1054,33 @@ svDocReady(function () {
             tagValue = target.text(),
             portletURL = list.data('portleturl'),
             fromDate = jQuery('input[name="af-events-from-date"]').val(),
-            toDate = jQuery('input[name="af-events-to-date"]').val();
+            toDate = jQuery('input[name="af-events-to-date"]').val(),
+
+            choosenTags,
+            tags = [];
 
         e.preventDefault();
-        jq('.af-event-calendar-categoryRow--filter-tag .active').removeClass('active');
-        target.addClass('active');
+
+        if (target.hasClass('active')) {
+            target.removeClass('active');
+        } else if (target.text() === 'Alla') {
+            jq('.af-event-calendar-categoryRow--filter-tag .active').removeClass('active');
+            target.addClass('active');
+        } else {
+            jq('.af-event-calendar-categoryRow--filter-tags').find('li').first().find('a').removeClass('active');
+            target.addClass('active');
+        }
+
+        choosenTags = jq('.af-event-calendar-categoryRow--filter-tags').find('.active');
+
+        jq.each(choosenTags, function (i, e) {
+            tags.push(jq(e).text());
+        });
 
         jq.ajax({
             url: portletURL,
             data: {
-                tag: tagValue,
+                tag: JSON.stringify(tags),
                 from: fromDate,
                 to: toDate
             },

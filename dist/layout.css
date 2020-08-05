@@ -4263,6 +4263,10 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   text-decoration-color: #002F6C;
 }
 
+.af-startpage-current p.normal {
+  margin: 0;
+}
+
 .af-startpage-current ul.sv-channel {
   display: flex;
   justify-content: space-around;

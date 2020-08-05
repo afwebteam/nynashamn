@@ -407,6 +407,10 @@
         }
     }
 
+    & p.normal {
+        margin: 0;
+    }
+
     & ul.sv-channel {
         display: flex;
         justify-content: space-around;
