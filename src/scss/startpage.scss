@@ -2,6 +2,13 @@
 
 /* Startpage */
 
+.af-theStartPage {
+
+    & .sv-font-stor-svart {
+        font-size: 35px;
+    }
+}
+
 .af-startpageMessages {
     display: flex;
     justify-content: center;
@@ -60,12 +67,11 @@
 
 .af-startpageBigImage {
     background-image: url($startpageBigImage);
-    /* background-repeat: no-repeat; */
-    background-size: cover;
-    /* padding-top: 56.25%; */
     position: relative;
     height: 700px;
-    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
 
     & > .af-center {
         position: absolute;
