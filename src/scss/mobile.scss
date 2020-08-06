@@ -58,7 +58,7 @@
     .af-wave {
 
         &--shape {
-            top: -40px;
+            top: -50px;
         }
     }
 
@@ -100,7 +100,7 @@
 
             & .sv-script-portlet.af-borderRadius {
                 border-radius: 0;
-                padding: 25px 0;
+                padding: 25px 0 50px 0;
                 text-align: left;
                 max-width: 100%;
             }
@@ -125,7 +125,7 @@
 
         &Container {
 
-            margin-top: 30px !important;
+            margin-top: 20px !important;
         
             &--item {
         
