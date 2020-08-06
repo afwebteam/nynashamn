@@ -34,14 +34,30 @@ div[role=search] {
         }
 
         & .af-searchIcon {
-            background-image: none;
             position: absolute;
+        }
+
+        & .af-searchIcon:after {
+            background-image: url($searchIcon);
+            background-repeat: no-repeat;
+            background-position: right;
+            content: ' ';
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            background-size: 30px;
+            background-position: center;
         }
 
         & .af-searchButton {
             height: 51px; 
         }
 
+        /*
         & div[role=search]:after {
             content: ' ';
             position: absolute;
@@ -55,6 +71,7 @@ div[role=search] {
             background-repeat: no-repeat;
             transition: transform .3s ease-in-out;
         }
+        */
     }
 }
 

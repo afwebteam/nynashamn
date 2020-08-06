@@ -636,6 +636,21 @@ div[role=search] {
 .af-hiddenSearchForm form {
   width: 850px;
   margin: 0 auto;
+  /*
+        & div[role=search]:after {
+            content: ' ';
+            position: absolute;
+            top: 3px;
+            right: 0;
+            height: 51px;
+            width: 47px;
+            background-size: 25px;
+            background-position: center;
+            background-image: url($searchIcon);
+            background-repeat: no-repeat;
+            transition: transform .3s ease-in-out;
+        }
+        */
 }
 
 .af-hiddenSearchForm form input[name=query] {
@@ -648,26 +663,26 @@ div[role=search] {
 }
 
 .af-hiddenSearchForm form .af-searchIcon {
-  background-image: none;
   position: absolute;
+}
+
+.af-hiddenSearchForm form .af-searchIcon:after {
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  content: ' ';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-size: 30px;
+  background-position: center;
 }
 
 .af-hiddenSearchForm form .af-searchButton {
   height: 51px;
-}
-
-.af-hiddenSearchForm form div[role=search]:after {
-  content: ' ';
-  position: absolute;
-  top: 3px;
-  right: 0;
-  height: 51px;
-  width: 47px;
-  background-size: 25px;
-  background-position: center;
-  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
-  background-repeat: no-repeat;
-  transition: transform .3s ease-in-out;
 }
 
 .sv-facetedsearch-portlet {
@@ -3362,64 +3377,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-hiddenSearchForm form {
     margin: 0 auto;
     width: 100%;
-    /*
-            & input[name=query] {
-                height: 54px;
-                box-sizing: content-box;
-                text-align: left;
-                text-indent: 10px;
-                border: none;
-                width: 100%;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                font-size: 16px;
-            }
-
-            & input:focus {
-                outline: 2px solid $nynas-search-bg;
-                outline-offset: 8px;
-                font-size: 16px;
-            }
-
-            & input[name=submitButton] {
-                height: 54px;
-                box-sizing: content-box;
-                top: 0;
-                right: -8px;
-                border-radius: 0;
-                font-size: 16px;
-                overflow: hidden;
-                width: 40px;
-                border-top-right-radius: 10px;
-                border-bottom-right-radius: 10px;
-                border-left: 1px solid $nynas-black-color;
-            }
-
-            & input[name=submitButton]:after {
-                background-position: center;
-                right: 20px;
-            }
-    
-    
-            & .af-searchIcon {
-                background-image: none;
-            }
-            
-            
-            & div[role=search]:after {
-                content: ' ';
-                position: absolute;
-                top: 0;
-                right: -6px;
-                height: 60px;
-                width: 47px;
-                background-size: 25px;
-                background-position: center;
-                background-image: url($searchIcon);
-                background-repeat: no-repeat;
-            }
-            */
+  }
+  .af-hiddenSearchForm form .af-searchIcon {
+    right: 10px;
   }
   .af-hiddenSearchForm form input[name=query] {
     width: 98%;
@@ -3989,20 +3949,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   right: 0;
 }
 
-.af-startpageBigImage .sv-searchform-portlet div[role=search]:after {
-  content: ' ';
-  position: absolute;
-  top: 3px;
-  right: 0;
-  height: 50px;
-  width: 50px;
-  background-size: 25px;
-  background-position: center;
-  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
-  background-repeat: no-repeat;
-  transition: transform .3s ease-in-out;
-}
-
 .af-startpageBigImage .sv-searchform-portlet .af-rotate:after {
   transform: rotate(20deg);
   transition: transform .3s ease-in-out;
@@ -4013,10 +3959,23 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   transition: transform 100ms ease-in-out;
 }
 
-.af-startpageBigImage .sv-searchform-portlet .af-searchIcon {
-  background-image: none;
+.af-startpageBigImage .sv-searchform-portlet .af-submitSearchIcon {
   height: 51px;
   position: absolute;
+}
+
+.af-startpageBigImage .sv-searchform-portlet .af-submitSearchIcon:after {
+  content: '';
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 30px;
+  background-position: center;
+  transition: transform .3s ease-in-out;
 }
 
 .af-startpageBigImage p {

@@ -87,20 +87,6 @@
         left: 0;
         right: 0;
 
-        & div[role=search]:after {
-            content: ' ';
-            position: absolute;
-            top: 3px;
-            right: 0;
-            height: 50px;
-            width: 50px;
-            background-size: 25px;
-            background-position: center;
-            background-image: url($searchIcon);
-            background-repeat: no-repeat;
-            transition: transform .3s ease-in-out;
-        }
-
         & .af-rotate:after {
             transform: rotate(20deg);
             transition: transform .3s ease-in-out;
@@ -111,10 +97,23 @@
             transition: transform 100ms ease-in-out;
         }
 
-        & .af-searchIcon {
-            background-image: none;
+        & .af-submitSearchIcon {
             height: 51px;
             position: absolute;
+        }
+
+        & .af-submitSearchIcon:after {
+            content: '';
+            background-image: url($searchIcon);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-size: 30px;
+            background-position: center;
+            transition: transform .3s ease-in-out;
         }
     }
 

@@ -162,12 +162,8 @@ svDocReady(function () {
             if (AF.isMobileView()) {
                 hiddenSearchForm = jq('.af-hiddenSearchForm');
                 hiddenSearchFormField = hiddenSearchForm.find('input[name="query"]');
-
-                //hiddenSearchForm.toggle();
                 hiddenSearchForm.slideToggle();
                 hiddenSearchFormField.focus();
-
-                //AF.debugElementSize();
             } else {
 
                 form.addClass('af-upscale');
@@ -181,8 +177,6 @@ svDocReady(function () {
         } else {
             hiddenSearchForm = jq('.af-hiddenSearchForm');
             hiddenSearchFormField = hiddenSearchForm.find('input[name="query"]');
-
-            //hiddenSearchForm.toggle();
             hiddenSearchForm.slideToggle();
             hiddenSearchFormField.focus();
 
@@ -680,11 +674,11 @@ svDocReady(function () {
     jq('.sv-searchform-portlet .af-textInputField').on('focus', function (e) {
 
         var target = jq(e.target),
-            div = target.closest('div');
+            submit = target.next('button');
 
-        div.addClass('af-rotate');
+        submit.addClass('af-rotate');
         setTimeout(function () {
-            div.removeClass('af-rotate');
+            submit.removeClass('af-rotate');
         }, 500);
     });
 
