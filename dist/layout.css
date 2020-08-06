@@ -2974,8 +2974,18 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     width: unset !important;
     height: unset !important;
   }
+  .af-amountEvents-3 .af-startpageEvents--eventTextDate > div {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .af-amountEvents-3 .af-startpageEvents--eventText .af-date {
+    font-size: 20px !important;
+  }
+  .af-amountEvents-3 .af-startpageEvents--eventText .af-month {
+    font-size: 14px !important;
+  }
   .af-amountEvents-3 .af-startpageEvents--eventTextContent {
-    margin: auto 30px !important;
+    margin: auto 25px !important;
     width: unset !important;
   }
   .af-amountEvents-3 .af-startpageEvents--eventTextContent p {

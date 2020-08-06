@@ -192,10 +192,23 @@
                     position: unset !important;
                     width: unset !important;
                     height: unset !important;
+
+                    & > div {
+                        width: 60px !important;
+                        height: 60px !important;
+                    }
+                }
+
+                & .af-date {
+                    font-size: 20px !important;
+                }
+
+                & .af-month {
+                    font-size: 14px !important;
                 }
 
                 &Content {
-                    margin: auto 30px !important;
+                    margin: auto 25px !important;
                     width: unset !important;
 
                     & p {
