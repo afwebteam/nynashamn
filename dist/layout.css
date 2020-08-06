@@ -1468,16 +1468,23 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-landingpage--pageName {
-  background-color: #EDEBE9;
   position: absolute;
   top: 70px;
   left: 0;
+  right: 0;
   padding: 20px 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .af-landingpage--pageName h1 {
-  padding: 0;
+  background-color: #EDEBE9;
   margin: 0;
+  background-color: #EDEBE9;
+  padding: 20px 25px;
+  display: inline-block;
+  border-radius: 6px;
 }
 
 .af-landingpage--shortcuts {
@@ -1488,11 +1495,16 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   padding: 20px 25px;
 }
 
+.af-landingpage--shortcuts .sv-font-brodtext-fet {
+  text-align: center;
+}
+
 .af-landingpage--shortcuts-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: inline-block;
+  text-align: left;
 }
 
 .af-landingpage--shortcuts-list li {
