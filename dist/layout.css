@@ -4178,17 +4178,15 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-amountEvents-3 .af-startpageEvents--eventTextDate {
-  width: 80px;
-  height: 80px;
   position: absolute;
-  top: 30px;
+  top: 20px;
 }
 
 .af-amountEvents-3 .af-startpageEvents--eventTextDate > div {
   background-color: #fff;
   float: left;
-  width: 60px;
-  height: 60px;
+  width: 75px;
+  height: 75px;
   text-align: center;
   border-radius: 50%;
 }
@@ -4198,7 +4196,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-amountEvents-3 .af-startpageEvents--eventTextDate p:first-of-type {
-  margin-top: 4px;
+  margin-top: 7px;
 }
 
 .af-amountEvents-3 .af-startpageEvents--eventText .af-month {
