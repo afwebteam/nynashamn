@@ -1416,19 +1416,19 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   background-color: #fff;
   border-radius: 50%;
   text-align: center;
-  width: 78px;
-  height: 78px;
+  width: 75px;
+  height: 75px;
 }
 
 .af-event-calendar .af-event-calendar-results .af-event-calendar-result .af-event-calendar-info .af-date {
   font-weight: 700;
-  font-size: 17px;
+  font-size: 25px;
   margin: 0;
   margin-top: 15px;
 }
 
 .af-event-calendar .af-event-calendar-results .af-event-calendar-result .af-event-calendar-info .af-month {
-  font-weight: 300;
+  font-weight: 700;
   font-size: 17px;
   margin: 0;
 }
@@ -1470,7 +1470,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-landingpage--pageName {
   background-color: #EDEBE9;
   position: absolute;
-  top: 100px;
+  top: 70px;
   left: 0;
   padding: 20px 25px;
 }
@@ -1483,7 +1483,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-landingpage--shortcuts {
   background-color: #EDEBE9;
   position: absolute;
-  top: 200px;
+  top: 185px;
   left: 0;
   padding: 20px 25px;
 }
