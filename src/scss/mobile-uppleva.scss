@@ -83,6 +83,23 @@
 
                 & .af-event-calendar-result {
                     width: 100%;
+
+                    & .af-event-calendar-info {
+
+                        & .af-event-calendar-result-date {
+                            width: 60px;
+                            height: 60px;   
+
+                            & .af-date {
+                                font-size: 20px;
+                                margin-top: 10px;
+                            }
+
+                            & .af-month {
+                                font-size: 14px;
+                            }
+                        }
+                    }
                 }
             }
         }
