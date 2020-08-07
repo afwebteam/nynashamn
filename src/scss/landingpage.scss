@@ -7,6 +7,9 @@
     &--bigImage {
         padding: 40px 0;
         height: 440px;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100%;
     }
 
     &--pageName {

@@ -1480,6 +1480,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-landingpage--bigImage {
   padding: 40px 0;
   height: 440px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
 }
 
 .af-landingpage--pageName {
