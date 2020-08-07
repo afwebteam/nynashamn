@@ -1740,20 +1740,30 @@ footer .sv-font-sidfot-rubrik + .sv-font-brodtext-liten {
   margin-bottom: 0;
 }
 
+.sv-linkicon {
+  width: 18px;
+  height: 18px;
+  padding-left: 5px;
+  position: absolute;
+  top: 3px;
+}
+
 a[href*="/download/"] {
   margin-right: 5px;
+  position: relative;
 }
 
+/*
 a[href*="/download/"]:after {
-  content: ' ';
-  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c543cac6/1589825604501/bifogaFil.svg");
-  background-repeat: no-repeat;
-  width: 20px;
-  display: inline-block;
-  border: none;
-  margin-left: 10px;
+    content: ' ';
+    background-image: url($attachedFile);
+    background-repeat: no-repeat;
+    width: 20px;
+    display: inline-block;
+    border: none;
+    margin-left: 10px;
 }
-
+*/
 .af-center {
   text-align: center;
 }
