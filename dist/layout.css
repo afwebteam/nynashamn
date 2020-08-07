@@ -1511,11 +1511,12 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   top: 185px;
   left: 0;
   right: 0;
-  padding: 20px 25px;
+  padding: 15px 25px 30px 25px;
 }
 
 .af-landingpage--shortcuts .sv-font-brodtext-fet {
   text-align: center;
+  margin: 0 0 15px 0;
 }
 
 .af-landingpage--shortcuts-list {
@@ -1813,6 +1814,7 @@ p.sv-portlet-image-caption {
   display: inline-block;
   background-color: #fff;
   margin-right: 15px;
+  margin-top: 15px;
 }
 
 .af-shortcuts--item a {
