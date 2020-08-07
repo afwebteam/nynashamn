@@ -57,6 +57,8 @@
 
     .af-wave {
 
+        margin-top: 60px;
+
         &--shape {
             top: -50px;
         }
@@ -84,7 +86,7 @@
         display: block;
     }
 
-    .af-startpageBigImage {
+    .af-theStartPage .af-startpageBigImage {
         background-image: none !important;
         padding: 0 !important;
         height: auto !important;

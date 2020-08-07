@@ -2808,6 +2808,33 @@ $museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/158937681741
 $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
 */
 @media screen and (max-width: 880px) {
+  .af-tillvaxt-site .af-startpageBigImage {
+    background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c542451a/1589378872626/startpage-background.png");
+    height: 400px;
+  }
+  .af-tillvaxt-site .af-wave .af-wave--shape {
+    top: -110px;
+  }
+}
+
+/*
+$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
+$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
+
+$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
+$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
+
+$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
+$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
+*/
+@media screen and (max-width: 880px) {
+  .af-uppleva-site .af-startpageBigImage {
+    background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c542451a/1589378872626/startpage-background.png");
+    height: 400px;
+  }
+  .af-uppleva-site .af-wave .af-wave--shape {
+    top: -110px;
+  }
   .af-uppleva-site .af-event-detailpage .af-breadcrumb {
     position: unset !important;
   }
@@ -2919,6 +2946,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-mobile-width100 .sv-font-toppmeny {
     font-size: 18px;
   }
+  .af-wave {
+    margin-top: 60px;
+  }
   .af-wave--shape {
     top: -50px;
   }
@@ -2937,20 +2967,20 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-desktopNone {
     display: block;
   }
-  .af-startpageBigImage {
+  .af-theStartPage .af-startpageBigImage {
     background-image: none !important;
     padding: 0 !important;
     height: auto !important;
   }
-  .af-startpageBigImage p {
+  .af-theStartPage .af-startpageBigImage p {
     margin: 0 0 25px 25px !important;
   }
-  .af-startpageBigImage > .af-center {
+  .af-theStartPage .af-startpageBigImage > .af-center {
     position: relative !important;
     top: unset !important;
     padding: 0;
   }
-  .af-startpageBigImage > .af-center .sv-script-portlet.af-borderRadius {
+  .af-theStartPage .af-startpageBigImage > .af-center .sv-script-portlet.af-borderRadius {
     border-radius: 0;
     padding: 25px 0 50px 0;
     text-align: left;

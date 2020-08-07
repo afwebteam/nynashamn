@@ -4,6 +4,18 @@
 
     .af-uppleva-site { 
 
+        & .af-startpageBigImage {
+            background-image: url($startpageBigImage);
+            height: 400px;
+        }
+
+        & .af-wave {
+
+            & .af-wave--shape {
+                top: -110px;
+            }
+        }
+
         & .af-event-detailpage {
 
             & .af-breadcrumb {

@@ -1,0 +1,19 @@
+@import 'variables';
+
+@media screen and (max-width: 880px) {
+
+    .af-tillvaxt-site { 
+
+        & .af-startpageBigImage {
+            background-image: url($startpageBigImage);
+            height: 400px;
+        }
+
+        & .af-wave {
+
+            & .af-wave--shape {
+                top: -110px;
+            }
+        }
+    }
+}
