@@ -1507,6 +1507,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   position: absolute;
   top: 185px;
   left: 0;
+  right: 0;
   padding: 20px 25px;
 }
 
@@ -3310,9 +3311,10 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .af-wave .af-landingpage--bigImage .af-landingpage--shortcuts .af-landingpage--shortcuts-list {
     margin: 25px 0;
+    padding: 0 0 20px 0;
   }
   .af-wave .af-landingpage--bigImage .af-landingpage--shortcuts .af-landingpage--shortcuts-list li {
-    margin: 5px 0;
+    /* margin: 5px 0; */
   }
   .af-wave .af-landingpage--bigImage .af-landingpage--shortcuts.af-borderRadius {
     border-radius: 0;
