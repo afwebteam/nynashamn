@@ -1616,6 +1616,21 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   text-decoration: none;
 }
 
+.af-landingPage {
+  position: relative;
+}
+
+.af-landingPage .af-breadcrumb {
+  position: absolute;
+  margin: 0;
+  background-color: #fff;
+  z-index: 2;
+  top: 50px;
+  left: 50px;
+  padding: 20px;
+  border-radius: 6px;
+}
+
 /*
 $museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
 $museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
@@ -2959,7 +2974,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     font-size: 18px;
   }
   .af-wave {
-    margin-top: 60px;
+    margin-top: 0;
   }
   .af-wave--shape {
     top: -50px;
@@ -3360,6 +3375,8 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-wave .af-landingpage--bigImage .af-landingpage--shortcuts .af-landingpage--shortcuts-list {
     margin: 25px 0;
     padding: 0 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
   }
   .af-wave .af-landingpage--bigImage .af-landingpage--shortcuts.af-borderRadius {
     border-radius: 0;
@@ -3368,6 +3385,12 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .af-wave .af-wave-grey--shape {
     background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c5418b8d/1589182390043/wave.svg");
+  }
+  .af-landingPage {
+    position: relative;
+  }
+  .af-landingPage .af-breadcrumb {
+    position: unset;
   }
   .af-landingpageRow {
     padding: 60px 20px;
@@ -4057,7 +4080,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-wave-grey--shape {
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.a5f223f171ac2fcd6d2adb5/1589530446861/wave-grey.svg");
-  padding: 7% 0 0 0;
+  padding: 6% 0 0 0;
   position: absolute;
   left: 0;
   right: 0;

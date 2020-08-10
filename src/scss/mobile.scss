@@ -57,7 +57,7 @@
 
     .af-wave {
 
-        margin-top: 60px;
+        margin-top: 0;
 
         &--shape {
             top: -50px;
@@ -637,6 +637,8 @@
                 & .af-landingpage--shortcuts-list {
                     margin: 25px 0;
                     padding: 0 0 20px 0;
+                    display: flex;
+                    flex-wrap: wrap;
                 }
             }
 
@@ -649,6 +651,15 @@
 
         & .af-wave-grey--shape {
             background-image: url($startpageWave);
+        }
+    }
+
+    .af-landingPage {
+
+        position: relative;
+    
+        & .af-breadcrumb {
+            position: unset;
         }
     }
 

@@ -147,3 +147,19 @@
         }
     }
 }
+
+.af-landingPage {
+
+    position: relative;
+
+    & .af-breadcrumb {
+        position: absolute;
+        margin: 0;
+        background-color: $white-color;
+        z-index: 2;
+        top: 50px;
+        left: 50px;
+        padding: 20px;
+        border-radius: 6px;
+    }
+}

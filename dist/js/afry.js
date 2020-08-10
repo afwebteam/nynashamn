@@ -13,6 +13,12 @@ svDocReady(function () {
         isMobile,
         afPublishedDate;
 
+    AF.hideElemsAfterLoad = function () {
+        jq('.af-findSchool-row--filter-areas').hide();
+        jq('.af-findSchool-row--filter-productions').hide();
+        jq('.af-findSchool-row--filter-forms').hide();
+    };
+
     AF.isEmptyString = function (aString) {
 
         if (!aString || aString === '') {
@@ -1149,9 +1155,6 @@ svDocReady(function () {
         });
     });
 
-
-
-
     jq('.af-findSchool-row--filter .af-accordionText').on('click', function (e) {
 
         var target = jq(e.target),
@@ -1505,4 +1508,5 @@ svDocReady(function () {
     });
 
     AF.changeStandardSVIcons();
+    AF.hideElemsAfterLoad();
 });
