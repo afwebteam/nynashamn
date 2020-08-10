@@ -3350,9 +3350,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     margin: 25px 0;
     padding: 0 0 20px 0;
   }
-  .af-wave .af-landingpage--bigImage .af-landingpage--shortcuts .af-landingpage--shortcuts-list li {
-    /* margin: 5px 0; */
-  }
   .af-wave .af-landingpage--bigImage .af-landingpage--shortcuts.af-borderRadius {
     border-radius: 0;
     position: relative;
@@ -4513,18 +4510,51 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-uppleva-site .af-startpage-listing-items {
   display: flex;
   flex-wrap: wrap;
-}
-
-.af-uppleva-site .af-startpage-listing-items .af-columns-1 {
-  width: 33%;
-}
-
-.af-uppleva-site .af-startpage-listing-items .af-columns-2 {
-  width: 66%;
+  justify-content: space-between;
 }
 
 .af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item {
-  border: 1px solid #cecece;
+  width: 32.4%;
+  margin-bottom: 20px;
+}
+
+.af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item-img {
+  background-size: cover;
+  background-position: center;
+  padding-top: 56.25%;
+}
+
+.af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item-textContent {
+  padding: 30px 20px;
+  background-color: #E6EFD9;
+}
+
+.af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item.af-item-1 .af-startpage-listing-item-img {
+  padding-top: 114.6%;
+}
+
+.af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item.af-item-2 {
+  width: 66.2%;
+}
+
+.af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item.af-item-2 .af-startpage-listing-item-img {
+  padding-top: 56.25%;
+}
+
+.af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item.af-item-6 {
+  width: 49.3%;
+}
+
+.af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item.af-item-6 .af-startpage-listing-item-img {
+  padding-top: 86.66%;
+}
+
+.af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item.af-item-7 {
+  width: 49.3%;
+}
+
+.af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item.af-item-7 .af-startpage-listing-item-img {
+  padding-top: 86.66%;
 }
 
 /*
