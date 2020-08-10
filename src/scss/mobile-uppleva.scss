@@ -115,5 +115,19 @@
                 }
             }
         }
+
+        .af-startpage-listing {
+
+            & .af-startpage-listing-items {
+
+                & .af-startpage-listing-item {
+                    width: 100% !important;
+
+                    & .af-startpage-listing-item-img {
+                        padding-top: 56.25% !important;
+                    }
+                }
+            }
+        }
     }
 }

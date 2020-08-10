@@ -2894,6 +2894,12 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-uppleva-site .af-event-calendar .af-event-calendar-results .af-event-calendar-result .af-event-calendar-info .af-event-calendar-result-date .af-month {
     font-size: 14px;
   }
+  .af-uppleva-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item {
+    width: 100% !important;
+  }
+  .af-uppleva-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item .af-startpage-listing-item-img {
+    padding-top: 56.25% !important;
+  }
 }
 
 /*
