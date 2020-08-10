@@ -672,6 +672,8 @@ svDocReady(function () {
                     if (newHits.length < 10) {
                         jq('.af-loadMoreSearchResult').remove();
                     }
+
+                    AF.changeStandardSVIcons();
                 } else {
                     jq('.af-loadMoreSearchResult').remove();
                 }
