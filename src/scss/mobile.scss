@@ -747,11 +747,11 @@
             width: 100%;
 
             & .af-searchIcon {
-                right: 10px;
+                right: 0;
+                top: 3px;
             }
             
             & input[name=query] { 
-                width: 98%;
                 font-size: 16px;
             }
 

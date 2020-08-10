@@ -27,7 +27,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-searchButton {
   position: absolute;
   top: 3px;
-  right: 2px;
+  right: 0;
   height: 46px;
   width: 46px;
   background-color: #EDEBE9;
@@ -619,6 +619,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   text-align: center;
   border: none;
   font-weight: 700;
+  padding: 0;
 }
 
 div[role=search] {
@@ -3427,10 +3428,10 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     width: 100%;
   }
   .af-hiddenSearchForm form .af-searchIcon {
-    right: 10px;
+    right: 0;
+    top: 3px;
   }
   .af-hiddenSearchForm form input[name=query] {
-    width: 98%;
     font-size: 16px;
   }
   .af-hiddenSearchForm form input:focus {
