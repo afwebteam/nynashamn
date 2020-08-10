@@ -1431,4 +1431,72 @@ svDocReady(function () {
         var theElem = jq(elem);
         theElem.prop('src', '/images/18.d9ec095172e6db963754cee/1596632006892/filer.svg');
     });
+
+    jq('.af-uppleva-events .af-accordionText').on('click', function (e) {
+
+        var target = jq(e.target),
+            container = target.closest('.sv-font-brodtext-fet'),
+            content = jq('.af-uppleva-events-filter-categories'),
+            text,
+            isExpanded;
+
+        text = target.find('.af-accordionText');
+
+        isExpanded = (container.attr('aria-expanded') === 'true');
+
+        if (isExpanded) {
+            container.attr('aria-expanded', false);
+            content.hide();
+            container.removeClass('af-open');
+            text.text('Visa');
+        } else {
+            container.attr('aria-expanded', true);
+            container.addClass('af-open');
+            content.show();
+            text.text('Dölj');
+        }
+    });
+
+    jq('.af-uppleva-events .af-uppleva-events-filter-categories a').on('click', function (e) {
+
+        var target = jq(e.target),
+            list = target.closest('ul'),
+            tagValue = target.text(),
+            portletURL = list.data('portleturl'),
+
+            choosenTags,
+            tags = [];
+
+        e.preventDefault();
+
+        if (target.hasClass('active')) {
+            target.removeClass('active');
+        } else if (target.text() === 'Alla') {
+            jq('.af-uppleva-events-filter-category .active').removeClass('active');
+            target.addClass('active');
+        } else {
+            jq('.af-uppleva-events-filter-categories').find('li').first().find('a').removeClass('active');
+            target.addClass('active');
+        }
+
+        choosenTags = jq('.af-uppleva-events-filter-categories').find('.active');
+
+        jq.each(choosenTags, function (i, e) {
+            tags.push(jq(e).text());
+        });
+
+        /*
+        jq.ajax({
+            url: portletURL,
+            data: {
+                tag: JSON.stringify(tags)
+            },
+            type: 'get',
+            success: function (data) {
+                jq('.af-uppleva-events-items').html(data);
+            }
+        });
+        */
+
+    });
 });

@@ -54,12 +54,117 @@
     }
 
     .af-uppleva-events {
-        max-width: 1366px;
-        margin: 0 auto;
-        padding: 30px 80px;
+
+        margin-bottom: 60px;
+
+        & .af-uppleva-events-bgColor {
+            background-color: $nynas-lightgrey-color;
+        }
+
+        & .af-uppleva-events-filter {
+            max-width: 1366px;
+            margin: 0 auto;
+            padding: 30px 0;
+
+            & .sv-font-brodtext-fet {
+                margin: unset;
+                margin-bottom: 0;
+                position: relative;
+            }
     
-        & .sv-font-stor-svart {
-            font-weight: 700;
+            & .af-accordionText {
+                position: absolute;
+                right: 0;
+                top: 2px;
+                font-size: 18px;
+                font-weight: 500;
+                padding-right: 25px;
+                z-index: 9;
+            }
+    
+            & .af-closed:after {
+                content: ' ';
+                background-image: url($plusSignIcon);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 18px;
+                position: absolute;
+                right: 0;
+                top: 4px;
+                height: 18px;
+                width: 18px;
+                transition: all 0.3s ease;
+            }
+    
+            & .af-open:after {
+                transform: rotate(45deg);
+                transition: all 0.3s ease;
+            }
+    
+            & .af-accordionText:hover {
+                cursor: pointer;
+            }
+        }
+    
+        & .af-uppleva-events-filter-categories {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            flex-wrap: wrap;
+            display: flex;
+            padding-top: 25px;
+
+            & .af-uppleva-events-filter-category {
+                margin-right: 20px;
+                margin-bottom: 20px;
+
+                & a {
+                    background-color: $white-color;
+                    font-weight: 500;
+                    font-size: 15px;
+                    padding: 10px 15px;
+                    border-radius: 6px;
+                    border: 1px solid $nynas-darkgrey-color;
+                    outline: none;
+                    text-decoration: none;
+                }
+
+                & .active {
+                    background-color: $nynas-darkblue-color;
+                    color: $white-color;
+                }
+            }
+        }
+
+        & .af-uppleva-events-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1366px;
+            margin: 10px auto;
+
+            & .af-uppleva-events-item {
+                width: 32.5%;
+                margin-bottom: 5px;
+                margin-right: 4px;
+
+                & .af-uppleva-events-item-img {
+                    padding-top: 56.25%;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+                & .af-uppleva-events-item-textContent {
+                    padding: 30px 20px;
+                    background-color: $nynas-lightgreen-color;
+                    height: 95px;
+                }
+            }
+
+            & .af-uppleva-events-item:nth-child(3n) {
+                margin-right: 0;
+            }
         }
     }
 
@@ -212,6 +317,17 @@
             & .af-startpage-listing-item-img {
                 padding-top: 86.66%;
             }
+        }
+    }
+
+    & .sv-facetedsearch-portlet {
+
+        & .sv-font-stor-svart {
+            margin: 0 !important;
+        }
+
+        & .sv-search-facet-backgroundColor {
+            margin-top: 10px;
         }
     }
 }
