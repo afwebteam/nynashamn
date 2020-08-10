@@ -1488,7 +1488,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-landingpage--pageName {
   position: absolute;
-  top: 70px;
+  top: 60px;
   left: 0;
   right: 0;
   padding: 20px 25px;
@@ -1509,7 +1509,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-landingpage--shortcuts {
   background-color: #EDEBE9;
   position: absolute;
-  top: 185px;
+  top: 170px;
   left: 0;
   right: 0;
   padding: 15px 25px 30px 25px;
