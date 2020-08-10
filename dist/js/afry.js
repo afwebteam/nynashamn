@@ -30,6 +30,14 @@ svDocReady(function () {
         isMobile = anIsMobile;
     };
 
+    AF.changeStandardSVIcons = function () {
+        // Change all standard sitevision file icons
+        jq('.sv-linkicon').each(function (index, elem) {
+            var theElem = jq(elem);
+            theElem.prop('src', '/images/18.d9ec095172e6db963754cee/1596632006892/filer.svg');
+        });
+    };
+
     AF.debugElementSize = function () {
 
         var docWidth = document.documentElement.offsetWidth;
@@ -1426,12 +1434,6 @@ svDocReady(function () {
         jq('.af-findSchool-map').toggle();
     });
 
-    // Change all standard sitevision file icons
-    jq('.sv-linkicon').each(function (index, elem) {
-        var theElem = jq(elem);
-        theElem.prop('src', '/images/18.d9ec095172e6db963754cee/1596632006892/filer.svg');
-    });
-
     jq('.af-uppleva-events .af-accordionText').on('click', function (e) {
 
         var target = jq(e.target),
@@ -1499,4 +1501,6 @@ svDocReady(function () {
         */
 
     });
+
+    AF.changeStandardSVIcons();
 });

@@ -2306,6 +2306,11 @@ nav.af-center .af-searchIcon a.active {
   margin-bottom: 10px;
 }
 
+.sv-search-result .sv-search-hit .infoText .sv-linkicon {
+  bottom: 2px;
+  top: auto;
+}
+
 .sv-search-result .sv-search-hit:first-of-type {
   border-top: 1px solid #414042;
 }
