@@ -1504,6 +1504,19 @@ svDocReady(function () {
         });
     });
 
+    // Link whole puff at startpage Uppleva site
+    jq.each(jq('.af-uppleva-site .af-pagewidth-1366px.af-puff .af-flexRow .sv-decoration-generell-gron-platta .sv-font-lankstig a'), function (i, e) {
+
+        var thisElem = jq(e),
+            thisHref = thisElem.prop('href'),
+            parent = thisElem.closest('.sv-vertical.sv-layout.sv-template-layout');
+
+        parent.on('click', function (e) {
+            document.location.href = thisHref;
+        });
+    });
+
+
     AF.changeStandardSVIcons();
     AF.hideElemsAfterLoad();
 });
