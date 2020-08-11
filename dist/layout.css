@@ -4496,7 +4496,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-filter {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 30px 20px;
 }
 
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-filter .sv-font-brodtext-fet {
@@ -4577,7 +4577,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-items .af-uppleva-events-item {
-  width: 32.5%;
+  width: 33%;
   margin-bottom: 5px;
   margin-right: 4px;
 }
