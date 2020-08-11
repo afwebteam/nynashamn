@@ -339,4 +339,161 @@
             margin-top: 10px;
         }
     }
+
+    & .af-uppleva-site-discover {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        & a {
+            text-decoration: none;
+        }
+
+        & .af-uppleva-site-discover--item {
+            width: 32.4%;
+            margin-bottom: 20px;
+
+            & .af-uppleva-site-discover--item-img {
+                background-size: cover;
+                background-position: center;
+                padding-top: 56.25%;
+            }
+
+            & .af-uppleva-site-discover--item-textContent {
+                padding: 30px 20px;
+                background-color: $nynas-lightgreen-color;
+                height: 75px;
+            }
+        }
+
+        & .af-uppleva-site-discover--item.af-item-1 {
+
+            & .af-uppleva-site-discover--item-img {
+                padding-top: 114.6%;
+            }
+        }
+
+        & .af-uppleva-site-discover--item.af-item-2 {
+            width: 66.2%;
+
+            & .af-uppleva-site-discover--item-img {
+                padding-top: 56.25%;
+            }
+        }
+
+        & .af-uppleva-site-discover--item.af-item-3 {
+            width: 66.2%;
+
+            & .af-uppleva-site-discover--item-img {
+                padding-top: 56.25%;
+            }
+        }
+
+        & .af-uppleva-site-discover--item.af-item-4 {
+            
+            & .af-uppleva-site-discover--item-img {
+                padding-top: 114.6%;
+            }
+        }
+
+        & .af-uppleva-site-discover--item.af-item-5 {
+            
+            & .af-uppleva-site-discover--item-img {
+                padding-top: 114.6%;
+            }
+        }
+
+        & .af-uppleva-site-discover--item.af-item-6 {
+            
+            & .af-uppleva-site-discover--item-img {
+                padding-top: 114.6%;
+            }
+        }
+
+        & .af-uppleva-site-discover--item.af-item-7 {
+            
+            & .af-uppleva-site-discover--item-img {
+                padding-top: 114.6%;
+            }
+        }
+
+    }
+
+    & .af-uppleva-site-meetTheLocals {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        & a {
+            text-decoration: none;
+        }
+
+        & .af-uppleva-site-meetTheLocals--local {
+            width: 32.4%;
+            margin-bottom: 20px;
+
+            & .af-uppleva-site-meetTheLocals--local-img {
+                background-size: cover;
+                background-position: center;
+                padding-top: 56.25%;
+            }
+
+            & .af-uppleva-site-meetTheLocals--local-textContent {
+                padding: 30px 20px;
+                background-color: $nynas-lightgreen-color;
+                height: 75px;
+            }
+        }
+
+        & .af-uppleva-site-meetTheLocals--local.af-item-1 {
+
+            & .af-uppleva-site-meetTheLocals--local-img {
+                padding-top: 114.6%;
+            }
+        }
+
+        & .af-uppleva-site-meetTheLocals--local.af-item-2 {
+            width: 66.2%;
+
+            & .af-uppleva-site-meetTheLocals--local-img {
+                padding-top: 56.25%;
+            }
+        }
+
+        & .af-uppleva-site-meetTheLocals--local.af-item-3 {
+            width: 66.2%;
+
+            & .af-uppleva-site-meetTheLocals--local-img {
+                padding-top: 56.25%;
+            }
+        }
+
+        & .af-uppleva-site-meetTheLocals--local.af-item-4 {
+
+            & .af-uppleva-site-meetTheLocals--local-img {
+                padding-top: 114.6%;
+            }
+        }
+
+        & .af-uppleva-site-meetTheLocals--local.af-item-5 {
+
+            & .af-uppleva-site-meetTheLocals--local-img {
+                padding-top: 114.6%;
+            }
+        }
+
+        & .af-uppleva-site-meetTheLocals--local.af-item-6 {
+
+            & .af-uppleva-site-meetTheLocals--local-img {
+                padding-top: 114.6%;
+            }
+        }
+
+        & .af-uppleva-site-meetTheLocals--local.af-item-7 {
+
+            & .af-uppleva-site-meetTheLocals--local-img {
+                padding-top: 114.6%;
+            }
+        }
+    }
 }

@@ -162,5 +162,35 @@
                 }
             }
         }
+
+        & .af-uppleva-site-meetTheLocals {
+
+            & .af-uppleva-site-meetTheLocals--local {
+                width: 100% !important;
+
+                & .af-uppleva-site-meetTheLocals--local-img {
+                    padding-top: 56.25% !important;
+                }
+
+                & .af-uppleva-site-meetTheLocals--local-textContent {
+                    height: auto !important;
+                }
+            }
+        }
+
+        & .af-uppleva-site-discover {
+
+            & .af-uppleva-site-discover--item {
+                width: 100% !important;
+
+                & .af-uppleva-site-discover--item-img {
+                    padding-top: 56.25% !important;
+                }
+
+                & .af-uppleva-site-discover--item-textContent {
+                    height: auto !important;
+                }
+            }
+        }
     }
 }
