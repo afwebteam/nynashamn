@@ -129,5 +129,38 @@
                 }
             }
         }
+
+        & .af-uppleva-events {
+
+            & .af-uppleva-events-filter {
+                padding: 30px 20px 25px 30px !important;
+
+                & .sv-font-brodtext-fet {
+                    font-size: 20px;
+                    font-weight: 700;
+
+                    & .af-accordionText {
+                        font-size: 13px;
+                        top: 4px;
+                    }
+                }
+
+                & .af-closed:after {
+                    background-size: 13px !important;
+                    top: 3px !important;
+                }
+            }
+
+            & .af-uppleva-events-items {
+
+                & .af-uppleva-events-item {
+                    width: 100% !important;
+
+                    & .af-uppleva-events-item-textContent {
+                        height: 65px !important;
+                    }
+                }
+            }
+        }
     }
 }

@@ -2920,6 +2920,27 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-uppleva-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item .af-startpage-listing-item-img {
     padding-top: 56.25% !important;
   }
+  .af-uppleva-site .af-uppleva-events .af-uppleva-events-filter {
+    padding: 30px 20px 25px 30px !important;
+  }
+  .af-uppleva-site .af-uppleva-events .af-uppleva-events-filter .sv-font-brodtext-fet {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .af-uppleva-site .af-uppleva-events .af-uppleva-events-filter .sv-font-brodtext-fet .af-accordionText {
+    font-size: 13px;
+    top: 4px;
+  }
+  .af-uppleva-site .af-uppleva-events .af-uppleva-events-filter .af-closed:after {
+    background-size: 13px !important;
+    top: 3px !important;
+  }
+  .af-uppleva-site .af-uppleva-events .af-uppleva-events-items .af-uppleva-events-item {
+    width: 100% !important;
+  }
+  .af-uppleva-site .af-uppleva-events .af-uppleva-events-items .af-uppleva-events-item .af-uppleva-events-item-textContent {
+    height: 65px !important;
+  }
 }
 
 /*
@@ -4509,7 +4530,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-filter-categories .af-uppleva-events-filter-category {
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-filter-categories .af-uppleva-events-filter-category a {
@@ -4531,7 +4552,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   max-width: 1366px;
   margin: 10px auto;
 }
@@ -4540,6 +4561,10 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   width: 32.5%;
   margin-bottom: 5px;
   margin-right: 4px;
+}
+
+.af-uppleva-site .af-uppleva-events .af-uppleva-events-items .af-uppleva-events-item a {
+  text-decoration: none;
 }
 
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-items .af-uppleva-events-item .af-uppleva-events-item-img {

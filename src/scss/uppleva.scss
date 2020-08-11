@@ -116,7 +116,7 @@
 
             & .af-uppleva-events-filter-category {
                 margin-right: 20px;
-                margin-bottom: 20px;
+                margin-bottom: 35px;
 
                 & a {
                     background-color: $white-color;
@@ -139,7 +139,7 @@
         & .af-uppleva-events-items {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: flex-start;
             max-width: 1366px;
             margin: 10px auto;
 
@@ -147,6 +147,10 @@
                 width: 32.5%;
                 margin-bottom: 5px;
                 margin-right: 4px;
+
+                & a {
+                    text-decoration: none;
+                }
 
                 & .af-uppleva-events-item-img {
                     padding-top: 56.25%;

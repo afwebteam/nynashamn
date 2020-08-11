@@ -17,6 +17,7 @@ svDocReady(function () {
         jq('.af-findSchool-row--filter-areas').hide();
         jq('.af-findSchool-row--filter-productions').hide();
         jq('.af-findSchool-row--filter-forms').hide();
+        jq('.af-uppleva-events-filter-categories').hide();
     };
 
     AF.isEmptyString = function (aString) {
@@ -1447,8 +1448,7 @@ svDocReady(function () {
             text,
             isExpanded;
 
-        text = target.find('.af-accordionText');
-
+        text = container.find('.af-accordionText');
         isExpanded = (container.attr('aria-expanded') === 'true');
 
         if (isExpanded) {
@@ -1492,19 +1492,16 @@ svDocReady(function () {
             tags.push(jq(e).text());
         });
 
-        /*
         jq.ajax({
             url: portletURL,
             data: {
-                tag: JSON.stringify(tags)
+                tags: JSON.stringify(tags)
             },
             type: 'get',
             success: function (data) {
                 jq('.af-uppleva-events-items').html(data);
             }
         });
-        */
-
     });
 
     AF.changeStandardSVIcons();
