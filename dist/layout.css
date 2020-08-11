@@ -4676,6 +4676,10 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   justify-content: space-between;
 }
 
+.af-uppleva-site .af-startpage-listing-items a {
+  text-decoration: none;
+}
+
 .af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item {
   width: 32.4%;
   margin-bottom: 20px;
