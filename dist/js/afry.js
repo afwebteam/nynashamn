@@ -40,7 +40,23 @@ svDocReady(function () {
     AF.changeStandardSVIcons = function () {
         // Change all standard sitevision file icons
         jq('.sv-linkicon').each(function (index, elem) {
-            var theElem = jq(elem);
+            var theElem = jq(elem),
+                title = theElem.prop('title'),
+                container;
+
+            if (title && title === 'PDF') {
+                container = theElem.closest('ul');
+
+                if (!container || container.length === 0) {
+                    container = theElem.closest('p.normal');
+                }
+
+                if (container && container.length > 0) {
+                    theElem.after('<span style="margin-left: 30px;font-size: 13px;">( PDF )</span>');
+                }
+
+            }
+
             theElem.prop('src', '/images/18.d9ec095172e6db963754cee/1596632006892/filer.svg');
         });
     };
