@@ -1532,6 +1532,33 @@ svDocReady(function () {
         });
     });
 
+    jq('.af-event-calendar-dateRow--filter .form-element').on('click', function (e) {
+
+        var target = jq(e.target),
+            datepicker,
+            nextInput,
+            name;
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        if (!target.is('input')) {
+            nextInput = target.closest('.form-element').find('input');
+        } else {
+            nextInput = target;
+        }
+
+        name = nextInput.prop('name');
+
+        if (name === 'af-events-from-date') {
+            datepicker = jq('input[name="af-events-from-date"]').data('datepicker');
+        } else {
+            datepicker = jq('input[name="af-events-to-date"]').data('datepicker');
+        }
+
+        datepicker.show();
+    });
+
 
     AF.changeStandardSVIcons();
     AF.hideElemsAfterLoad();

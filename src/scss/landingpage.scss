@@ -14,20 +14,22 @@
 
     &--pageName {
         position: absolute;
-        top:60px;
+        top:0;
         left: 0;
         right: 0;
         padding: 20px 25px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+        display: none;
 
         & h1 {
             background-color: $nynas-grey-color;
             margin: 0;
             background-color: #EDEBE9;
             padding: 20px 25px;
-            display: inline-block;
+            /* display: inline-block; */
+            display: none;
             border-radius: 6px;
         }
     }
@@ -35,7 +37,7 @@
     &--shortcuts {
         background-color: $nynas-grey-color;
         position: absolute;
-        top:170px;
+        top:80px;
         left: 0;
         right: 0;
         padding: 15px 25px 30px 25px;

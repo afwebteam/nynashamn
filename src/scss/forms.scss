@@ -32,10 +32,13 @@ div[role=search] {
             outline: none;
             width: 100%;
             font-weight: 700;
+            padding: 0;
         }
 
         & .af-searchIcon {
             position: absolute;
+            top: 2px;
+            right: 3px;
         }
 
         & .af-searchIcon:after {
