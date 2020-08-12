@@ -2541,6 +2541,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   margin-left: 30px;
   padding: 15px 0;
   display: block;
+  font-family: museo,sans-serif;
 }
 
 .af-mobileMainMenu--level2,
@@ -2650,10 +2651,10 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-mobileMainMenu--level3Item a {
-  font-family: museo;
-  font-size: 14px;
   color: #414042;
   margin-left: 40px;
+  font-family: museo,sans-serif;
+  font-size: 15px;
 }
 
 .af-mobileMainMenu--level4 {
