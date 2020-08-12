@@ -1559,6 +1559,24 @@ svDocReady(function () {
         datepicker.show();
     });
 
+    jq('.sv-predefinedsearch-portlet .af-viewMoreEvents').on('click', function (e) {
+
+        var target = jq(e.target),
+            isOpen = (target.attr('aria-expanded') === 'true');
+
+        if (isOpen) {
+            target.attr('aria-expanded', false);
+            target.text('Visa fler');
+            target.removeClass('af-open');
+        } else {
+            target.attr('aria-expanded', true);
+            target.text('Visa färre');
+            target.addClass('af-open');
+        }
+
+        jq('.sv-predefinedsearch-portlet .af-viewMoreEvents--hidden').toggle();
+    });
+
 
     AF.changeStandardSVIcons();
     AF.hideElemsAfterLoad();

@@ -500,4 +500,33 @@
     .af-pagewidth-1366px.af-puff .af-flexRow .sv-vertical.sv-layout .sv-vertical.sv-layout:hover {
         cursor: pointer;
     }
+
+    & .sv-predefinedsearch-portlet {
+
+        & .af-viewMoreEvents--hidden {
+            display: none;
+        }
+
+        & .af-closed:after {
+            content: ' ';
+            background-image: url($plusSignIcon);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 13px;
+            display: inline-block;
+            height: 13px;
+            width: 13px;
+            margin-left: 5px;
+            transition: all 0.3s ease;
+        }
+
+        & .af-open:after {
+            transform: rotate(45deg);
+            transition: all 0.3s ease;
+        }
+
+        & .af-viewMoreEvents:hover {
+            cursor: pointer;
+        }
+    }
 }
