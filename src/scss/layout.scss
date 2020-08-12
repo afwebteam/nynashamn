@@ -131,6 +131,12 @@ footer {
     top: 3px;
 }
 
+.normal {
+    .sv-linkicon {
+        top: unset;
+    } 
+}
+
 a[href*="/download/"] {
     margin-right: 5px; 
     position: relative;
