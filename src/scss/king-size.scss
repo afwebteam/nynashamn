@@ -1,0 +1,14 @@
+@import 'variables';
+
+@media screen and (min-width: 1550px) {
+
+    .af-theStartPage {
+
+        & .af-wave {
+
+            & .af-wave--shape {
+                padding: 6% 0 0 0;
+            }
+        }
+    }
+}

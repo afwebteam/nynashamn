@@ -1480,6 +1480,22 @@ $museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/
 $museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
 $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
 */
+@media screen and (min-width: 1550px) {
+  .af-theStartPage .af-wave .af-wave--shape {
+    padding: 6% 0 0 0;
+  }
+}
+
+/*
+$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
+$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
+
+$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
+$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
+
+$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
+$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
+*/
 /* Landing page */
 .af-landingpage--bigImage {
   padding: 40px 0;
