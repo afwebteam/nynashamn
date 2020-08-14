@@ -275,15 +275,19 @@
     & .af-startpage-listing-items {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: stretch;
+        margin: 0 -5px;
 
         & a {
             text-decoration: none;
+            display: block;
+            border: 5px solid $white-color;
+            background-color: $nynas-lightgreen-color;
         }
 
         & .af-startpage-listing-item {
-            width: 32.4%;
-            margin-bottom: 20px;
+            width: 33.33333%;
+            display: flex;
         }
 
         & .af-startpage-listing-item-img {
@@ -305,7 +309,7 @@
         }
 
         & .af-startpage-listing-item.af-item-2 {
-            width: 66.2%;
+            width: 66.66666%;
 
             & .af-startpage-listing-item-img {
                 padding-top: 56.25%;
@@ -313,7 +317,7 @@
         }
 
         & .af-startpage-listing-item.af-item-6 {
-            width: 49.3%;
+            width: 50%;
 
             & .af-startpage-listing-item-img {
                 padding-top: 86.66%;
@@ -321,7 +325,7 @@
         }
 
         & .af-startpage-listing-item.af-item-7 {
-            width: 49.3%;
+            width: 50%;
 
             & .af-startpage-listing-item-img {
                 padding-top: 86.66%;

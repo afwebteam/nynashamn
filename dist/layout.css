@@ -4738,16 +4738,20 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-uppleva-site .af-startpage-listing-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: stretch;
+  margin: 0 -5px;
 }
 
 .af-uppleva-site .af-startpage-listing-items a {
   text-decoration: none;
+  display: block;
+  border: 5px solid #fff;
+  background-color: #E6EFD9;
 }
 
 .af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item {
-  width: 32.4%;
-  margin-bottom: 20px;
+  width: 33.33333%;
+  display: flex;
 }
 
 .af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item-img {
@@ -4766,7 +4770,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item.af-item-2 {
-  width: 66.2%;
+  width: 66.66666%;
 }
 
 .af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item.af-item-2 .af-startpage-listing-item-img {
@@ -4774,7 +4778,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item.af-item-6 {
-  width: 49.3%;
+  width: 50%;
 }
 
 .af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item.af-item-6 .af-startpage-listing-item-img {
@@ -4782,7 +4786,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item.af-item-7 {
-  width: 49.3%;
+  width: 50%;
 }
 
 .af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item.af-item-7 .af-startpage-listing-item-img {
