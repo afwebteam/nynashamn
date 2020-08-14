@@ -2131,7 +2131,7 @@ nav.af-center .af-searchIcon a.active {
 
 .sv-decoration-generell-dragspel h2, .sv-decoration-generell-dragspel .subheading3 {
   background-color: #EDEBE9;
-  padding: 20px 54px;
+  padding: 20px 100px 20px 50px;
   margin-bottom: 15px;
   position: relative;
   font-size: 25px;
@@ -2177,6 +2177,7 @@ nav.af-center .af-searchIcon a.active {
   background-position: center;
   background-size: 25px;
   position: absolute;
+  top: 20px;
   right: 20px;
   width: 30px;
   transition: all 0.3s ease;
@@ -2206,6 +2207,10 @@ nav.af-center .af-searchIcon a.active {
 
 .sv-decoration-generell-dragspel .sv-text-portlet-content p:first-of-type {
   margin: 0;
+}
+
+.sv-decoration-generell-dragspel .sv-decoration-generell-tabell {
+  margin-bottom: 25px;
 }
 
 .sv-decoration-generell-tabell table {
