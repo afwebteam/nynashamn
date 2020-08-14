@@ -408,6 +408,10 @@ nav.af-center {
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
     }
+
+    & p.normal + p.normal {
+        margin: 0;
+    }
     
 }
 

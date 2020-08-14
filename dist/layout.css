@@ -2063,6 +2063,10 @@ nav.af-center .af-searchIcon a.active {
   border-bottom-right-radius: 6px;
 }
 
+.sv-decoration-generell-faktaruta p.normal + p.normal {
+  margin: 0;
+}
+
 .af-related-information {
   margin: 60px 0;
 }
