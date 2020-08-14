@@ -384,7 +384,7 @@ nav.af-center {
     & h2, h3, .sv-font-stor-svart {
         background-color: $nynas-darkblue-color;
         padding: 25px 50px;
-        margin-bottom: 5px;
+        margin-bottom: 5px !important;
         border-top-left-radius: 6px;
         border-top-right-radius: 6px;
         font-size: 25px;
@@ -400,6 +400,10 @@ nav.af-center {
         display: inline-block;
         background-repeat: no-repeat;
         background-position: center;
+    }
+
+    p.normal:first-of-type {
+        margin-top: 5px;
     }
 
     & p.normal {

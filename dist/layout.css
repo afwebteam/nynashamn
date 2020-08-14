@@ -2038,7 +2038,7 @@ nav.af-center .af-searchIcon a.active {
 .sv-decoration-generell-faktaruta h2, .sv-decoration-generell-faktaruta h3, .sv-decoration-generell-faktaruta .sv-font-stor-svart {
   background-color: #002F6C;
   padding: 25px 50px;
-  margin-bottom: 5px;
+  margin-bottom: 5px !important;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   font-size: 25px;
@@ -2054,6 +2054,10 @@ nav.af-center .af-searchIcon a.active {
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.sv-decoration-generell-faktaruta p.normal:first-of-type {
+  margin-top: 5px;
 }
 
 .sv-decoration-generell-faktaruta p.normal {
