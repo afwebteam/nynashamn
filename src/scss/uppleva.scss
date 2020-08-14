@@ -189,13 +189,19 @@
             background-size: cover;
         }
 
-        & .af-breadcrumb {
-            position: absolute;
-            top: 50px;
-            left: 50px;
-            background-color: $white-color;
-            padding: 15px;
-            border-radius: 6px;
+        & .af-pagewidth-1366px {
+
+            position: relative;
+
+            & .af-breadcrumb {
+                position: absolute;
+                top: 10px;
+                left: 50px;
+                background-color: $white-color;
+                padding: 10px 15px;
+                border-radius: 6px;
+            }
+
         }
     }
 

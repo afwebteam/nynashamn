@@ -1652,9 +1652,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   margin: 0;
   background-color: #fff;
   z-index: 2;
-  top: 5px;
+  top: 10px;
   left: 50px;
-  padding: 15px;
+  padding: 10px 15px;
   border-radius: 6px;
 }
 
@@ -2379,7 +2379,8 @@ nav.af-center .af-searchIcon a.active {
 }
 
 .af-breadcrumb {
-  margin: 0;
+  max-width: 1366px;
+  margin: 0 auto;
   padding: 0;
   padding-bottom: 20px;
   padding-left: 88px;
@@ -4698,12 +4699,16 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   background-size: cover;
 }
 
-.af-uppleva-site .af-event-detailpage .af-breadcrumb {
+.af-uppleva-site .af-event-detailpage .af-pagewidth-1366px {
+  position: relative;
+}
+
+.af-uppleva-site .af-event-detailpage .af-pagewidth-1366px .af-breadcrumb {
   position: absolute;
-  top: 50px;
+  top: 10px;
   left: 50px;
   background-color: #fff;
-  padding: 15px;
+  padding: 10px 15px;
   border-radius: 6px;
 }
 
