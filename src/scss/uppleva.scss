@@ -353,26 +353,29 @@
     & .af-uppleva-site-discover {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: stretch;
+        margin: 0 -5px;
 
         & a {
             text-decoration: none;
+            display: block;
+            border: 5px solid $white-color;
+            background-color: $nynas-lightgreen-color;
         }
 
         & .af-uppleva-site-discover--item {
-            width: 32.4%;
-            margin-bottom: 20px;
+            width: 33.33333%;
+            display: flex;
 
             & .af-uppleva-site-discover--item-img {
                 background-size: cover;
                 background-position: center;
-                padding-top: 56.25%;
+                padding-top: 56.6%;
             }
 
             & .af-uppleva-site-discover--item-textContent {
                 padding: 30px 20px;
                 background-color: $nynas-lightgreen-color;
-                height: 75px;
             }
         }
 
@@ -384,18 +387,18 @@
         }
 
         & .af-uppleva-site-discover--item.af-item-2 {
-            width: 66.2%;
+            width: 66.66666%;
 
             & .af-uppleva-site-discover--item-img {
-                padding-top: 56.25%;
+                padding-top: 56.6%;
             }
         }
 
         & .af-uppleva-site-discover--item.af-item-3 {
-            width: 66.2%;
+            width: 66.66666%;
 
             & .af-uppleva-site-discover--item-img {
-                padding-top: 56.25%;
+                padding-top: 56.6%;
             }
         }
 
@@ -432,15 +435,19 @@
     & .af-uppleva-site-meetTheLocals {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: stretch;
+        margin: 0 -5px;
 
         & a {
             text-decoration: none;
+            display: block;
+            border: 5px solid $white-color;
+            background-color: $nynas-lightgreen-color;
         }
 
         & .af-uppleva-site-meetTheLocals--local {
-            width: 32.4%;
-            margin-bottom: 20px;
+            width: 33.33333%;
+            display: flex;
 
             & .af-uppleva-site-meetTheLocals--local-img {
                 background-size: cover;
@@ -451,7 +458,6 @@
             & .af-uppleva-site-meetTheLocals--local-textContent {
                 padding: 30px 20px;
                 background-color: $nynas-lightgreen-color;
-                height: 75px;
             }
         }
 
@@ -463,18 +469,18 @@
         }
 
         & .af-uppleva-site-meetTheLocals--local.af-item-2 {
-            width: 66.2%;
+            width: 66.66666%;
 
             & .af-uppleva-site-meetTheLocals--local-img {
-                padding-top: 56.25%;
+                padding-top: 56.6%;
             }
         }
 
         & .af-uppleva-site-meetTheLocals--local.af-item-3 {
-            width: 66.2%;
+            width: 66.66666%;
 
             & .af-uppleva-site-meetTheLocals--local-img {
-                padding-top: 56.25%;
+                padding-top: 56.6%;
             }
         }
 
