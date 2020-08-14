@@ -1,6 +1,6 @@
 @import 'variables';
 
-@media screen and (min-width: 1550px) {
+@media screen and (max-width: 450px) {
 
     .af-theStartPage {
 
@@ -16,13 +16,17 @@
 
         & .af-wave--shape {
             padding: 6% 0 0 0;
+            background-position: bottom;
         }
     }
 
     .af-tillvaxt-site {
 
-        & .af-wave--shape {
-            padding: 6% 0 0 0;
+        & .af-wave {
+            & .af-wave--shape {
+                top: -80px;
+                background-position: bottom;
+            }
         }
     }
 }
