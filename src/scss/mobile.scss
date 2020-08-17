@@ -1114,4 +1114,22 @@
             }
         }
     }
+
+    & .af-eservicesResult-heading {
+        font-size: 20px !important;
+    }
+
+    & .af-eservicesResult {
+
+        padding: 20px !important;
+
+        & .sv-search-hit {
+            padding: 5px 0 !important;
+            border: none;
+
+            & a {
+                font-size: 15px !important;
+            }
+        }
+    }
 }

@@ -84,11 +84,12 @@ div[role=search] {
     position: relative;
 
     & .af-eservicesResult-heading {
-        font-weight: 700;
+        font-weight: 300;
         background-color: #002F6C;
         padding: 25px 50px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        font-size: 25px;
         color: #fff;
         position: relative;
     }
@@ -97,6 +98,7 @@ div[role=search] {
 
         padding: 50px;
         margin: 0;
+        margin-top: 5px;
         list-style-type: none;
         background-color: $nynas-grey-color;
 
@@ -110,7 +112,9 @@ div[role=search] {
 
             & a {
                 font-size: 20px;
-                font-weight: 500;;
+                font-weight: 300;
+                text-decoration: underline;
+                text-decoration-color: $nynas-darkblue-color;
             }
         }
 

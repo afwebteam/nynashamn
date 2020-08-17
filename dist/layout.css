@@ -694,11 +694,12 @@ div[role=search] {
 }
 
 .sv-facetedsearch-portlet .af-eservicesResult-heading {
-  font-weight: 700;
+  font-weight: 300;
   background-color: #002F6C;
   padding: 25px 50px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  font-size: 25px;
   color: #fff;
   position: relative;
 }
@@ -706,6 +707,7 @@ div[role=search] {
 .sv-facetedsearch-portlet .af-eservicesResult {
   padding: 50px;
   margin: 0;
+  margin-top: 5px;
   list-style-type: none;
   background-color: #EDEBE9;
 }
@@ -721,7 +723,10 @@ div[role=search] {
 
 .sv-facetedsearch-portlet .af-eservicesResult .sv-search-hit a {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 300;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #002F6C;
+  text-decoration-color: #002F6C;
 }
 
 .sv-facetedsearch-portlet .sv-search-result-normalHits {
@@ -3851,6 +3856,19 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .pagecontent .af-pageWidth h1.heading {
     margin-left: 20px;
+  }
+  .af-eservicesResult-heading {
+    font-size: 20px !important;
+  }
+  .af-eservicesResult {
+    padding: 20px !important;
+  }
+  .af-eservicesResult .sv-search-hit {
+    padding: 5px 0 !important;
+    border: none;
+  }
+  .af-eservicesResult .sv-search-hit a {
+    font-size: 15px !important;
   }
 }
 
