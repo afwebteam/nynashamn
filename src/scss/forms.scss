@@ -83,6 +83,43 @@ div[role=search] {
 
     position: relative;
 
+    & .af-eservicesResult-heading {
+        font-weight: 700;
+        background-color: #002F6C;
+        padding: 25px 50px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        color: #fff;
+        position: relative;
+    }
+
+    & .af-eservicesResult {
+
+        padding: 50px;
+        margin: 0;
+        list-style-type: none;
+        background-color: $nynas-grey-color;
+
+        & .sv-search-hit:first-of-type {
+            border: none;
+        }
+
+        & .sv-search-hit {
+            padding: 10px 0;
+            border: none;
+
+            & a {
+                font-size: 20px;
+                font-weight: 500;;
+            }
+        }
+
+    }
+
+    & .sv-search-result-normalHits {
+        margin-top: 80px !important;
+    }
+
     & .af-margin {
         margin: 20px 0 60px 0;
     }

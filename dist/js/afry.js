@@ -29,6 +29,25 @@ svDocReady(function () {
         return false;
     };
 
+    AF.updateSearchResult = function () {
+
+        var eserviceContainer = jq('.af-eservicesResult-container'),
+            amountServices = eserviceContainer.find('li'),
+            theLength;
+
+        if (amountServices && amountServices.length) {
+            theLength = amountServices.length;
+        } else {
+            theLength = 0;
+        }
+
+        if (theLength === 0) {
+            eserviceContainer.hide();
+        } else {
+            eserviceContainer.show();
+        }
+    };
+
     AF.isMobileView = function () {
         return isMobile;
     };
