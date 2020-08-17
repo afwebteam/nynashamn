@@ -17,7 +17,7 @@ svDocReady(function () {
         jq('.af-findSchool-row--filter-areas').hide();
         jq('.af-findSchool-row--filter-productions').hide();
         jq('.af-findSchool-row--filter-forms').hide();
-        jq('.af-uppleva-events-filter-categories').hide();
+        //jq('.af-uppleva-events-filter-categories').hide();
     };
 
     AF.isEmptyString = function (aString) {
