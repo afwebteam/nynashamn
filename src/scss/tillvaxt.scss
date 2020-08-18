@@ -25,6 +25,13 @@
         }
     }
 
+    & .af-tags {
+
+        & .af-tag {
+            margin-bottom: 10px;
+        }
+    }
+
     & .af-pageWidth {
 
         & .sv-font-stor-svart {
@@ -36,6 +43,68 @@
 
         & .sv-font-stor-svart {
             font-size: 35px;
+        }
+    }
+
+    & .af-startpage-listing {
+
+        margin: 60px 0;
+
+        & .af-startpage-listing-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: stretch;
+            margin: 0 -5px;
+
+            & .af-startpage-listing-item {
+                width: 33.33333%;
+                display: flex;
+
+                & .af-startpage-listing-item-img {
+                    padding-top: 56.25%;
+                    background-size: cover;
+                }
+
+                & .af-startpage-listing-item-textContent {
+                    padding: 30px 20px;
+
+                    & .sv-font-brodtext-fet {
+                        font-size: 25px;
+                        color: $white-color;
+                        font-weight: 700;
+                    }
+
+                    & .tag {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: $white-color;
+                    }
+                }
+            }
+
+            & .af-startpage-listing-item.af-item-1 {
+                width: 50%;
+            }
+
+            & .af-startpage-listing-item.af-item-2 {
+                width: 50%;
+            }
+
+            & .af-startpage-listing-item.af-item-6 {
+                width: 50%;
+            }
+
+            & .af-startpage-listing-item.af-item-7 {
+                width: 50%;
+            }
+
+            & a {
+                text-decoration: none;
+                display: block;
+                border: 5px solid #fff;
+                background-color: $nynas-darkgreen-color;
+                width: 100%;
+            }
         }
     }
 }

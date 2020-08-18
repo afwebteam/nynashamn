@@ -52,5 +52,26 @@
                 background-repeat: no-repeat;
             }
         }
+
+        & .af-startpage-listing {
+
+            & .af-startpage-listing-items {
+    
+                & .af-startpage-listing-item {
+                    width: 100% !important;
+    
+                    & .af-startpage-listing-item-textContent {
+    
+                        & .sv-font-brodtext-fet {
+                            font-size: 18px !important;
+                        }
+    
+                        & .tag {
+                            font-size: 14px !important;
+                        }
+                    }
+                }
+            }
+        }    
     }
 }

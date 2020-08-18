@@ -2977,6 +2977,15 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     top: -50px;
     background-repeat: no-repeat;
   }
+  .af-tillvaxt-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item {
+    width: 100% !important;
+  }
+  .af-tillvaxt-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item .af-startpage-listing-item-textContent .sv-font-brodtext-fet {
+    font-size: 18px !important;
+  }
+  .af-tillvaxt-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item .af-startpage-listing-item-textContent .tag {
+    font-size: 14px !important;
+  }
 }
 
 /*
@@ -4625,12 +4634,77 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   background-color: #A19A94;
 }
 
+.af-tillvaxt-site .af-tags .af-tag {
+  margin-bottom: 10px;
+}
+
 .af-tillvaxt-site .af-pageWidth .sv-font-stor-svart {
   margin: 70px 0 25px 0;
 }
 
 .af-tillvaxt-site .af-aktuelltIcon .sv-font-stor-svart {
   font-size: 35px;
+}
+
+.af-tillvaxt-site .af-startpage-listing {
+  margin: 60px 0;
+}
+
+.af-tillvaxt-site .af-startpage-listing .af-startpage-listing-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  margin: 0 -5px;
+}
+
+.af-tillvaxt-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item {
+  width: 33.33333%;
+  display: flex;
+}
+
+.af-tillvaxt-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item .af-startpage-listing-item-img {
+  padding-top: 56.25%;
+  background-size: cover;
+}
+
+.af-tillvaxt-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item .af-startpage-listing-item-textContent {
+  padding: 30px 20px;
+}
+
+.af-tillvaxt-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item .af-startpage-listing-item-textContent .sv-font-brodtext-fet {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.af-tillvaxt-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item .af-startpage-listing-item-textContent .tag {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.af-tillvaxt-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item.af-item-1 {
+  width: 50%;
+}
+
+.af-tillvaxt-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item.af-item-2 {
+  width: 50%;
+}
+
+.af-tillvaxt-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item.af-item-6 {
+  width: 50%;
+}
+
+.af-tillvaxt-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item.af-item-7 {
+  width: 50%;
+}
+
+.af-tillvaxt-site .af-startpage-listing .af-startpage-listing-items a {
+  text-decoration: none;
+  display: block;
+  border: 5px solid #fff;
+  background-color: #2D5F55;
+  width: 100%;
 }
 
 /*
