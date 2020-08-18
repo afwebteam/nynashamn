@@ -2943,12 +2943,38 @@ $museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/158937681741
 $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
 */
 @media screen and (max-width: 880px) {
+  .af-tillvaxt-site * {
+    font-family: museo,sans-serif;
+  }
+  .af-tillvaxt-site .af-mobileTabs .af-menu--item {
+    order: unset;
+  }
+  .af-tillvaxt-site .af-pageWidth {
+    padding: 0 50px;
+  }
   .af-tillvaxt-site .af-startpageBigImage {
-    background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c542451a/1589378872626/startpage-background.png");
-    height: 400px;
+    background-image: none !important;
+    padding: 0 !important;
+    height: auto !important;
+  }
+  .af-tillvaxt-site .af-startpageBigImage .sv-script-portlet.sv-portlet.af-borderRadius {
+    width: 100%;
+  }
+  .af-tillvaxt-site .af-startpageBigImage > .af-center {
+    position: relative !important;
+    top: unset !important;
+    padding: 0;
+  }
+  .af-tillvaxt-site .af-startpageBigImage > .af-center .af-shortcuts-title {
+    text-align: left;
+  }
+  .af-tillvaxt-site .af-startpageBigImage > .af-center .af-shortcuts {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
   }
   .af-tillvaxt-site .af-wave .af-wave--shape {
-    top: -90px;
+    top: -50px;
     background-repeat: no-repeat;
   }
 }
@@ -4581,6 +4607,30 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 */
 .af-tillvaxt-site .af-menu .af-activeMenuItem {
   background-color: #2D5F55;
+}
+
+.af-tillvaxt-site .af-puffContainer {
+  margin-top: 0px;
+}
+
+.af-tillvaxt-site .af-puffContainer .af-tillvaxt-puff-1 {
+  background-color: #2D5F55;
+}
+
+.af-tillvaxt-site .af-puffContainer .af-tillvaxt-puff-2 {
+  background-color: #6D877F;
+}
+
+.af-tillvaxt-site .af-puffContainer .af-tillvaxt-puff-3 {
+  background-color: #A19A94;
+}
+
+.af-tillvaxt-site .af-pageWidth .sv-font-stor-svart {
+  margin: 70px 0 25px 0;
+}
+
+.af-tillvaxt-site .af-aktuelltIcon .sv-font-stor-svart {
+  font-size: 35px;
 }
 
 /*

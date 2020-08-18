@@ -8,4 +8,34 @@
             background-color: $nynas-darkgreen-color;
         }
     }
+
+    & .af-puffContainer {
+        margin-top: 0px;
+
+        & .af-tillvaxt-puff-1 {
+            background-color: $nynas-darkgreen-color;
+        }
+
+        & .af-tillvaxt-puff-2 {
+            background-color: $nynas-tillvaxt-greengrey;
+        }
+
+        & .af-tillvaxt-puff-3 {
+            background-color: $nynas-tillvaxt-grey;
+        }
+    }
+
+    & .af-pageWidth {
+
+        & .sv-font-stor-svart {
+            margin: 70px 0 25px 0;
+        }
+    }
+
+    & .af-aktuelltIcon {
+
+        & .sv-font-stor-svart {
+            font-size: 35px;
+        }
+    }
 }
