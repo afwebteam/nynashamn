@@ -4,6 +4,21 @@
 
     .af-uppleva-site { 
 
+        & * {
+            font-family: museo,sans-serif;
+        }
+
+        & .af-mobileTabs {
+
+            & .af-menu--item {
+                order: unset;
+            }
+        }
+
+        & .af-pageWidth {
+            padding: 0 50px;
+        }
+
         & .af-startpageBigImage {
             background-image: url($startpageBigImage);
             height: 400px;
