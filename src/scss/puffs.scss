@@ -125,6 +125,14 @@
             margin-bottom: 25px;
             flex-basis: 100%;
             width: 100%;
+
+            & .sv-horizontal.sv-layout {
+                margin-bottom: 25px;
+            }
+
+            & p {
+                margin: 0 0 5px 0;
+            }
         }
 
         & .af-contactModule--left {
