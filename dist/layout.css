@@ -3427,7 +3427,8 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-related-information h3,
   .af-related-information .sv-font-stor-svart,
   .af-contactModule .sv-font-stor-svart,
-  .sv-decoration-generell-faktaruta .sv-font-stor-svart {
+  .sv-decoration-generell-faktaruta .sv-font-stor-svart,
+  .sv-decoration-generell-faktaruta h2 {
     font-size: 20px !important;
   }
   .af-contactModule .af-contactModule-content .af-contactModule--left, .af-contactModule .af-contactModule-content .af-contactModule--right {
@@ -3440,7 +3441,8 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-contactModule h2:before,
   .af-contactModule h3:before,
   .af-contactModule .sv-font-stor-svart:before,
-  .sv-decoration-generell-faktaruta .sv-font-stor-svart:before {
+  .sv-decoration-generell-faktaruta .sv-font-stor-svart:before,
+  .sv-decoration-generell-faktaruta h2:before {
     margin-right: 5px !important;
     background-position: center 5px;
     background-size: 15px;

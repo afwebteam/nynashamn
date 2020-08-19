@@ -406,7 +406,8 @@
     .af-related-information h3,
     .af-related-information .sv-font-stor-svart,
     .af-contactModule .sv-font-stor-svart,
-    .sv-decoration-generell-faktaruta .sv-font-stor-svart {
+    .sv-decoration-generell-faktaruta .sv-font-stor-svart,
+    .sv-decoration-generell-faktaruta h2 {
         font-size: 20px !important;
     }
 
@@ -428,7 +429,8 @@
     .af-contactModule h2:before,
     .af-contactModule h3:before,
     .af-contactModule .sv-font-stor-svart:before,
-    .sv-decoration-generell-faktaruta .sv-font-stor-svart:before {
+    .sv-decoration-generell-faktaruta .sv-font-stor-svart:before,
+    .sv-decoration-generell-faktaruta h2:before {
         margin-right: 5px !important;
         background-position: center 5px;
         background-size: 15px;
