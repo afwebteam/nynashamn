@@ -1132,4 +1132,11 @@
             }
         }
     }
+
+    & .af-mobileTabs {
+
+        & .af-menu--item {
+            order: unset;
+        }
+    }
 }
