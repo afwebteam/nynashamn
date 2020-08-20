@@ -1413,14 +1413,18 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-event-calendar .af-event-calendar-dateRow .af-event-calendar-categoryRow--filter-tags .af-event-calendar-categoryRow--filter-tag .active, .af-event-calendar .af-event-calendar-categoryRow .af-event-calendar-categoryRow--filter-tags .af-event-calendar-categoryRow--filter-tag .active {
-  background-color: #002F6C;
-  color: #fff;
+  background-color: #BBE0ED;
+}
+
+.af-event-calendar .af-event-calendar-clearFilterRow {
+  margin: 10px 0 40px 0;
+  background-color: #EDEBE9;
 }
 
 .af-event-calendar .af-event-calendar-clearFilter {
   max-width: 850px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .af-event-calendar .af-event-calendar-dateRow {
