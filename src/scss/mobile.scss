@@ -413,6 +413,15 @@
 
     .af-contactModule {
 
+        & .af-contactModule--middle {
+
+            margin-bottom: 0 !important;
+
+            & > div > div {
+                margin-bottom: 25px;
+            }
+        }
+
         & .af-contactModule-content {
 
             & .af-contactModule--left, & .af-contactModule--right {
