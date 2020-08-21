@@ -128,14 +128,21 @@
             & > .sv-horizontal {
                 display: flex;
                 margin-bottom: 0;
+                justify-content: space-between;
+
+                & > .sv-vertical.sv-layout {
+                    width: 44%;
+                    margin-right: 0;
+                }
+
+                & > .sv-vertical.sv-layout:first-of-type {
+                    width: 54%;
+                    margin-right: 0;
+                }
 
                 & .sv-horizontal.sv-layout {
                     margin-bottom: 25px;
                 }
-            }
-
-            & a {
-                word-break: break-word;
             }
 
             & p {
