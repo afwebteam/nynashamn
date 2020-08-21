@@ -71,6 +71,12 @@
         background-color: $nynas-darkblue-color;
         position: relative;
 
+        & > .activeMenuItem {
+            text-decoration: underline;
+            /* text-decoration-color: $nynas-darkblue-color; */
+            text-decoration-color: $white-color;
+        }
+
         &.open {
             padding: 0;
             border-bottom: 1px solid $white-color;

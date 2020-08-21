@@ -512,7 +512,6 @@ svDocReady(function () {
                 // Get all siblings
                 if (i === 1) {
                     siblings = menu.siblings('ul');
-                    console.log(siblings);
 
                     jq.each(siblings, function (i, e) {
 
@@ -532,7 +531,10 @@ svDocReady(function () {
 
             jq.each(allItems, function (i, e) {
                 var item = jq(e);
-                item.addClass('open');
+
+                if (i > 0) {
+                    item.addClass('open');
+                }
             });
         }
 
