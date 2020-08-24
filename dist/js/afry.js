@@ -336,7 +336,7 @@ svDocReady(function () {
                         h3Siblings;
 
                     if (target.is('.af-accordionText')) {
-                        target = target.closest('p');
+                        target = target.closest('.af-closed');
                     }
 
                     content = itemContainer.next('div');
@@ -357,37 +357,6 @@ svDocReady(function () {
                     }
 
                 });
-
-
-                /*
-                item.on('click', function (e) {
-                    var target = jq(e.target),
-                        content,
-                        text,
-                        isExpanded;
-         
-                    if (target.is('.af-accordionText')) {
-                        target = target.closest('p');
-                    }
-         
-                    content = target.next('.normal');
-                    text = target.find('.af-accordionText');
-                    isExpanded = (item.attr('aria-expanded') === 'true');
-         
-                    if (isExpanded) {
-                        item.attr('aria-expanded', false);
-                        content.slideUp();
-                        item.removeClass('af-open');
-                        text.text('Visa');
-                    } else {
-                        item.attr('aria-expanded', true);
-                        item.addClass('af-open');
-                        content.slideDown();
-                        text.text('Dölj');
-                    }
-         
-                });
-                */
             });
 
             if (h3s && h3s.length > 0) {
@@ -415,7 +384,7 @@ svDocReady(function () {
                             isExpanded;
 
                         if (target.is('.af-accordionText')) {
-                            target = target.closest('p');
+                            target = target.closest('.af-closed');
                         }
 
                         container = target.closest('div.sv-text-portlet');
