@@ -1598,6 +1598,13 @@ svDocReady(function () {
         jq('.sv-predefinedsearch-portlet .af-viewMoreEvents--hidden').toggle();
     });
 
+    jq('.af-findSchool .af-findSchool-school-info-map').on('click', function (e) {
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        console.log('click');
+    });
 
     AF.changeStandardSVIcons();
     AF.hideElemsAfterLoad();

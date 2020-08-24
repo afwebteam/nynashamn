@@ -505,6 +505,19 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   text-decoration: underline;
   -webkit-text-decoration-color: #002F6C;
   text-decoration-color: #002F6C;
+  padding-right: 20px;
+  position: relative;
+}
+
+.af-findSchool .af-findSchool-schools .af-findSchool-school .af-findSchool-school-info .af-findSchool-school-info-bottom .af-findSchool-school-info-map:after {
+  position: absolute;
+  content: ' ';
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
 }
 
 @media screen and (max-width: 880px) {
