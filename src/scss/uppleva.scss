@@ -130,14 +130,13 @@
                     font-size: 15px;
                     padding: 10px 15px;
                     border-radius: 6px;
-                    border: 1px solid $nynas-darkgrey-color;
+                    border: 1px solid $nynas-uppleva-grey;
                     outline: none;
                     text-decoration: none;
                 }
 
                 & .active {
-                    background-color: $nynas-darkblue-color;
-                    color: $white-color;
+                    background-color: $nynas-uppleva-blue;
                 }
             }
         }

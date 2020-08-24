@@ -252,6 +252,11 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   margin-bottom: 40px;
 }
 
+.af-findSchool #af-mapAll {
+  height: 500px;
+  margin-bottom: 40px;
+}
+
 .af-findSchool .af-findSchool-row {
   margin-bottom: 10px;
   padding: 20px;
@@ -1408,7 +1413,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   font-size: 15px;
   padding: 10px 15px;
   border-radius: 6px;
-  border: 1px solid #403E41;
+  border: 1px solid #938E90;
   outline: none;
 }
 
@@ -4882,14 +4887,13 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   font-size: 15px;
   padding: 10px 15px;
   border-radius: 6px;
-  border: 1px solid #403E41;
+  border: 1px solid #938E90;
   outline: none;
   text-decoration: none;
 }
 
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-filter-categories .af-uppleva-events-filter-category .active {
-  background-color: #002F6C;
-  color: #fff;
+  background-color: #BBE0ED;
 }
 
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-items {
