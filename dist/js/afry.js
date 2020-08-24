@@ -1569,10 +1569,13 @@ svDocReady(function () {
 
     jq('.af-findSchool .af-findSchool-school-info-map').on('click', function (e) {
 
+        var target = jq(e.target),
+            targetURL = target.data('detailpagemap');
+
         e.preventDefault();
         e.stopPropagation();
 
-        console.log('click');
+        document.location.href = targetURL;
     });
 
     AF.changeStandardSVIcons();
