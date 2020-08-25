@@ -1567,7 +1567,7 @@ svDocReady(function () {
         jq('.sv-predefinedsearch-portlet .af-viewMoreEvents--hidden').toggle();
     });
 
-    jq('.af-findSchool .af-findSchool-school-info-map').on('click', function (e) {
+    jq('.af-findSchool .af-findSchool-result').on('click', '.af-findSchool-school-info-map', function (e) {
 
         var target = jq(e.target),
             targetURL = target.data('detailpagemap');
