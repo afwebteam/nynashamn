@@ -254,8 +254,8 @@
         flex-wrap: wrap;
 
         & .af-findSchool-school {
-            width: calc(33% - 7px);
-            margin: 0 10px 10px 0;
+            width: calc(33.3333% - 15px);
+            margin: 0 20px 20px 0;
             background-color: $white-color;
             border-radius: 6px;
 
@@ -408,6 +408,7 @@
 
                     & .af-findSchool-school {
                         width: 100%;
+                        margin-right: 0;
                     }
                 }
             }

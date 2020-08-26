@@ -512,8 +512,8 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-findSchool .af-findSchool-schools .af-findSchool-school {
-  width: calc(33% - 7px);
-  margin: 0 10px 10px 0;
+  width: calc(33.3333% - 15px);
+  margin: 0 20px 20px 0;
   background-color: #fff;
   border-radius: 6px;
 }
@@ -628,6 +628,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .af-findSchool .af-findSchool-result .af-findSchool-result-width .af-findSchool-schools .af-findSchool-school {
     width: 100%;
+    margin-right: 0;
   }
 }
 
