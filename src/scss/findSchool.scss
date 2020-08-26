@@ -1,5 +1,42 @@
 @import 'variables';
 
+.sv-grid-850 {
+
+    & .pagecontent {
+
+        & .af-school-shortinfo {
+            margin-top: 0;
+            display: flex;
+            border-bottom: 1px solid $nynas-grey-color;
+            padding-bottom: 5px;
+
+            & > div {
+                width: 50%;
+
+                & .sv-font-brodtext-liten {
+                    margin: 0;
+                }
+            }
+
+            & > div:last-of-type {
+                & .sv-font-brodtext-liten {
+                    text-align: right;
+                }
+
+                & .sv-font-brodtext-liten:before {
+                    content: ' ';
+                    display: inline-block;
+                    background-image: url($mapIcon);
+                    background-repeat: no-repeat;
+                    background-size: 13px;
+                    background-position: center;
+                    width: 25px;
+                }
+            }
+        }
+    }
+}
+
 .af-schoolPage {
 
     & .af-schoolPage-header {

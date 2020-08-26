@@ -248,6 +248,35 @@ $museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/
 $museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
 $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
 */
+.sv-grid-850 .pagecontent .af-school-shortinfo {
+  margin-top: 0;
+  display: flex;
+  border-bottom: 1px solid #EDEBE9;
+  padding-bottom: 5px;
+}
+
+.sv-grid-850 .pagecontent .af-school-shortinfo > div {
+  width: 50%;
+}
+
+.sv-grid-850 .pagecontent .af-school-shortinfo > div .sv-font-brodtext-liten {
+  margin: 0;
+}
+
+.sv-grid-850 .pagecontent .af-school-shortinfo > div:last-of-type .sv-font-brodtext-liten {
+  text-align: right;
+}
+
+.sv-grid-850 .pagecontent .af-school-shortinfo > div:last-of-type .sv-font-brodtext-liten:before {
+  content: ' ';
+  display: inline-block;
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
+  background-repeat: no-repeat;
+  background-size: 13px;
+  background-position: center;
+  width: 25px;
+}
+
 .af-schoolPage .af-schoolPage-header {
   background-color: #002F6C;
   padding: 25px 50px;
