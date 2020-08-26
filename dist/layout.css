@@ -3048,11 +3048,18 @@ $museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/158937681741
 $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
 */
 @media screen and (max-width: 880px) {
+  .af-tillvaxt-site > div:first-of-type {
+    border: none;
+  }
   .af-tillvaxt-site * {
     font-family: museo,sans-serif;
   }
   .af-tillvaxt-site .af-mobileTabs .af-menu--item {
     order: unset;
+  }
+  .af-tillvaxt-site .af-mobileTabs .sv-font-toppmeny-aktiv {
+    border: none;
+    padding: 15px 28px 10px 28px !important;
   }
   .af-tillvaxt-site .af-pageWidth {
     padding: 0 50px;
@@ -3104,8 +3111,18 @@ $museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/158937681741
 $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
 */
 @media screen and (max-width: 880px) {
+  .af-uppleva-site > div:first-of-type {
+    border: none;
+  }
   .af-uppleva-site * {
     font-family: museo,sans-serif;
+  }
+  .af-uppleva-site .af-mobileTabs {
+    border-bottom: 4px solid #58A618;
+  }
+  .af-uppleva-site .af-mobileTabs .sv-font-toppmeny-aktiv {
+    border: none;
+    padding: 15px 28px 10px 28px !important;
   }
   .af-uppleva-site .af-mobileTabs .af-menu--item {
     order: unset;
@@ -4762,6 +4779,18 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   background-color: #2D5F55;
 }
 
+.af-tillvaxt-site .af-hiddenSearchForm {
+  background-color: #2D5F55;
+}
+
+.af-tillvaxt-site .af-mobileMainMenu {
+  background-color: #2D5F55;
+}
+
+.af-tillvaxt-site .af-mobileMainMenu .af-mobileMainMenu--item {
+  background-color: #2D5F55;
+}
+
 .af-tillvaxt-site .af-puffContainer {
   margin-top: 0px;
 }
@@ -4861,6 +4890,10 @@ $museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/
 $museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
 $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
 */
+.af-uppleva-site .af-hiddenSearchForm {
+  background-color: #002F6C;
+}
+
 .af-uppleva-site .sv-font-stor-svart {
   font-size: 35px;
   margin: 40px 0 !important;

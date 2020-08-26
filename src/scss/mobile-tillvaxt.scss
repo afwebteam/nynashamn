@@ -4,6 +4,10 @@
 
     .af-tillvaxt-site { 
 
+        & > div:first-of-type {
+            border: none;
+        }
+
         & * {
             font-family: museo,sans-serif;
         }
@@ -12,6 +16,11 @@
 
             & .af-menu--item {
                 order: unset;
+            }
+
+            & .sv-font-toppmeny-aktiv {
+                border: none;
+                padding: 15px 28px 10px 28px !important;
             }
         }
 

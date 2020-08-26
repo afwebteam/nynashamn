@@ -2,6 +2,10 @@
 
 .af-uppleva-site {
 
+    & .af-hiddenSearchForm {
+        background-color: $nynas-darkblue-color;
+    }
+
     & .sv-font-stor-svart {
         font-size: 35px;
         margin: 40px 0 !important;

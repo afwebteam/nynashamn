@@ -9,6 +9,18 @@
         }
     }
 
+    & .af-hiddenSearchForm {
+        background-color: $nynas-darkgreen-color;
+    }
+
+    & .af-mobileMainMenu {
+        background-color: $nynas-darkgreen-color;
+
+        & .af-mobileMainMenu--item {
+            background-color: $nynas-darkgreen-color;
+        }
+    }
+
     & .af-puffContainer {
         margin-top: 0px;
 
