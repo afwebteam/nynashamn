@@ -127,7 +127,7 @@
 
             & > .sv-horizontal {
                 display: flex;
-                margin-bottom: 0;
+                margin-bottom: 25px;
                 justify-content: space-between;
 
                 & > .sv-vertical.sv-layout {
@@ -143,6 +143,10 @@
                 & .sv-horizontal.sv-layout {
                     margin-bottom: 25px;
                 }
+            }
+
+            & > .sv-horizontal:last-of-type {
+                margin-bottom: 0;
             }
 
             & p {
