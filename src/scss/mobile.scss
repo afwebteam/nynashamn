@@ -423,8 +423,16 @@
                 margin-bottom: 0;
             }
 
+            & > .sv-horizontal:before {
+                display: none;
+            }
+
             & > div > div {
                 margin-bottom: 25px;
+            }
+
+            & > div > div:last-of-type {
+                margin-bottom: 0;
             }
         }
 

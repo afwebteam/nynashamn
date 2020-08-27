@@ -3596,8 +3596,14 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     flex-wrap: wrap;
     margin-bottom: 0;
   }
+  .af-contactModule .af-contactModule--middle > .sv-horizontal:before {
+    display: none;
+  }
   .af-contactModule .af-contactModule--middle > div > div {
     margin-bottom: 25px;
+  }
+  .af-contactModule .af-contactModule--middle > div > div:last-of-type {
+    margin-bottom: 0;
   }
   .af-contactModule .af-contactModule-content .af-contactModule--left, .af-contactModule .af-contactModule-content .af-contactModule--right {
     width: 100% !important;
