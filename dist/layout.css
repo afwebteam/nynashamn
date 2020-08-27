@@ -1604,6 +1604,45 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   background-position: center;
 }
 
+.af-articleListing {
+  margin: 60px 0;
+}
+
+.af-articleListing ul .sv-channel-item:first-of-type {
+  border-top: 1px solid #707070;
+}
+
+.af-articleListing ul .sv-channel-item {
+  border-bottom: 1px solid #707070;
+  padding: 50px 0;
+}
+
+.af-articleListing ul .sv-channel-item .sv-font-brodtext-liten {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 22px;
+  text-indent: 12px;
+}
+
+.af-articleListing ul .sv-channel-item .sv-font-brodtext-liten:before {
+  content: ' ';
+  display: inline-block;
+  background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.fe28bf21723114cc4d1ed5/1590133639274/klocka.svg");
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.af-articleListing ul .sv-channel-item .subheading {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 17px 0 7px 0;
+}
+
 /*
 $museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
 $museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
@@ -3966,6 +4005,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .af-related-information ul .sv-decoration-generell-bla-knapp--external {
     padding: 8px 50px 12px 20px !important;
+  }
+  .af-articleListing ul .sv-channel-item .subheading {
+    font-size: 18px;
   }
   .sv-facetedsearch-portlet .sv-font-stor-svart {
     font-size: 20px;

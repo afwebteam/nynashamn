@@ -1025,6 +1025,19 @@
         }
     }
 
+    .af-articleListing {
+    
+        & ul {
+    
+            & .sv-channel-item {
+    
+                & .subheading {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
     .sv-facetedsearch-portlet {
 
         & .sv-font-stor-svart {

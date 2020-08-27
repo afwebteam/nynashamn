@@ -679,3 +679,45 @@
     background-size: 60px;
     background-position: center;
 }
+
+.af-articleListing {
+    margin: 60px 0;
+
+    & ul {
+
+        & .sv-channel-item:first-of-type {
+            border-top: 1px solid $nynas-currentFilter-border-color;
+        }
+        
+        .sv-channel-item {
+            border-bottom: 1px solid $nynas-currentFilter-border-color;
+            padding: 50px 0;
+
+            & .sv-font-brodtext-liten {
+                display: block;
+                font-size: 16px;
+                font-weight: 500;
+                position: relative;
+                padding-left: 22px;
+                text-indent: 12px;
+            }
+
+            & .sv-font-brodtext-liten:before {
+                content: ' ';
+                display: inline-block;
+                background-image: url($clockIcon);
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            & .subheading {
+                font-size: 25px;
+                font-weight: 700;
+                margin: 17px 0 7px 0;
+            }
+        }
+    }
+}
