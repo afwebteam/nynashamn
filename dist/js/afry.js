@@ -1578,6 +1578,19 @@ svDocReady(function () {
         document.location.href = targetURL;
     });
 
+    jq('.af-mobileMainMenu').on('click', '.af-doNotLink', function (e) {
+
+        var target = jq(e.target),
+            parent = target.closest('li'),
+            openIcon = parent.find('> .af-menuIcon');
+
+        e.preventDefault();
+
+        if (openIcon) {
+            openIcon.trigger('click');
+        }
+    });
+
     AF.changeStandardSVIcons();
     AF.hideElemsAfterLoad();
 });
