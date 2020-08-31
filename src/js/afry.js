@@ -20,6 +20,15 @@ svDocReady(function () {
         //jq('.af-uppleva-events-filter-categories').hide();
     };
 
+    AF.removeAttribute = function (anElem, anAttribute) {
+
+        var attr = jq(anElem).attr(anAttribute);
+
+        if (typeof attr !== typeof undefined && attr !== false) {
+            jq(anElem).removeAttr(anAttribute);
+        }
+    };
+
     AF.isEmptyString = function (aString) {
 
         if (!aString || aString === '') {
@@ -1593,4 +1602,5 @@ svDocReady(function () {
 
     AF.changeStandardSVIcons();
     AF.hideElemsAfterLoad();
+    AF.removeAttribute('.sv-searchform-portlet .af-textInputField', 'aria-expanded');
 });
