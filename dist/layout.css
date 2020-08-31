@@ -366,7 +366,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   list-style-type: none;
   flex-wrap: wrap;
   display: flex;
-  padding-top: 25px;
+  /* padding-top: 25px; */
 }
 
 .af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-area,
@@ -378,8 +378,8 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms .af-findSchool-row--filter-area,
 .af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms .af-findSchool-row--filter-production,
 .af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms .af-findSchool-row--filter-form {
-  margin-right: 20px;
-  margin-bottom: 20px;
+  /* margin-right: 20px; */
+  /* margin-bottom: 20px; */
 }
 
 .af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-area a,
@@ -399,6 +399,8 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   border: 1px solid #403E41;
   outline: none;
   text-decoration: none;
+  margin: 20px 20px 0 0;
+  display: inline-block;
 }
 
 .af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-area .active,
@@ -425,7 +427,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   top: 2px;
   font-size: 18px;
   font-weight: 500;
-  padding-right: 25px;
+  padding-right: 28px;
   z-index: 9;
 }
 
@@ -454,7 +456,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-findSchool .af-findSchool-filterActions {
   max-width: 850px;
-  margin: 30px auto 40px auto;
+  margin: 30px auto 30px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -490,7 +492,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-findSchool .af-findSchool-result .af-findSchool-result-width {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 26px 40px 40px 40px;
 }
 
 .af-findSchool .af-findSchool-result .af-findSchool-result-width p.normal {
@@ -530,7 +532,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-findSchool .af-findSchool-schools .af-findSchool-school .af-findSchool-school-info {
-  padding: 30px;
+  padding: 30px 30px 26px 30px;
   background-color: #fff;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -556,6 +558,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
+  margin-bottom: 0;
 }
 
 .af-findSchool .af-findSchool-schools .af-findSchool-school .af-findSchool-school-info .af-findSchool-school-info-bottom .af-findSchool-school-info-address {
@@ -603,27 +606,35 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     width: 13px;
     height: 13px;
   }
+  .af-findSchool .af-findSchool-row .af-findSchool-row--filter .form-element button {
+    right: -4px;
+  }
   .af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-area {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }
   .af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-productions .af-findSchool-row--filter-production {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }
   .af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms .af-findSchool-row--filter-form {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }
   .af-findSchool .af-findSchool-filterActions {
     padding: 0 30px;
+    margin: 20px auto 20px auto;
   }
   .af-findSchool .af-findSchool-result .af-findSchool-result-width {
     padding: 20px;
   }
   .af-findSchool .af-findSchool-result .af-findSchool-result-width p.normal {
-    display: none;
+    font-size: 14px;
+    margin-bottom: 14px;
   }
   .af-findSchool .af-findSchool-result .af-findSchool-result-width .af-findSchool-schools .af-findSchool-school {
     width: 100%;
     margin-right: 0;
+  }
+  .af-findSchool .af-findSchool-result .af-findSchool-result-width .af-findSchool-schools .af-findSchool-school .af-findSchool-school-info {
+    padding: 20px 30px 16px 30px;
   }
 }
 
