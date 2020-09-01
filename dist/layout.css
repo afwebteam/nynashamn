@@ -1687,9 +1687,12 @@ $museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/158937681741
 $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
 */
 /* Landing page */
+.af-landingpage {
+  margin-top: -50px;
+}
+
 .af-landingpage--bigImage {
-  padding: 40px 0;
-  height: 440px;
+  height: 240px;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100%;
@@ -1724,6 +1727,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   left: 0;
   right: 0;
   padding: 15px 25px 30px 25px;
+  display: none;
 }
 
 .af-landingpage--shortcuts .sv-font-brodtext-fet {
@@ -4519,12 +4523,13 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-wave-grey--shape {
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.a5f223f171ac2fcd6d2adb5/1589530446861/wave-grey.svg");
-  padding: 6% 0 0 0;
+  padding: 90px 0 0 0;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   background-size: 100% auto;
+  transform: scaleX(-1);
 }
 
 .af-amountEvents-4 .af-startpageEvents {

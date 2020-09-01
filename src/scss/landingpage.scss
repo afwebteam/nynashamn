@@ -4,9 +4,10 @@
 /* Landing page */
 .af-landingpage {
 
+    margin-top: -50px;
+
     &--bigImage {
-        padding: 40px 0;
-        height: 440px;
+        height: 240px;
         background-repeat: no-repeat;
         background-position: top center;
         background-size: 100%;
@@ -41,6 +42,7 @@
         left: 0;
         right: 0;
         padding: 15px 25px 30px 25px;
+        display: none;
 
         & .sv-font-brodtext-fet {
             text-align: center;
