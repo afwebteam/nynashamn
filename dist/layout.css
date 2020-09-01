@@ -3754,6 +3754,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     background-image: none !important;
     padding: 0;
     height: auto;
+    display: none;
   }
   .af-wave .af-landingpage--bigImage .af-landingpage--pageName {
     background-color: #fff;
@@ -3782,12 +3783,19 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .af-wave .af-wave-grey--shape {
     background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c5418b8d/1589182390043/wave.svg");
+    display: none;
   }
   .af-landingPage {
     position: relative;
   }
   .af-landingPage .af-breadcrumb {
     position: unset;
+  }
+  .af-landingpage .af-landingpageColor:nth-child(even) {
+    background-color: #fff;
+  }
+  .af-landingpage .af-landingpageColor:nth-child(odd) {
+    background-color: #EDEBE9;
   }
   .af-landingpageRow {
     padding: 60px 20px;

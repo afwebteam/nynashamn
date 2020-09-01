@@ -641,6 +641,7 @@
             background-image: none !important;
             padding: 0;
             height: auto;
+            display: none;
 
             & .af-landingpage--pageName {
                 background-color: $white-color;
@@ -676,6 +677,7 @@
 
         & .af-wave-grey--shape {
             background-image: url($startpageWave);
+            display: none;
         }
     }
 
@@ -689,6 +691,14 @@
     }
 
     .af-landingpage {
+
+        & .af-landingpageColor:nth-child(even) {
+            background-color: $white-color;
+        }
+
+        & .af-landingpageColor:nth-child(odd) {
+            background-color: $nynas-grey-color;
+        }
 
         &Row {
             padding: 60px 20px;
