@@ -4452,7 +4452,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-startpageBigImage {
   background-image: url("https://use-nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c542451a/1589378872626/startpage-background.png");
   position: relative;
-  height: 700px;
+  height: 440px;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -4460,14 +4460,14 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-startpageBigImage > .af-center {
   position: absolute;
-  top: 210px;
+  top: 138px;
   left: 0;
   right: 0;
 }
 
 .af-startpageBigImage .sv-searchform-portlet {
   position: absolute;
-  top: 120px;
+  top: 73px;
   left: 0;
   right: 0;
 }
@@ -4519,6 +4519,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   right: 0;
   bottom: 0;
   background-size: 100% auto;
+  transform: scaleX(-1);
 }
 
 .af-wave-grey--shape {

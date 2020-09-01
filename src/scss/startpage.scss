@@ -68,14 +68,14 @@
 .af-startpageBigImage {
     background-image: url($startpageBigImage);
     position: relative;
-    height: 700px;
+    height: 440px;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
 
     & > .af-center {
         position: absolute;
-        top: 210px;
+        top: 138px;
         left: 0;
         right: 0;
     }
@@ -83,7 +83,7 @@
     & .sv-searchform-portlet {
 
         position: absolute;
-        top: 120px;
+        top: 73px;
         left: 0;
         right: 0;
 
@@ -136,6 +136,7 @@
         right: 0;
         bottom: 0;
         background-size: 100% auto;
+        transform: scaleX(-1);
     }
 
     &-grey--shape {
