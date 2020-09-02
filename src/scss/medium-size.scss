@@ -1,0 +1,11 @@
+@import 'variables';
+
+@media screen and (min-width: 881px) and (max-width: 1000px) {
+
+    .af-subMenu {
+
+        & .af-subMenu--item {
+            margin: 0 15px;
+        }
+    }
+}
