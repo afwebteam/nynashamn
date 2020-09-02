@@ -102,14 +102,13 @@
                     padding: 10px 0;
                     width: 100%;
                     text-indent: 15px;
-                    border-top-left-radius: 6px;
-                    border-bottom-left-radius: 6px;
+                    border-radius: 6px;
                 }
 
                 & button {
                     position: absolute;
                     top: 0;
-                    right: 0;
+                    right: -2px;
                     bottom: 0;
                     padding: 0 20px;
                     border: none;

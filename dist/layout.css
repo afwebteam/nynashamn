@@ -341,14 +341,13 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   padding: 10px 0;
   width: 100%;
   text-indent: 15px;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+  border-radius: 6px;
 }
 
 .af-findSchool .af-findSchool-row .af-findSchool-row--filter .form-element button {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -2px;
   bottom: 0;
   padding: 0 20px;
   border: none;
