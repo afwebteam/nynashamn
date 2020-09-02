@@ -2,6 +2,17 @@
 
 @media screen and (min-width: 1550px) {
 
+    .af-landingpage {
+        margin-top: -40px;
+    }
+
+    .af-wave {
+
+        & .af-wave-grey--shape {
+            top: 110px;
+        }
+    }
+
     .af-theStartPage {
 
         & .af-wave {
