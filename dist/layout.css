@@ -1673,8 +1673,11 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-landingpage {
     margin-top: -40px;
   }
+  .af-wave .af-landingpage--bigImage {
+    height: 270px;
+  }
   .af-wave .af-wave-grey--shape {
-    top: 110px;
+    top: 130px;
   }
   .af-theStartPage .af-wave .af-wave--shape {
     padding: 6% 0 0 0;

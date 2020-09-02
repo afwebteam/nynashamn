@@ -8,8 +8,12 @@
 
     .af-wave {
 
+        & .af-landingpage--bigImage {
+            height: 270px;
+        }
+
         & .af-wave-grey--shape {
-            top: 110px;
+            top: 130px;
         }
     }
 
