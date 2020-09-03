@@ -848,6 +848,27 @@
         }
     }
 
+    .sv-decoration-bla-knapp-bygglov {
+
+        width: 100%;
+        
+        & .sv-text-portlet {
+    
+            & a {
+                padding-right: 50px;
+                background-size: 26px;
+            }
+        }
+    }
+
+    .sv-decoration-bla-knapp-bygglov-2-kolumner {
+        flex-wrap: wrap;
+
+        & .sv-text-portlet {
+            width: 100%;
+        }
+    }
+
     .af-currentFilter {
 
         &--areas {

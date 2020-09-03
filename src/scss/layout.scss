@@ -419,6 +419,56 @@ nav.af-center {
     
 }
 
+.sv-decoration-bla-knapp-bygglov {
+
+    width: 448px;
+    
+    & .sv-text-portlet {
+
+        position: relative;
+
+        & a {
+            text-decoration: none;
+            background-color: $nynas-darkblue-color;
+            color: $white-color;
+            display: block;
+            padding: 15px 15px;
+            border-radius: 6px;
+            font-weight: 500;
+            background-image: url($arrowForwardWhite);
+            background-repeat: no-repeat;
+            background-size: 34px;
+            background-position: right 15px center;
+            padding-right: 50px;
+        }
+    }
+}
+
+.sv-decoration-bla-knapp-bygglov-2-kolumner {
+
+    display: flex;
+    justify-content: space-between;
+        
+    & .sv-text-portlet {
+        width: 46%;
+
+        & a {
+            text-decoration: none;
+            background-color: $nynas-darkblue-color;
+            color: $white-color;
+            display: block;
+            padding: 15px 15px;
+            border-radius: 6px;
+            font-weight: 500;
+            background-image: url($arrowForwardWhite);
+            background-repeat: no-repeat;
+            background-size: 34px;
+            background-position: right 15px center;
+            padding-right: 50px;
+        }
+    }
+}
+
 .af-related-information {
 
     margin: 60px 0;
