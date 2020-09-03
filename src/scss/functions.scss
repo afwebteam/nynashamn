@@ -723,33 +723,47 @@
 }
 
 .af-bygglovProcess {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
 
-    & .af-bygglovProcess--step {
-        width: 60px;
-        height: 60px;
-        background-color: $nynas-comments-bg;
-        position: relative;
-        border-radius: 50%;
+    position: relative;
 
-        & a {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-decoration: none;
-            border-radius: 50%;
-            font-weight: 700;
-        }
+    & .af-bygglovProcess-line {
+        position: absolute;
+        border-bottom: 1px solid $nynas-uppleva-grey;
+        left: 0;
+        right: 0;
+        top: 29px;
     }
 
-    & .activeStep {
-        background-color: $nynas-search-bg;
+    & .af-bygglovProcess--steps {
 
-        & a {
-            color: $white-color;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+        & .af-bygglovProcess--step {
+            width: 60px;
+            height: 60px;
+            background-color: $nynas-comments-bg;
+            position: relative;
+            border-radius: 50%;
+
+            & a {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-decoration: none;
+                border-radius: 50%;
+                font-weight: 700;
+            }
+        }
+
+        & .activeStep {
+            background-color: $nynas-search-bg;
+
+            & a {
+                color: $white-color;
+            }
         }
     }
 }

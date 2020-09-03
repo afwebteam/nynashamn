@@ -1659,12 +1659,24 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-bygglovProcess {
+  position: relative;
+}
+
+.af-bygglovProcess .af-bygglovProcess-line {
+  position: absolute;
+  border-bottom: 1px solid #938E90;
+  left: 0;
+  right: 0;
+  top: 29px;
+}
+
+.af-bygglovProcess .af-bygglovProcess--steps {
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
 }
 
-.af-bygglovProcess .af-bygglovProcess--step {
+.af-bygglovProcess .af-bygglovProcess--steps .af-bygglovProcess--step {
   width: 60px;
   height: 60px;
   background-color: #EDEBEA;
@@ -1672,7 +1684,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   border-radius: 50%;
 }
 
-.af-bygglovProcess .af-bygglovProcess--step a {
+.af-bygglovProcess .af-bygglovProcess--steps .af-bygglovProcess--step a {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1682,11 +1694,11 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   font-weight: 700;
 }
 
-.af-bygglovProcess .activeStep {
+.af-bygglovProcess .af-bygglovProcess--steps .activeStep {
   background-color: #53BDD6;
 }
 
-.af-bygglovProcess .activeStep a {
+.af-bygglovProcess .af-bygglovProcess--steps .activeStep a {
   color: #fff;
 }
 
