@@ -869,6 +869,61 @@
         }
     }
 
+    .af-bygglovProcess {
+
+        & .af-bygglovProcess-line {
+            top: 20px;
+        }
+
+        & .af-bygglovProcess--steps {
+
+            & .af-bygglovProcess--step {
+                width: 40px;
+                height: 40px;
+
+                & a {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .af-guide.af-generell-prevNext {
+
+        & .af-generell-prevNext--links {
+
+            & a {
+                font-size: 15px;
+            }
+
+
+            & .af-generell-prevNext--links-next {
+
+                & a {
+                    padding: 10px 45px 10px 20px;
+                }
+
+                & a:before {
+                    background-size: 20px;
+                    top: 4px;
+                }
+
+            }
+
+            & .af-generell-prevNext--links-prev {
+
+                & a {
+                    padding: 10px 20px 10px 45px;
+                }
+
+                & a:before {
+                    background-size: 20px;
+                    top: 4px;
+                }
+            }
+        }
+    }
+
     .af-currentFilter {
 
         &--areas {
