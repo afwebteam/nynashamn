@@ -81,6 +81,60 @@
                     }
                 }
             }
-        }    
+        }
+        
+        & .af-tillvaxt-cityProject {
+
+
+            & .af-tillvaxt-cityProject-area {
+                font-size: 12px !important;
+            }
+
+            & .af-tillvaxt-cityProject-type {
+                font-size: 12px !important;
+            }
+
+            & .af-tillvaxt-cityProject-showMap {
+                font-size: 12px !important;
+            }
+        }
+
+        .af-tillvaxt-cityProject-processFlow {
+
+            & .af-tillvaxt-cityProject-processFlow--line {
+                left: 71px !important;
+                top: 0;
+                bottom: 70px;
+                border-left: 1px solid $nynas-uppleva-grey; 
+                border-bottom: none !important;
+            }
+
+            & .af-tillvaxt-cityProject-processFlow--steps {
+                display: block !important;
+
+                & .af-tillvaxt-cityProject-processFlow--step {
+
+                    display: flex;
+                    margin-top: 15px;
+
+                    & .af-tillvaxt-cityProject-processFlow--step-animation {
+                        margin: unset !important;
+                        height: 20px !important;
+                        width: 20px !important;
+                        background-size: 12px !important;
+                        z-index: 1;
+                    }
+
+                    & .af-tillvaxt-cityProject-processFlow--step-name {
+                        margin-top: 0 !important;
+                        margin-left: 15px;
+                    }
+                }
+            }
+
+            & .af-tillvaxt-cityProject-processFlow--step:first-of-type {
+                margin-top: 0;
+            }
+        }
     }
 }

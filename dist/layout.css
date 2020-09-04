@@ -3334,6 +3334,43 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-tillvaxt-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item .af-startpage-listing-item-textContent .tag {
     font-size: 14px !important;
   }
+  .af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-area {
+    font-size: 12px !important;
+  }
+  .af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-type {
+    font-size: 12px !important;
+  }
+  .af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-showMap {
+    font-size: 12px !important;
+  }
+  .af-tillvaxt-site .af-tillvaxt-cityProject-processFlow .af-tillvaxt-cityProject-processFlow--line {
+    left: 71px !important;
+    top: 0;
+    bottom: 70px;
+    border-left: 1px solid #938E90;
+    border-bottom: none !important;
+  }
+  .af-tillvaxt-site .af-tillvaxt-cityProject-processFlow .af-tillvaxt-cityProject-processFlow--steps {
+    display: block !important;
+  }
+  .af-tillvaxt-site .af-tillvaxt-cityProject-processFlow .af-tillvaxt-cityProject-processFlow--steps .af-tillvaxt-cityProject-processFlow--step {
+    display: flex;
+    margin-top: 15px;
+  }
+  .af-tillvaxt-site .af-tillvaxt-cityProject-processFlow .af-tillvaxt-cityProject-processFlow--steps .af-tillvaxt-cityProject-processFlow--step .af-tillvaxt-cityProject-processFlow--step-animation {
+    margin: unset !important;
+    height: 20px !important;
+    width: 20px !important;
+    background-size: 12px !important;
+    z-index: 1;
+  }
+  .af-tillvaxt-site .af-tillvaxt-cityProject-processFlow .af-tillvaxt-cityProject-processFlow--steps .af-tillvaxt-cityProject-processFlow--step .af-tillvaxt-cityProject-processFlow--step-name {
+    margin-top: 0 !important;
+    margin-left: 15px;
+  }
+  .af-tillvaxt-site .af-tillvaxt-cityProject-processFlow .af-tillvaxt-cityProject-processFlow--step:first-of-type {
+    margin-top: 0;
+  }
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
@@ -5179,6 +5216,93 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   border: 5px solid #fff;
   background-color: #2D5F55;
   width: 100%;
+}
+
+.af-tillvaxt-site .af-tillvaxt-cityProject {
+  margin-top: 20px;
+}
+
+.af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-area {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-dot {
+  display: inline-block;
+}
+
+.af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-type {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-showMap {
+  display: inline-block;
+  float: right;
+  margin-top: 6px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-showMap a {
+  -webkit-text-decoration-color: #002F6C;
+  text-decoration-color: #002F6C;
+}
+
+.af-tillvaxt-site .af-tillvaxt-cityProject-processFlow {
+  padding: 60px;
+  background-color: #EDEBE9;
+  border-radius: 6px;
+  position: relative;
+}
+
+.af-tillvaxt-site .af-tillvaxt-cityProject-processFlow .af-tillvaxt-cityProject-processFlow--line {
+  position: absolute;
+  border-bottom: 1px solid #938E90;
+  left: 95px;
+  right: 100px;
+  top: 75px;
+}
+
+.af-tillvaxt-site .af-tillvaxt-cityProject-processFlow .af-tillvaxt-cityProject-processFlow--steps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.af-tillvaxt-site .af-tillvaxt-cityProject-processFlow .af-tillvaxt-cityProject-processFlow--steps .af-tillvaxt-cityProject-processFlow--step {
+  z-index: 2;
+}
+
+.af-tillvaxt-site .af-tillvaxt-cityProject-processFlow .af-tillvaxt-cityProject-processFlow--steps .af-tillvaxt-cityProject-processFlow--step .af-tillvaxt-cityProject-processFlow--step-animation {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  border-radius: 6px;
+  border: 1px solid #403E41;
+}
+
+.af-tillvaxt-site .af-tillvaxt-cityProject-processFlow .af-tillvaxt-cityProject-processFlow--steps .af-tillvaxt-cityProject-processFlow--step .af-tillvaxt-cityProject-processFlow--step-name {
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.af-tillvaxt-site .af-tillvaxt-cityProject-processFlow .af-tillvaxt-cityProject-processFlow--steps .af-tillvaxt-cityProject-processFlow--step.regularStep .af-tillvaxt-cityProject-processFlow--step-animation {
+  background-color: #403E41;
+  background-image: url("https://nynashamn-ext.sitevision.se/images/18.4cf034b9173e68c403818489/1599220434057/checkIcon.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+}
+
+.af-tillvaxt-site .af-tillvaxt-cityProject-processFlow .af-tillvaxt-cityProject-processFlow--steps .af-tillvaxt-cityProject-processFlow--step.activeStep .af-tillvaxt-cityProject-processFlow--step-animation {
+  background-color: #58A618;
+}
+
+.af-tillvaxt-site .af-tillvaxt-cityProject-processFlow .af-tillvaxt-cityProject-processFlow--steps .af-tillvaxt-cityProject-processFlow--step.emptyStep .af-tillvaxt-cityProject-processFlow--step-animation {
+  background-color: #fff;
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */

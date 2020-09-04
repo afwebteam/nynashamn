@@ -119,4 +119,97 @@
             }
         }
     }
+
+    .af-tillvaxt-cityProject {
+        margin-top: 20px;
+
+        & .af-tillvaxt-cityProject-area {
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        & .af-tillvaxt-cityProject-dot {
+            display: inline-block;
+        }
+
+        & .af-tillvaxt-cityProject-type {
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        & .af-tillvaxt-cityProject-showMap {
+            display: inline-block;
+            float: right;
+            margin-top: 6px;
+            font-size: 15px;
+            font-weight: 500;
+
+            & a {
+                text-decoration-color: $nynas-darkblue-color;
+            }
+        }
+    }
+
+    .af-tillvaxt-cityProject-processFlow {
+        padding: 60px;
+        background-color: $nynas-grey-color;
+        border-radius: 6px;
+        position: relative;
+
+        & .af-tillvaxt-cityProject-processFlow--line {
+            position: absolute;
+            border-bottom: 1px solid $nynas-uppleva-grey; 
+            left: 95px;
+            right: 100px;
+            top: 75px;
+        }
+        
+        & .af-tillvaxt-cityProject-processFlow--steps {
+            display: flex;
+            justify-content: space-between;
+            
+            & .af-tillvaxt-cityProject-processFlow--step {
+                z-index: 2;
+
+                & .af-tillvaxt-cityProject-processFlow--step-animation {
+                    width: 30px;
+                    height: 30px;
+                    margin: 0 auto;
+                    border-radius: 6px;
+                    border: 1px solid $nynas-darkgrey-color;
+                }
+
+                & .af-tillvaxt-cityProject-processFlow--step-name {
+                    font-size: 15px;
+                    font-weight: 300;
+                    margin-top: 15px;
+                }
+            }
+
+            & .af-tillvaxt-cityProject-processFlow--step.regularStep {
+
+                & .af-tillvaxt-cityProject-processFlow--step-animation {
+                    background-color: $nynas-darkgrey-color;
+                    background-image: url($checkIconWhite);
+                    background-repeat: no-repeat;
+                    background-size: 20px;
+                    background-position: center;
+                }
+            }
+
+            & .af-tillvaxt-cityProject-processFlow--step.activeStep {
+                & .af-tillvaxt-cityProject-processFlow--step-animation {
+                    background-color: $nynas-green-color;
+                }
+            }
+
+            & .af-tillvaxt-cityProject-processFlow--step.emptyStep {
+                & .af-tillvaxt-cityProject-processFlow--step-animation {
+                    background-color: $white-color;
+                }
+            }
+        }
+    }
 }
