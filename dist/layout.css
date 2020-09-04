@@ -5228,14 +5228,39 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   font-weight: 500;
 }
 
+.af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-area:before {
+  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
+  content: ' ';
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  background-position: bottom center;
+  margin-right: 5px;
+}
+
 .af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-dot {
   display: inline-block;
+  margin: 0 10px;
 }
 
 .af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-type {
   display: inline-block;
   font-size: 15px;
   font-weight: 500;
+}
+
+.af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-type:before {
+  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
+  content: ' ';
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  background-position: bottom center;
+  margin-right: 5px;
 }
 
 .af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-showMap {
@@ -5249,6 +5274,18 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-showMap a {
   -webkit-text-decoration-color: #002F6C;
   text-decoration-color: #002F6C;
+}
+
+.af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-showMap:after {
+  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
+  content: ' ';
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  background-position: bottom center;
+  margin-left: 5px;
 }
 
 .af-tillvaxt-site .af-tillvaxt-cityProject-processFlow {

@@ -129,14 +129,39 @@
             font-weight: 500;
         }
 
+        & .af-tillvaxt-cityProject-area:before {
+            background-image: url($mapIcon);
+            content: ' ';
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-size: 13px;
+            background-position: bottom center;
+            margin-right: 5px;
+        } 
+
         & .af-tillvaxt-cityProject-dot {
             display: inline-block;
+            margin: 0 10px;
         }
 
         & .af-tillvaxt-cityProject-type {
             display: inline-block;
             font-size: 15px;
             font-weight: 500;
+        }
+
+        & .af-tillvaxt-cityProject-type:before {
+            background-image: url($mapIcon);
+            content: ' ';
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-size: 13px;
+            background-position: bottom center;
+            margin-right: 5px;
         }
 
         & .af-tillvaxt-cityProject-showMap {
@@ -149,6 +174,18 @@
             & a {
                 text-decoration-color: $nynas-darkblue-color;
             }
+        }
+
+        & .af-tillvaxt-cityProject-showMap:after {
+            background-image: url($mapIcon);
+            content: ' ';
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-size: 13px;
+            background-position: bottom center;
+            margin-left: 5px;
         }
     }
 
