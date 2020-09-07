@@ -3838,12 +3838,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-popularShortcuts--itemName {
     font-size: 14px;
   }
-  .af-popularShortcuts--item:nth-child(4) {
-    margin-right: 10px;
-  }
-  .af-popularShortcuts--item:nth-child(5) {
-    margin-left: 10px;
-  }
   .af-popularShortcuts--itemStyle {
     width: 80px !important;
     height: 80px !important;
