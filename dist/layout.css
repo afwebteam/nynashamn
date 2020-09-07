@@ -3652,7 +3652,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     height: auto !important;
   }
   .af-theStartPage .af-startpageBigImage p {
-    margin: 0 0 25px 25px !important;
+    margin: 0 0 30px 25px !important;
   }
   .af-theStartPage .af-startpageBigImage > .af-center {
     position: relative !important;
@@ -3661,7 +3661,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .af-theStartPage .af-startpageBigImage > .af-center .sv-script-portlet.af-borderRadius {
     border-radius: 0;
-    padding: 25px 0 50px 0;
+    padding: 30px 0 50px 0;
     text-align: left;
     max-width: 100%;
   }
@@ -3673,7 +3673,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     margin-left: 20px !important;
   }
   .af-shortcuts--item {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    margin-right: 20px;
   }
   .af-puff {
     padding: 0 !important;
