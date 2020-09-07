@@ -559,13 +559,15 @@
 
         & .af-accordionText {
             top: 23px;
-            right: 60px;
+            right: 40px;
             font-size: 13px;
         }
 
         & .af-closed:after {
-            background-size: 20px;
-            top: 20px;
+            background-size: 18px;
+            top: 25px;
+            width: 13px;
+            height: 13px;
         }
     }
 
