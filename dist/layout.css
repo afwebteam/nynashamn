@@ -3864,11 +3864,10 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .sv-decoration-generell-gra-platta .af-startpageMessages .af-startpageMessages--listItem .sv-font-brodtext-fet {
     font-size: 18px;
-    margin-bottom: 10px;
   }
   .sv-decoration-generell-gra-platta .af-startpageMessages .af-startpageMessages--listItem .normal {
     font-size: 15px;
-    margin-top: 12px !important;
+    margin-top: 5px;
   }
   .af-related-information h2,
   .af-related-information h3,
@@ -4778,7 +4777,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-startpageMessages--list li p.normal {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .af-startpageMessages--list li a {
@@ -5298,13 +5297,13 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-area:before {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
+  background-image: url("https://nynashamn-ext.sitevision.se/images/18.ca6b0751735c3b34e7325c5/1599503644539/pinIcon.svg");
   content: ' ';
   width: 15px;
   height: 15px;
   display: inline-block;
   background-repeat: no-repeat;
-  background-size: 13px;
+  background-size: 7px;
   background-position: bottom center;
   margin-right: 5px;
 }
@@ -5321,7 +5320,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-type:before {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
+  background-image: url("https://nynashamn-ext.sitevision.se/images/18.ca6b0751735c3b34e7325c6/1599503644548/housing.svg");
   content: ' ';
   width: 15px;
   height: 15px;

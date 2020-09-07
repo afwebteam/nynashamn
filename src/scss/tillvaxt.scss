@@ -130,13 +130,13 @@
         }
 
         & .af-tillvaxt-cityProject-area:before {
-            background-image: url($mapIcon);
+            background-image: url($pinIcon);
             content: ' ';
             width: 15px;
             height: 15px;
             display: inline-block;
             background-repeat: no-repeat;
-            background-size: 13px;
+            background-size: 7px;
             background-position: bottom center;
             margin-right: 5px;
         } 
@@ -153,7 +153,7 @@
         }
 
         & .af-tillvaxt-cityProject-type:before {
-            background-image: url($mapIcon);
+            background-image: url($housingIcon);
             content: ' ';
             width: 15px;
             height: 15px;
