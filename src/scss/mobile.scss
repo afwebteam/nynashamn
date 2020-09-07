@@ -1165,6 +1165,9 @@
         & input[name=submitButton] {
             background-size: 15px;
             padding: 0 35px 0 25px;
+            height: auto;
+            bottom: 0;
+            right: -4px;
         }
 
         & .af-margin {
