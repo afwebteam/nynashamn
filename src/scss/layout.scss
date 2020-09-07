@@ -762,6 +762,11 @@ nav.af-center {
         & .subheading {
             margin-bottom: 10px;
             display: inline-block;
+            
+            & .sv-linkicon {
+                top: unset;
+                bottom: 6px;
+            }
         }
 
         & .summary {

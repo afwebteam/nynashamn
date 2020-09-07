@@ -2709,6 +2709,11 @@ nav.af-center .af-searchIcon a.active {
   display: inline-block;
 }
 
+.sv-search-result .sv-search-hit .subheading .sv-linkicon {
+  top: unset;
+  bottom: 6px;
+}
+
 .sv-search-result .sv-search-hit .summary {
   margin: 10px 0;
 }
