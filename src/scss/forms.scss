@@ -140,8 +140,9 @@ div[role=search] {
         border: none;
         position: absolute;
         top: 0;
-        right: -2px;
-        height: 100%;
+        right: -4px;
+        height: auto;
+        bottom: 0; 
         color: $white-color;
         padding: 0 45px 0 25px;
         border-top-right-radius: 10px;
