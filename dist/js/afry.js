@@ -72,6 +72,7 @@ svDocReady(function () {
                 title = theElem.prop('title'),
                 container;
 
+            /*
             if (title && title === 'PDF') {
                 container = theElem.closest('ul');
 
@@ -84,6 +85,7 @@ svDocReady(function () {
                 }
 
             }
+            */
 
             theElem.prop('src', '/images/18.d9ec095172e6db963754cee/1596632006892/filer.svg');
         });
