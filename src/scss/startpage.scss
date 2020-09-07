@@ -29,6 +29,10 @@
             position: relative;
             margin: 10px;
 
+            & p.normal {
+                margin-top: 15px;
+            }
+
             & a {
                 text-decoration: none;
             }
