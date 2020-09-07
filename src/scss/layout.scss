@@ -328,6 +328,45 @@ nav.af-center {
         height: 25px;
     }
 
+    & .sv-linkicon {
+        display: none;
+    }
+
+    & p.normal {
+
+        margin: -2px 0 0 0;
+
+        & a {
+            color: #fff;
+            font-family: museo,sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+    }
+}
+
+.sv-decoration-bla-knapp-pdf {
+    background-color: $nynas-darkblue-color;
+    padding: 15px 50px 15px 20px;
+    display: inline-block;
+    color: $white-color;
+    margin: 40px 0;
+    border-radius: 10px;
+    position: relative;
+
+    &:after {
+        content: ' ';
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-image: url($fileIconWhite);
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
     & p.normal {
 
         margin: -2px 0 0 0;
@@ -376,6 +415,10 @@ nav.af-center {
             font-weight: 500;
             text-decoration: none;
         }
+    }
+
+    & .sv-linkicon {
+        display: none;
     }
 }
 
