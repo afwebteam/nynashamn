@@ -767,6 +767,10 @@
             }
         }
     }
+
+    & .af-bygglovProcess--step:hover {
+        cursor: pointer;
+    }
 }
 
 .af-guide.af-generell-prevNext {

@@ -1863,6 +1863,21 @@ svDocReady(function () {
         }
     });
 
+    // Link whole puff...
+    jq('.af-bygglovProcess--step').on('click', function (e) {
+        var target = jq(e.target),
+            link,
+            url;
+
+        if (!target.is('.af-bygglovProcess--step')) {
+            target = target.closest('.af-bygglovProcess--step');
+        }
+
+        link = target.find('a');
+        url = link.prop('href');
+        document.location.href = url;
+    });
+
     AF.changeStandardSVIcons();
     AF.hideElemsAfterLoad();
     AF.removeAttribute('.sv-searchform-portlet .af-textInputField', 'aria-expanded');
