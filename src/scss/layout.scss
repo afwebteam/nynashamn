@@ -860,16 +860,16 @@ nav.af-center {
     & .af-oldArticle {
         font-size: 15px;
         background-color: $nynas-grey-color;
-        padding: 4px;
+        padding: 4px 10px;
         border-radius: 6px;
     }
 
     & .af-oldArticle-before:before {
         font-size: 15px;
         padding: 4px;
-        margin: 0 20px;
+        margin: 0 10px;
         content: '\2022';
-}
+    }
 }
 
 .af-publishedDate:before {
@@ -888,8 +888,33 @@ input:focus {
     outline: 2px solid $nynas-search-bg;
 }
 
+.af-oldNewsChecker {
+
+    & .pagecontent {
+        margin-top: 0;
+    }
+
+}
+
 .af-oldNewsChecker .sv-text-portlet + .sv-image-portlet {
     margin: 60px 0;
+}
+
+.af-oldNewsChecker .af-tags {
+    display: inline-block;
+    margin: 0;
+
+    & .af-tag {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    & .af-tag:before {
+        width: 16px;
+        height: 16px;
+        background-size: 13px;
+        background-position: center;
+    }
 }
 
 .af-tags {

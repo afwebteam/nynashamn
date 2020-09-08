@@ -3198,14 +3198,14 @@ nav.af-center .af-searchIcon a.active {
 .af-publishedDate .af-oldArticle {
   font-size: 15px;
   background-color: #EDEBE9;
-  padding: 4px;
+  padding: 4px 10px;
   border-radius: 6px;
 }
 
 .af-publishedDate .af-oldArticle-before:before {
   font-size: 15px;
   padding: 4px;
-  margin: 0 20px;
+  margin: 0 10px;
   content: '\2022';
 }
 
@@ -3225,8 +3225,29 @@ input:focus {
   outline: 2px solid #53BDD6;
 }
 
+.af-oldNewsChecker .pagecontent {
+  margin-top: 0;
+}
+
 .af-oldNewsChecker .sv-text-portlet + .sv-image-portlet {
   margin: 60px 0;
+}
+
+.af-oldNewsChecker .af-tags {
+  display: inline-block;
+  margin: 0;
+}
+
+.af-oldNewsChecker .af-tags .af-tag {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.af-oldNewsChecker .af-tags .af-tag:before {
+  width: 16px;
+  height: 16px;
+  background-size: 13px;
+  background-position: center;
 }
 
 .af-tags {
@@ -4857,6 +4878,32 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .af-mobileTabs .af-menu--item {
     order: unset;
+  }
+  .af-oldNewsChecker .af-tags {
+    display: inline-block;
+    margin: 0;
+  }
+  .af-oldNewsChecker .af-tags .af-tag {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .af-oldNewsChecker .af-tags .af-tag:before {
+    width: 10px;
+    height: 12px;
+    background-size: 10px;
+  }
+  .af-publishedDate {
+    font-size: 16px;
+  }
+  .af-publishedDate .af-oldArticle {
+    font-size: 12px;
+  }
+  .af-publishedDate .af-oldArticle-before:before {
+    margin: 0;
+  }
+  .af-publishedDate:before {
+    height: 13px;
+    width: 13px;
   }
 }
 
