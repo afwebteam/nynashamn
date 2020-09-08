@@ -17,6 +17,10 @@ svDocReady(function () {
         jq('.af-findSchool-row--filter-areas').hide();
         jq('.af-findSchool-row--filter-productions').hide();
         jq('.af-findSchool-row--filter-forms').hide();
+
+        jq('.af-findProject-row--filter-areas').hide();
+        jq('.af-findProject-row--filter-types').hide();
+        jq('.af-findProject-row--filter-processes').hide();
         //jq('.af-uppleva-events-filter-categories').hide();
     };
 
@@ -1425,6 +1429,170 @@ svDocReady(function () {
         });
     });
 
+    jq('.af-findProject-row--filter-areas a').on('click', function (e) {
+
+        var target = jq(e.target),
+            list = target.closest('ul'),
+            allButton = list.find('li').first().find('a'),
+            inputField = jq('input[name="af-project-name"]'),
+            text = target.text(),
+            ajaxURL = list.data('portleturl'),
+
+            areas,
+            areaArr = [],
+            types,
+            typeArr = [];
+
+        e.preventDefault();
+
+        if (text === 'Alla') {
+            list.find('.active').removeClass('active');
+            target.addClass('active');
+        } else {
+
+            if (allButton.hasClass('active')) {
+                allButton.removeClass('active');
+            }
+
+            if (target.hasClass('active')) {
+                target.removeClass('active');
+            } else {
+                target.addClass('active');
+            }
+        }
+
+        areas = jq('.af-findProject-row--filter-areas .active');
+        types = jq('.af-findProject-row--filter-types .active');
+
+        jq.each(areas, function (i, e) {
+            areaArr.push(jq(e).text());
+        });
+
+        jq.each(types, function (i, e) {
+            typeArr.push(jq(e).text());
+        });
+
+        jq.ajax({
+            url: ajaxURL,
+            data: {
+                areas: JSON.stringify(areaArr),
+                types: JSON.stringify(typeArr)
+            },
+            success: function (data) {
+                jq('.af-findProject-result').html(data);
+                inputField.val('');
+            }
+        });
+    });
+
+    jq('.af-findProject-row--filter-types a').on('click', function (e) {
+
+        var target = jq(e.target),
+            list = target.closest('ul'),
+            allButton = list.find('li').first().find('a'),
+            inputField = jq('input[name="af-project-name"]'),
+            text = target.text(),
+            ajaxURL = list.data('portleturl'),
+
+            areas,
+            areaArr = [],
+            types,
+            typeArr = [];
+
+        e.preventDefault();
+
+        if (text === 'Alla') {
+            list.find('.active').removeClass('active');
+            target.addClass('active');
+        } else {
+
+            if (allButton.hasClass('active')) {
+                allButton.removeClass('active');
+            }
+
+            if (target.hasClass('active')) {
+                target.removeClass('active');
+            } else {
+                target.addClass('active');
+            }
+        }
+
+        areas = jq('.af-findProject-row--filter-areas .active');
+        types = jq('.af-findProject-row--filter-types .active');
+
+        jq.each(areas, function (i, e) {
+            areaArr.push(jq(e).text());
+        });
+
+        jq.each(types, function (i, e) {
+            typeArr.push(jq(e).text());
+        });
+
+        jq.ajax({
+            url: ajaxURL,
+            data: {
+                areas: JSON.stringify(areaArr),
+                types: JSON.stringify(typeArr)
+            },
+            success: function (data) {
+                jq('.af-findProject-result').html(data);
+                inputField.val('');
+            }
+        });
+    });
+
+    jq('.af-findProject-row--filter .af-accordionText').on('click', function (e) {
+
+        var target = jq(e.target),
+            p = target.closest('p'),
+            list = p.next('ul'),
+            isExpanded = (p.attr('aria-expanded') === 'true');
+
+        if (isExpanded) {
+            p.attr('aria-expanded', false);
+            list.slideUp();
+            p.removeClass('af-open');
+            target.text('Visa');
+        } else {
+            p.attr('aria-expanded', true);
+            p.addClass('af-open');
+            list.slideDown();
+            target.text('Dölj');
+        }
+    });
+
+    jq('.af-findProject input[name="af-project-name"]').on('keyup', function (e) {
+
+        var target = jq(e.target),
+            inputText = target.val(),
+            allProjects;
+
+        if (inputText.length > 2) {
+
+            allProjects = jq('.af-findProject .af-findProject-project');
+
+            jq.each(allProjects, function (index, elem) {
+                var theElem = jq(elem),
+                    text = theElem.text();
+
+                if (text.toLowerCase().indexOf(inputText.toLowerCase()) > -1) {
+                    theElem.show();
+                } else {
+                    theElem.hide();
+                }
+            });
+        } else {
+            allProjects = jq('.af-findSchool .af-findSchool-school');
+
+            jq.each(allProjects, function (index, elem) {
+                var theElem = jq(elem);
+                theElem.show();
+            });
+        }
+
+        updateFilterItems('.af-findProject-projects', '.af-findProject-project:visible', '.af-findProject-result .af-findProject-result-width p.normal');
+    });
+
     jq('.af-findSchool .af-clear-filter').on('click', function (e) {
 
         var ajaxURL = jq('.af-findSchool-row--filter-areas').data('portleturl'),
@@ -1453,8 +1621,37 @@ svDocReady(function () {
         });
     });
 
+    jq('.af-findProject .af-clear-filter').on('click', function (e) {
+
+        var ajaxURL = jq('.af-findProject-row--filter-areas').data('portleturl'),
+            areaList = jq('.af-findProject-row--filter-areas'),
+            types = jq('.af-findProject-row--filter-types');
+
+        jq.ajax({
+            url: ajaxURL,
+            data: {
+                areas: JSON.stringify([]),
+                types: JSON.stringify([])
+            },
+            success: function (data) {
+                jq('.af-findProject-result').html(data);
+                jq('input[name="af-project-name"]').val('');
+                areaList.find('.active').removeClass('active');
+                types.find('.active').removeClass('active');
+
+                areaList.find('li').first().find('a').addClass('active');
+                types.find('li').first().find('a').addClass('active');
+
+            }
+        });
+    });
+
     jq('.af-findSchool .af-showMap').on('click', function () {
         jq('.af-findSchool-map').toggle();
+    });
+
+    jq('.af-findProject .af-showMap').on('click', function () {
+        jq('.af-findProject-map').toggle();
     });
 
     jq('.af-uppleva-events .af-accordionText').on('click', function (e) {
