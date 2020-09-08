@@ -1485,6 +1485,70 @@ svDocReady(function () {
         });
     });
 
+    jq('.af-findProject-row--filter-processes a').on('click', function (e) {
+
+        var target = jq(e.target),
+            list = target.closest('ul'),
+            allButton = list.find('li').first().find('a'),
+            inputField = jq('input[name="af-project-name"]'),
+            text = target.text(),
+            ajaxURL = list.data('portleturl'),
+
+            areas,
+            areaArr = [],
+            types,
+            typeArr = [],
+            processes,
+            processArr = [];
+
+        e.preventDefault();
+
+        if (text === 'Alla') {
+            list.find('.active').removeClass('active');
+            target.addClass('active');
+        } else {
+
+            if (allButton.hasClass('active')) {
+                allButton.removeClass('active');
+            }
+
+            if (target.hasClass('active')) {
+                target.removeClass('active');
+            } else {
+                target.addClass('active');
+            }
+        }
+
+        areas = jq('.af-findProject-row--filter-areas .active');
+        types = jq('.af-findProject-row--filter-types .active');
+        processes = jq('.af-findProject-row--filter-processes .active');
+
+        jq.each(areas, function (i, e) {
+            areaArr.push(jq(e).text());
+        });
+
+        jq.each(types, function (i, e) {
+            typeArr.push(jq(e).text());
+        });
+
+        jq.each(processes, function (i, e) {
+            processArr.push(jq(e).text());
+        });
+
+        jq.ajax({
+            url: ajaxURL,
+            data: {
+                areas: JSON.stringify(areaArr),
+                types: JSON.stringify(typeArr),
+                processes: JSON.stringify(processArr)
+            },
+            success: function (data) {
+                jq('.af-findProject-result').html(data);
+                inputField.val('');
+            }
+        });
+    });
+
     jq('.af-findProject-row--filter-types a').on('click', function (e) {
 
         var target = jq(e.target),
