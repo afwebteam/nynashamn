@@ -3262,6 +3262,7 @@ input:focus {
   padding: 5px 5px 5px 30px;
   border-radius: 6px;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .af-tags .af-tag a {
