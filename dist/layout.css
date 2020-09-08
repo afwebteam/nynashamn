@@ -534,6 +534,16 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   margin-bottom: 10px;
 }
 
+.af-findProject .af-findProject-projects .af-findProject-project .af-findProject-project-info .af-findProject-project-info-detailPlan {
+  background-color: #EDEBE9;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .af-findProject .af-findProject-projects .af-findProject-project .af-findProject-project-info .af-findProject-project-info-bottom {
   display: flex;
   justify-content: space-between;
@@ -5579,6 +5589,19 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-tillvaxt-site .af-mobileMainMenu .af-mobileMainMenu--item {
   background-color: #2D5F55;
+}
+
+.af-tillvaxt-site .af-tillvaxt-site-detailPlan {
+  background-color: #EDEBE9;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.af-tillvaxt-site .af-tillvaxt-site-detailPlan p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .af-tillvaxt-site .af-puffContainer {

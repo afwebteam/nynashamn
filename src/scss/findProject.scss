@@ -295,6 +295,16 @@
                     margin-bottom: 10px;
                 }
 
+                & .af-findProject-project-info-detailPlan {
+                    background-color: $nynas-grey-color;
+                    display: inline-block;
+                    padding: 5px 10px;
+                    border-radius: 6px;
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+
                 & .af-findProject-project-info-bottom {
                     display: flex;
                     justify-content: space-between;
