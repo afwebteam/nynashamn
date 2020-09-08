@@ -4565,6 +4565,10 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .sv-decoration-generell-bla-knapp--external {
     padding: 15px 35px 15px 20px;
     margin: 40px 0;
+    max-width: 110px;
+  }
+  .sv-decoration-generell-bla-knapp--external .subheading3 {
+    padding: 20px 60px;
   }
   .sv-decoration-generell-bla-knapp--external:after {
     background-size: 15px 15px;
@@ -4574,10 +4578,15 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .sv-decoration-generell-bla-knapp--external p.normal a {
     font-size: 15px;
+    overflow-wrap: break-word;
   }
   .sv-decoration-generell-bla-knapp--intern {
     padding: 15px 35px 15px 20px;
     margin: 40px 0;
+    max-width: 110px;
+  }
+  .sv-decoration-generell-bla-knapp--intern .subheading3 {
+    padding: 20px 60px;
   }
   .sv-decoration-generell-bla-knapp--intern:after {
     background-size: 15px 15px;
@@ -4587,6 +4596,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .sv-decoration-generell-bla-knapp--intern p.normal a {
     font-size: 15px;
+    overflow-wrap: break-word;
   }
   .sv-decoration-bla-knapp-bygglov {
     width: 100%;

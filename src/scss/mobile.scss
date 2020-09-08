@@ -827,6 +827,11 @@
     .sv-decoration-generell-bla-knapp--external {
         padding: 15px 35px 15px 20px;
         margin: 40px 0;
+        max-width: 110px;
+
+        & .subheading3 {
+            padding: 20px 60px;
+        }
 
         &:after {
             background-size: 15px 15px;
@@ -839,6 +844,7 @@
 
             & a {
                 font-size: 15px;
+                overflow-wrap: break-word;
             }
         }
     }
@@ -846,6 +852,11 @@
     .sv-decoration-generell-bla-knapp--intern {
         padding: 15px 35px 15px 20px;
         margin: 40px 0;
+        max-width: 110px;
+
+        & .subheading3 {
+            padding: 20px 60px;
+        }
 
         &:after {
             background-size: 15px 15px;
@@ -858,6 +869,7 @@
 
             & a {
                 font-size: 15px;
+                overflow-wrap: break-word;
             }
         }
     }
