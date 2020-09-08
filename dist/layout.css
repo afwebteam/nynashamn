@@ -4319,6 +4319,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .normal {
     font-size: 15px;
+    overflow-wrap: break-word;
   }
   .sv-font-brodtext-fet {
     font-size: 15px;
