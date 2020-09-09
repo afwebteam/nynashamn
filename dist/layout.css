@@ -5660,6 +5660,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   display: inline-block;
   padding: 5px 10px;
   border-radius: 6px;
+  margin-bottom: 25px;
 }
 
 .af-tillvaxt-site .af-tillvaxt-site-detailPlan p {
@@ -5758,7 +5759,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-tillvaxt-site .af-tillvaxt-cityProject {
-  margin-top: 20px;
+  padding-bottom: 20px;
 }
 
 .af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-area {
