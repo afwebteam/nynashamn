@@ -427,13 +427,19 @@
         flex-wrap: wrap;
 
         & li {
-            max-width: 28%;
-            flex-basis: calc(100%/3 - 80px);
+            flex-basis: calc(100%/3 - 70px);
             background-color: $white-color;
             border-radius: 10px;
             padding: 25px 25px 25px 25px;
             position: relative;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
+
+            & .af-tags {
+
+                & .af-tag {
+                    padding: 5px 10px 5px 30px;
+                }
+            }
 
             & .sv-font-liten-morkgra {
                 display: block;

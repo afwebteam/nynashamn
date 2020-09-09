@@ -5604,13 +5604,16 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-startpage-current ul.sv-channel li {
-  max-width: 28%;
-  flex-basis: calc(100%/3 - 80px);
+  flex-basis: calc(100%/3 - 70px);
   background-color: #fff;
   border-radius: 10px;
   padding: 25px 25px 25px 25px;
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+
+.af-startpage-current ul.sv-channel li .af-tags .af-tag {
+  padding: 5px 10px 5px 30px;
 }
 
 .af-startpage-current ul.sv-channel li .sv-font-liten-morkgra {
