@@ -1787,10 +1787,16 @@ svDocReady(function () {
 
         var thisElem = jq(e),
             thisHref = thisElem.prop('href'),
-            parent = thisElem.closest('.sv-vertical.sv-layout.sv-template-layout');
+            parent = thisElem.closest('.sv-vertical.sv-layout.sv-template-layout'),
+            location = document.location.href;
 
         parent.on('click', function (e) {
-            document.location.href = thisHref;
+
+            if (location.indexOf('/edit/') > -1 || location.indexOf('/edit-offline/') > 1) {
+                return;
+            } else {
+                document.location.href = thisHref;
+            }
         });
     });
 
