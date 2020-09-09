@@ -4232,6 +4232,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     max-width: 100% !important;
     height: auto !important;
   }
+  .af-startpage-current ul.sv-channel li .af-tags .af-tag {
+    padding: 5px 10px 5px 25px !important;
+  }
   .af-startpage-current ul.sv-channel .sv-font-brodtext-fet {
     font-size: 18px;
   }

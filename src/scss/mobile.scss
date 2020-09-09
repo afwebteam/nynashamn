@@ -305,6 +305,13 @@
                 flex-basis: 100% !important;
                 max-width: 100% !important;
                 height: auto !important;
+
+                & .af-tags {
+
+                    & .af-tag {
+                        padding: 5px 10px 5px 25px !important;
+                    }
+                }
             }
 
             & .sv-font-brodtext-fet {
