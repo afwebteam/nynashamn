@@ -429,6 +429,8 @@
 
 .af-event-calendar {
 
+    margin: 0 -5px;
+
     & h1 {
         display: none;
     }
@@ -604,10 +606,16 @@
         justify-content: flex-start;
 
         & .af-event-calendar-result {
-            /* flex-grow: 1; */
-            width: 32.5%;
+            width: 33.33333%;
+            background-color: $nynas-lightgreen-color;
             margin-bottom: 5px;
-            margin-right: 4px;
+
+            & a {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                border: 5px solid $white-color;
+            }
 
             & .af-event-calendar-result-img {
                 background-size: contain;
@@ -617,11 +625,7 @@
 
             & .af-event-calendar-info {
                 padding: 30px 20px;
-                background-color: $nynas-lightgreen-color;
-                height: 50px;
-                margin-top: -1px;
                 display: flex;
-                height: 70px;
 
                 & .af-event-calendar-result-name {
                     font-weight: 700;
@@ -650,6 +654,7 @@
                     font-size: 25px;
                     margin: 0;
                     margin-top: 10px;
+                    width: 75px;
                 }
 
                 & .af-month {
@@ -665,6 +670,10 @@
         max-width: 1366px;
         text-align: center;
         margin: 0 auto;
+
+        & .sv-decoration-generell-bla-knapp--intern {
+            margin-bottom: 0;
+        }
     }
 }
 
