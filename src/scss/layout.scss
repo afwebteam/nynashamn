@@ -966,3 +966,34 @@ header {
         }
     }
 }
+
+.sv-list-style-numrerad-med-svart-cirkel {
+    counter-reset: item;
+    list-style-type: none !important;
+    margin-top: 25px !important;
+
+    & > li {
+        position: relative;
+        margin-bottom: 25px;
+    }
+
+    & > li:before { 
+        content: counter(item) ''; 
+        counter-increment: item;
+        width: 23px;
+        height: 21px;
+        background-color: $nynas-black-color;
+        color: $white-color;
+        text-align: center;
+        font-size: 14px;
+        position: absolute;
+        left: -32px;
+        border-radius: 50%;
+        padding-top: 3px;
+        font-weight: 700;
+    }
+
+    & > li > * {
+        margin-top: 25px;
+    }
+}

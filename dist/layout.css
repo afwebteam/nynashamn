@@ -3305,6 +3305,37 @@ header .af-center p.sv-font-liten-morkgra:hover {
   text-decoration: underline;
 }
 
+.sv-list-style-numrerad-med-svart-cirkel {
+  counter-reset: item;
+  list-style-type: none !important;
+  margin-top: 25px !important;
+}
+
+.sv-list-style-numrerad-med-svart-cirkel > li {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.sv-list-style-numrerad-med-svart-cirkel > li:before {
+  content: counter(item) "";
+  counter-increment: item;
+  width: 23px;
+  height: 21px;
+  background-color: #414042;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  position: absolute;
+  left: -32px;
+  border-radius: 50%;
+  padding-top: 3px;
+  font-weight: 700;
+}
+
+.sv-list-style-numrerad-med-svart-cirkel > li > * {
+  margin-top: 25px;
+}
+
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
 /*
 $museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
@@ -4921,6 +4952,24 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     height: 13px;
     width: 13px;
   }
+  .sv-list-style-numrerad-med-svart-cirkel {
+    counter-reset: item;
+    list-style-type: none !important;
+    margin-top: 20px !important;
+  }
+  .sv-list-style-numrerad-med-svart-cirkel > li {
+    margin-bottom: 20px;
+  }
+  .sv-list-style-numrerad-med-svart-cirkel > li:before {
+    width: 19px;
+    height: 17px;
+    font-size: 11px;
+    border-radius: 50%;
+    padding-top: 4px;
+  }
+  .sv-list-style-numrerad-med-svart-cirkel > li > * {
+    margin-top: 20px;
+  }
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
@@ -4968,10 +5017,6 @@ input::-moz-placeholder {
 }
 
 input:-ms-input-placeholder {
-  color: #414042;
-}
-
-input::-ms-input-placeholder {
   color: #414042;
 }
 
