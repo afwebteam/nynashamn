@@ -5106,14 +5106,12 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 .af-puffContainer .af-etjanster {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c5424165/1589375355020/etj%C3%A4nster.svg");
   background-repeat: no-repeat;
   background-size: 80px 80px;
   background-position: center;
 }
 
 .af-puffContainer .af-servicecenter {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c5424188/1589375624321/kontakt.svg");
   background-repeat: no-repeat;
   background-size: 80px 80px;
   background-position: center;
@@ -5123,7 +5121,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   height: 186px;
   width: 186px;
   border-radius: 50%;
-  /* transform: translateY(-50%); */
   background-repeat: no-repeat;
   background-size: 80px 80px;
   background-position: center;
@@ -5133,8 +5130,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   width: 266px;
   height: 266px;
   border-radius: 50%;
-  /* transform: translateY(-50%); */
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c5424152/1589375164499/lediga-jobb.png");
   background-size: 266px 266px;
   background-repeat: no-repeat;
   background-position: top center;
