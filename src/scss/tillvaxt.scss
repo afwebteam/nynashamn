@@ -303,4 +303,20 @@
             margin: 0;
         }
     }
+
+    & .af-popularShortcuts {
+        align-items: flex-end;
+
+        & .af-popularShortcuts--item {
+
+            & .af-popularShortcuts--itemStyle.af-bigPuff {
+                width: 266px;
+                height: 266px;
+                border-radius: 50%;
+                background-size: 266px 266px;
+                background-repeat: no-repeat;
+                background-position: top center;
+            }
+        }
+    }
 }
