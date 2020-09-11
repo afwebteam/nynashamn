@@ -1722,7 +1722,7 @@ svDocReady(function () {
 
         var target = jq(e.target),
             container = target.closest('.sv-font-brodtext-fet'),
-            content = container.next('ul'),
+            content = jq('.af-uppleva-events-filter-categories'),
             text,
             isExpanded;
 
@@ -1742,58 +1742,38 @@ svDocReady(function () {
         }
     });
 
-    jq('.af-uppleva-events .af-uppleva-events-filter a').on('click', function (e) {
+    jq('.af-uppleva-events .af-uppleva-events-filter-categories a').on('click', function (e) {
 
         var target = jq(e.target),
-            constainer = target.closest('.af-uppleva-events-filter'),
-            isPlaces = constainer.hasClass('places'),
             list = target.closest('ul'),
             tagValue = target.text(),
             portletURL = list.data('portleturl'),
 
             choosenTags,
-            choosenPlaces,
-            tags = [],
-            places = [];
+            tags = [];
 
         e.preventDefault();
 
         if (target.hasClass('active')) {
             target.removeClass('active');
         } else if (target.text() === 'Alla') {
-            if (isPlaces) {
-                jq('.af-uppleva-events-filter-place .active').removeClass('active');
-            } else {
-                jq('.af-uppleva-events-filter-category .active').removeClass('active');
-            }
-            
+            jq('.af-uppleva-events-filter-category .active').removeClass('active');
             target.addClass('active');
         } else {
-            if (isPlaces) {
-                jq('.af-uppleva-events-filter-places').find('li').first().find('a').removeClass('active');
-            } else {
-                jq('.af-uppleva-events-filter-categories').find('li').first().find('a').removeClass('active');
-            }
-            
+            jq('.af-uppleva-events-filter-categories').find('li').first().find('a').removeClass('active');
             target.addClass('active');
         }
 
         choosenTags = jq('.af-uppleva-events-filter-categories').find('.active');
-        choosenPlaces = jq('.af-uppleva-events-filter-places').find('.active');
 
         jq.each(choosenTags, function (i, e) {
             tags.push(jq(e).text());
         });
 
-        jq.each(choosenPlaces, function (i, e) {
-            places.push(jq(e).text());
-        });
-
         jq.ajax({
             url: portletURL,
             data: {
-                tags: JSON.stringify(tags),
-                places: JSON.stringify(places),
+                tags: JSON.stringify(tags)
             },
             type: 'get',
             success: function (data) {

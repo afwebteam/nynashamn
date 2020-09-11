@@ -136,5 +136,18 @@
                 margin-top: 0;
             }
         }
+
+        & .sv-decoration-planprocessen {
+
+            & h2, h3, .sv-font-stor-svart {
+                font-size: 20px !important;
+            }
+
+            & h2:before, h3:before, .sv-font-stor-svart:before {
+                background-size: 15px;
+                top: 24px;
+                margin-right: 0 !important;
+            }
+        }
     }
 }
