@@ -5902,7 +5902,8 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-tillvaxt-site .af-tillvaxt-cityProject-processFlow {
   padding: 60px;
   background-color: #EDEBE9;
-  border-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   position: relative;
 }
 

@@ -206,7 +206,8 @@
     .af-tillvaxt-cityProject-processFlow {
         padding: 60px;
         background-color: $nynas-grey-color;
-        border-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
         position: relative;
 
         & .af-tillvaxt-cityProject-processFlow--line {
