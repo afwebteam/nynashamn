@@ -4,6 +4,15 @@
 
     .af-tillvaxt-site { 
 
+        & .af-aktuelltIcon {
+            padding-left: 40px;
+            background-size: 25px;
+
+            & .sv-font-stor-svart {
+                font-size: 25px;
+            }
+        }
+
         & > div:first-of-type {
             border: none;
         }

@@ -3831,6 +3831,13 @@ $museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/158937681741
 $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
 */
 @media screen and (max-width: 880px) {
+  .af-tillvaxt-site .af-aktuelltIcon {
+    padding-left: 40px;
+    background-size: 25px;
+  }
+  .af-tillvaxt-site .af-aktuelltIcon .sv-font-stor-svart {
+    font-size: 25px;
+  }
   .af-tillvaxt-site > div:first-of-type {
     border: none;
   }
@@ -4464,7 +4471,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     font-size: 18px;
   }
   .sv-font-stor-svart {
-    font-size: 25px;
+    font-size: 25px !important;
   }
   .sv-grid-850.sv-fluid-grid > div,
   .sv-grid-850.sv-fixed-fluid-grid > div {
