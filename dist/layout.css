@@ -6106,7 +6106,11 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   z-index: 9;
 }
 
-.af-uppleva-site .af-uppleva-events .af-uppleva-events-filter .af-closed:after {
+.af-uppleva-site .af-uppleva-events .af-uppleva-events-filter .af-accordionText:hover {
+  cursor: pointer;
+}
+
+.af-uppleva-site .af-uppleva-events .af-closed:after {
   content: ' ';
   background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
@@ -6120,13 +6124,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   transition: all 0.3s ease;
 }
 
-.af-uppleva-site .af-uppleva-events .af-uppleva-events-filter .af-open:after {
+.af-uppleva-site .af-uppleva-events .af-open:after {
   transform: rotate(45deg);
   transition: all 0.3s ease;
-}
-
-.af-uppleva-site .af-uppleva-events .af-uppleva-events-filter .af-accordionText:hover {
-  cursor: pointer;
 }
 
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-filter-categories,

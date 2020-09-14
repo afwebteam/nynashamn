@@ -1721,22 +1721,23 @@ svDocReady(function () {
     jq('.af-uppleva-events .af-accordionText').on('click', function (e) {
 
         var target = jq(e.target),
-            container = target.closest('.sv-font-brodtext-fet'),
-            content = jq('.af-uppleva-events-filter-categories'),
+            container = target.closest('.af-uppleva-events-filter'),
+            containerText = container.find('.sv-font-brodtext-fet'),
+            content = container.find('ul'),
             text,
             isExpanded;
 
         text = container.find('.af-accordionText');
-        isExpanded = (container.attr('aria-expanded') === 'true');
+        isExpanded = (containerText.attr('aria-expanded') === 'true');
 
         if (isExpanded) {
-            container.attr('aria-expanded', false);
+            containerText.attr('aria-expanded', false);
             content.hide();
-            container.removeClass('af-open');
+            containerText.removeClass('af-open');
             text.text('Visa');
         } else {
-            container.attr('aria-expanded', true);
-            container.addClass('af-open');
+            containerText.attr('aria-expanded', true);
+            containerText.addClass('af-open');
             content.show();
             text.text('Dölj');
         }
