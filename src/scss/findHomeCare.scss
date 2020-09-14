@@ -1,0 +1,405 @@
+@import 'variables';
+
+.sv-grid-850 {
+
+    & .pagecontent {
+
+        & .af-homeCare-shortinfo {
+            margin-top: 0;
+            display: flex;
+            border-bottom: 1px solid $nynas-grey-color;
+            padding-bottom: 5px;
+
+            & > div {
+                width: 50%;
+
+                & .sv-font-brodtext-liten {
+                    margin: 0;
+                }
+            }
+
+            & > div:last-of-type {
+                & .sv-font-brodtext-liten {
+                    text-align: right;
+                }
+
+                & .sv-font-brodtext-liten:before {
+                    content: ' ';
+                    display: inline-block;
+                    background-image: url($mapIcon);
+                    background-repeat: no-repeat;
+                    background-size: 13px;
+                    background-position: center;
+                    width: 25px;
+                }
+            }
+        }
+    }
+}
+
+.af-homeCarePage {
+
+    & .af-homeCarePage-header {
+        background-color: $nynas-darkblue-color;
+        padding: 25px 50px;
+        margin-bottom: 5px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        color: $white-color;
+        position: relative;
+        padding-left: 80px;
+        font-weight: 700;
+    }
+
+    & .af-homeCarePage-header:before {
+        content: '';
+        position: absolute;
+        background-image: url($mapIconWhite);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: right;
+        width: 25px;
+        height: 25px;
+        top: 29px;
+        left: 50px;
+    }
+
+    & .af-homeCarePage-body {
+
+        #af-detailMap {
+            width: 100%;
+            height: 350px;
+        }
+    }
+}
+
+.af-homeCare {
+
+    margin-bottom: 40px;
+
+    & #af-mapAll {
+        height: 500px;
+        margin-bottom: 40px;
+    }
+
+    & .af-homeCare-row {
+        margin-bottom: 10px;
+        padding: 20px;
+        background-color: $nynas-grey-color;
+
+        & .af-homeCare-row--filter {
+            max-width: 850px;
+            margin: 0 auto;
+
+            & .form-element {
+                position: relative;
+
+                & label {
+                    display: none;
+                }
+
+                & input {
+                    border: none;
+                    padding: 10px 0;
+                    width: 100%;
+                    text-indent: 15px;
+                    border-radius: 6px;
+                }
+
+                & button {
+                    position: absolute;
+                    top: 0;
+                    right: -2px;
+                    bottom: 0;
+                    padding: 0 20px;
+                    border: none;
+                    background-color: $nynas-darkblue-color;
+                    color: $white-color;
+                    font-size: 20px;
+                    font-weight: 500;
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                }
+            }
+
+            & .af-homeCare-row--filter-areas,
+            & .af-homeCare-row--filter-productions,
+            & .af-homeCare-row--filter-services {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                flex-wrap: wrap;
+                display: flex;
+
+                & .af-homeCare-row--filter-area,
+                & .af-homeCare-row--filter-production,
+                & .af-homeCare-row--filter-services {
+
+                    & a {
+                        background-color: $white-color;
+                        font-weight: 500;
+                        font-size: 15px;
+                        padding: 10px 15px;
+                        border-radius: 6px;
+                        border: 1px solid $nynas-darkgrey-color;
+                        outline: none;
+                        text-decoration: none;
+
+                        margin: 20px 20px 0 0;
+                        display: inline-block;
+                    }
+
+                    & .active {
+                        background-color: $nynas-darkblue-color;
+                        color: $white-color;
+                    }
+                }
+            }
+
+            & .sv-font-brodtext-fet {
+                position: relative;
+                margin: unset;
+            }
+
+            & .af-accordionText {
+                position: absolute;
+                right: 0;
+                top: 2px;
+                font-size: 18px;
+                font-weight: 500;
+                padding-right: 28px;
+                z-index: 9;
+            }
+    
+            & .af-accordionText:hover {
+                cursor: pointer;
+            }
+
+            & .af-closed:after {
+                content: ' ';
+                background-image: url($plusSignIcon);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 18px;
+                position: absolute;
+                right: 0;
+                top: 4px;
+                height: 18px;
+                width: 18px;
+                transition: all 0.3s ease;
+            }
+    
+            & .af-open:after {
+                transform: rotate(45deg);
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
+    & .af-homeCare-filterActions {
+        max-width: 850px;
+        margin: 30px auto 30px auto;
+        display: flex;
+        justify-content: space-between;
+
+        & .af-showMap {
+            position: relative;
+            padding-right: 40px;
+        }
+
+        & .af-showMap:after {
+            content: '';
+            position: absolute;
+            background-image: url($mapIconWhite);
+            background-repeat: no-repeat;
+            background-size: 18px;
+            background-position: right;
+            width: 20px;
+            height: 20px;
+            top: 8px;
+            right: 12px;
+        }
+    }
+
+    & .af-homeCare-map {
+        max-width: 1192px;
+        margin: 0 auto;
+        display: none;
+    }
+
+    & .af-homeCare-result {
+        background-color: $nynas-grey-color;
+
+        & .af-homeCare-result-width {
+            max-width: 1366px;
+            margin: 0 auto;
+            padding: 26px 40px 40px 40px;
+
+            & p.normal {
+                margin: unset;
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    & .af-homeCare-homeCares {
+
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        & .af-homeCare-homeCare {
+            width: calc(33.3333% - 15px);
+            margin: 0 20px 20px 0;
+            background-color: $white-color;
+            border-radius: 6px;
+
+            & a {
+                text-decoration: none;
+            }
+
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+
+            & .af-homeCare-homeCare-img {
+                padding-top: 56.25%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+            }
+
+            & .af-homeCare-homeCare-info{
+                padding: 30px 30px 26px 30px;
+                background-color: $white-color;
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+
+                & * {
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
+
+                & span {
+                    font-weight: 300;
+                }
+
+                & .af-homeCare-homeCare-info-name {
+                    font-size: 25px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+
+                & .af-homeCare-homeCare-info-bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 25px;
+                    margin-bottom: 0;
+    
+                    & .af-homeCare-homeCare-info-address {
+                        font-size: 13px;
+                        font-weight: 500;
+                    }
+
+                    & .af-homeCare-homeCare-info-map {
+                        font-size: 13px;
+                        font-weight: 500;
+                        text-decoration: underline;
+                        text-decoration-color: $nynas-darkblue-color;
+                        padding-right: 20px;
+                        position: relative;
+                    }
+
+                    & .af-homeCare-homeCare-info-map:after {
+                        position: absolute;
+                        content: ' ';
+                        height: 15px;
+                        width: 15px;
+                        display: inline-block;
+                        top: 0;
+                        right: 0;
+                        background-image: url($mapIcon);
+                    }
+                }
+            }  
+        }
+    }
+}
+
+@media screen and (max-width: 880px) {
+
+    .af-homeCarePage {
+
+        & .af-homeCarePage-header {
+            font-size: 20px;
+        }
+
+        & .af-homeCarePage-header:before {
+            background-size: 15px;
+            top: 24px;
+        }
+    }
+
+    .af-homeCare {
+
+        & .sv-font-brodtext-fet.af-closed {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        & .af-accordionText {
+            font-size: 13px !important;
+        }
+
+        & .af-homeCare-row {
+
+            & .af-homeCare-row--filter {
+
+                & .af-closed:after {
+                    width: 13px;
+                    height: 13px;
+                }
+
+                & .form-element {
+
+                    & button {
+                        right: -4px;
+                    }
+                } 
+            }
+        }  
+
+        & .af-homeCare-filterActions {
+            padding: 0 30px;
+            margin: 20px auto 20px auto;
+        }
+
+        & .af-homeCare-result {
+
+            & .af-homeCare-result-width {
+                padding: 20px;
+
+                & p.normal {
+                    font-size: 14px;
+                    margin-bottom: 14px;
+                }
+
+                & .af-homeCare-homeCares {
+
+                    & .af-homeCare-homeCare {
+                        width: 100%;
+                        margin-right: 0;
+
+                        & .af-homeCare-homeCare-info {
+                            padding: 20px 30px 16px 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

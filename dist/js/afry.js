@@ -22,6 +22,10 @@ svDocReady(function () {
         jq('.af-findProject-row--filter-types').hide();
         jq('.af-findProject-row--filter-processes').hide();
         //jq('.af-uppleva-events-filter-categories').hide();
+
+        jq('.af-homeCare-row--filter-areas').hide();
+        jq('.af-homeCare-row--filter-productions').hide();
+        jq('.af-homeCare-row--filter-services').hide();
     };
 
     AF.changePDFLinksInRelatedInfo = function () {
@@ -1912,6 +1916,282 @@ svDocReady(function () {
         link = target.find('a');
         url = link.prop('href');
         document.location.href = url;
+    });
+
+    jq('.af-homeCare-row--filter-areas a').on('click', function (e) {
+
+        var target = jq(e.target),
+            list = target.closest('ul'),
+            allButton = list.find('li').first().find('a'),
+            inputField = jq('input[name="af-homeCare-name"]'),
+            text = target.text(),
+            ajaxURL = list.data('portleturl'),
+
+            areas,
+            areaArr = [],
+            productions,
+            productionsArr = [],
+            services,
+            servicesArr = [];
+
+        e.preventDefault();
+
+        if (text === 'Alla') {
+            list.find('.active').removeClass('active');
+            target.addClass('active');
+        } else {
+
+            if (allButton.hasClass('active')) {
+                allButton.removeClass('active');
+            }
+
+            if (target.hasClass('active')) {
+                target.removeClass('active');
+            } else {
+                target.addClass('active');
+            }
+        }
+
+        areas = jq('.af-homeCare-row--filter-areas .active');
+        productions = jq('.af-homeCare-row--filter-productions .active');
+        services = jq('.af-homeCare-row--filter-services .active');
+
+        jq.each(areas, function (i, e) {
+            areaArr.push(jq(e).text());
+        });
+
+        jq.each(productions, function (i, e) {
+            productionsArr.push(jq(e).text());
+        });
+
+        jq.each(services, function (i, e) {
+            servicesArr.push(jq(e).text());
+        });
+
+        jq.ajax({
+            url: ajaxURL,
+            data: {
+                areas: JSON.stringify(areaArr),
+                productions: JSON.stringify(productionsArr),
+                services: JSON.stringify(servicesArr)
+            },
+            success: function (data) {
+                jq('.af-homeCare-result').html(data);
+                inputField.val('');
+            }
+        });
+    });
+
+    jq('.af-homeCare-row--filter-productions a').on('click', function (e) {
+
+        var target = jq(e.target),
+            list = target.closest('ul'),
+            allButton = list.find('li').first().find('a'),
+            inputField = jq('input[name="af-homeCare-name"]'),
+            text = target.text(),
+            ajaxURL = list.data('portleturl'),
+
+            areas,
+            areaArr = [],
+            productions,
+            productionsArr = [],
+            services,
+            servicesArr = [];
+
+        e.preventDefault();
+
+        if (text === 'Alla') {
+            list.find('.active').removeClass('active');
+            target.addClass('active');
+        } else {
+
+            if (allButton.hasClass('active')) {
+                allButton.removeClass('active');
+            }
+
+            if (target.hasClass('active')) {
+                target.removeClass('active');
+            } else {
+                target.addClass('active');
+            }
+        }
+
+        areas = jq('.af-homeCare-row--filter-areas .active');
+        productions = jq('.af-homeCare-row--filter-productions .active');
+        services = jq('.af-homeCare-row--filter-services .active');
+
+        jq.each(areas, function (i, e) {
+            areaArr.push(jq(e).text());
+        });
+
+        jq.each(productions, function (i, e) {
+            productionsArr.push(jq(e).text());
+        });
+
+        jq.each(services, function (i, e) {
+            servicesArr.push(jq(e).text());
+        });
+
+        jq.ajax({
+            url: ajaxURL,
+            data: {
+                areas: JSON.stringify(areaArr),
+                productions: JSON.stringify(productionsArr),
+                services: JSON.stringify(servicesArr)
+            },
+            success: function (data) {
+                jq('.af-homeCare-result').html(data);
+                inputField.val('');
+            }
+        });
+    });
+
+    jq('.af-homeCare-row--filter-services a').on('click', function (e) {
+
+        var target = jq(e.target),
+            list = target.closest('ul'),
+            allButton = list.find('li').first().find('a'),
+            inputField = jq('input[name="af-homeCare-name"]'),
+            text = target.text(),
+            ajaxURL = list.data('portleturl'),
+
+            areas,
+            areaArr = [],
+            productions,
+            productionsArr = [],
+            services,
+            servicesArr = [];
+
+        e.preventDefault();
+
+        if (text === 'Alla') {
+            list.find('.active').removeClass('active');
+            target.addClass('active');
+        } else {
+
+            if (allButton.hasClass('active')) {
+                allButton.removeClass('active');
+            }
+
+            if (target.hasClass('active')) {
+                target.removeClass('active');
+            } else {
+                target.addClass('active');
+            }
+        }
+
+        areas = jq('.af-homeCare-row--filter-areas .active');
+        productions = jq('.af-homeCare-row--filter-productions .active');
+        services = jq('.af-homeCare-row--filter-services .active');
+
+        jq.each(areas, function (i, e) {
+            areaArr.push(jq(e).text());
+        });
+
+        jq.each(productions, function (i, e) {
+            productionsArr.push(jq(e).text());
+        });
+
+        jq.each(services, function (i, e) {
+            servicesArr.push(jq(e).text());
+        });
+
+        jq.ajax({
+            url: ajaxURL,
+            data: {
+                areas: JSON.stringify(areaArr),
+                productions: JSON.stringify(productionsArr),
+                services: JSON.stringify(servicesArr)
+            },
+            success: function (data) {
+                jq('.af-homeCare-result').html(data);
+                inputField.val('');
+            }
+        });
+    });
+
+    jq('.af-homeCare-row--filter .af-accordionText').on('click', function (e) {
+
+        var target = jq(e.target),
+            p = target.closest('p'),
+            list = p.next('ul'),
+            isExpanded = (p.attr('aria-expanded') === 'true');
+
+        if (isExpanded) {
+            p.attr('aria-expanded', false);
+            list.slideUp();
+            p.removeClass('af-open');
+            target.text('Visa');
+        } else {
+            p.attr('aria-expanded', true);
+            p.addClass('af-open');
+            list.slideDown();
+            target.text('Dölj');
+        }
+    });
+
+    jq('.af-homeCare .af-showMap').on('click', function () {
+        jq('.af-homeCare-map').toggle();
+    });
+
+    jq('.af-homeCare .af-clear-filter').on('click', function (e) {
+
+        var ajaxURL = jq('.af-homeCare-row--filter-areas').data('portleturl'),
+            areaList = jq('.af-homeCare-row--filter-areas'),
+            productionList = jq('.af-homeCare-row--filter-productions'),
+            serviceList = jq('.af-homeCare-row--filter-services');
+
+        jq.ajax({
+            url: ajaxURL,
+            data: {
+                areas: JSON.stringify([]),
+                productions: JSON.stringify([]),
+                services: JSON.stringify([])
+            },
+            success: function (data) {
+                jq('.af-homeCare-result').html(data);
+                jq('input[name="af-homeCare-name"]').val('');
+                areaList.find('.active').removeClass('active');
+                productionList.find('.active').removeClass('active');
+                serviceList.find('.active').removeClass('active');
+
+                areaList.find('li').first().find('a').addClass('active');
+                productionList.find('li').first().find('a').addClass('active');
+                serviceList.find('li').first().find('a').addClass('active');
+            }
+        });
+    });
+
+    jq('.af-homeCare input[name="af-homeCare-name"]').on('keyup', function (e) {
+
+        var target = jq(e.target),
+            inputText = target.val(),
+            allHomeCares;
+
+        if (inputText.length > 2) {
+
+            allHomeCares = jq('.af-homeCare .af-homeCare-homeCare');
+
+            jq.each(allHomeCares, function (index, elem) {
+                var theElem = jq(elem),
+                    text = theElem.text();
+
+                if (text.toLowerCase().indexOf(inputText.toLowerCase()) > -1) {
+                    theElem.show();
+                } else {
+                    theElem.hide();
+                }
+            });
+        } else {
+            allHomeCares = jq('.af-homeCare .af-homeCare-homeCare');
+
+            jq.each(allHomeCares, function (index, elem) {
+                var theElem = jq(elem);
+                theElem.show();
+            });
+        }
+
+        updateFilterItems('.af-homeCare-homeCares', '.af-homeCare-homeCare:visible', '.af-homeCare-result .af-homeCare-result-width p.normal');
     });
 
     AF.changeStandardSVIcons();
