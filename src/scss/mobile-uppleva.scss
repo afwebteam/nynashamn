@@ -26,8 +26,15 @@
             }
         }
 
-        & .af-pageWidth {
+        & .af-pageWidth.af-center {
             padding: 0 50px;
+
+            & .sv-text-portlet-content {
+
+                & .sv-font-stor-svart {
+                    margin-top: 0px !important;
+                }
+            }
         }
 
         & .af-startpageBigImage {

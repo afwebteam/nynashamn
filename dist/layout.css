@@ -3351,6 +3351,11 @@ header .af-center p.sv-font-liten-morkgra:hover {
   margin: 0;
 }
 
+.af-logo .sv-svg {
+  max-width: 210px;
+  max-height: 65px;
+}
+
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
 /*
 $museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
@@ -3940,8 +3945,11 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-uppleva-site .af-mobileTabs .af-menu--item {
     order: unset;
   }
-  .af-uppleva-site .af-pageWidth {
+  .af-uppleva-site .af-pageWidth.af-center {
     padding: 0 50px;
+  }
+  .af-uppleva-site .af-pageWidth.af-center .sv-text-portlet-content .sv-font-stor-svart {
+    margin-top: 0px !important;
   }
   .af-uppleva-site .af-startpageBigImage {
     background-image: url("https://nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c542451a/1589378872626/startpage-background.png");
@@ -4309,6 +4317,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     padding-left: 20px !important;
     padding-right: 20px !important;
     flex-direction: column;
+    margin-top: 0;
   }
   .af-flexRow > * {
     max-width: 100% !important;
