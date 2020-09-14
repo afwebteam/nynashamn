@@ -4106,6 +4106,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     overflow: auto;
     overflow-x: hidden;
   }
+  body > div > div:first-of-type {
+    border: none;
+  }
   ul, ol {
     font-size: 15px;
   }
