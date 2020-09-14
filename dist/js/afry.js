@@ -24,6 +24,35 @@ svDocReady(function () {
         //jq('.af-uppleva-events-filter-categories').hide();
     };
 
+    AF.changePDFLinksInRelatedInfo = function () {
+
+        var container = jq('.af-related-information'),
+            pdfLinks;
+
+        if (container && container.length > 0) {
+            pdfLinks = container.find('.af-file a');
+
+            if (pdfLinks && pdfLinks.length > 0) {
+                jq.each(pdfLinks, function (i, e) {
+                    var link = jq(e),
+                        text = link.text().trim(),
+                        indexOfPDFInfo = text.indexOf('(pdf'),
+                        newText;
+
+                    if (indexOfPDFInfo > -1) {
+                        newText = text.substring(0, indexOfPDFInfo);
+                        link.text(newText);
+                    }
+                });
+            }
+        }
+
+    };
+
+    setTimeout(function () {
+        AF.changePDFLinksInRelatedInfo();
+    }, 100);
+
     AF.removeAttribute = function (anElem, anAttribute) {
 
         var attr = jq(anElem).attr(anAttribute);

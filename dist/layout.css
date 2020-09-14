@@ -2934,6 +2934,20 @@ nav.af-center .af-searchIcon a.active {
   margin: 0;
 }
 
+.af-related-information ul .af-file a {
+  position: relative;
+}
+
+.af-related-information ul .af-file a:after {
+  position: absolute;
+  content: '';
+  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db963754cee/1596632006892/filer.svg");
+  width: 18px;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  bottom: 3px;
+}
+
 .af-related-information ul .sv-decoration-generell-bla-knapp--external, .af-related-information ul .sv-decoration-generell-bla-knapp--intern {
   padding: 10px 50px 10px 20px;
 }

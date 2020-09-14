@@ -558,6 +558,24 @@ nav.af-center {
             margin: 0;
         }
 
+        & .af-file {
+
+            & a {
+                position: relative;
+            }
+
+            & a:after {
+                position: absolute;
+                content: '';
+                background-image: url($fileIcon);
+                width: 18px;
+                background-repeat: no-repeat;
+                margin-left: 10px;
+                bottom: 3px;
+            }
+
+        }
+
         & .sv-decoration-generell-bla-knapp--external, .sv-decoration-generell-bla-knapp--intern  {
 
             &:after {
