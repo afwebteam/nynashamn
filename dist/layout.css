@@ -3201,6 +3201,7 @@ nav.af-center .af-searchIcon a.active {
   padding-bottom: 20px;
   padding-left: 88px;
   padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 .af-publishedDate {
@@ -3337,6 +3338,14 @@ header .af-center p.sv-font-liten-morkgra:hover {
 
 .sv-list-style-numrerad-med-svart-cirkel > li > * {
   margin-top: 25px;
+}
+
+.sv-list-style-numrerad-med-svart-cirkel ul {
+  list-style-type: disc;
+}
+
+.pagecontent .sv-spacer-60pxvt .sv-text-portlet + .sv-text-portlet {
+  margin: 0;
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
@@ -4125,6 +4134,12 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   .af-desktopNone {
     display: block;
   }
+  .af-theStartPage .sv-font-stor-svart {
+    font-size: 25px !important;
+  }
+  .af-theStartPage .af-messageIcon, .af-theStartPage .af-eventsIcon, .af-theStartPage .af-aktuelltIcon {
+    padding-left: 32px;
+  }
   .af-theStartPage .af-startpageBigImage {
     background-image: none !important;
     padding: 0 !important;
@@ -4443,6 +4458,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   }
   .sv-decoration-generell-tabell table tbody tr td p {
     font-size: 17px !important;
+  }
+  .sv-decoration-generell-dragspel > div.sv-vertical.sv-layout {
+    padding: 10px 20px 10px 20px;
   }
   .sv-decoration-generell-dragspel h2 {
     font-size: 20px;
@@ -5002,6 +5020,10 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 /* OVERRIDES */
 p.normal {
   margin: 25px 0 0 0;
+}
+
+h2.subheading + p.normal {
+  margin-top: 10px;
 }
 
 .sv-autocomplete-search-result {
