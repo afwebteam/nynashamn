@@ -2767,9 +2767,10 @@ nav.af-center .af-searchIcon a.active {
   padding: 15px 50px 15px 20px;
   display: inline-block;
   color: #fff;
-  margin: 40px 0;
+  margin: 0;
   border-radius: 10px;
   position: relative;
+  margin-top: 25px;
 }
 
 .sv-decoration-generell-bla-knapp--intern:after {
@@ -2948,7 +2949,7 @@ nav.af-center .af-searchIcon a.active {
 
 .sv-decoration-generell-dragspel h2, .sv-decoration-generell-dragspel .subheading3 {
   background-color: #EDEBE9;
-  padding: 20px 100px 20px 50px;
+  padding: 20px 100px 20px 30px;
   margin-bottom: 15px;
   position: relative;
   font-size: 25px;
@@ -2959,7 +2960,7 @@ nav.af-center .af-searchIcon a.active {
 
 .sv-decoration-generell-dragspel .subheading3 {
   background-color: #EDEBE9;
-  padding: 20px 54px;
+  padding: 20px 30px;
   margin-bottom: 15px;
   position: relative;
   font-size: 22px;
@@ -2975,7 +2976,7 @@ nav.af-center .af-searchIcon a.active {
 }
 
 .sv-decoration-generell-dragspel > div.sv-vertical.sv-layout {
-  padding: 66px 58px 56px 58px;
+  padding: 40px 30px 56px 30px;
   border: 1px solid #EDEBE9;
   margin-top: -15px;
   margin-bottom: 15px;
@@ -3014,7 +3015,7 @@ nav.af-center .af-searchIcon a.active {
 }
 
 .sv-decoration-generell-dragspel .boxStyle {
-  padding: 66px 58px 56px 58px;
+  padding: 40px 30px 56px 30px;
   border: 1px solid #EDEBE9;
   margin-top: -15px;
   margin-bottom: 15px;
@@ -5023,6 +5024,10 @@ p.normal {
 }
 
 h2.subheading + p.normal {
+  margin-top: 10px;
+}
+
+h3.subheading3-utan-dragspel + p.normal {
   margin-top: 10px;
 }
 
