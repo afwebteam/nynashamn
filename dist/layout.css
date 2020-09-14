@@ -1343,6 +1343,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .af-currentFilter--areas li {
@@ -1356,6 +1357,8 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   border-radius: 6px;
   padding: 10px 20px;
   text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .af-currentFilter--areas li a.active {
@@ -5030,6 +5033,10 @@ input::-moz-placeholder {
 }
 
 input:-ms-input-placeholder {
+  color: #414042;
+}
+
+input::-ms-input-placeholder {
   color: #414042;
 }
 
