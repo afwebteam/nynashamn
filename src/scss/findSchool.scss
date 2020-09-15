@@ -338,7 +338,7 @@
     .af-schoolPage {
 
         & .af-schoolPage-header {
-            font-size: 20px;
+            font-size: 20px !important;
         }
 
         & .af-schoolPage-header:before {
@@ -373,29 +373,6 @@
                         right: -4px;
                     }
                 } 
-
-                & .af-findSchool-row--filter-areas {
-
-                    & .af-findSchool-row--filter-area {
-                        /* margin-bottom: 40px; */
-                    }
-                }
-
-                & .af-findSchool-row--filter-productions {
-
-                    & .af-findSchool-row--filter-production {
-                        /* margin-bottom: 40px; */
-                    }
-                }
-
-                & .af-findSchool-row--filter-forms {
-
-                    & .af-findSchool-row--filter-form {
-                        /* margin-bottom: 40px; */
-                    }
-                }
-
-
             }
         }  
 

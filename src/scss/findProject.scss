@@ -37,43 +37,6 @@
     }
 }
 
-/*
-.af-schoolPage {
-
-    & .af-schoolPage-header {
-        background-color: $nynas-darkblue-color;
-        padding: 25px 50px;
-        margin-bottom: 5px;
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px;
-        color: $white-color;
-        position: relative;
-        padding-left: 80px;
-    }
-
-    & .af-schoolPage-header:before {
-        content: '';
-        position: absolute;
-        background-image: url($mapIconWhite);
-        background-repeat: no-repeat;
-        background-size: 20px;
-        background-position: right;
-        width: 25px;
-        height: 25px;
-        top: 29px;
-        left: 50px;
-    }
-
-    & .af-schoolPage-body {
-
-        #af-detailMap {
-            width: 100%;
-            height: 350px;
-        }
-    }
-}
-*/
-
 .af-findProject {
 
     margin-bottom: 40px;
@@ -341,15 +304,51 @@
     }
 }
 
+.af-cityProjectPage {
+
+    & .af-cityProjectPage-header {
+        background-color: $nynas-darkblue-color;
+        padding: 25px 50px;
+        margin-bottom: 5px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        color: $white-color;
+        position: relative;
+        padding-left: 80px;
+        font-weight: 700;
+    }
+
+    & .af-cityProjectPage-header:before {
+        content: '';
+        position: absolute;
+        background-image: url($mapIconWhite);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: right;
+        width: 25px;
+        height: 25px;
+        top: 29px;
+        left: 50px;
+    }
+
+    & .af-cityProjectPage-body {
+
+        #af-detailMap {
+            width: 100%;
+            height: 350px;
+        }
+    }
+}
+
 @media screen and (max-width: 880px) {
 
-    .af-schoolPage {
+    .af-cityProjectPage {
 
-        & .af-schoolPage-header {
-            font-size: 20px;
+        & .af-cityProjectPage-header {
+            font-size: 20px !important;
         }
 
-        & .af-schoolPage-header:before {
+        & .af-cityProjectPage-header:before {
             background-size: 15px;
             top: 24px;
         }
