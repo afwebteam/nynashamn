@@ -5,7 +5,8 @@ p.normal {
     margin: 25px 0 0 0;
 }
 
-h2.subheading + p.normal {
+h2.subheading + p.normal,
+h3.subheading3 + p.normal {
     margin-top: 10px;
 }
 

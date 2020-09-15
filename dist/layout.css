@@ -2665,7 +2665,7 @@ h2 + h3 {
 }
 
 .sv-use-margins p.normal + h3 {
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 input {
@@ -5190,7 +5190,8 @@ p.normal {
   margin: 25px 0 0 0;
 }
 
-h2.subheading + p.normal {
+h2.subheading + p.normal,
+h3.subheading3 + p.normal {
   margin-top: 10px;
 }
 
@@ -5227,10 +5228,6 @@ input::-moz-placeholder {
 }
 
 input:-ms-input-placeholder {
-  color: #414042;
-}
-
-input::-ms-input-placeholder {
   color: #414042;
 }
 
