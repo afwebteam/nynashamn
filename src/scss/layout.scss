@@ -131,12 +131,6 @@ footer {
     top: 3px;
 }
 
-/*
-.sv-linkicon[title='PDF']:after {
-    content: 'PDF';
-}
-*/
-
 .normal {
     .sv-linkicon {
         top: unset;
@@ -147,18 +141,6 @@ a[href*="/download/"] {
     margin-right: 5px; 
     position: relative;
 }
-
-/*
-a[href*="/download/"]:after {
-    content: ' ';
-    background-image: url($attachedFile);
-    background-repeat: no-repeat;
-    width: 20px;
-    display: inline-block;
-    border: none;
-    margin-left: 10px;
-}
-*/
 
 .af-center {
     text-align: center;
@@ -249,7 +231,6 @@ p.sv-portlet-image-caption {
         }
 
         & a:hover {
-            /* border-bottom: $linkBorderStyle; */
             text-decoration: underline;
             text-decoration-color: $nynas-darkblue-color;
         }
@@ -404,7 +385,6 @@ nav.af-center {
         right: 10px;
         width: 25px;
         height: 25px;
-
     }
 
     & p.normal {

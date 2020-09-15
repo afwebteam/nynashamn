@@ -130,13 +130,10 @@
                 list-style-type: none;
                 flex-wrap: wrap;
                 display: flex;
-                /* padding-top: 25px; */
 
                 & .af-findSchool-row--filter-area,
                 & .af-findSchool-row--filter-production,
                 & .af-findSchool-row--filter-form {
-                    /* margin-right: 20px; */
-                    /* margin-bottom: 20px; */
 
                     & a {
                         background-color: $white-color;

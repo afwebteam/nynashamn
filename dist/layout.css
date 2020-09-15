@@ -1,14 +1,4 @@
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 /* Buttons */
 .af-blueButton {
   padding: 10px 15px;
@@ -226,16 +216,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 .sv-grid-850 .pagecontent .af-homeCare-shortinfo {
   margin-top: 0;
   display: flex;
@@ -604,16 +584,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 .sv-grid-850 .pagecontent .af-project-shortinfo {
   margin-top: 0;
   display: flex;
@@ -992,16 +962,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 .sv-grid-850 .pagecontent .af-school-shortinfo {
   margin-top: 0;
   display: flex;
@@ -1120,20 +1080,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   list-style-type: none;
   flex-wrap: wrap;
   display: flex;
-  /* padding-top: 25px; */
-}
-
-.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-area,
-.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-production,
-.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-form,
-.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-productions .af-findSchool-row--filter-area,
-.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-productions .af-findSchool-row--filter-production,
-.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-productions .af-findSchool-row--filter-form,
-.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms .af-findSchool-row--filter-area,
-.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms .af-findSchool-row--filter-production,
-.af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-forms .af-findSchool-row--filter-form {
-  /* margin-right: 20px; */
-  /* margin-bottom: 20px; */
 }
 
 .af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-findSchool-row--filter-areas .af-findSchool-row--filter-area a,
@@ -1384,38 +1330,7 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 /* Fonts */
-/*
-@font-face {
-    font-family: "Museo";
-    src: url($museoWoff2) format("woff2"),
-         url($museoWoff) format("woff");
-}
-
-@font-face {
-    font-family: "Museo";
-    src: url($museoWoff2Bold) format('woff2'),
-         url($museoWoffBold) format('woff');
-   font-weight: 500;
-}
-
-@font-face {
-    font-family: "Museo";
-    src: url($museoWoff2Boldest) format('woff2'),
-         url($museoWoffBoldest) format('woff');
-   font-weight: 700;
-}
-*/
 @font-face {
   font-family: "Museo";
   src: url("https://nynashamn-ext.sitevision.se/download/18.71262abb1722c35351612026/1590570244874/exljbris%20-%20MuseoSans-100.otf") format("opentype");
@@ -1451,16 +1366,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 /* Form */
 .af-textInputField {
   height: 55px;
@@ -1485,21 +1390,6 @@ div[role=search] {
 .af-hiddenSearchForm form {
   width: 850px;
   margin: 0 auto;
-  /*
-        & div[role=search]:after {
-            content: ' ';
-            position: absolute;
-            top: 3px;
-            right: 0;
-            height: 51px;
-            width: 47px;
-            background-size: 25px;
-            background-position: center;
-            background-image: url($searchIcon);
-            background-repeat: no-repeat;
-            transition: transform .3s ease-in-out;
-        }
-        */
 }
 
 .af-hiddenSearchForm form input[name=query] {
@@ -1687,16 +1577,6 @@ div[role=search] {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 .af-currentFilter p.normal {
   font-weight: 700;
   margin-bottom: 15px;
@@ -2540,16 +2420,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 @media screen and (min-width: 1550px) {
   .af-landingpage {
     margin-top: -40px;
@@ -2572,16 +2442,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 /* Landing page */
 .af-landingpage {
   margin-top: -40px;
@@ -2611,7 +2471,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   margin: 0;
   background-color: #EDEBE9;
   padding: 20px 25px;
-  /* display: inline-block; */
   display: none;
   border-radius: 6px;
 }
@@ -2743,16 +2602,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 /* Icons */
 .af-searchIcon {
   position: relative;
@@ -2882,11 +2731,6 @@ footer .sv-font-sidfot-rubrik + .sv-font-brodtext-liten {
   top: 3px;
 }
 
-/*
-.sv-linkicon[title='PDF']:after {
-    content: 'PDF';
-}
-*/
 .normal .sv-linkicon {
   top: unset;
 }
@@ -2896,17 +2740,6 @@ a[href*="/download/"] {
   position: relative;
 }
 
-/*
-a[href*="/download/"]:after {
-    content: ' ';
-    background-image: url($attachedFile);
-    background-repeat: no-repeat;
-    width: 20px;
-    display: inline-block;
-    border: none;
-    margin-left: 10px;
-}
-*/
 .af-center {
   text-align: center;
 }
@@ -2997,7 +2830,6 @@ p.sv-portlet-image-caption {
 }
 
 .af-tableOfContent li a:hover {
-  /* border-bottom: $linkBorderStyle; */
   text-decoration: underline;
   -webkit-text-decoration-color: #002F6C;
   text-decoration-color: #002F6C;
@@ -3735,16 +3567,6 @@ header .af-center p.sv-font-liten-morkgra:hover {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 @media screen and (min-width: 881px) and (max-width: 1020px) {
   .af-subMenu .af-subMenu--item {
     margin: 0 10px;
@@ -3752,16 +3574,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 /* Menu */
 .af-menu {
   display: inline;
@@ -3836,7 +3648,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 
 .af-mobileMainMenu--item > .activeMenuItem {
   text-decoration: underline;
-  /* text-decoration-color: $nynas-darkblue-color; */
   -webkit-text-decoration-color: #fff;
   text-decoration-color: #fff;
 }
@@ -4158,16 +3969,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 @media screen and (max-width: 450px) {
   .af-theStartPage .af-wave .af-wave--shape {
     padding: 6% 0 0 0;
@@ -4183,16 +3984,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 @media screen and (max-width: 880px) {
   .af-tillvaxt-site .af-aktuelltIcon {
     padding-left: 40px;
@@ -4306,16 +4097,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 @media screen and (max-width: 880px) {
   .af-uppleva-site > div:first-of-type {
     border: none;
@@ -4462,16 +4243,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 @media screen and (max-width: 880px) {
   html,
   body {
@@ -4726,7 +4497,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     justify-content: center;
   }
   .af-popularShortcuts {
-    /* flex-direction: column; */
     flex-wrap: wrap;
     padding: 0 20px;
   }
@@ -5415,16 +5185,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 /* OVERRIDES */
 p.normal {
   margin: 25px 0 0 0;
@@ -5509,16 +5269,6 @@ input::placeholder {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 /* Puffar */
 .af-puff {
   padding: 0 100px;
@@ -5682,16 +5432,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 /* Startpage */
 .af-theStartPage .sv-font-stor-svart {
   font-size: 35px;
@@ -5718,29 +5458,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
   margin-bottom: 0;
   position: relative;
   margin: 10px;
-  /*
-            .af-startpageMessages--listItem--externalLink .af-linkIcon {
-                position: absolute;
-                top: 10px;
-                right: 10px;
-                width: 25px;
-                height: 25px;
-                background-size: 20px;
-                background-repeat: no-repeat;
-                background-image: url($externalLinkIconGrey);
-            }
-
-            .af-startpageMessages--listItem--internalLink .af-linkIcon {
-                position: absolute;
-                top: 10px;
-                right: 10px;
-                width: 25px;
-                height: 25px;
-                background-repeat: no-repeat;
-                background-size: 20px;
-                background-image: url($internalLinkIconGrey);
-            }
-            */
 }
 
 .af-startpageMessages--list li p.normal {
@@ -5877,11 +5594,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 .af-amountEvents-4 .af-startpageEvents--eventTextContent div > p {
   margin-top: 5px;
   font-weight: 300;
-}
-
-.af-amountEvents-4 .af-startpageEvents--eventTextDate {
-  /* width: 76px; */
-  /* height: 76px; */
 }
 
 .af-amountEvents-4 .af-startpageEvents--eventTextDate > div {
@@ -6141,16 +5853,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 .af-tillvaxt-site .af-menu .af-activeMenuItem {
   background-color: #2D5F55;
 }
@@ -6453,16 +6155,6 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/
 .af-uppleva-site .af-hiddenSearchForm {
   background-color: #002F6C;
 }
@@ -6956,13 +6648,3 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-/*
-$museoWoff: $domain + '/download/18.6719b35d171ac1e3c542431f/1589376798536/Museo300-Regular-webfont.woff';
-$museoWoff2: $domain + '/download/18.6719b35d171ac1e3c5424320/1589376798551/Museo300-Regular-webfont.woff2';
-
-$museoWoffBold: $domain + '/download/18.6719b35d171ac1e3c5424321/1589376807195/Museo500-Regular-webfont.woff';
-$museoWoff2Bold: $domain + '/download/18.6719b35d171ac1e3c5424322/1589376807213/Museo500-Regular-webfont.woff2';
-
-$museoWoffBoldest: $domain + '/download/18.6719b35d171ac1e3c5424323/1589376817413/Museo700-Regular-webfont.woff';
-$museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/1589376817425/Museo700-Regular-webfont.woff2';
-*/

@@ -60,22 +60,6 @@ div[role=search] {
         & .af-searchButton {
             height: 51px; 
         }
-
-        /*
-        & div[role=search]:after {
-            content: ' ';
-            position: absolute;
-            top: 3px;
-            right: 0;
-            height: 51px;
-            width: 47px;
-            background-size: 25px;
-            background-position: center;
-            background-image: url($searchIcon);
-            background-repeat: no-repeat;
-            transition: transform .3s ease-in-out;
-        }
-        */
     }
 }
 

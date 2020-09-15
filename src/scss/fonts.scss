@@ -1,28 +1,6 @@
 @import 'variables';
 
 /* Fonts */
-/*
-@font-face {
-    font-family: "Museo";
-    src: url($museoWoff2) format("woff2"),
-         url($museoWoff) format("woff");
-}
-
-@font-face {
-    font-family: "Museo";
-    src: url($museoWoff2Bold) format('woff2'),
-         url($museoWoffBold) format('woff');
-   font-weight: 500;
-}
-
-@font-face {
-    font-family: "Museo";
-    src: url($museoWoff2Boldest) format('woff2'),
-         url($museoWoffBoldest) format('woff');
-   font-weight: 700;
-}
-*/
-
 @font-face {
     font-family: "Museo";
     src: url($museoSans100) format('opentype');

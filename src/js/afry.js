@@ -21,7 +21,6 @@ svDocReady(function () {
         jq('.af-findProject-row--filter-areas').hide();
         jq('.af-findProject-row--filter-types').hide();
         jq('.af-findProject-row--filter-processes').hide();
-        //jq('.af-uppleva-events-filter-categories').hide();
 
         jq('.af-homeCare-row--filter-areas').hide();
         jq('.af-homeCare-row--filter-productions').hide();
@@ -105,42 +104,10 @@ svDocReady(function () {
     AF.changeStandardSVIcons = function () {
         // Change all standard sitevision file icons
         jq('.sv-linkicon').each(function (index, elem) {
-            var theElem = jq(elem),
-                title = theElem.prop('title'),
-                container;
-
-            /*
-            if (title && title === 'PDF') {
-                container = theElem.closest('ul');
-
-                if (!container || container.length === 0) {
-                    container = theElem.closest('p.normal');
-                }
-
-                if (container && container.length > 0) {
-                    theElem.after('<span style="margin-left: 30px;font-size: 13px;">( PDF )</span>');
-                }
-
-            }
-            */
+            var theElem = jq(elem);
 
             theElem.prop('src', '/images/18.d9ec095172e6db963754cee/1596632006892/filer.svg');
         });
-    };
-
-    AF.debugElementSize = function () {
-
-        var docWidth = document.documentElement.offsetWidth;
-
-        [].forEach.call(
-            document.querySelectorAll('*'),
-            function (el) {
-                if (el.offsetWidth > docWidth) {
-                    console.log(el);
-                    alert(el);
-                }
-            }
-        );
     };
 
     // If useMonth amount month will be used, else amount days
@@ -555,7 +522,6 @@ svDocReady(function () {
             });
         }
 
-        //theMenu.toggle();
         theMenu.slideToggle();
         tabs.toggle();
         target.toggleClass('af-MobileMenu--active');
@@ -662,8 +628,6 @@ svDocReady(function () {
 
                     if (link.indexOf('#Kontaktcenter') > 0) {
                         jq('html, body').animate({ scrollTop: jq('#Kontaktcenter').offset().top }, 800);
-
-                        //jq('#Kontaktcenter').get(0).scrollIntoView();
                     } else {
                         document.location.href = link;
                     }
@@ -814,13 +778,6 @@ svDocReady(function () {
                 dataType: 'html',
                 success: function (data) {
                     resultTarget.html(data);
-                    /*
-                    resultTarget.slideUp('slow', function () {
-                        resultTarget.html(data);
-                        resultTarget.slideDown('slow');
-                    });
-                    */
-
                     loopAreas(topAreaFilter, '', false);
                 }
             });
@@ -835,13 +792,6 @@ svDocReady(function () {
                 dataType: 'html',
                 success: function (data) {
                     resultTarget.html(data);
-                    /*
-                    resultTarget.slideUp('slow', function () {
-                        resultTarget.html(data);
-                        resultTarget.slideDown('slow');
-                    });
-                    */
-
                     loopAreas(topAreaFilter, paramValue, true);
                 }
             });
@@ -876,18 +826,10 @@ svDocReady(function () {
                 },
                 dataType: 'html',
                 success: function (data) {
-
                     resultTarget.html(data);
-                    /*
-                    resultTarget.slideUp('slow', function () {
-                        resultTarget.html(data);
-                        resultTarget.slideDown('slow');
-                    });
-                    */
                 }
             });
         } else {
-            //jq('.af-currentFilter--areas .active').removeClass('active');
             target.addClass('active');
 
             allAreasElem = jq('.af-currentFilter .af-currentFilter--areas .active');
@@ -902,15 +844,7 @@ svDocReady(function () {
                 },
                 dataType: 'html',
                 success: function (data) {
-
                     resultTarget.html(data);
-
-                    /*
-                    resultTarget.slideUp('slow', function () {
-                        resultTarget.html(data);
-                        resultTarget.slideDown('slow');
-                    });
-                    */
                 }
             });
         }
@@ -989,9 +923,6 @@ svDocReady(function () {
                 theElem.hide();
             }
         });
-
-        //jq('.af-currentFilter--dateFilter--inner--year--title.af-open').removeClass('af-open');
-        //list.slideUp();
     });
 
     jq('.af-currentFilter--dateFilter--inner--month--list').on('click', function (e) {
@@ -1005,7 +936,6 @@ svDocReady(function () {
             monthValues = [];
 
         e.preventDefault();
-        //jq('.af-currentFilter--dateFilter--inner--month--list .active').removeClass('active');
 
         if (target.hasClass('active')) {
             target.removeClass('active');
@@ -1046,9 +976,6 @@ svDocReady(function () {
                 theElem.hide();
             }
         });
-
-        //jq('.af-currentFilter--dateFilter--inner--month--title.af-open').removeClass('af-open');
-        //list.slideUp();
     });
 
     jq('.af-currentFilter--dateFilter--inner--clear a').on('click', function (e) {
