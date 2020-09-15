@@ -4879,14 +4879,15 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     font-size: 17px !important;
   }
   .sv-decoration-generell-dragspel > div.sv-vertical.sv-layout {
-    padding: 10px 20px 10px 20px;
+    padding: 20px 20px 10px 20px;
   }
   .sv-decoration-generell-dragspel h2 {
     font-size: 20px;
+    padding: 20px 100px 20px 20px;
   }
   .sv-decoration-generell-dragspel .subheading3 {
     font-size: 18px;
-    padding: 20px 60px;
+    padding: 20px 60px 20px 20px;
   }
   .sv-decoration-generell-dragspel .af-accordionText {
     top: 23px;
@@ -4898,6 +4899,9 @@ $museoWoff2Boldest: $domain + '/download/18.6719b35d171ac1e3c5424324/15893768174
     top: 25px;
     width: 13px;
     height: 13px;
+  }
+  .sv-decoration-generell-dragspel .boxStyle {
+    padding: 20px;
   }
   .sv-decoration-contentpage-share-social a {
     top: 5px;

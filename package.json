@@ -29,5 +29,7 @@
         "gulp-sass": "^4.0.2",
         "gulp-sftp": "^0.1.5"
     },
-    "dependencies": {}
+    "dependencies": {
+        "jshint": "^2.12.0"
+    }
 }
