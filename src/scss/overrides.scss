@@ -33,6 +33,10 @@ h3.subheading3-utan-dragspel + p.normal {
     margin-bottom: 25px;
 }
 
+.sv-image-portlet img + p.sv-portlet-image-caption {
+    margin-top: -5px;
+}
+
 .datepicker {
     width: 333px;
 }
