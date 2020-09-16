@@ -840,6 +840,24 @@
   font-weight: 300;
 }
 
+.af-findProject .af-findProject-projects .af-findProject-project .af-findProject-project-info .af-findProject-project-multiProject .af-findProject-project-multiProject-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.af-findProject .af-findProject-projects .af-findProject-project .af-findProject-project-info .af-findProject-project-multiProject .af-findProject-project-multiProject-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.af-findProject .af-findProject-projects .af-findProject-project .af-findProject-project-info .af-findProject-project-multiProject .af-findProject-project-multiProject-list li {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
 .af-findProject .af-findProject-projects .af-findProject-project .af-findProject-project-info .af-findProject-project-info-name {
   font-size: 25px;
   font-weight: 700;
@@ -958,6 +976,94 @@
   }
   .af-findProject .af-findProject-result .af-findProject-result-width .af-findProject-projects .af-findProject-project .af-findProject-project-info {
     padding: 20px 30px 16px 30px;
+  }
+}
+
+.af-findProject--multiPage {
+  background-color: #EDEBE9;
+}
+
+.af-findProject--multiPage .af-findProject-result-width {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.af-findProject--multiPage .af-findProject-result-width .af-findProject-projects {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.af-findProject--multiPage .af-findProject-result-width .af-findProject-projects .af-findProject-project {
+  width: calc(50% - 20px);
+  background-color: #fff;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.af-findProject--multiPage .af-findProject-result-width .af-findProject-projects .af-findProject-project a {
+  text-decoration: none;
+}
+
+.af-findProject--multiPage .af-findProject-result-width .af-findProject-projects .af-findProject-project .af-findProject-project-img {
+  padding-top: 56.25%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.af-findProject--multiPage .af-findProject-result-width .af-findProject-projects .af-findProject-project .af-findProject-project-info {
+  padding: 30px 30px 26px 30px;
+  background-color: #fff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.af-findProject--multiPage .af-findProject-result-width .af-findProject-projects .af-findProject-project .af-findProject-project-info span {
+  font-weight: 300;
+}
+
+.af-findProject--multiPage .af-findProject-result-width .af-findProject-projects .af-findProject-project .af-findProject-project-info-name {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.af-findProject--multiPage .af-findProject-result-width .af-findProject-projects .af-findProject-project .af-findProject-project-info-area {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.af-findProject--multiPage .af-findProject-result-width .af-findProject-projects .af-findProject-project .af-findProject-project-info-type {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.af-findProject--multiPage .af-findProject-result-width .af-findProject-projects .af-findProject-project .af-findProject-project-info-form {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.af-findProject--multiPage .af-findProject-result-width .af-findProject-projects .af-findProject-project .af-findProject-project-info-detailPlan {
+  background-color: #EDEBE9;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 880px) {
+  .af-findProject--multiPage .af-findProject-projects .af-findProject-project {
+    width: 100% !important;
+    margin-right: 0 !important;
   }
 }
 
@@ -5975,6 +6081,7 @@ input::placeholder {
 
 .af-tillvaxt-site .af-tillvaxt-cityProject {
   padding-bottom: 20px;
+  border-bottom: 1px solid #403E41;
 }
 
 .af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-area {
