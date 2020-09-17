@@ -4970,8 +4970,8 @@ header .af-center p.sv-font-liten-morkgra:hover {
   }
   .sv-decoration-generell-bla-knapp--intern {
     padding: 15px 35px 15px 20px;
-    margin: 40px 0;
-    max-width: 110px;
+    margin: 15px 0;
+    max-width: 100%;
   }
   .sv-decoration-generell-bla-knapp--intern .subheading3 {
     padding: 20px 60px;
@@ -5373,6 +5373,14 @@ input::placeholder {
 .datepicker--cell.-current- {
   background-color: #E6EFD9;
   color: #414042;
+}
+
+.sv-decoration-generell-dragspel .sv-mfpimage-portlet {
+  margin-bottom: 25px;
+}
+
+.sv-decoration-generell-dragspel .sv-text-portlet-content ul.normal {
+  margin: 0;
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */

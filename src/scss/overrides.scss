@@ -92,3 +92,16 @@ input::placeholder {
     background-color: $nynas-lightgreen-color;
     color: $nynas-black-color;
 }
+
+.sv-decoration-generell-dragspel {
+    .sv-mfpimage-portlet {
+        margin-bottom: 25px;
+    }
+
+    .sv-text-portlet-content {
+
+        & ul.normal {
+            margin: 0;
+        }
+    }
+}
