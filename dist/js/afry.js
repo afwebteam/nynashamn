@@ -65,6 +65,14 @@ svDocReady(function () {
         }
     };
 
+    AF.removeLastCommaInString = function(aString) {
+
+        var str = aString,
+            lastComma = str.lastIndexOf(','),
+            newStr = str.substring(0, lastComma);
+
+    };
+
     AF.isEmptyString = function (aString) {
 
         if (!aString || aString === '') {
