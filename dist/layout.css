@@ -5383,6 +5383,23 @@ input::placeholder {
   margin: 0;
 }
 
+.sv-readspeaker_expandingplayer-portlet.sv-portlet img {
+  height: 20px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 4px;
+}
+
+.sv-readspeaker_expandingplayer-portlet.sv-portlet a {
+  font-family: museo,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  color: #403e41;
+  line-height: inherit;
+  font-weight: 700;
+}
+
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
 /* Puffar */
 .af-puff {
