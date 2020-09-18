@@ -65,14 +65,6 @@ svDocReady(function () {
         }
     };
 
-    AF.removeLastCommaInString = function(aString) {
-
-        var str = aString,
-            lastComma = str.lastIndexOf(','),
-            newStr = str.substring(0, lastComma);
-
-    };
-
     AF.isEmptyString = function (aString) {
 
         if (!aString || aString === '') {
@@ -1719,7 +1711,9 @@ svDocReady(function () {
             portletURL = list.data('portleturl'),
 
             choosenTags,
-            tags = [];
+            choosenPlaces,
+            tags = [],
+            places = [];
 
         e.preventDefault();
 
@@ -1734,15 +1728,69 @@ svDocReady(function () {
         }
 
         choosenTags = jq('.af-uppleva-events-filter-categories').find('.active');
+        choosenPlaces = jq('.af-uppleva-events-filter-places').find('.active');
 
         jq.each(choosenTags, function (i, e) {
             tags.push(jq(e).text());
         });
 
+        jq.each(choosenPlaces, function (i, e) {
+            places.push(jq(e).text());
+        });
+
         jq.ajax({
             url: portletURL,
             data: {
-                tags: JSON.stringify(tags)
+                tags: JSON.stringify(tags),
+                places: JSON.stringify(places)
+            },
+            type: 'get',
+            success: function (data) {
+                jq('.af-uppleva-events-items').html(data);
+            }
+        });
+    });
+
+    jq('.af-uppleva-events .af-uppleva-events-filter-places a').on('click', function (e) {
+
+        var target = jq(e.target),
+            list = target.closest('ul'),
+            tagValue = target.text(),
+            portletURL = list.data('portleturl'),
+
+            choosenTags,
+            choosenPlaces,
+            tags = [],
+            places = [];
+
+        e.preventDefault();
+
+        if (target.hasClass('active')) {
+            target.removeClass('active');
+        } else if (target.text() === 'Alla') {
+            jq('.af-uppleva-events-filter-places .active').removeClass('active');
+            target.addClass('active');
+        } else {
+            jq('.af-uppleva-events-filter-places').find('li').first().find('a').removeClass('active');
+            target.addClass('active');
+        }
+
+        choosenTags = jq('.af-uppleva-events-filter-categories').find('.active');
+        choosenPlaces = jq('.af-uppleva-events-filter-places').find('.active');
+
+        jq.each(choosenTags, function (i, e) {
+            tags.push(jq(e).text());
+        });
+
+        jq.each(choosenPlaces, function (i, e) {
+            places.push(jq(e).text());
+        });
+
+        jq.ajax({
+            url: portletURL,
+            data: {
+                tags: JSON.stringify(tags),
+                places: JSON.stringify(places)
             },
             type: 'get',
             success: function (data) {
