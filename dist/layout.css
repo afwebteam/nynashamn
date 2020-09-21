@@ -4373,6 +4373,18 @@ header .af-center p.sv-font-liten-morkgra:hover {
   .af-mobile-width100 {
     padding: 0;
   }
+  .af-mobile-width100 .af-toolsMenyHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0 10px 0;
+  }
+  .af-mobile-width100 .af-toolsMenyHeader:first-of-type {
+    background-color: #EDEBE9;
+  }
+  .af-mobile-width100 .af-toolsMenyHeader .af-center img {
+    width: unset !important;
+  }
   .af-mobile-width100 > div {
     width: 100%;
     display: flex;
@@ -4944,6 +4956,7 @@ header .af-center p.sv-font-liten-morkgra:hover {
   .sv-decoration-bla-knapp-pdf {
     padding: 15px 35px 15px 20px;
     margin: 40px 0;
+    max-width: 80%;
   }
   .sv-decoration-bla-knapp-pdf:after {
     background-size: 14px;
@@ -4957,7 +4970,7 @@ header .af-center p.sv-font-liten-morkgra:hover {
   .sv-decoration-generell-bla-knapp--external {
     padding: 15px 35px 15px 20px;
     margin: 40px 0;
-    max-width: 110px;
+    max-width: 80%;
   }
   .sv-decoration-generell-bla-knapp--external .subheading3 {
     padding: 20px 60px;
@@ -4975,7 +4988,7 @@ header .af-center p.sv-font-liten-morkgra:hover {
   .sv-decoration-generell-bla-knapp--intern {
     padding: 15px 35px 15px 20px;
     margin: 15px 0;
-    max-width: 100%;
+    max-width: 80%;
   }
   .sv-decoration-generell-bla-knapp--intern .subheading3 {
     padding: 20px 60px;

@@ -25,6 +25,25 @@
 
     .af-mobile-width100 {
 
+        & .af-toolsMenyHeader {
+            width: 100%;
+
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0 10px 0;
+
+            &:first-of-type {
+                background-color: $nynas-grey-color;
+            }
+
+            & .af-center {
+
+                & img {
+                    width: unset !important;
+                }
+            }
+        }
+
         padding: 0;
 
         & > div {
