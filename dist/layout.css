@@ -4085,7 +4085,7 @@ header .af-center p.sv-font-liten-morkgra:hover {
   }
   .af-tillvaxt-site .af-wave .af-wave--shape {
     top: -80px;
-    background-position: bottom;
+    /* background-position: bottom; */
   }
 }
 
