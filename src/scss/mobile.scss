@@ -843,6 +843,7 @@
     .sv-decoration-bla-knapp-pdf {
         padding: 15px 35px 15px 20px;
         margin: 40px 0;
+        max-width: 80%;
 
         &:after {
             background-size: 14px;
@@ -862,7 +863,7 @@
     .sv-decoration-generell-bla-knapp--external {
         padding: 15px 35px 15px 20px;
         margin: 40px 0;
-        max-width: 110px;
+        max-width: 80%;
 
         & .subheading3 {
             padding: 20px 60px;
@@ -887,7 +888,7 @@
     .sv-decoration-generell-bla-knapp--intern {
         padding: 15px 35px 15px 20px;
         margin: 15px 0;
-        max-width: 100%;
+        max-width: 80%;
 
         & .subheading3 {
             padding: 20px 60px;
