@@ -6564,6 +6564,7 @@ input::placeholder {
   display: block;
   border: 5px solid #fff;
   background-color: #E6EFD9;
+  width: 100%;
 }
 
 .af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item {
@@ -6591,7 +6592,8 @@ input::placeholder {
 }
 
 .af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item.af-item-2 .af-startpage-listing-item-img {
-  padding-top: 56.25%;
+  /* padding-top: 56.25%; */
+  padding-top: 56.5%;
 }
 
 .af-uppleva-site .af-startpage-listing-items .af-startpage-listing-item.af-item-6 {
