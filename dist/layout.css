@@ -3054,6 +3054,10 @@ nav.af-center .af-searchIcon a.active {
   height: 25px;
 }
 
+.sv-decoration-bla-knapp-pdf .sv-linkicon {
+  display: none;
+}
+
 .sv-decoration-bla-knapp-pdf p.normal {
   margin: -2px 0 0 0;
 }
