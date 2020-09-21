@@ -5411,6 +5411,7 @@ input::placeholder {
   display: flex;
   align-items: flex-end;
   margin-top: -70px;
+  justify-content: stretch;
 }
 
 .af-puffContainer--item .af-puffText {
@@ -5426,6 +5427,7 @@ input::placeholder {
   text-align: center;
   overflow: hidden;
   z-index: 1;
+  flex: 1 1 33.3333%;
 }
 
 .af-puffContainer .af-etjanster {
@@ -5447,6 +5449,7 @@ input::placeholder {
   background-repeat: no-repeat;
   background-size: 80px 80px;
   background-position: center;
+  margin: 0 auto;
 }
 
 .af-puffContainer .af-bigPuff {
@@ -5456,6 +5459,7 @@ input::placeholder {
   background-size: 266px 266px;
   background-repeat: no-repeat;
   background-position: top center;
+  margin: 0 auto;
 }
 
 .af-puffContainer .af-bigPuff > div {
