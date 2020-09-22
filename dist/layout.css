@@ -5949,6 +5949,16 @@ input::placeholder {
   font-weight: 700;
 }
 
+@media screen and (min-width: 881px) and (max-width: 1200px) {
+  .af-popularShortcuts--item {
+    width: 33.333%;
+    margin-bottom: 25px;
+  }
+  .af-popularShortcuts--itemStyle {
+    margin: 0 auto;
+  }
+}
+
 .af-startpage-current .sv-text-portlet a {
   text-decoration: underline;
   -webkit-text-decoration-color: #002F6C;

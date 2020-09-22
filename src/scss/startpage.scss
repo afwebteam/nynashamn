@@ -381,6 +381,21 @@
     }
 }
 
+@media screen and (min-width: 881px) and (max-width: 1200px) {
+
+    .af-popularShortcuts {
+    
+        &--item {
+            width: 33.333%;
+            margin-bottom: 25px;
+
+            &Style {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
 .af-startpage-current {
 
     .sv-text-portlet {
