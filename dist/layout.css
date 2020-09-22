@@ -4330,6 +4330,7 @@ header .af-center p.sv-font-liten-morkgra:hover {
   }
   .af-uppleva-site .af-uppleva-events .af-uppleva-events-items .af-uppleva-events-item {
     width: 100% !important;
+    margin-right: 0 !important;
   }
   .af-uppleva-site .af-uppleva-events .af-uppleva-events-items .af-uppleva-events-item .af-uppleva-events-item-textContent {
     height: 65px !important;
