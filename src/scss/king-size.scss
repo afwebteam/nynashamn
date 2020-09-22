@@ -9,7 +9,7 @@
     .af-wave {
 
         & .af-landingpage--bigImage {
-            height: 310px;
+            height: 350px;
         }
 
         & .af-wave-grey--shape {
@@ -18,6 +18,10 @@
     }
 
     .af-theStartPage {
+
+        & .af-startpageBigImage {
+            height: 480px;
+        }
 
         & .af-wave {
 
@@ -29,12 +33,22 @@
 
     .af-uppleva-site {
 
+        /*
+        & .af-startpageBigImage {
+            height: 480px;
+        }
+        */
+
         & .af-wave--shape {
             padding: 6% 0 0 0;
         }
     }
 
     .af-tillvaxt-site {
+
+        & .af-startpageBigImage {
+            height: 480px;
+        }
 
         & .af-wave--shape {
             padding: 6% 0 0 0;

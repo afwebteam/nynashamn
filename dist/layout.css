@@ -2540,16 +2540,29 @@ div[role=search] {
     margin-top: -40px;
   }
   .af-wave .af-landingpage--bigImage {
-    height: 310px;
+    height: 350px;
   }
   .af-wave .af-wave-grey--shape {
     top: 170px;
   }
+  .af-theStartPage .af-startpageBigImage {
+    height: 480px;
+  }
   .af-theStartPage .af-wave .af-wave--shape {
     padding: 6% 0 0 0;
   }
+  .af-uppleva-site {
+    /*
+        & .af-startpageBigImage {
+            height: 480px;
+        }
+        */
+  }
   .af-uppleva-site .af-wave--shape {
     padding: 6% 0 0 0;
+  }
+  .af-tillvaxt-site .af-startpageBigImage {
+    height: 480px;
   }
   .af-tillvaxt-site .af-wave--shape {
     padding: 6% 0 0 0;
@@ -5721,7 +5734,7 @@ input::placeholder {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   background-size: 100% auto;
   transform: scaleX(-1);
 }
