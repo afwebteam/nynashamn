@@ -27,10 +27,13 @@
 
         & .af-toolsMenyHeader {
             width: 100%;
-
             display: flex;
             justify-content: space-around;
             padding: 15px 0 10px 0;
+
+            & #Genvagar {
+                display: none;
+            }
 
             &:first-of-type {
                 background-color: $nynas-grey-color;

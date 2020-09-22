@@ -4384,6 +4384,9 @@ header .af-center p.sv-font-liten-morkgra:hover {
     justify-content: space-around;
     padding: 15px 0 10px 0;
   }
+  .af-mobile-width100 .af-toolsMenyHeader #Genvagar {
+    display: none;
+  }
   .af-mobile-width100 .af-toolsMenyHeader:first-of-type {
     background-color: #EDEBE9;
   }
