@@ -2106,6 +2106,7 @@ div[role=search] {
 
 .af-event-calendar {
   margin: 0 -5px;
+  margin-bottom: 40px;
 }
 
 .af-event-calendar h1 {
@@ -2354,6 +2355,10 @@ div[role=search] {
 
 .af-event-calendar .af-loadMoreEvents .sv-decoration-generell-bla-knapp--intern {
   margin-bottom: 0;
+}
+
+.af-event-calendar .af-loadMoreEvents .sv-decoration-generell-bla-knapp--intern:after {
+  background-image: url("https://nynashamn-ext.sitevision.se/images/18.4bceb9e21738d812472fbab/1595877899398/pil-ner.svg");
 }
 
 .af-404icon {
@@ -3286,7 +3291,7 @@ nav.af-center .af-searchIcon a.active {
 
 .sv-decoration-generell-dragspel .subheading3 {
   background-color: #EDEBE9;
-  padding: 20px 30px;
+  padding: 20px 60px 20px 30px;
   margin-bottom: 15px;
   position: relative;
   font-size: 22px;

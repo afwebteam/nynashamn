@@ -437,6 +437,7 @@
 .af-event-calendar {
 
     margin: 0 -5px;
+    margin-bottom: 40px;
 
     & h1 {
         display: none;
@@ -680,6 +681,10 @@
 
         & .sv-decoration-generell-bla-knapp--intern {
             margin-bottom: 0;
+        }
+
+        & .sv-decoration-generell-bla-knapp--intern:after {
+            background-image: url($arrowDownIconWhite);
         }
     }
 }
