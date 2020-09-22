@@ -1111,6 +1111,9 @@
                 padding: 40px 20px;
                 display: flex;
             }
+            & .af-importantMessage--content {
+                margin-left: 5px;
+            }
 
             & .af-importantMessage--contentTitle {
                 font-size: 20px;

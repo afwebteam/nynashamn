@@ -2026,6 +2026,10 @@ div[role=search] {
   height: 30px;
 }
 
+.af-importantMessage.af-smallMessage .af-importantMessage--content {
+  margin-left: 0;
+}
+
 .af-importantMessage.af-smallMessage .af-importantMessage--contentTitle {
   font-size: 25px;
   margin-bottom: 0;
@@ -2037,7 +2041,7 @@ div[role=search] {
 
 .af-importantMessage--content {
   display: inline-block;
-  margin-left: 25px;
+  margin-left: 10px;
   width: 90%;
 }
 
@@ -5107,6 +5111,9 @@ header .af-center p.sv-font-liten-morkgra:hover {
   .af-importantMessage.af-smallMessage .af-importantMessage--wrapper {
     padding: 40px 20px;
     display: flex;
+  }
+  .af-importantMessage.af-smallMessage .af-importantMessage--content {
+    margin-left: 5px;
   }
   .af-importantMessage.af-smallMessage .af-importantMessage--contentTitle {
     font-size: 20px;

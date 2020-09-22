@@ -354,6 +354,10 @@
             height: 30px;
         }
 
+        & .af-importantMessage--content {
+            margin-left: 0;
+        }
+
         & .af-importantMessage--contentTitle {
             font-size: 25px;
             margin-bottom: 0;
@@ -366,7 +370,7 @@
 
     &--content {
         display: inline-block;
-        margin-left: 25px;
+        margin-left: 10px;
         width: 90%;
     }
 
