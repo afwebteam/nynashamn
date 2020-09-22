@@ -6493,6 +6493,7 @@ input::placeholder {
   text-decoration: none;
   display: block;
   background-color: #E6EFD9;
+  width: 100%;
 }
 
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-items .af-uppleva-events-item .af-uppleva-events-item-img {
