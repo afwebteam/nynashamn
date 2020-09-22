@@ -6486,10 +6486,13 @@ input::placeholder {
   width: 33%;
   margin-bottom: 5px;
   margin-right: 4px;
+  display: flex;
 }
 
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-items .af-uppleva-events-item a {
   text-decoration: none;
+  display: block;
+  background-color: #E6EFD9;
 }
 
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-items .af-uppleva-events-item .af-uppleva-events-item-img {
@@ -6501,8 +6504,6 @@ input::placeholder {
 
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-items .af-uppleva-events-item .af-uppleva-events-item-textContent {
   padding: 30px 20px;
-  background-color: #E6EFD9;
-  height: 95px;
 }
 
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-items .af-uppleva-events-item:nth-child(3n) {
