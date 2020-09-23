@@ -3712,6 +3712,21 @@ header .af-center p.sv-font-liten-morkgra:hover {
   height: 65px !important;
 }
 
+.af-socialIcons img[src*="facebook.svg"] {
+  height: 27px;
+  width: 16px;
+}
+
+.af-socialIcons img[src*="linkedIn.svg"] {
+  height: 27px;
+  width: 29px;
+}
+
+.af-socialIcons img[src*="rss.svg"] {
+  height: 27px;
+  width: 27px;
+}
+
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
 @media screen and (min-width: 881px) and (max-width: 1060px) {
   .af-subMenu .af-subMenu--item {

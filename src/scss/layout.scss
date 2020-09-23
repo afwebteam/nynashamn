@@ -1021,3 +1021,21 @@ header {
     width: 210px !important;
     height: 65px !important;
 }
+
+.af-socialIcons {
+
+    & img[src*="facebook.svg"] {
+        height: 27px;
+        width: 16px;
+    }
+
+    & img[src*="linkedIn.svg"] {
+        height: 27px;
+        width: 29px;
+    }
+
+    & img[src*="rss.svg"] {
+        height: 27px;
+        width: 27px;
+    }
+}
