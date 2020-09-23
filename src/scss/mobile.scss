@@ -1409,4 +1409,31 @@
             margin-top: 20px;
         }
     }
+
+    .af-404page {
+        background-color: $nynas-grey-color;
+        padding: 40px 30px 60px 30px;
+        border-radius: 0;
+
+        & .af-shortcuts-title {
+            margin-left: 0 !important;
+        } 
+
+        & .sv-form-portlet {
+
+            & label {
+                margin: 30px 0 12px 0;
+            }
+        }
+    
+        & .af-shortcuts {
+            margin-left: 0 !important;
+    
+            & .af-bla-knapp {
+                margin: 0;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
