@@ -3708,6 +3708,8 @@ header .af-center p.sv-font-liten-morkgra:hover {
 .af-logo .sv-svg {
   max-width: 210px;
   max-height: 65px;
+  width: 210px !important;
+  height: 65px !important;
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
