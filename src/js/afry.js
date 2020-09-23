@@ -1712,8 +1712,8 @@ svDocReady(function () {
 
             choosenTags,
             choosenPlaces,
-            tags = [],
-            places = [];
+            tags = [];
+            //places = [];
 
         e.preventDefault();
 
@@ -1728,21 +1728,22 @@ svDocReady(function () {
         }
 
         choosenTags = jq('.af-uppleva-events-filter-categories').find('.active');
-        choosenPlaces = jq('.af-uppleva-events-filter-places').find('.active');
+        //choosenPlaces = jq('.af-uppleva-events-filter-places').find('.active');
 
         jq.each(choosenTags, function (i, e) {
             tags.push(jq(e).text());
         });
 
+        /*
         jq.each(choosenPlaces, function (i, e) {
             places.push(jq(e).text());
         });
+        */
 
         jq.ajax({
             url: portletURL,
             data: {
-                tags: JSON.stringify(tags),
-                places: JSON.stringify(places)
+                tags: JSON.stringify(tags)
             },
             type: 'get',
             success: function (data) {
