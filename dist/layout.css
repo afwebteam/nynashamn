@@ -3699,9 +3699,9 @@ header .af-center p.sv-font-liten-morkgra:hover {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
-@media screen and (min-width: 881px) and (max-width: 1020px) {
+@media screen and (min-width: 881px) and (max-width: 1060px) {
   .af-subMenu .af-subMenu--item {
-    margin: 0 10px;
+    margin: 0 5px;
   }
 }
 
