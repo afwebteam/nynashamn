@@ -4254,7 +4254,6 @@ header .af-center p.sv-font-liten-morkgra:hover {
     margin-top: 0px !important;
   }
   .af-uppleva-site .af-startpageBigImage {
-    background-image: url("https://nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c542451a/1589378872626/startpage-background.png");
     height: 400px;
   }
   .af-uppleva-site .af-wave .af-wave--shape {
@@ -5656,7 +5655,6 @@ input::placeholder {
 }
 
 .af-startpageBigImage {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c542451a/1589378872626/startpage-background.png");
   position: relative;
   height: 440px;
   background-repeat: no-repeat;
@@ -5723,7 +5721,7 @@ input::placeholder {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -1px;
+  bottom: -2px;
   background-size: 100% auto;
   transform: scaleX(-1);
 }
@@ -5734,7 +5732,7 @@ input::placeholder {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -1px;
+  bottom: -2px;
   background-size: 100% auto;
   transform: scaleX(-1);
 }
@@ -6388,10 +6386,6 @@ input::placeholder {
 
 .af-uppleva-site .af-menu .af-activeMenuItem {
   background-color: #58A618;
-}
-
-.af-uppleva-site .af-startpageBigImage {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c542451a/1589378872626/startpage-background.png");
 }
 
 .af-uppleva-site .af-uppleva-events {
