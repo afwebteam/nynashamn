@@ -4903,6 +4903,9 @@ header .af-center p.sv-font-liten-morkgra:hover {
   .af-landingPage .af-breadcrumb {
     position: unset;
   }
+  .af-landingpage {
+    margin-top: 0;
+  }
   .af-landingpage .af-landingpageColor:nth-child(even) {
     background-color: #fff;
   }

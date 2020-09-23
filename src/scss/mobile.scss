@@ -735,7 +735,6 @@
     }
 
     .af-landingPage {
-
         position: relative;
     
         & .af-breadcrumb {
@@ -744,6 +743,7 @@
     }
 
     .af-landingpage {
+        margin-top: 0;
 
         & .af-landingpageColor:nth-child(even) {
             background-color: $white-color;
