@@ -4930,7 +4930,7 @@ header .af-center p.sv-font-liten-morkgra:hover {
     background-color: #EDEBE9;
   }
   .af-landingpageRow {
-    padding: 60px 20px;
+    padding: 25px 20px 60px 20px;
     flex-direction: column;
   }
   .af-landingpageRow .af-landingpageRow--left, .af-landingpageRow .af-landingpageRow--right {
