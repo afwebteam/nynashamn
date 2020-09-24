@@ -2547,7 +2547,8 @@ div[role=search] {
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .af-wave--shape {
+  .af-wave--shape,
+  .af-wave-grey--shape {
     display: none;
   }
 }
