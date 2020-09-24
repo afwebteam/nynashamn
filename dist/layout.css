@@ -2546,6 +2546,12 @@ div[role=search] {
   margin-bottom: 10px;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .af-wave--shape {
+    display: none;
+  }
+}
+
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
 @media screen and (min-width: 1550px) {
   .af-landingpage {
