@@ -27,6 +27,12 @@ svDocReady(function () {
         jq('.af-homeCare-row--filter-services').hide();
     };
 
+    // For making inline-block elements appears as blocks
+    AF.wrapElement = function(anElement){
+        var localElem = jq(anElement);
+        localElem.wrap('<div></div>');
+    };
+
     AF.changePDFLinksInRelatedInfo = function () {
 
         var container = jq('.af-related-information'),
@@ -1713,7 +1719,6 @@ svDocReady(function () {
             choosenTags,
             choosenPlaces,
             tags = [];
-            //places = [];
 
         e.preventDefault();
 
@@ -1728,17 +1733,10 @@ svDocReady(function () {
         }
 
         choosenTags = jq('.af-uppleva-events-filter-categories').find('.active');
-        //choosenPlaces = jq('.af-uppleva-events-filter-places').find('.active');
 
         jq.each(choosenTags, function (i, e) {
             tags.push(jq(e).text());
         });
-
-        /*
-        jq.each(choosenPlaces, function (i, e) {
-            places.push(jq(e).text());
-        });
-        */
 
         jq.ajax({
             url: portletURL,
@@ -2181,4 +2179,5 @@ svDocReady(function () {
     AF.changeStandardSVIcons();
     AF.hideElemsAfterLoad();
     AF.removeAttribute('.sv-searchform-portlet .af-textInputField', 'aria-expanded');
+    AF.wrapElement('.sv-decoration-bla-knapp-pdf');
 });
