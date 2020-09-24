@@ -2551,6 +2551,9 @@ div[role=search] {
   .af-wave-grey--shape {
     display: none;
   }
+  .af-messageIcon {
+    background-image: none;
+  }
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
