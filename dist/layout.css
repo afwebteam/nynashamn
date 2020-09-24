@@ -1118,7 +1118,7 @@
   background-position: right;
   width: 25px;
   height: 25px;
-  top: 29px;
+  top: 28px;
   left: 50px;
 }
 
@@ -4717,7 +4717,8 @@ header .af-center p.sv-font-liten-morkgra:hover {
   .af-related-information .sv-font-stor-svart,
   .af-contactModule .sv-font-stor-svart,
   .sv-decoration-generell-faktaruta .sv-font-stor-svart,
-  .sv-decoration-generell-faktaruta h2 {
+  .sv-decoration-generell-faktaruta h2,
+  .sv-decoration-generell-faktaruta h3 {
     font-size: 20px !important;
   }
   .af-contactModule .af-contactModule--middle {
@@ -4753,6 +4754,9 @@ header .af-center p.sv-font-liten-morkgra:hover {
     background-position: center 5px;
     background-size: 15px;
     height: 20px !important;
+  }
+  .sv-decoration-generell-faktaruta h3:before {
+    width: 22px;
   }
   .sv-multilevellink-portlet,
   .af-breadcrumb {
@@ -6887,6 +6891,18 @@ input::placeholder {
 
 .af-uppleva-site .sv-predefinedsearch-portlet .af-viewMoreEvents:hover {
   cursor: pointer;
+}
+
+.af-uppleva-site .af-schoolPage .af-schoolPage-header {
+  font-size: 25px;
+  margin: 0 !important;
+  margin-bottom: 5px !important;
+}
+
+.af-uppleva-site .af-contactModule .sv-font-stor-svart {
+  font-size: 25px;
+  margin: 0 !important;
+  margin-bottom: 5px !important;
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */

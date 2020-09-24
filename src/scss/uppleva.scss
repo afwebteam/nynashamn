@@ -556,4 +556,22 @@
             cursor: pointer;
         }
     }
+
+    & .af-schoolPage {
+
+        & .af-schoolPage-header {
+            font-size: 25px;
+            margin: 0 !important;
+            margin-bottom: 5px !important;
+        }
+    } 
+
+    & .af-contactModule {
+
+        & .sv-font-stor-svart {
+            font-size: 25px;
+            margin: 0 !important;
+            margin-bottom: 5px !important;
+        }
+    }
 }

@@ -446,7 +446,8 @@
     .af-related-information .sv-font-stor-svart,
     .af-contactModule .sv-font-stor-svart,
     .sv-decoration-generell-faktaruta .sv-font-stor-svart,
-    .sv-decoration-generell-faktaruta h2 {
+    .sv-decoration-generell-faktaruta h2,
+    .sv-decoration-generell-faktaruta h3 {
         font-size: 20px !important;
     }
 
@@ -497,6 +498,10 @@
         background-position: center 5px;
         background-size: 15px;
         height: 20px !important;
+    }
+
+    .sv-decoration-generell-faktaruta h3:before {
+        width: 22px;
     }
 
     .sv-multilevellink-portlet,
