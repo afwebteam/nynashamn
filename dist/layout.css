@@ -4264,6 +4264,9 @@ header .af-center p.sv-font-liten-morkgra:hover {
     top: 24px;
     margin-right: 0 !important;
   }
+  .af-tillvaxt-site .af-popularShortcuts {
+    align-items: flex-start !important;
+  }
   .af-tillvaxt-site .af-popularShortcuts .af-popularShortcuts--item .af-bigPuff {
     background-size: 80px 80px !important;
   }
