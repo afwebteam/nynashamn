@@ -2552,7 +2552,7 @@ div[role=search] {
     display: none;
   }
   .af-messageIcon {
-    background-image: none;
+    background-image: none !important;
   }
 }
 
