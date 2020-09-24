@@ -2551,7 +2551,9 @@ div[role=search] {
   .af-wave-grey--shape {
     display: none;
   }
-  .af-messageIcon {
+  .af-messageIcon,
+  .af-eventsIcon,
+  .af-aktuelltIcon {
     background-image: none !important;
   }
 }
