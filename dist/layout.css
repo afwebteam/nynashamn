@@ -3250,10 +3250,10 @@ nav.af-center .af-searchIcon a.active {
 .af-related-information h2, .af-related-information h3, .af-related-information .sv-font-stor-svart {
   background-color: #002F6C;
   padding: 25px 50px;
-  margin-bottom: 5px;
+  margin-bottom: 5px !important;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  font-size: 25px;
+  font-size: 25px !important;
   color: #fff;
   font-weight: 700;
 }
@@ -3743,10 +3743,19 @@ header .af-center p.sv-font-liten-morkgra:hover {
   width: 27px;
 }
 
+header > div:first-of-type {
+  padding-top: 25px;
+}
+
+header.af-pagewidth-1366px {
+  padding: 0 25px;
+}
+
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
 @media screen and (min-width: 881px) and (max-width: 1060px) {
   .af-subMenu .af-subMenu--item {
-    margin: 0 5px;
+    /* margin: 0 5px; */
+    font-size: 15px;
   }
 }
 
@@ -4422,6 +4431,22 @@ header .af-center p.sv-font-liten-morkgra:hover {
   }
   h1.heading {
     font-size: 25px !important;
+  }
+  .af-pagewidth-1366px.af-puff {
+    margin: 20px -10px;
+  }
+  .af-pagewidth-1366px.af-puff .af-flexRow > div {
+    margin-top: 10px !important;
+  }
+  .af-pagewidth-1366px.af-puff .af-flexRow > div .sv-decoration-generell-gron-platta .sv-font-lankstig {
+    font-size: 35px;
+  }
+  .af-pagewidth-1366px.af-puff .af-flexRow > div .sv-decoration-generell-gron-platta p.normal {
+    margin: 10px 0 0 0;
+  }
+  .af-pagewidth-1366px.af-puff .af-flexRow > div img {
+    width: 100%;
+    max-width: 100% !important;
   }
 }
 
@@ -5409,6 +5434,19 @@ header .af-center p.sv-font-liten-morkgra:hover {
     margin: 0;
     margin-right: 10px;
     margin-bottom: 10px;
+  }
+  header > div:first-of-type {
+    padding-top: 0;
+  }
+  header.af-pagewidth-1366px {
+    padding: 0;
+  }
+  .af-logo .sv-svg,
+  .af-logo .sv-noborder {
+    max-width: 150px;
+    max-height: 55px;
+    width: 150px !important;
+    height: 55px !important;
   }
 }
 

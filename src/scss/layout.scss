@@ -508,10 +508,10 @@ nav.af-center {
     & h2, h3, .sv-font-stor-svart {
         background-color: $nynas-darkblue-color;
         padding: 25px 50px;
-        margin-bottom: 5px;
+        margin-bottom: 5px !important;
         border-top-left-radius: 6px;
         border-top-right-radius: 6px;
-        font-size: 25px;
+        font-size: 25px !important;
         color: $white-color;
         font-weight: 700;
     }
@@ -1042,4 +1042,12 @@ header {
         height: 27px;
         width: 27px;
     }
+}
+
+header > div:first-of-type {
+    padding-top: 25px;
+}
+
+header.af-pagewidth-1366px {
+    padding: 0 25px;
 }

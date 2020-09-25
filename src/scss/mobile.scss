@@ -1441,4 +1441,20 @@
             }
         }
     }
+
+    header > div:first-of-type {
+        padding-top: 0;
+    }
+
+    header.af-pagewidth-1366px {
+        padding: 0;
+    }
+
+    .af-logo .sv-svg,
+    .af-logo .sv-noborder {
+        max-width: 150px;
+        max-height: 55px;
+        width: 150px !important;
+        height: 55px !important;
+    }
 }

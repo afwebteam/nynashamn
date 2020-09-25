@@ -241,4 +241,28 @@
     h1.heading {
         font-size: 25px !important;
     }
+
+    .af-pagewidth-1366px.af-puff {
+        margin: 20px -10px;
+
+        & .af-flexRow > div {
+            margin-top: 10px !important;
+
+            & .sv-decoration-generell-gron-platta {
+
+                & .sv-font-lankstig {
+                    font-size: 35px;
+                }
+
+                & p.normal {
+                    margin: 10px 0 0 0;
+                }
+            }
+
+            & img {
+                width: 100%;
+                max-width: 100% !important;
+            }
+        }
+    }
 }
