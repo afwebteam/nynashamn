@@ -4420,6 +4420,9 @@ header .af-center p.sv-font-liten-morkgra:hover {
   .af-uppleva-site .af-uppleva-site-discover .af-uppleva-site-discover--item .af-uppleva-site-discover--item-textContent {
     height: auto !important;
   }
+  h1.heading {
+    font-size: 25px !important;
+  }
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
