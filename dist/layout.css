@@ -3754,7 +3754,9 @@ header.af-pagewidth-1366px {
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
 @media screen and (min-width: 881px) and (max-width: 1060px) {
   .af-subMenu .af-subMenu--item {
-    /* margin: 0 5px; */
+    margin: 0 18px;
+  }
+  .af-subMenu .af-subMenu--item a {
     font-size: 15px;
   }
 }

@@ -5,8 +5,11 @@
     .af-subMenu {
 
         & .af-subMenu--item {
-            /* margin: 0 5px; */
-            font-size: 15px;
+            margin: 0 18px;
+
+            & a {
+                font-size: 15px;
+            }
         }
     }
 }
