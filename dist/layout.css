@@ -6430,8 +6430,9 @@ input::placeholder {
 }
 
 .af-uppleva-site .af-pageWidth.af-center .sv-font-stor-svart {
-  margin-top: 70px !important;
+  margin-top: 40px !important;
   margin-bottom: 25px !important;
+  font-size: 50px !important;
 }
 
 .af-uppleva-site .af-wave--shape h1 {
@@ -6593,7 +6594,7 @@ input::placeholder {
 }
 
 .af-uppleva-site h1 {
-  font-size: 50px;
+  font-size: 35px;
   font-weight: 300;
 }
 
