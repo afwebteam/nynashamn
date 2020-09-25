@@ -2575,12 +2575,8 @@ div[role=search] {
   .af-theStartPage .af-wave .af-wave--shape {
     padding: 6% 0 0 0;
   }
-  .af-uppleva-site {
-    /*
-        & .af-startpageBigImage {
-            height: 480px;
-        }
-        */
+  .af-uppleva-site .af-startpageBigImage {
+    height: 480px;
   }
   .af-uppleva-site .af-wave--shape {
     padding: 6% 0 0 0;
