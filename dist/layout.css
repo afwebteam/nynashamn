@@ -6617,6 +6617,13 @@ input::placeholder {
   width: 100%;
 }
 
+.af-uppleva-site .af-uppleva-events .af-uppleva-events-items .af-uppleva-events-item a.af-externalSite {
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-image: url("https://nynashamn-ext.sitevision.se/images/18.74c6f5b2174af6d33e0aa55/1601056094831/externalLinkGrey.svg");
+  background-position: right 10px bottom 10px;
+}
+
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-items .af-uppleva-events-item .af-uppleva-events-item-img {
   padding-top: 56.25%;
   background-size: cover;
