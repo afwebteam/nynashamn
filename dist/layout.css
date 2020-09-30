@@ -6651,7 +6651,7 @@ input::placeholder {
 .af-uppleva-site .af-event-detailpage--bigImage {
   height: 480px;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
   background-size: cover;
 }
 
