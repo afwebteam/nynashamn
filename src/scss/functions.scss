@@ -743,10 +743,27 @@
     }
 }
 
+.af-bygglovProcess-page {
+
+    & h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    & h2 {
+        margin-top: 20px !important;
+    }
+
+    & p.normal {
+        margin-top: 10px;
+    }
+}
+
 .af-bygglovProcess {
 
     position: relative;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 
     & .af-bygglovProcess-line {
         position: absolute;

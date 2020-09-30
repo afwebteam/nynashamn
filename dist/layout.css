@@ -2412,9 +2412,23 @@ div[role=search] {
   margin: 17px 0 7px 0;
 }
 
+.af-bygglovProcess-page h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.af-bygglovProcess-page h2 {
+  margin-top: 20px !important;
+}
+
+.af-bygglovProcess-page p.normal {
+  margin-top: 10px;
+}
+
 .af-bygglovProcess {
   position: relative;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .af-bygglovProcess .af-bygglovProcess-line {
