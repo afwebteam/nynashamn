@@ -1221,7 +1221,7 @@ svDocReady(function () {
 
         e.preventDefault();
 
-        if (text === 'Alla') {
+        if (text.indexOf('Alla') > -1) {
             list.find('.active').removeClass('active');
             target.addClass('active');
         } else {
@@ -1285,7 +1285,7 @@ svDocReady(function () {
 
         e.preventDefault();
 
-        if (text === 'Alla') {
+        if (text.indexOf('Alla') > -1) {
             list.find('.active').removeClass('active');
             target.addClass('active');
         } else {
@@ -1349,7 +1349,7 @@ svDocReady(function () {
 
         e.preventDefault();
 
-        if (text === 'Alla') {
+        if (text.indexOf('Alla') > -1) {
             list.find('.active').removeClass('active');
             target.addClass('active');
         } else {
@@ -1411,7 +1411,7 @@ svDocReady(function () {
 
         e.preventDefault();
 
-        if (text === 'Alla') {
+        if (text.indexOf('Alla') > -1) {
             list.find('.active').removeClass('active');
             target.addClass('active');
         } else {
@@ -1469,7 +1469,7 @@ svDocReady(function () {
 
         e.preventDefault();
 
-        if (text === 'Alla') {
+        if (text.indexOf('Alla') > -1) {
             list.find('.active').removeClass('active');
             target.addClass('active');
         } else {
@@ -1531,7 +1531,7 @@ svDocReady(function () {
 
         e.preventDefault();
 
-        if (text === 'Alla') {
+        if (text.indexOf('Alla') > -1) {
             list.find('.active').removeClass('active');
             target.addClass('active');
         } else {
