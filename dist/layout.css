@@ -4201,7 +4201,7 @@ header.af-pagewidth-1366px {
     height: auto !important;
   }
   .af-tillvaxt-site .af-startpageBigImage .sv-script-portlet.sv-portlet.af-borderRadius {
-    width: 100%;
+    width: 100% !important;
   }
   .af-tillvaxt-site .af-startpageBigImage > .af-center {
     position: relative !important;
