@@ -2101,7 +2101,7 @@ div[role=search] {
 .af-importantMessage--wrapper {
   margin: 0 auto;
   max-width: 850px;
-  padding: 45px 0;
+  padding: 30px 0;
 }
 
 .af-event-calendar {
@@ -4307,6 +4307,7 @@ header.af-pagewidth-1366px {
   }
   .af-uppleva-site .af-pageWidth.af-center .sv-text-portlet-content .sv-font-stor-svart {
     margin-top: 0px !important;
+    font-size: 35px !important;
   }
   .af-uppleva-site .af-startpageBigImage {
     height: 200px;
@@ -5226,7 +5227,7 @@ header.af-pagewidth-1366px {
   }
   .af-importantMessage--wrapper {
     display: flex;
-    padding: 40px 20px;
+    padding: 40px 20px 20px 20px;
   }
   .af-importantMessage--hide {
     font-size: 13px;
@@ -6483,13 +6484,14 @@ input::placeholder {
 }
 
 .af-uppleva-site .af-puff .af-flexRow > * {
-  max-width: 49%;
+  max-width: 50%;
+  border: 5px solid #fff;
 }
 
 .af-uppleva-site .af-puff .af-flexRow img {
   max-height: 679px;
   margin-bottom: 0;
-  max-width: 100%;
+  max-width: 100% !important;
 }
 
 .af-uppleva-site .af-puff .sv-font-lankstig {
@@ -6604,9 +6606,7 @@ input::placeholder {
 }
 
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-items .af-uppleva-events-item {
-  width: 33%;
-  margin-bottom: 5px;
-  margin-right: 4px;
+  width: 33.3333%;
   display: flex;
 }
 
@@ -6615,6 +6615,7 @@ input::placeholder {
   display: block;
   background-color: #E6EFD9;
   width: 100%;
+  border: 5px solid #fff;
 }
 
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-items .af-uppleva-events-item a.af-externalSite {
@@ -6671,7 +6672,7 @@ input::placeholder {
 .af-uppleva-site .af-uppleva-site h1.heading {
   font-size: 35px;
   font-weight: 300;
-  margin: 60px 0 50px 0;
+  margin: 40px 0 20px 0;
 }
 
 .af-uppleva-site .sv-decoration-generell-gron-platta h2 {
@@ -6723,6 +6724,10 @@ input::placeholder {
   background-image: url("https://nynashamn-ext.sitevision.se/images/18.553838ea17305720c32b197/1595269750051/mail-grey.svg");
 }
 
+.af-uppleva-site .af-uppleva-site-extraBig-h1 h1.heading {
+  font-size: 50px;
+}
+
 .af-uppleva-site .sv-search-facets-header.sv-font-stor-svart {
   font-weight: 300;
   font-size: 25px;
@@ -6734,6 +6739,7 @@ input::placeholder {
   flex-wrap: wrap;
   justify-content: stretch;
   margin: 0 -5px;
+  margin-bottom: 60px;
 }
 
 .af-uppleva-site .af-startpage-listing-items a {
