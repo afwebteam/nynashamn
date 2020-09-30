@@ -13,7 +13,7 @@
         }
 
         & .af-wave-grey--shape {
-            top: 170px;
+            top: 205px;
         }
     }
 
@@ -50,6 +50,16 @@
 
         & .af-wave--shape {
             padding: 6% 0 0 0;
+        }
+    }
+}
+
+@media screen and (min-width: 2550px) {
+
+    .af-wave {
+
+        & .af-wave-grey--shape {
+            top: 170px;
         }
     }
 }
