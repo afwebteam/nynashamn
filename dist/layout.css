@@ -1,4 +1,5 @@
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 /* Buttons */
 .af-blueButton {
   padding: 10px 15px;
@@ -33,7 +34,7 @@
 
 .sv-print-portlet a:after {
   content: ' ';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.fe28bf21723114cc4d18d68/1591266749240/skrivUt.svg");
+  background-image: url("/images/18.fe28bf21723114cc4d18d68/1591266749240/skrivUt.svg");
   background-repeat: no-repeat;
   display: inline-block;
   padding: 12px 0;
@@ -92,7 +93,7 @@
 }
 
 .sv-decoration-contentpage-share-social .af-share-container .af-share-facebook {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.2647a0fc173056ff08415ee/1593775348367/Facebook.svg");
+  background-image: url("/images/18.2647a0fc173056ff08415ee/1593775348367/Facebook.svg");
   background-size: 12px;
 }
 
@@ -103,7 +104,7 @@
 }
 
 .sv-decoration-contentpage-share-social .af-share-container .af-share-linkedIn {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.2647a0fc173056ff08415ef/1593775434296/linkedIn.svg");
+  background-image: url("/images/18.2647a0fc173056ff08415ef/1593775434296/linkedIn.svg");
 }
 
 .sv-decoration-contentpage-share-social .af-share-container .af-share-linkedIn a {
@@ -113,7 +114,7 @@
 }
 
 .sv-decoration-contentpage-share-social .af-share-container .af-share-twitter {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.2647a0fc173056ff08415f0/1593775468502/twitter.svg");
+  background-image: url("/images/18.2647a0fc173056ff08415f0/1593775468502/twitter.svg");
 }
 
 .sv-decoration-contentpage-share-social .af-share-container .af-share-twitter a {
@@ -123,7 +124,7 @@
 }
 
 .sv-decoration-contentpage-share-social .af-share-container .af-share-mail {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.2647a0fc173056ff08415f1/1593775482126/mail.svg");
+  background-image: url("/images/18.2647a0fc173056ff08415f1/1593775482126/mail.svg");
 }
 
 .sv-decoration-contentpage-share-social .af-share-container .af-share-mail a {
@@ -151,7 +152,7 @@
 
 .af-generell-prevNext--links-prev:before {
   content: ' ';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.fe28bf21723114cc4d18ef3/1591270303096/f%C3%B6reg%C3%A5ende.svg");
+  background-image: url("/images/18.fe28bf21723114cc4d18ef3/1591270303096/f%C3%B6reg%C3%A5ende.svg");
   background-size: 25px;
   background-repeat: no-repeat;
   margin-right: 15px;
@@ -171,7 +172,7 @@
 
 .af-generell-prevNext--links-next:after {
   content: ' ';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.fe28bf21723114cc4d18ef2/1591270286255/n%C3%A4sta.svg");
+  background-image: url("/images/18.fe28bf21723114cc4d18ef2/1591270286255/n%C3%A4sta.svg");
   background-size: 25px;
   background-repeat: no-repeat;
   display: inline-block;
@@ -205,7 +206,7 @@
   content: ' ';
   display: inline-block;
   margin-left: 15px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   position: absolute;
   width: 25px;
   height: 25px;
@@ -216,6 +217,7 @@
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 .sv-grid-850 .pagecontent .af-homeCare-shortinfo {
   margin-top: 0;
   display: flex;
@@ -238,7 +240,7 @@
 .sv-grid-850 .pagecontent .af-homeCare-shortinfo > div:last-of-type .sv-font-brodtext-liten:before {
   content: ' ';
   display: inline-block;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
+  background-image: url("/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
   background-repeat: no-repeat;
   background-size: 13px;
   background-position: center;
@@ -260,7 +262,7 @@
 .af-homeCarePage .af-homeCarePage-header:before {
   content: '';
   position: absolute;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549cf/1596623711584/Karta_vit.svg");
+  background-image: url("/images/18.d9ec095172e6db9637549cf/1596623711584/Karta_vit.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: right;
@@ -391,7 +393,7 @@
 
 .af-homeCare .af-homeCare-row .af-homeCare-row--filter .af-closed:after {
   content: ' ';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px;
@@ -423,7 +425,7 @@
 .af-homeCare .af-homeCare-filterActions .af-showMap:after {
   content: '';
   position: absolute;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549cf/1596623711584/Karta_vit.svg");
+  background-image: url("/images/18.d9ec095172e6db9637549cf/1596623711584/Karta_vit.svg");
   background-repeat: no-repeat;
   background-size: 18px;
   background-position: right;
@@ -538,7 +540,7 @@
   display: inline-block;
   top: 0;
   right: 0;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
+  background-image: url("/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
 }
 
 @media screen and (max-width: 880px) {
@@ -584,6 +586,7 @@
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 .sv-grid-850 .pagecontent .af-project-shortinfo {
   margin-top: 0;
   display: flex;
@@ -606,7 +609,7 @@
 .sv-grid-850 .pagecontent .af-project-shortinfo > div:last-of-type .sv-font-brodtext-liten:before {
   content: ' ';
   display: inline-block;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
+  background-image: url("/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
   background-repeat: no-repeat;
   background-size: 13px;
   background-position: center;
@@ -729,7 +732,7 @@
 
 .af-findProject .af-findProject-row .af-findProject-row--filter .af-closed:after {
   content: ' ';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px;
@@ -761,7 +764,7 @@
 .af-findProject .af-findProject-filterActions .af-showMap:after {
   content: '';
   position: absolute;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549cf/1596623711584/Karta_vit.svg");
+  background-image: url("/images/18.d9ec095172e6db9637549cf/1596623711584/Karta_vit.svg");
   background-repeat: no-repeat;
   background-size: 18px;
   background-position: right;
@@ -904,7 +907,7 @@
   display: inline-block;
   top: 0;
   right: 0;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
+  background-image: url("/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
 }
 
 .af-cityProjectPage .af-cityProjectPage-header {
@@ -922,7 +925,7 @@
 .af-cityProjectPage .af-cityProjectPage-header:before {
   content: '';
   position: absolute;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549cf/1596623711584/Karta_vit.svg");
+  background-image: url("/images/18.d9ec095172e6db9637549cf/1596623711584/Karta_vit.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: right;
@@ -1068,6 +1071,7 @@
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 .sv-grid-850 .pagecontent .af-school-shortinfo {
   margin-top: 0;
   display: flex;
@@ -1090,7 +1094,7 @@
 .sv-grid-850 .pagecontent .af-school-shortinfo > div:last-of-type .sv-font-brodtext-liten:before {
   content: ' ';
   display: inline-block;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
+  background-image: url("/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
   background-repeat: no-repeat;
   background-size: 13px;
   background-position: center;
@@ -1112,7 +1116,7 @@
 .af-schoolPage .af-schoolPage-header:before {
   content: '';
   position: absolute;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549cf/1596623711584/Karta_vit.svg");
+  background-image: url("/images/18.d9ec095172e6db9637549cf/1596623711584/Karta_vit.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: right;
@@ -1243,7 +1247,7 @@
 
 .af-findSchool .af-findSchool-row .af-findSchool-row--filter .af-closed:after {
   content: ' ';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px;
@@ -1275,7 +1279,7 @@
 .af-findSchool .af-findSchool-filterActions .af-showMap:after {
   content: '';
   position: absolute;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549cf/1596623711584/Karta_vit.svg");
+  background-image: url("/images/18.d9ec095172e6db9637549cf/1596623711584/Karta_vit.svg");
   background-repeat: no-repeat;
   background-size: 18px;
   background-position: right;
@@ -1390,7 +1394,7 @@
   display: inline-block;
   top: 0;
   right: 0;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
+  background-image: url("/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
 }
 
 @media screen and (max-width: 880px) {
@@ -1436,42 +1440,44 @@
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 /* Fonts */
 @font-face {
   font-family: "Museo";
-  src: url("https://nynashamn-ext.sitevision.se/download/18.71262abb1722c35351612026/1590570244874/exljbris%20-%20MuseoSans-100.otf") format("opentype");
+  src: url("/download/18.71262abb1722c35351612026/1590570244874/exljbris%20-%20MuseoSans-100.otf") format("opentype");
   font-style: italic;
 }
 
 @font-face {
   font-family: "Museo";
-  src: url("https://nynashamn-ext.sitevision.se/download/18.71262abb1722c35351612028/1590570244900/exljbris%20-%20MuseoSans-300.otf") format("opentype");
+  src: url("/download/18.71262abb1722c35351612028/1590570244900/exljbris%20-%20MuseoSans-300.otf") format("opentype");
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Museo";
-  src: url("https://nynashamn-ext.sitevision.se/download/18.71262abb1722c3535161202a/1590570244928/exljbris%20-%20MuseoSans-500.otf") format("opentype");
+  src: url("/download/18.71262abb1722c3535161202a/1590570244928/exljbris%20-%20MuseoSans-500.otf") format("opentype");
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Museo";
-  src: url("https://nynashamn-ext.sitevision.se/download/18.71262abb1722c3535161202c/1590570244954/exljbris%20-%20MuseoSans-700.otf") format("opentype");
+  src: url("/download/18.71262abb1722c3535161202c/1590570244954/exljbris%20-%20MuseoSans-700.otf") format("opentype");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Museo";
-  src: url("https://nynashamn-ext.sitevision.se/download/18.71262abb1722c3535161202e/1590570244981/exljbris%20-%20MuseoSans-900.otf") format("opentype");
+  src: url("/download/18.71262abb1722c3535161202e/1590570244981/exljbris%20-%20MuseoSans-900.otf") format("opentype");
   font-weight: 900;
   font-style: italic;
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 /* Form */
 .af-textInputField {
   height: 55px;
@@ -1515,7 +1521,7 @@ div[role=search] {
 }
 
 .af-hiddenSearchForm form .af-searchIcon:after {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
+  background-image: url("/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
   background-repeat: no-repeat;
   background-position: right;
   content: ' ';
@@ -1601,7 +1607,7 @@ div[role=search] {
   padding: 0 45px 0 25px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961012242/1590480111317/sok-vit.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961012242/1590480111317/sok-vit.svg");
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 20px;
@@ -1615,11 +1621,11 @@ div[role=search] {
 }
 
 .sv-facetedsearch-portlet .sv-search-facets .af-open {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f9610132c1/1590497163518/do%CC%88lj-vit.svg") !important;
+  background-image: url("/images/18.5eb95a9b1722c1f9610132c1/1590497163518/do%CC%88lj-vit.svg") !important;
 }
 
 .sv-facetedsearch-portlet .sv-search-facets .af-closed {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f9610132c0/1590497157690/plus-vit.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f9610132c0/1590497157690/plus-vit.svg");
   background-repeat: no-repeat;
   background-position: right 30px center;
   background-size: 20px;
@@ -1683,6 +1689,7 @@ div[role=search] {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 .af-currentFilter p.normal {
   font-weight: 700;
   margin-bottom: 15px;
@@ -1729,7 +1736,7 @@ div[role=search] {
 
 .af-currentFilter .sv-font-stor-svart:after {
   content: ' ';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f9610132c0/1590497157690/plus-vit.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f9610132c0/1590497157690/plus-vit.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 25px;
@@ -1819,7 +1826,7 @@ div[role=search] {
   position: absolute;
   top: 18px;
   right: 15px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f9610132c0/1590497157690/plus-vit.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f9610132c0/1590497157690/plus-vit.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 25px;
@@ -1940,7 +1947,7 @@ div[role=search] {
 .af-currentFilter--result ul li .af-currentFilter--result--pubDate:before {
   content: ' ';
   display: inline-block;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.fe28bf21723114cc4d1ed5/1590133639274/klocka.svg");
+  background-image: url("/images/18.fe28bf21723114cc4d1ed5/1590133639274/klocka.svg");
   width: 16px;
   height: 16px;
   position: absolute;
@@ -2005,7 +2012,7 @@ div[role=search] {
 }
 
 .af-importantMessage.af-Notis .af-importantMessage--icon {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.20c6b495172a24959ced97c/1592462978829/info.svg");
+  background-image: url("/images/18.20c6b495172a24959ced97c/1592462978829/info.svg");
 }
 
 .af-importantMessage.af-Fara {
@@ -2013,7 +2020,7 @@ div[role=search] {
 }
 
 .af-importantMessage.af-Fara .af-importantMessage--icon {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.1a666647172a20f55b1bba7/1592399205209/warning.svg");
+  background-image: url("/images/18.1a666647172a20f55b1bba7/1592399205209/warning.svg");
 }
 
 .af-importantMessage.af-smallMessage .af-importantMessage--wrapper {
@@ -2089,7 +2096,7 @@ div[role=search] {
   top: 1px;
   right: 2px;
   content: ' ';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -2134,7 +2141,7 @@ div[role=search] {
 .af-event-calendar .af-event-calendar-dateRow .af-event-calendar-categoryRow--filter .af-closed:after, .af-event-calendar .af-event-calendar-categoryRow .af-event-calendar-dateRow--filter .af-closed:after,
 .af-event-calendar .af-event-calendar-categoryRow .af-event-calendar-categoryRow--filter .af-closed:after {
   content: ' ';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px;
@@ -2209,7 +2216,7 @@ div[role=search] {
   position: absolute;
   top: 11px;
   right: 10px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.2647a0fc173056ff08411758/1596108728509/datumva%CC%88ljare.svg");
+  background-image: url("/images/18.2647a0fc173056ff08411758/1596108728509/datumva%CC%88ljare.svg");
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
@@ -2358,7 +2365,7 @@ div[role=search] {
 }
 
 .af-event-calendar .af-loadMoreEvents .sv-decoration-generell-bla-knapp--intern:after {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.4bceb9e21738d812472fbab/1595877899398/pil-ner.svg");
+  background-image: url("/images/18.4bceb9e21738d812472fbab/1595877899398/pil-ner.svg");
 }
 
 .af-404icon {
@@ -2367,7 +2374,7 @@ div[role=search] {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.553838ea17305720c32100de/1596132134884/404-sidan.svg");
+  background-image: url("/images/18.553838ea17305720c32100de/1596132134884/404-sidan.svg");
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: center;
@@ -2398,7 +2405,7 @@ div[role=search] {
 .af-articleListing ul .sv-channel-item .sv-font-brodtext-liten:before {
   content: ' ';
   display: inline-block;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.fe28bf21723114cc4d1ed5/1590133639274/klocka.svg");
+  background-image: url("/images/18.fe28bf21723114cc4d1ed5/1590133639274/klocka.svg");
   width: 16px;
   height: 16px;
   position: absolute;
@@ -2503,7 +2510,7 @@ div[role=search] {
 
 .af-guide.af-generell-prevNext .af-generell-prevNext--links-prev a:before {
   content: ' ';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.b86c4c173e68e512a16ea6/1599119840609/next-white.svg");
+  background-image: url("/images/18.b86c4c173e68e512a16ea6/1599119840609/next-white.svg");
   background-size: 25px;
   background-repeat: no-repeat;
   margin-right: 15px;
@@ -2532,7 +2539,7 @@ div[role=search] {
 
 .af-guide.af-generell-prevNext .af-generell-prevNext--links-next a:before {
   content: ' ';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.b86c4c173e68e512a16ea6/1599119840609/next-white.svg");
+  background-image: url("/images/18.b86c4c173e68e512a16ea6/1599119840609/next-white.svg");
   background-size: 25px;
   background-repeat: no-repeat;
   margin-right: 0;
@@ -2573,6 +2580,7 @@ div[role=search] {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 @media screen and (min-width: 1550px) {
   .af-landingpage {
     margin-top: -40px;
@@ -2610,6 +2618,7 @@ div[role=search] {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 /* Landing page */
 .af-landingpage {
   margin-top: -40px;
@@ -2770,13 +2779,14 @@ div[role=search] {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 /* Icons */
 .af-searchIcon {
   position: relative;
 }
 
 .af-searchIcon:after {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
+  background-image: url("/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
   background-repeat: no-repeat;
   background-position: right;
   content: ' ';
@@ -2789,25 +2799,25 @@ div[role=search] {
 }
 
 .af-messageIcon {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.2ee7eb0171ac15bcfcda267/1589446001801/meddelande.svg");
+  background-image: url("/images/18.2ee7eb0171ac15bcfcda267/1589446001801/meddelande.svg");
   background-repeat: no-repeat;
   background-position: left;
 }
 
 .af-eventsIcon {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.2ee7eb0171ac15bcfcda35f/1589446301525/events.svg");
+  background-image: url("/images/18.2ee7eb0171ac15bcfcda35f/1589446301525/events.svg");
   background-repeat: no-repeat;
   background-position: left;
 }
 
 .af-arrowDownIcon {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.2ee7eb0171ac15bcfcdaa11/1589448167835/pilNer.svg");
+  background-image: url("/images/18.2ee7eb0171ac15bcfcdaa11/1589448167835/pilNer.svg");
   background-repeat: no-repeat;
   background-position: left;
 }
 
 .af-aktuelltIcon {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.2ee7eb0171ac15bcfcdbd95/1589454065133/aktuellt.svg");
+  background-image: url("/images/18.2ee7eb0171ac15bcfcdbd95/1589454065133/aktuellt.svg");
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -2866,7 +2876,7 @@ footer .sv-font-brodtext-fet a {
 footer .sv-font-brodtext-fet a:after {
   content: ' ';
   display: inline-block;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.553838ea17305720c324a73/1594235978687/pil-framat.svg");
+  background-image: url("/images/18.553838ea17305720c324a73/1594235978687/pil-framat.svg");
   width: 20px;
   margin-left: 5px;
   background-repeat: no-repeat;
@@ -2986,7 +2996,7 @@ p.sv-portlet-image-caption {
 .af-tableOfContent li {
   margin: 10px 0;
   padding-left: 50px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.2ee7eb0171ac15bcfcdaa11/1589448167835/pilNer.svg");
+  background-image: url("/images/18.2ee7eb0171ac15bcfcdaa11/1589448167835/pilNer.svg");
   background-repeat: no-repeat;
   background-position: left 2px;
   background-size: 22px;
@@ -3069,7 +3079,7 @@ nav.af-center .af-searchIcon a.active {
   background-repeat: no-repeat;
   background-position: 90% 44%;
   background-size: 25px 25px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.2ee7eb0171ac15bcfcdad5e/1589449117007/externLink.svg");
+  background-image: url("/images/18.2ee7eb0171ac15bcfcdad5e/1589449117007/externLink.svg");
   position: absolute;
   top: 12px;
   right: 10px;
@@ -3108,7 +3118,7 @@ nav.af-center .af-searchIcon a.active {
   content: ' ';
   background-repeat: no-repeat;
   background-size: 20px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.4baadc3b174afc852bc3225/1600863859409/Ikon_pdf_vit2.svg");
+  background-image: url("/images/18.4baadc3b174afc852bc3225/1600863859409/Ikon_pdf_vit2.svg");
   position: absolute;
   top: 12px;
   right: 11px;
@@ -3148,7 +3158,7 @@ nav.af-center .af-searchIcon a.active {
   background-repeat: no-repeat;
   background-position: 95% 44%;
   background-size: 25px 25px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.b86c4c173e68e512a16ea6/1599119840609/next-white.svg");
+  background-image: url("/images/18.b86c4c173e68e512a16ea6/1599119840609/next-white.svg");
   position: absolute;
   top: 12px;
   right: 10px;
@@ -3190,7 +3200,7 @@ nav.af-center .af-searchIcon a.active {
 .sv-decoration-generell-faktaruta h2:before, .sv-decoration-generell-faktaruta h3:before, .sv-decoration-generell-faktaruta .sv-font-stor-svart:before {
   content: ' ';
   margin-right: 11px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.39f98b4f1722babea8d12f/1589876546207/Faktaruta.svg");
+  background-image: url("/images/18.39f98b4f1722babea8d12f/1589876546207/Faktaruta.svg");
   width: 25px;
   display: inline-block;
   background-repeat: no-repeat;
@@ -3228,7 +3238,7 @@ nav.af-center .af-searchIcon a.active {
   padding: 15px 15px;
   border-radius: 6px;
   font-weight: 500;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.b86c4c173e68e512a16ea6/1599119840609/next-white.svg");
+  background-image: url("/images/18.b86c4c173e68e512a16ea6/1599119840609/next-white.svg");
   background-repeat: no-repeat;
   background-size: 34px;
   background-position: right 15px center;
@@ -3252,7 +3262,7 @@ nav.af-center .af-searchIcon a.active {
   padding: 15px 15px;
   border-radius: 6px;
   font-weight: 500;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.b86c4c173e68e512a16ea6/1599119840609/next-white.svg");
+  background-image: url("/images/18.b86c4c173e68e512a16ea6/1599119840609/next-white.svg");
   background-repeat: no-repeat;
   background-size: 34px;
   background-position: right 15px center;
@@ -3277,7 +3287,7 @@ nav.af-center .af-searchIcon a.active {
 .af-related-information h2:before, .af-related-information h3:before, .af-related-information .sv-font-stor-svart:before {
   content: ' ';
   margin-right: 11px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.39f98b4f1722babea8d3ba/1589879998149/Realterad%20information.svg");
+  background-image: url("/images/18.39f98b4f1722babea8d3ba/1589879998149/Realterad%20information.svg");
   width: 25px;
   display: inline-block;
   background-repeat: no-repeat;
@@ -3308,7 +3318,7 @@ nav.af-center .af-searchIcon a.active {
 .af-related-information ul .af-file a:after {
   position: absolute;
   content: '';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db963754cee/1596632006892/filer.svg");
+  background-image: url("/images/18.d9ec095172e6db963754cee/1596632006892/filer.svg");
   width: 18px;
   background-repeat: no-repeat;
   margin-left: 10px;
@@ -3374,7 +3384,7 @@ nav.af-center .af-searchIcon a.active {
 
 .sv-decoration-generell-dragspel .af-closed:after {
   content: ' ';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px;
@@ -3479,7 +3489,7 @@ nav.af-center .af-searchIcon a.active {
   content: ' ';
   margin-right: 15px;
   width: 30px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f96107cbd/1589978216557/pratbubbla.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f96107cbd/1589978216557/pratbubbla.svg");
   display: inline-block;
   background-repeat: no-repeat;
   height: 21px;
@@ -3615,7 +3625,7 @@ nav.af-center .af-searchIcon a.active {
 
 .af-publishedDate:before {
   content: ' ';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.fe28bf21723114cc4d1ed5/1590133639274/klocka.svg");
+  background-image: url("/images/18.fe28bf21723114cc4d1ed5/1590133639274/klocka.svg");
   height: 15px;
   display: inline-block;
   width: 15px;
@@ -3676,7 +3686,7 @@ input:focus {
 .af-tags .af-tag:before {
   content: ' ';
   display: inline-block;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.553838ea17305720c321587/1593711825242/etikett.svg");
+  background-image: url("/images/18.553838ea17305720c321587/1593711825242/etikett.svg");
   position: absolute;
   top: 6px;
   left: 10px;
@@ -3768,6 +3778,7 @@ header.af-pagewidth-1366px {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 @media screen and (min-width: 881px) and (max-width: 1060px) {
   .af-subMenu .af-subMenu--item {
     margin: 0 18px;
@@ -3778,6 +3789,7 @@ header.af-pagewidth-1366px {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 /* Menu */
 .af-menu {
   display: inline;
@@ -3867,7 +3879,7 @@ header.af-pagewidth-1366px {
   right: 5px;
   width: 45px;
   height: 45px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f9610132c0/1590497157690/plus-vit.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f9610132c0/1590497157690/plus-vit.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
@@ -3880,7 +3892,7 @@ header.af-pagewidth-1366px {
   right: 5px;
   width: 45px;
   height: 45px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f9610132c0/1590497157690/plus-vit.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f9610132c0/1590497157690/plus-vit.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
@@ -3927,7 +3939,7 @@ header.af-pagewidth-1366px {
   right: 5px;
   width: 45px;
   height: 45px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
@@ -3941,7 +3953,7 @@ header.af-pagewidth-1366px {
   right: 5px;
   width: 45px;
   height: 45px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
@@ -3982,7 +3994,7 @@ header.af-pagewidth-1366px {
   right: 5px;
   width: 45px;
   height: 45px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
@@ -3995,7 +4007,7 @@ header.af-pagewidth-1366px {
   right: 5px;
   width: 45px;
   height: 45px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
@@ -4035,7 +4047,7 @@ header.af-pagewidth-1366px {
   right: 5px;
   width: 45px;
   height: 45px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
@@ -4048,7 +4060,7 @@ header.af-pagewidth-1366px {
   right: 5px;
   width: 45px;
   height: 45px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
@@ -4089,7 +4101,7 @@ header.af-pagewidth-1366px {
   right: 5px;
   width: 45px;
   height: 45px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
@@ -4102,7 +4114,7 @@ header.af-pagewidth-1366px {
   right: 5px;
   width: 45px;
   height: 45px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
@@ -4143,7 +4155,7 @@ header.af-pagewidth-1366px {
   right: 5px;
   width: 45px;
   height: 45px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
@@ -4156,7 +4168,7 @@ header.af-pagewidth-1366px {
   right: 5px;
   width: 45px;
   height: 45px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
@@ -4173,6 +4185,7 @@ header.af-pagewidth-1366px {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 @media screen and (max-width: 450px) {
   .af-theStartPage .af-wave .af-wave--shape {
     padding: 6% 0 0 0;
@@ -4188,6 +4201,7 @@ header.af-pagewidth-1366px {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 @media screen and (max-width: 880px) {
   .af-tillvaxt-site .af-aktuelltIcon {
     padding-left: 40px;
@@ -4304,6 +4318,7 @@ header.af-pagewidth-1366px {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 @media screen and (max-width: 880px) {
   .af-uppleva-site > div:first-of-type {
     border: none;
@@ -4470,6 +4485,7 @@ header.af-pagewidth-1366px {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 @media screen and (max-width: 880px) {
   html,
   body {
@@ -4537,7 +4553,7 @@ header.af-pagewidth-1366px {
   }
   .af-MobileMenu:before {
     content: ' ';
-    background-image: url("https://nynashamn-ext.sitevision.se/images/18.39f98b4f1722babea8decf3/1590390894695/hambyrgare.svg");
+    background-image: url("/images/18.39f98b4f1722babea8decf3/1590390894695/hambyrgare.svg");
     background-size: 18px;
     background-repeat: no-repeat;
     display: inline-block;
@@ -4914,7 +4930,7 @@ header.af-pagewidth-1366px {
     content: ' ';
     margin-right: 15px;
     width: 30px;
-    background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f96107cbd/1589978216557/pratbubbla.svg");
+    background-image: url("/images/18.5eb95a9b1722c1f96107cbd/1589978216557/pratbubbla.svg");
     display: inline-block;
     background-repeat: no-repeat;
     height: 21px;
@@ -4981,7 +4997,7 @@ header.af-pagewidth-1366px {
     top: 0;
   }
   .af-wave .af-wave-grey--shape {
-    background-image: url("https://nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c5418b8d/1589182390043/wave.svg");
+    background-image: url("/images/18.6719b35d171ac1e3c5418b8d/1589182390043/wave.svg");
     display: none;
   }
   .af-landingPage {
@@ -5470,6 +5486,7 @@ header.af-pagewidth-1366px {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 /* OVERRIDES */
 p.normal {
   margin: 25px 0 0 0;
@@ -5580,6 +5597,7 @@ input::placeholder {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 /* Puffar */
 .af-puff {
   padding: 0 100px;
@@ -5676,7 +5694,7 @@ input::placeholder {
 .af-contactModule .sv-font-stor-svart:before {
   content: ' ';
   margin-right: 11px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c5424188/1589375624321/kontakt.svg");
+  background-image: url("/images/18.6719b35d171ac1e3c5424188/1589375624321/kontakt.svg");
   width: 25px;
   display: inline-block;
   background-repeat: no-repeat;
@@ -5747,6 +5765,7 @@ input::placeholder {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 /* Startpage */
 .af-theStartPage .sv-font-stor-svart {
   font-size: 35px;
@@ -5829,7 +5848,7 @@ input::placeholder {
 
 .af-startpageBigImage .sv-searchform-portlet .af-submitSearchIcon:after {
   content: '';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
+  background-image: url("/images/18.71262abb1722c353516d93d4/1591775181907/so%CC%88k-2.svg");
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -5850,7 +5869,7 @@ input::placeholder {
 }
 
 .af-wave--shape {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.6719b35d171ac1e3c5418b8d/1589182390043/wave.svg");
+  background-image: url("/images/18.6719b35d171ac1e3c5418b8d/1589182390043/wave.svg");
   padding: 95px 0 0 0;
   position: absolute;
   left: 0;
@@ -5861,7 +5880,7 @@ input::placeholder {
 }
 
 .af-wave-grey--shape {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.a5f223f171ac2fcd6d2adb5/1589530446861/wave-grey.svg");
+  background-image: url("/images/18.a5f223f171ac2fcd6d2adb5/1589530446861/wave-grey.svg");
   padding: 90px 0 0 0;
   position: absolute;
   left: 0;
@@ -6157,7 +6176,7 @@ input::placeholder {
 
 .af-startpage-current ul.sv-channel li .sv-font-liten-morkgra:before {
   content: ' ';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.fe28bf21723114cc4d1ed5/1590133639274/klocka.svg");
+  background-image: url("/images/18.fe28bf21723114cc4d1ed5/1590133639274/klocka.svg");
   height: 15px;
   display: inline-block;
   width: 15px;
@@ -6177,6 +6196,7 @@ input::placeholder {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 .af-tillvaxt-site .af-menu .af-activeMenuItem {
   background-color: #2D5F55;
 }
@@ -6308,7 +6328,7 @@ input::placeholder {
 }
 
 .af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-area:before {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.ca6b0751735c3b34e7325c5/1599503644539/pinIcon.svg");
+  background-image: url("/images/18.ca6b0751735c3b34e7325c5/1599503644539/pinIcon.svg");
   content: ' ';
   width: 15px;
   height: 15px;
@@ -6331,7 +6351,7 @@ input::placeholder {
 }
 
 .af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-type:before {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.ca6b0751735c3b34e7325c6/1599503644548/housing.svg");
+  background-image: url("/images/18.ca6b0751735c3b34e7325c6/1599503644548/housing.svg");
   content: ' ';
   width: 15px;
   height: 15px;
@@ -6356,7 +6376,7 @@ input::placeholder {
 }
 
 .af-tillvaxt-site .af-tillvaxt-cityProject .af-tillvaxt-cityProject-showMap:after {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
+  background-image: url("/images/18.d9ec095172e6db9637549c0/1596623640851/Karta_grey.svg");
   content: ' ';
   width: 15px;
   height: 15px;
@@ -6408,7 +6428,7 @@ input::placeholder {
 
 .af-tillvaxt-site .af-tillvaxt-cityProject-processFlow .af-tillvaxt-cityProject-processFlow--steps .af-tillvaxt-cityProject-processFlow--step.regularStep .af-tillvaxt-cityProject-processFlow--step-animation {
   background-color: #403E41;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.4cf034b9173e68c403818489/1599220434057/checkIcon.svg");
+  background-image: url("/images/18.4cf034b9173e68c403818489/1599220434057/checkIcon.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
@@ -6440,7 +6460,7 @@ input::placeholder {
 .af-tillvaxt-site .sv-decoration-planprocessen h2:before, .af-tillvaxt-site .sv-decoration-planprocessen h3:before, .af-tillvaxt-site .sv-decoration-planprocessen .sv-font-stor-svart:before {
   content: ' ';
   margin-right: 11px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.74aa99c17471d6226f2bb6/1599823725311/housingWhite.svg");
+  background-image: url("/images/18.74aa99c17471d6226f2bb6/1599823725311/housingWhite.svg");
   width: 25px;
   display: inline-block;
   background-repeat: no-repeat;
@@ -6480,6 +6500,7 @@ input::placeholder {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 .af-uppleva-site .af-hiddenSearchForm {
   background-color: #002F6C;
 }
@@ -6561,7 +6582,7 @@ input::placeholder {
 
 .af-uppleva-site .af-uppleva-events .af-closed:after {
   content: ' ';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px;
@@ -6641,7 +6662,7 @@ input::placeholder {
 .af-uppleva-site .af-uppleva-events .af-uppleva-events-items .af-uppleva-events-item a.af-externalSite {
   background-repeat: no-repeat;
   background-size: 25px;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.74c6f5b2174af6d33e0aa55/1601056094831/externalLinkGrey.svg");
+  background-image: url("/images/18.74c6f5b2174af6d33e0aa55/1601056094831/externalLinkGrey.svg");
   background-position: right 10px bottom 10px;
 }
 
@@ -6703,7 +6724,7 @@ input::placeholder {
 .af-uppleva-site .sv-decoration-generell-gron-platta h2:before {
   content: '';
   display: inline-block;
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f96107cbd/1589978216557/pratbubbla.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f96107cbd/1589978216557/pratbubbla.svg");
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
@@ -6729,19 +6750,19 @@ input::placeholder {
 }
 
 .af-uppleva-site .sv-decoration-contentpage-share-social .af-share-container .af-share-facebook {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.a5f223f171ac2fcd6d2b447/1589549364769/facebook.svg");
+  background-image: url("/images/18.a5f223f171ac2fcd6d2b447/1589549364769/facebook.svg");
 }
 
 .af-uppleva-site .sv-decoration-contentpage-share-social .af-share-container .af-share-linkedIn {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.a5f223f171ac2fcd6d2b448/1589549385445/linkedIn.svg");
+  background-image: url("/images/18.a5f223f171ac2fcd6d2b448/1589549385445/linkedIn.svg");
 }
 
 .af-uppleva-site .sv-decoration-contentpage-share-social .af-share-container .af-share-twitter {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.a5f223f171ac2fcd6d2b449/1589549410361/twitter.svg");
+  background-image: url("/images/18.a5f223f171ac2fcd6d2b449/1589549410361/twitter.svg");
 }
 
 .af-uppleva-site .sv-decoration-contentpage-share-social .af-share-container .af-share-mail {
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.553838ea17305720c32b197/1595269750051/mail-grey.svg");
+  background-image: url("/images/18.553838ea17305720c32b197/1595269750051/mail-grey.svg");
 }
 
 .af-uppleva-site .af-uppleva-site-extraBig-h1 h1.heading {
@@ -6965,7 +6986,7 @@ input::placeholder {
 
 .af-uppleva-site .sv-predefinedsearch-portlet .af-closed:after {
   content: ' ';
-  background-image: url("https://nynashamn-ext.sitevision.se/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
+  background-image: url("/images/18.5eb95a9b1722c1f961074d6/1589964296044/plus.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 13px;
@@ -7002,3 +7023,4 @@ input::placeholder {
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
