@@ -218,6 +218,177 @@
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
 /* $domain: 'https://nynashamn-ext.sitevision.se'; */
+@media screen and (max-width: 880px) {
+  .af-campus-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item {
+    width: 100% !important;
+  }
+  .af-campus-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item .af-startpage-listing-item-img {
+    padding-top: 56.25% !important;
+  }
+  .af-campus-site .af-startpageMessages .af-startpageMessages--list .af-startpageMessages--listItem {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .af-campus-site .af-popularShortcuts .af-popularShortcuts--item .af-popularShortcuts--itemName {
+    width: 110px !important;
+  }
+}
+
+/* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
+.af-campus-site .af-theStartPage .af-startpageBigImage {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 580px;
+}
+
+.af-campus-site .af-theStartPage .af-startpageBigImage .af-pageWidth {
+  display: flex;
+  justify-content: space-between;
+}
+
+.af-campus-site .af-theStartPage .af-startpageBigImage .af-pageWidth .sv-decoration-orange-knapp-campus {
+  width: 210px;
+  text-align: center;
+}
+
+.af-campus-site .af-theStartPage .af-startpageBigImage .sv-font-toppmeny-aktiv {
+  font-size: 50px;
+  font-family: museo,sans-serif;
+  font-weight: 700;
+}
+
+.af-campus-site header {
+  background-color: #000;
+}
+
+.af-campus-site .af-toolsMenyHeader a {
+  text-decoration: none;
+}
+
+.af-campus-site .af-toolsMenyHeader * {
+  color: #C2C2C2 !important;
+}
+
+.af-campus-site .af-subMenu a {
+  color: #fff;
+}
+
+.af-campus-site .af-startpageMessages .af-startpageMessages--list .af-startpageMessages--listItem {
+  width: 32%;
+}
+
+.af-campus-site .af-startpage-listing-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  margin: 0 -5px;
+  margin-bottom: 60px;
+}
+
+.af-campus-site .af-startpage-listing-items .af-startpage-listing-item {
+  width: 33.33333%;
+  display: flex;
+}
+
+.af-campus-site .af-startpage-listing-items .af-startpage-listing-item a {
+  text-decoration: none;
+  display: block;
+  border: 5px solid #fff;
+  width: 100%;
+  background-color: #EDEBEA;
+}
+
+.af-campus-site .af-startpage-listing-items .af-startpage-listing-item .af-startpage-listing-item-img {
+  background-size: cover;
+  background-position: center;
+  padding-top: 56.25%;
+}
+
+.af-campus-site .af-startpage-listing-items .af-startpage-listing-item .af-startpage-listing-item-textContent {
+  padding: 30px 20px;
+}
+
+.af-campus-site .af-startpage-listing-items .af-startpage-listing-item.af-item-1 .af-startpage-listing-item-img {
+  padding-top: 114.6%;
+}
+
+.af-campus-site .af-startpage-listing-items .af-startpage-listing-item.af-item-2 {
+  width: 66.66666%;
+}
+
+.af-campus-site .af-startpage-listing-items .af-startpage-listing-item.af-item-2 .af-startpage-listing-item-img {
+  padding-top: 56.5%;
+}
+
+.af-campus-site .af-popularShortcuts {
+  justify-content: space-between;
+}
+
+.af-campus-site .af-popularShortcuts .af-popularShortcuts--item .af-popularShortcuts--itemName {
+  width: 186px;
+  margin: 18px auto;
+}
+
+.af-campus-site .ai-campus-partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.af-campus-site .ai-campus-partners .ai-campus-partners-partner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 130px;
+  height: 86px;
+  margin: 15px 30px;
+}
+
+.af-campus-site .sv-decoration-lank-till-kommun-webb-campus {
+  background-color: #D8D8D8;
+  padding-bottom: 25px;
+}
+
+.af-campus-site .sv-decoration-lank-till-kommun-webb-campus .sv-decoration-generell-bla-knapp--external {
+  padding: 15px 20px 15px 20px;
+}
+
+.af-campus-site .sv-decoration-lank-till-kommun-webb-campus .sv-decoration-generell-bla-knapp--external:after {
+  display: none;
+}
+
+.sv-decoration-orange-knapp-campus {
+  padding: 15px 25px;
+  background-color: #E97C1D;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.sv-decoration-orange-knapp-campus p.normal {
+  margin: 0 !important;
+  color: #fff;
+}
+
+.sv-decoration-orange-knapp-campus a {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+@media screen and (max-width: 1190px) {
+  .af-campus-site .af-popularShortcuts {
+    justify-content: space-between;
+  }
+  .af-campus-site .af-popularShortcuts .af-popularShortcuts--item .af-popularShortcuts--itemName {
+    width: 186px;
+  }
+}
+
+/* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
+/* $domain: 'https://nynashamn-ext.sitevision.se'; */
 .sv-grid-850 .pagecontent .af-homeCare-shortinfo {
   margin-top: 0;
   display: flex;
@@ -2608,6 +2779,9 @@ div[role=search] {
   }
   .af-tillvaxt-site .af-wave--shape {
     padding: 6% 0 0 0;
+  }
+  .af-campus-site .af-startpageBigImage {
+    height: 580px;
   }
 }
 

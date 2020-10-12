@@ -1,0 +1,184 @@
+@import 'variables';
+
+.af-campus-site { 
+
+    & .af-theStartPage {
+
+        & .af-startpageBigImage {
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            background-position: center !important;
+            height: 580px;
+
+            & .af-pageWidth {
+                display: flex;
+                justify-content: space-between;
+
+                & .sv-decoration-orange-knapp-campus {
+                    width: 210px;
+                    text-align: center;
+                }
+            }
+    
+            & .sv-font-toppmeny-aktiv {
+                font-size: 50px;
+                font-family: museo,sans-serif;
+                font-weight: 700;
+            }
+        }
+
+    }
+
+    & header {
+        background-color: $campus-black;
+    }
+
+    & .af-toolsMenyHeader {
+
+        & a {
+            text-decoration: none;
+        }
+
+        & * {
+            color: $campus-light !important;
+        }
+    }
+
+    & .af-subMenu {
+
+        & a {
+            color: $white-color;
+        }
+    }
+
+    & .af-startpageMessages {
+
+        & .af-startpageMessages--list {
+
+            & .af-startpageMessages--listItem {
+                width: 32%;
+            }
+        }
+    }
+
+    & .af-startpage-listing-items {
+	    display: flex;
+        flex-wrap: wrap;
+        justify-content: stretch;
+        margin: 0 -5px;
+        margin-bottom: 60px; 
+
+        & .af-startpage-listing-item {
+            width: 33.33333%;
+            display: flex;
+
+            & a {
+                text-decoration: none;
+                display: block;
+                border: 5px solid $white-color;
+                width: 100%;
+                background-color: $campus-grey;
+            }
+
+            & .af-startpage-listing-item-img {
+                background-size: cover;
+                background-position: center;
+                padding-top: 56.25%;
+            }
+
+            & .af-startpage-listing-item-textContent {
+                padding: 30px 20px;
+                
+            }
+        }
+
+        & .af-startpage-listing-item.af-item-1 {
+
+            & .af-startpage-listing-item-img {
+                padding-top: 114.6%;
+            }
+        }
+
+        & .af-startpage-listing-item.af-item-2 {
+            width: 66.66666%;
+
+            & .af-startpage-listing-item-img {
+                padding-top: 56.5%;
+            }
+        }
+    }
+
+    & .af-popularShortcuts {
+        justify-content: space-between;
+
+        & .af-popularShortcuts--item {
+
+            & .af-popularShortcuts--itemName {
+                width: 186px;
+                margin: 18px auto;
+            }
+        }
+    }
+
+    & .ai-campus-partners {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & .ai-campus-partners-partner {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 130px;
+            height: 86px;
+            margin: 15px 30px;
+        }
+    }
+
+    & .sv-decoration-lank-till-kommun-webb-campus {
+        background-color: #D8D8D8;
+        padding-bottom: 25px;
+
+        & .sv-decoration-generell-bla-knapp--external {
+            padding: 15px 20px 15px 20px;
+            
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+.sv-decoration-orange-knapp-campus {
+    padding: 15px 25px;
+    background-color: $campus-orange;
+    border-radius: 6px;
+    display: inline-block;
+
+    & p.normal {
+        margin: 0 !important;
+        color: $white-color;
+    }
+
+    & a {
+        color: $white-color;
+        text-decoration: none !important;
+    }
+}
+
+
+@media screen and (max-width: 1190px) {
+    .af-campus-site {
+
+        & .af-popularShortcuts {
+            justify-content: space-between;
+    
+            & .af-popularShortcuts--item {
+    
+                & .af-popularShortcuts--itemName {
+                    width: 186px;
+                }
+            }
+        }
+    }
+}
