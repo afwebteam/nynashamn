@@ -355,6 +355,7 @@
   margin-bottom: 0 !important;
 }
 
+af-startpage-listing
 .af-campus-site .af-theStartPage .af-startpageBigImage {
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -362,16 +363,19 @@
   height: 580px;
 }
 
+af-startpage-listing
 .af-campus-site .af-theStartPage .af-startpageBigImage .af-pageWidth {
   display: flex;
   justify-content: space-between;
 }
 
+af-startpage-listing
 .af-campus-site .af-theStartPage .af-startpageBigImage .af-pageWidth .sv-decoration-orange-knapp-campus {
   width: 210px;
   text-align: center;
 }
 
+af-startpage-listing
 .af-campus-site .af-theStartPage .af-startpageBigImage .sv-font-toppmeny-aktiv {
   font-size: 50px;
   font-family: museo,sans-serif;
@@ -396,6 +400,46 @@
 
 .af-campus-site .af-subMenu a {
   color: #fff;
+}
+
+.af-campus-site .af-campus-inspiration-listing .af-campus-inspiration-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+
+.af-campus-site .af-campus-inspiration-listing .af-campus-inspiration-items .af-campus-inspiration-item {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.af-campus-site .af-campus-inspiration-listing .af-campus-inspiration-items .af-campus-inspiration-item a {
+  display: block;
+  border: 5px solid #fff;
+  background-color: #edebea;
+  text-decoration: none;
+  height: 100%;
+}
+
+.af-campus-site .af-campus-inspiration-listing .af-campus-inspiration-items .af-campus-inspiration-item a .af-campus-inspiration-item-img {
+  padding-top: 56.25%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.af-campus-site .af-campus-inspiration-listing .af-campus-inspiration-items .af-campus-inspiration-item a .af-campus-inspiration-item-textContent {
+  padding: 25px 25px 15px 25px;
+}
+
+.af-campus-site .af-campus-inspiration-listing .af-campus-inspiration-items .af-campus-inspiration-item a .af-campus-inspiration-item-textContent .af-campus-inspiration-item-textContent-title {
+  font-size: 20px;
+  font-family: museo,sans-serif;
+  font-weight: 700;
+  color: #403e41;
+  display: block;
+  margin-bottom: 12px;
+  text-align: center;
 }
 
 .af-campus-site .af-startpageMessages .af-startpageMessages--list .af-startpageMessages--listItem {
