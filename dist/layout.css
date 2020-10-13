@@ -219,6 +219,20 @@
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
 /* $domain: 'https://nynashamn-ext.sitevision.se'; */
 @media screen and (max-width: 880px) {
+  .af-campus-site .sv-horizontal-column .af-logo .sv-svg,
+  .af-campus-site .sv-horizontal-column .af-logo .sv-noborder {
+    width: 100px !important;
+    height: 100px !important;
+    max-width: 100px !important;
+    max-height: 100px !important;
+    margin-bottom: 0 !important;
+  }
+  .af-campus-site .af-MobileMenu:before {
+    color: #fff;
+  }
+  .af-campus-site .af-MobileMenu .sv-font-toppmeny {
+    color: #fff;
+  }
   .af-campus-site .af-startpage-listing .af-startpage-listing-items .af-startpage-listing-item {
     width: 100% !important;
   }
@@ -226,7 +240,101 @@
     padding-top: 56.25% !important;
   }
   .af-campus-site .af-startpageMessages .af-startpageMessages--list .af-startpageMessages--listItem {
-    width: 90% !important;
+    display: block !important;
+    width: unset !important;
+  }
+  .af-campus-site .af-theStartPage .af-startpageBigImage {
+    height: 545px !important;
+    background-image: url("/images/18.51ec72a6175022eb0cb7a1a/1602492208688/Toppbild-Sta%E2%95%A0%C3%A8ende_2C1A6873.jpg") !important;
+  }
+  .af-campus-site .af-theStartPage .af-startpageBigImage .sv-font-toppmeny-aktiv {
+    font-size: 25px !important;
+    padding: 0 30px;
+  }
+  .af-campus-site .af-theStartPage .af-startpageBigImage > .sv-text-portlet {
+    padding-top: 200px !important;
+    padding-bottom: 0 !important;
+  }
+  .af-campus-site .af-theStartPage .af-startpageBigImage .af-pageWidth {
+    flex-direction: column;
+  }
+  .af-campus-site .af-theStartPage .af-startpageBigImage .af-pageWidth .sv-decoration-orange-knapp-campus {
+    margin: 20px auto 0 auto !important;
+    width: 156px !important;
+  }
+  .af-campus-site .af-theStartPage .af-startpageBigImage .af-pageWidth .sv-decoration-orange-knapp-campus p {
+    margin: 0 !important;
+  }
+  .af-campus-site header {
+    margin-bottom: 0 !important;
+  }
+  .af-campus-site header .af-mobile-width100 {
+    background-color: #000;
+  }
+  .af-campus-site header .af-mobile-width100 > .sv-horizontal-column {
+    height: 100px;
+  }
+  .af-campus-site header .af-mobile-width100 > div {
+    justify-content: unset;
+    padding: 0;
+    position: relative;
+  }
+  .af-campus-site header .af-mobile-width100 > div > div {
+    width: 50%;
+  }
+  .af-campus-site header .af-mobile-width100 > div .af-logo {
+    width: 50%;
+  }
+  .af-campus-site header .af-mobile-width100 > div .af-desktopNone {
+    width: 50%;
+    text-align: right;
+    margin-right: 25px;
+    margin-top: 25px;
+  }
+  .af-campus-site header .af-toolsMenyHeader {
+    padding: 20px !important;
+  }
+  .af-campus-site header .af-toolsMenyHeader .af-searchIcon.af-center {
+    padding-right: 0;
+    background-size: 0;
+    background-position: center;
+    margin: 0;
+  }
+  .af-campus-site header .af-toolsMenyHeader .af-searchIcon.af-center:after {
+    display: none;
+  }
+  .af-campus-site header .af-toolsMenyHeader:first-of-type {
+    background-color: #000;
+  }
+  .af-campus-site .sv-decoration-orange-knapp-campus {
+    display: block;
+    margin: 0 30px;
+  }
+  .af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item {
+    width: 100% !important;
+  }
+  .af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item a {
+    display: block;
+    border: 5px solid #fff;
+    background-color: #EDEBEA;
+    text-decoration: none;
+    height: 100%;
+  }
+  .af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item .af-campus-schools-item-applyLink {
+    position: relative;
+  }
+  .af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item .af-campus-schools-item-applyLink .sv-decoration-orange-knapp-campus {
+    font-size: 15px;
+    width: 75px !important;
+  }
+  .af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item .af-campus-schools-item-textContent {
+    padding: 25px 25px 100px 25px;
+  }
+  .af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item .af-campus-schools-item-textContent .af-campus-schools-item-textContent-title {
+    font-size: 18px;
+  }
+  .af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item .af-campus-schools-item-textContent .af-campus-schools-item-textContent-desc {
+    display: none;
   }
 }
 
@@ -238,6 +346,15 @@
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
 /* $domain: 'https://nynashamn-ext.sitevision.se'; */
+.af-campus-site .af-logo .sv-svg,
+.af-campus-site .af-logo .sv-noborder {
+  width: 130px !important;
+  height: 130px !important;
+  max-width: 130px !important;
+  max-height: 130px !important;
+  margin-bottom: 0 !important;
+}
+
 .af-campus-site .af-theStartPage .af-startpageBigImage {
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -271,6 +388,10 @@
 
 .af-campus-site .af-toolsMenyHeader * {
   color: #C2C2C2 !important;
+}
+
+.af-campus-site .af-toolsMenyHeader .af-searchIcon.af-center:after {
+  display: none;
 }
 
 .af-campus-site .af-subMenu a {
@@ -359,6 +480,84 @@
 
 .af-campus-site .sv-decoration-lank-till-kommun-webb-campus .sv-decoration-generell-bla-knapp--external:after {
   display: none;
+}
+
+.af-campus-site .af-campus-schools .af-campus-schools-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+
+.af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item a {
+  display: block;
+  border: 5px solid #fff;
+  background-color: #EDEBEA;
+  text-decoration: none;
+  height: 100%;
+}
+
+.af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item .af-campus-schools-item-applyLink {
+  position: relative;
+}
+
+.af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item .af-campus-schools-item-applyLink .sv-decoration-orange-knapp-campus {
+  border: none;
+  top: -85px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  background-color: #E97C1D;
+  line-height: 0;
+  color: #fff;
+  padding: 25px 35px;
+}
+
+.af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item .af-campus-schools-item-img {
+  padding-top: 56.25%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item .af-campus-schools-item-textContent {
+  padding: 25px 25px 100px 25px;
+}
+
+.af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item .af-campus-schools-item-textContent .af-campus-schools-item-textContent-title {
+  font-size: 20px;
+  font-family: museo,sans-serif;
+  font-weight: 700;
+  color: #403E41;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item .af-campus-schools-item-textContent .af-campus-schools-item-textContent-desc {
+  font-size: 20px;
+  font-family: museo,sans-serif;
+  font-weight: 300;
+  color: #403E41;
+  display: block;
+}
+
+.af-campus-site .af-related-information .sv-font-stor-svar {
+  background-color: #2D2D2D;
+}
+
+.af-campus-site .sv-related-portlet .sv-font-stor-svart {
+  background-color: #2D2D2D;
+}
+
+.af-campus-site .af-contactModule .sv-font-stor-svart {
+  background-color: #2D2D2D;
 }
 
 .sv-decoration-orange-knapp-campus {

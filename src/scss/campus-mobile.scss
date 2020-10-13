@@ -4,6 +4,32 @@
 
     .af-campus-site {
 
+        & .sv-horizontal-column {
+
+            & .af-logo {
+
+                & .sv-svg,
+                & .sv-noborder {
+                    width: 100px !important;
+                    height: 100px !important;
+                    max-width: 100px !important;
+                    max-height: 100px !important; 
+                    margin-bottom: 0 !important;             
+                }
+            }
+        }
+
+        & .af-MobileMenu {
+
+            &:before {
+                color: #fff;
+            }
+
+            & .sv-font-toppmeny {
+                color: #fff;
+            }
+        }
+
         & .af-startpage-listing {
 
             & .af-startpage-listing-items {
@@ -23,10 +49,139 @@
             & .af-startpageMessages--list {
     
                 & .af-startpageMessages--listItem {
-                    width: 90% !important;
+                    display: block !important;
+                    width: unset !important;
                 }
             }
         }
+
+        & .af-theStartPage {
+
+            & .af-startpageBigImage {
+                height: 545px !important;
+                background-image: url('/images/18.51ec72a6175022eb0cb7a1a/1602492208688/Toppbild-Sta%E2%95%A0%C3%A8ende_2C1A6873.jpg') !important;
+
+                & .sv-font-toppmeny-aktiv {
+                    font-size: 25px !important;
+                    padding: 0 30px;
+                }
+
+                & > .sv-text-portlet {
+                    padding-top: 200px !important;
+                    padding-bottom: 0 !important;
+                }
+
+                & .af-pageWidth {
+                    flex-direction: column;
+
+                    .sv-decoration-orange-knapp-campus {
+                        margin: 20px auto 0 auto !important;
+                        width: 156px !important;
+
+                        & p {
+                            margin: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        & header {
+            margin-bottom: 0 !important;
+
+            & .af-mobile-width100 {
+                background-color: #000;
+
+                & > .sv-horizontal-column {
+                    height: 100px;
+                }
+
+                & > div {
+                    justify-content: unset;
+                    padding: 0;
+                    position: relative;
+
+                    & > div {
+                        width: 50%;
+                    }
+
+                    & .af-logo {
+                        width: 50%;
+                    }
+
+                    & .af-desktopNone {
+                        width: 50%;
+                        text-align: right;
+                        margin-right: 25px;
+                        margin-top: 25px;
+                    }
+                }
+            }
+
+            & .af-toolsMenyHeader {
+                padding: 20px !important;
+
+                & .af-searchIcon.af-center {
+                    padding-right: 0;
+                    background-size: 0;
+                    background-position: center;
+                    margin: 0;
+                }
+
+                & .af-searchIcon.af-center:after {
+                    display: none;
+                }
+            } 
+
+            & .af-toolsMenyHeader:first-of-type {
+                background-color: #000;
+            }
+        }
+
+        & .sv-decoration-orange-knapp-campus {
+            display: block;
+            margin: 0 30px;
+        }
+
+        & .af-campus-schools {
+
+            & .af-campus-schools-items {
+    
+                & .af-campus-schools-item {
+                    width: 100% !important;
+    
+                    & a {
+                        display: block;
+                        border: 5px solid $white-color;
+                        background-color: $campus-grey;
+                        text-decoration: none;
+                        height: 100%;
+                    }
+    
+                    & .af-campus-schools-item-applyLink {
+                        position: relative;
+    
+                        & .sv-decoration-orange-knapp-campus {
+                            font-size: 15px;
+                            width: 75px !important;
+                        }
+                    }
+    
+                    & .af-campus-schools-item-textContent {
+                        padding: 25px 25px 100px 25px;
+    
+                        & .af-campus-schools-item-textContent-title {
+                            font-size: 18px;
+                        }
+    
+                        & .af-campus-schools-item-textContent-desc {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }
 

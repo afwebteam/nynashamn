@@ -2,6 +2,18 @@
 
 .af-campus-site { 
 
+    & .af-logo {
+
+        & .sv-svg,
+        & .sv-noborder {
+            width: 130px !important;
+            height: 130px !important;
+            max-width: 130px !important;
+            max-height: 130px !important; 
+            margin-bottom: 0 !important;             
+        }
+    }
+
     & .af-theStartPage {
 
         & .af-startpageBigImage {
@@ -41,6 +53,10 @@
 
         & * {
             color: $campus-light !important;
+        }
+
+        & .af-searchIcon.af-center:after {
+            display: none;
         }
     }
 
@@ -145,6 +161,96 @@
             &:after {
                 display: none;
             }
+        }
+    }
+
+    & .af-campus-schools {
+
+        & .af-campus-schools-items {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -5px;
+
+            & .af-campus-schools-item {
+                width: 50%;
+                margin-bottom: 10px;
+
+                & a {
+                    display: block;
+                    border: 5px solid $white-color;
+                    background-color: $campus-grey;
+                    text-decoration: none;
+                    height: 100%;
+                }
+
+                & .af-campus-schools-item-applyLink {
+                    position: relative;
+
+                    & .sv-decoration-orange-knapp-campus {
+                        border: none;
+                        top: -85px;
+                        position: absolute; 
+                        left: 0; 
+                        right: 0; 
+                        margin-left: auto; 
+                        margin-right: auto; 
+                        width: 100px;
+                        background-color: $campus-orange;
+                        line-height: 0;
+                        color: $white-color;
+                        padding: 25px 35px;
+                    }
+                }
+
+                & .af-campus-schools-item-img {
+                    padding-top: 56.25%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                & .af-campus-schools-item-textContent {
+                    padding: 25px 25px 100px 25px;
+
+                    & .af-campus-schools-item-textContent-title {
+                        font-size: 20px;
+                        font-family: museo,sans-serif;
+                        font-weight: 700;
+                        color: $nynas-darkgrey-color;
+                        display: block;
+                        margin-bottom: 12px;
+                    }
+
+                    & .af-campus-schools-item-textContent-desc {
+                        font-size: 20px;
+                        font-family: museo,sans-serif;
+                        font-weight: 300;
+                        color: $nynas-darkgrey-color;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    & .af-related-information {
+
+        & .sv-font-stor-svar {
+            background-color: $campus-superdarkgrey;
+        }
+    }
+
+    & .sv-related-portlet {
+
+        & .sv-font-stor-svart {
+            background-color: $campus-superdarkgrey;
+        }
+    }
+
+    & .af-contactModule {
+
+        & .sv-font-stor-svart {
+            background-color: $campus-superdarkgrey;
         }
     }
 }

@@ -218,6 +218,41 @@ svDocReady(function () {
     AF.setIsMobileView(mql.matches);
     mql.addListener(mediaQueryChecker);
 
+    jq('.af-campus-site .af-toolsMenyHeader .af-searchIcon.af-center').on('click', function(e){
+        var target = jq(e.target),
+            field = jq('.sv-searchform-portlet .af-textInputField'),
+            form = field.closest('form'),
+            hiddenSearchForm,
+            hiddenSearchFormField;
+
+        e.preventDefault();
+        target.toggleClass('active');
+
+        if (field && field.length > 0) {
+            if (AF.isMobileView()) {
+                hiddenSearchForm = jq('.af-hiddenSearchForm');
+                hiddenSearchFormField = hiddenSearchForm.find('input[name="query"]');
+                hiddenSearchForm.slideToggle();
+                hiddenSearchFormField.focus();
+            } else {
+
+                form.addClass('af-upscale');
+                setTimeout(function () {
+                    form.removeClass('af-upscale');
+                }, 200);
+
+                field.focus();
+            }
+
+        } else {
+            hiddenSearchForm = jq('.af-hiddenSearchForm');
+            hiddenSearchFormField = hiddenSearchForm.find('input[name="query"]');
+            hiddenSearchForm.slideToggle();
+            hiddenSearchFormField.focus();
+
+        }
+    });
+
     jq('.sv-text-portlet.af-searchIcon').on('click', function (e) {
 
         var target = jq(e.target),
