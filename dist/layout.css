@@ -308,7 +308,11 @@
   }
   .af-campus-site .sv-decoration-orange-knapp-campus {
     display: block;
-    margin: 0 30px;
+    margin: 20px 30px;
+  }
+  .af-campus-site .sv-decoration-gra-knapp-campus {
+    display: block;
+    margin: 20px 30px;
   }
   .af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item {
     width: 100% !important;
@@ -336,6 +340,21 @@
   .af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item .af-campus-schools-item-textContent .af-campus-schools-item-textContent-desc {
     display: none;
   }
+  .af-campus-site .af-campus-inspiration-listing .af-campus-inspiration-items .af-campus-inspiration-item {
+    width: 100% !important;
+  }
+  .af-campus-site .af-campus-inspiration-listing .af-campus-inspiration-items .af-campus-inspiration-item a .af-campus-inspiration-item-textContent {
+    padding: 20px 20px 10px 20px !important;
+  }
+  .af-campus-site .af-campus-inspiration-listing .af-campus-inspiration-items .af-campus-inspiration-item a .af-campus-inspiration-item-textContent .af-campus-inspiration-item-textContent-title {
+    font-size: 18px !important;
+  }
+  .af-campus-site .ai-buttonHolderGreyAndOrange-campus {
+    flex-direction: column;
+  }
+  .af-campus-site .ai-buttonHolderGreyAndOrange-campus .sv-decoration-orange-knapp-campus + .sv-decoration-gra-knapp-campus {
+    margin: 0 30px 20px 30px;
+  }
 }
 
 @media screen and (max-width: 590px) {
@@ -355,7 +374,10 @@
   margin-bottom: 0 !important;
 }
 
-af-startpage-listing
+.af-campus-site .sv-decoration-generell-faktaruta .subheading3-utan-dragspel {
+  background-color: #2D2D2D;
+}
+
 .af-campus-site .af-theStartPage .af-startpageBigImage {
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -363,19 +385,16 @@ af-startpage-listing
   height: 580px;
 }
 
-af-startpage-listing
 .af-campus-site .af-theStartPage .af-startpageBigImage .af-pageWidth {
   display: flex;
   justify-content: space-between;
 }
 
-af-startpage-listing
 .af-campus-site .af-theStartPage .af-startpageBigImage .af-pageWidth .sv-decoration-orange-knapp-campus {
   width: 210px;
   text-align: center;
 }
 
-af-startpage-listing
 .af-campus-site .af-theStartPage .af-startpageBigImage .sv-font-toppmeny-aktiv {
   font-size: 50px;
   font-family: museo,sans-serif;
@@ -400,6 +419,10 @@ af-startpage-listing
 
 .af-campus-site .af-subMenu a {
   color: #fff;
+}
+
+.af-campus-site .af-campus-inspiration-listing {
+  margin-top: 40px;
 }
 
 .af-campus-site .af-campus-inspiration-listing .af-campus-inspiration-items {
@@ -604,11 +627,37 @@ af-startpage-listing
   background-color: #2D2D2D;
 }
 
+.af-campus-site .ai-buttonHolderGreyAndOrange-campus {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sv-decoration-gra-knapp-campus {
+  padding: 15px 25px;
+  background-color: #EDEBEA;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.sv-decoration-gra-knapp-campus p.normal {
+  margin: 0 !important;
+  color: #403E41;
+}
+
+.sv-decoration-gra-knapp-campus a {
+  color: #403E41;
+  text-decoration: none !important;
+}
+
 .sv-decoration-orange-knapp-campus {
   padding: 15px 25px;
   background-color: #E97C1D;
   border-radius: 6px;
   display: inline-block;
+  margin: 20px 0;
+  text-align: center;
 }
 
 .sv-decoration-orange-knapp-campus p.normal {

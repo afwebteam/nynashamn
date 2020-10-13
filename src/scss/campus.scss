@@ -14,7 +14,12 @@
         }
     }
 
-    af-startpage-listing
+    & .sv-decoration-generell-faktaruta {
+
+        & .subheading3-utan-dragspel {
+            background-color: $campus-superdarkgrey;
+        }
+    }
 
     & .af-theStartPage {
 
@@ -70,6 +75,7 @@
     }
 
     & .af-campus-inspiration-listing {
+        margin-top: 40px;
 
         & .af-campus-inspiration-items {
             display: flex;
@@ -298,6 +304,30 @@
             background-color: $campus-superdarkgrey;
         }
     }
+
+    & .ai-buttonHolderGreyAndOrange-campus {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.sv-decoration-gra-knapp-campus {
+    padding: 15px 25px;
+    background-color: $campus-grey;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 20px 0;
+    text-align: center;
+
+    & p.normal {
+        margin: 0 !important;
+        color: $nynas-darkgrey-color;
+    }
+
+    & a {
+        color: $nynas-darkgrey-color;
+        text-decoration: none !important;
+    }
 }
 
 .sv-decoration-orange-knapp-campus {
@@ -305,6 +335,8 @@
     background-color: $campus-orange;
     border-radius: 6px;
     display: inline-block;
+    margin: 20px 0;
+    text-align: center;
 
     & p.normal {
         margin: 0 !important;

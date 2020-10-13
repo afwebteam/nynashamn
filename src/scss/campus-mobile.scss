@@ -140,7 +140,12 @@
 
         & .sv-decoration-orange-knapp-campus {
             display: block;
-            margin: 0 30px;
+            margin: 20px 30px;
+        }
+
+        & .sv-decoration-gra-knapp-campus {
+            display: block;
+            margin: 20px 30px;
         }
 
         & .af-campus-schools {
@@ -179,6 +184,35 @@
                         }
                     }
                 }
+            }
+        }
+
+        & .af-campus-inspiration-listing {
+    
+            & .af-campus-inspiration-items {
+    
+                & .af-campus-inspiration-item {
+                    width: 100% !important;
+    
+                    & a {
+    
+                        & .af-campus-inspiration-item-textContent {
+                            padding: 20px 20px 10px 20px !important;
+    
+                            & .af-campus-inspiration-item-textContent-title {
+                                font-size: 18px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & .ai-buttonHolderGreyAndOrange-campus {
+            flex-direction: column;
+
+            .sv-decoration-orange-knapp-campus + .sv-decoration-gra-knapp-campus {
+                margin: 0 30px 20px 30px;
             }
         }
         
