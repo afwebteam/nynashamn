@@ -349,6 +349,26 @@
     }
 }
 
+.af-campusStudyIcon {
+    background-image: url($campusLogoIcon);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.af-starIcon {
+    background-image: url($startIcon);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 39px;
+}
+
+@media screen and (max-width: 880px) {
+
+    .af-starIcon {
+        background-size: 26px;
+    }
+}
+
 
 @media screen and (max-width: 1190px) {
     .af-campus-site {
