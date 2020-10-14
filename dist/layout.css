@@ -355,6 +355,27 @@
   .af-campus-site .ai-buttonHolderGreyAndOrange-campus .sv-decoration-orange-knapp-campus + .sv-decoration-gra-knapp-campus {
     margin: 0 30px 20px 30px;
   }
+  .af-campus-site .af-campus-hero {
+    border-top: 5px solid #E97C1D;
+    border-bottom: 5px solid #E97C1D !important;
+  }
+  .af-campus-site .af-campus-hero .af-campus-hero-textContent {
+    display: none;
+  }
+  .af-campus-site .af-MobileMenu:before {
+    background-image: url("/images/18.14995aea175214466cf1eec/1602700757904/meny-vit.svg");
+    height: 16px;
+  }
+  .af-campus-site .af-MobileMenu.af-MobileMenu--active {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .af-campus-site .af-mobileMainMenu {
+    background-color: #000;
+  }
+  .af-campus-site .af-mobileMainMenu .af-mobileMainMenu--item {
+    background-color: #000;
+  }
 }
 
 @media screen and (max-width: 590px) {
@@ -419,6 +440,10 @@
 
 .af-campus-site .af-subMenu a {
   color: #fff;
+}
+
+.af-campus-site .af-subMenu a.af-activeMenuItem {
+  border-bottom: 3px solid #E97C1D;
 }
 
 .af-campus-site .af-campus-inspiration-listing {
@@ -630,6 +655,58 @@
 .af-campus-site .ai-buttonHolderGreyAndOrange-campus {
   display: flex;
   justify-content: space-between;
+}
+
+.af-campus-site .af-campus-hero {
+  position: relative;
+  border-bottom: 10px solid #E97C1D;
+}
+
+.af-campus-site .af-campus-hero .af-campus-hero-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 290px;
+}
+
+.af-campus-site .af-campus-hero .af-campus-hero-textContent {
+  position: absolute;
+  top: 100px;
+  width: 850px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.af-campus-site .af-campus-hero .af-campus-hero-textContent .af-campus-hero-textContent-title {
+  max-width: 350px;
+  display: block;
+  color: #fff;
+  font-size: 25px;
+}
+
+.af-campus-site .af-hiddenSearchForm {
+  background-color: #000;
+}
+
+.af-campus-site .af-hiddenSearchForm .sv-searchform-portlet form input[name=query] {
+  height: 42px;
+}
+
+.af-campus-site .af-hiddenSearchForm .sv-searchform-portlet form .af-searchButton.af-searchIcon {
+  background-color: #E97C1D;
+  height: 37px;
+  width: 38px;
+}
+
+.af-campus-site .af-hiddenSearchForm .sv-searchform-portlet form .af-searchButton.af-searchIcon:after {
+  background-image: url("/images/18.5eb95a9b1722c1f961012242/1590480111317/sok-vit.svg");
+  background-size: 22px;
+}
+
+.af-campus-site .af-breadcrumb .divider {
+  color: #E97C1D;
 }
 
 .sv-decoration-gra-knapp-campus {

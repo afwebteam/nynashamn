@@ -72,6 +72,10 @@
         & a {
             color: $white-color;
         }
+
+        & a.af-activeMenuItem {
+            border-bottom: 3px solid $campus-orange;
+        }
     }
 
     & .af-campus-inspiration-listing {
@@ -308,6 +312,67 @@
     & .ai-buttonHolderGreyAndOrange-campus {
         display: flex;
         justify-content: space-between;
+    }
+
+    & .af-campus-hero {
+        position: relative;
+        border-bottom: 10px solid $campus-orange;
+
+        & .af-campus-hero-img {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 290px;
+        }
+
+        & .af-campus-hero-textContent {
+            position: absolute;
+            top: 100px;
+            width: 850px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+
+            & .af-campus-hero-textContent-title {
+                max-width: 350px;
+                display: block;
+                color: $white-color;
+                font-size: 25px;
+            }
+        }
+    }
+
+    & .af-hiddenSearchForm {
+        background-color: $campus-black;
+
+        & .sv-searchform-portlet {
+
+            & form {
+
+                & input[name=query] {
+                    height: 42px;
+                }
+
+                & .af-searchButton.af-searchIcon {
+                    background-color: $campus-orange;
+                    height: 37px;
+                    width: 38px;
+    
+                    &:after {
+                        background-image: url($searchIconWhite);
+                        background-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+    .af-breadcrumb {
+
+        & .divider {
+            color: $campus-orange;
+        }
     }
 }
 

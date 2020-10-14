@@ -215,6 +215,35 @@
                 margin: 0 30px 20px 30px;
             }
         }
+
+        & .af-campus-hero {
+            border-top: 5px solid $campus-orange;
+            border-bottom: 5px solid $campus-orange !important;
+    
+            & .af-campus-hero-textContent {
+                display: none;
+            }
+        }
+
+        & .af-MobileMenu {
+            &:before {
+                background-image: url($whiteHamburgerIcon);
+                height: 16px;
+            }
+
+            &.af-MobileMenu--active {
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+        }
+
+        & .af-mobileMainMenu {
+            background-color: $campus-black;
+
+            & .af-mobileMainMenu--item {
+                background-color: $campus-black;
+            }
+        }
         
     }
 }
