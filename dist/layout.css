@@ -3138,6 +3138,22 @@ div[role=search] {
   margin-bottom: 10px;
 }
 
+.ai-accesskeys-links {
+  display: none;
+}
+
+.ai-accesskeys-links:focus {
+  display: inline-block;
+  top: 30px;
+  position: absolute;
+}
+
+.ai-accesskeys-links:active {
+  display: inline-block;
+  top: 30px;
+  position: absolute;
+}
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .af-wave--shape,
   .af-wave-grey--shape {
@@ -5822,7 +5838,7 @@ header.af-pagewidth-1366px {
     cursor: pointer;
   }
   .af-importantMessage.af-smallMessage .af-importantMessage--wrapper {
-    padding: 40px 20px;
+    padding: 25px 20px;
     display: flex;
   }
   .af-importantMessage.af-smallMessage .af-importantMessage--content {

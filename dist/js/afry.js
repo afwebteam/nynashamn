@@ -27,6 +27,49 @@ svDocReady(function () {
         jq('.af-homeCare-row--filter-services').hide();
     };
 
+    AF.addTabIndexToElem = function(anElem){
+        var attr, elem;
+
+        if (anElem instanceof jQuery){
+            elem = anElem;
+        } else {
+            elem = jq(anElem);
+        }
+
+        if (!elem || !elem.length || elem.length === 0) {
+            return;
+        } 
+
+        attr = elem.attr('tabindex');
+        if (typeof attr !== typeof undefined && attr !== false) {
+
+        } else {
+            elem.prop('tabindex', '0');
+        }
+    };
+
+    AF.addTitleAttributeToElem = function(anElem, anText){
+        var attr, elem;
+
+        if (anElem instanceof jQuery){
+            elem = anElem;
+        } else {
+            elem = jq(anElem);    
+        }
+
+        if (!elem || !elem.length || elem.length === 0) {
+            return;
+        } 
+
+        attr = elem.attr('title');
+
+        if (typeof attr !== typeof undefined && attr !== false) {
+
+        } else {
+            elem.attr('title', anText);
+        }
+    };
+
     // For making inline-block elements appears as blocks
     AF.wrapElement = function(anElement){
         var localElem = jq(anElement);
@@ -2215,4 +2258,12 @@ svDocReady(function () {
     AF.hideElemsAfterLoad();
     AF.removeAttribute('.sv-searchform-portlet .af-textInputField', 'aria-expanded');
     AF.wrapElement('.sv-decoration-bla-knapp-pdf');
+
+    setTimeout(function(){
+        AF.addTitleAttributeToElem('#af-detailMap iframe', 'Karta');
+    }, 1000);
+
+    AF.addTabIndexToElem('.sv-decoration-generell-dragspel h2');
+    AF.addTabIndexToElem('.sv-decoration-generell-dragspel .af-accordionText');
+    AF.addTabIndexToElem('h1');
 });

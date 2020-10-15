@@ -899,3 +899,18 @@
         }
     }
 }
+
+.ai-accesskeys-links {
+    display: none;
+
+    &:focus {
+        display: inline-block;
+        top: 30px;
+        position: absolute;
+    }
+    &:active {
+        display: inline-block;
+        top: 30px;
+        position: absolute;
+    }
+}
