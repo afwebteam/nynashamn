@@ -317,12 +317,21 @@
     & .af-campus-hero {
         position: relative;
         border-bottom: 10px solid $campus-orange;
+        background-color: #000;
+
+        & .af-campus-hero-wrapper {
+            max-width: 850px;
+            margin: 0 auto;
+        }
 
         & .af-campus-hero-img {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             height: 290px;
+            max-width: 500px;
+            margin-right: 0;
+            margin-left: auto;
         }
 
         & .af-campus-hero-textContent {

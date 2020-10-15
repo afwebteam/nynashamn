@@ -219,6 +219,10 @@
         & .af-campus-hero {
             border-top: 5px solid $campus-orange;
             border-bottom: 5px solid $campus-orange !important;
+
+            & .af-campus-hero-img {
+                max-width: 100% !important;
+            }
     
             & .af-campus-hero-textContent {
                 display: none;

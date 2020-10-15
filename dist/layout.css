@@ -359,6 +359,9 @@
     border-top: 5px solid #E97C1D;
     border-bottom: 5px solid #E97C1D !important;
   }
+  .af-campus-site .af-campus-hero .af-campus-hero-img {
+    max-width: 100% !important;
+  }
   .af-campus-site .af-campus-hero .af-campus-hero-textContent {
     display: none;
   }
@@ -660,6 +663,12 @@
 .af-campus-site .af-campus-hero {
   position: relative;
   border-bottom: 10px solid #E97C1D;
+  background-color: #000;
+}
+
+.af-campus-site .af-campus-hero .af-campus-hero-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
 }
 
 .af-campus-site .af-campus-hero .af-campus-hero-img {
@@ -667,6 +676,9 @@
   background-position: center;
   background-size: cover;
   height: 290px;
+  max-width: 500px;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .af-campus-site .af-campus-hero .af-campus-hero-textContent {
