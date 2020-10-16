@@ -901,16 +901,27 @@
 }
 
 .ai-accesskeys-links {
-    display: none;
+    border: 0;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    width: 1px;
 
     &:focus {
-        display: inline-block;
         top: 30px;
-        position: absolute;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        background-color: #cecece;
     }
     &:active {
-        display: inline-block;
         top: 30px;
-        position: absolute;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        background-color: #cecece;
     }
 }

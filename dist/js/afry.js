@@ -417,7 +417,7 @@ svDocReady(function () {
                     item = jq(elem),
                     span = jq('<span/>', {
                         class: 'af-accordionText',
-                        text: 'Visa'
+                        text: ' Visa'
                     });
 
                 item.attr('aria-expanded', false);
@@ -447,12 +447,12 @@ svDocReady(function () {
                         item.attr('aria-expanded', false);
                         content.slideUp();
                         item.removeClass('af-open');
-                        text.text('Visa');
+                        text.text(' Visa');
                     } else {
                         item.attr('aria-expanded', true);
                         item.addClass('af-open');
                         content.slideDown();
-                        text.text('Dölj');
+                        text.text(' Dölj');
                     }
 
                 });
@@ -466,7 +466,7 @@ svDocReady(function () {
                         item = jq(e),
                         span = jq('<span/>', {
                             class: 'af-accordionText',
-                            text: 'Visa'
+                            text: ' Visa'
                         }),
                         h3Siblings = item.nextUntil('h3.subheading3');
 
@@ -497,12 +497,12 @@ svDocReady(function () {
                             item.attr('aria-expanded', false);
                             content.slideUp();
                             item.removeClass('af-open');
-                            text.text('Visa');
+                            text.text(' Visa');
                         } else {
                             item.attr('aria-expanded', true);
                             item.addClass('af-open');
                             content.slideDown();
-                            text.text('Dölj');
+                            text.text(' Dölj');
                         }
 
                     });

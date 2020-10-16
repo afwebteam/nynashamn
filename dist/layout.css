@@ -623,7 +623,7 @@
 }
 
 .af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item .af-campus-schools-item-textContent {
-  padding: 25px 25px 100px 25px;
+  padding: 25px;
 }
 
 .af-campus-site .af-campus-schools .af-campus-schools-items .af-campus-schools-item .af-campus-schools-item-textContent .af-campus-schools-item-textContent-title {
@@ -667,7 +667,7 @@
 }
 
 .af-campus-site .af-campus-hero .af-campus-hero-wrapper {
-  max-width: 850px;
+  max-width: 1800px;
   margin: 0 auto;
 }
 
@@ -676,9 +676,6 @@
   background-position: center;
   background-size: cover;
   height: 290px;
-  max-width: 500px;
-  margin-right: 0;
-  margin-left: auto;
 }
 
 .af-campus-site .af-campus-hero .af-campus-hero-textContent {
@@ -751,11 +748,11 @@
 
 .sv-decoration-orange-knapp-campus p.normal {
   margin: 0 !important;
-  color: #fff;
+  color: #000;
 }
 
 .sv-decoration-orange-knapp-campus a {
-  color: #fff;
+  color: #000;
   text-decoration: none !important;
 }
 
@@ -3139,19 +3136,30 @@ div[role=search] {
 }
 
 .ai-accesskeys-links {
-  display: none;
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 1px;
 }
 
 .ai-accesskeys-links:focus {
-  display: inline-block;
   top: 30px;
-  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: #cecece;
 }
 
 .ai-accesskeys-links:active {
-  display: inline-block;
   top: 30px;
-  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: #cecece;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {

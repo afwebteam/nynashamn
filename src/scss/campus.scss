@@ -265,7 +265,7 @@
                 }
 
                 & .af-campus-schools-item-textContent {
-                    padding: 25px 25px 100px 25px;
+                    padding: 25px;
 
                     & .af-campus-schools-item-textContent-title {
                         font-size: 20px;
@@ -320,7 +320,7 @@
         background-color: #000;
 
         & .af-campus-hero-wrapper {
-            max-width: 850px;
+            max-width: 1800px;
             margin: 0 auto;
         }
 
@@ -329,9 +329,6 @@
             background-position: center;
             background-size: cover;
             height: 290px;
-            max-width: 500px;
-            margin-right: 0;
-            margin-left: auto;
         }
 
         & .af-campus-hero-textContent {
@@ -414,11 +411,11 @@
 
     & p.normal {
         margin: 0 !important;
-        color: $white-color;
+        color: $campus-black;
     }
 
     & a {
-        color: $white-color;
+        color: $campus-black;
         text-decoration: none !important;
     }
 }
