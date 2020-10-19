@@ -2254,6 +2254,47 @@ svDocReady(function () {
         updateFilterItems('.af-homeCare-homeCares', '.af-homeCare-homeCare:visible', '.af-homeCare-result .af-homeCare-result-width p.normal');
     });
 
+    jq('.af-campus-educations-type a').on('click', function (e) {
+
+        var target = jq(e.target),
+            list = target.closest('ul'),
+            tagValue = target.text(),
+            portletURL = list.data('portleturl'),
+
+            choosenEducations,
+            educations = [];
+
+        e.preventDefault();
+
+        if (target.hasClass('active')) {
+            target.removeClass('active');
+        } else if (target.text() === 'Alla') {
+            jq('.af-campus-educations-type .active').removeClass('active');
+            target.addClass('active');
+        } else {
+            jq('.af-campus-educations-filter-types').find('li').first().find('a').removeClass('active');
+            target.addClass('active');
+        }
+
+        choosenEducations = jq('.af-campus-educations-type').find('.active');
+
+        jq.each(choosenEducations, function (i, e) {
+            educations.push(jq(e).text());
+        });
+
+        jq.ajax({
+            url: portletURL,
+            data: {
+                type: JSON.stringify(educations)
+            },
+            type: 'get',
+            success: function (data) {
+                jq('.af-campus-educations-items').html(data);
+            }
+
+        });
+    });
+
     AF.changeStandardSVIcons();
     AF.hideElemsAfterLoad();
     AF.removeAttribute('.sv-searchform-portlet .af-textInputField', 'aria-expanded');

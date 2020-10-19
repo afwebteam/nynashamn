@@ -380,6 +380,93 @@
             color: $campus-orange;
         }
     }
+
+    .af-campus-educations {
+        margin: -20px 0 40px 0;
+
+        & .af-campus-educations-filter {
+            background-color: $campus-grey;
+            padding: 10px 0 20px 0;
+            margin-bottom: 5px;
+
+            & .af-campus-educations-filter-header {
+                max-width: 850px;
+                margin: 0 auto;
+                font-size: 20px;
+                font-family: museo,sans-serif;
+                font-weight: 700;
+                padding-bottom: 25px;
+            }
+
+            & .af-campus-educations-filter-types {
+                max-width: 850px;
+                margin: 0 auto;
+                padding: 0;
+                list-style-type: none;
+                flex-wrap: wrap;
+                display: flex;
+
+                & .af-campus-educations-type {
+                    margin-bottom: 40px;
+
+                    & a {
+                        margin-right: 20px;
+                        margin-bottom: 20px;
+                        font-weight: 500;
+                        font-size: 15px;
+                        padding: 10px 15px;
+                        border-radius: 6px;
+                        border: 1px solid #938e90;
+                        outline: 0;    
+                        text-decoration: none;
+                        background-color: $white-color;
+                        font-family: museo;
+                        color: $nynas-darkgrey-color;
+                    }
+
+                    & a.active {
+                        background-color: $campus-orange;
+                        color: $campus-black;
+                    }
+                }
+            }
+        }
+
+        & .af-campus-educations-items {
+            max-width: 1366px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            & .af-campus-educations-item {
+                width: 33.33333%;
+                background-color: $campus-grey;
+                margin-bottom: 5px;
+
+                & a {
+                    display: flex;
+                    height: 100%;
+                    flex-direction: column;
+                    border: 5px solid #fff;
+                    text-decoration: none;
+
+                    & .af-campus-educations-item-img {
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        padding-top: 56.25%;
+                        background-position: center;
+                    }
+
+                    & .af-campus-educations-item-textContent {
+                        padding: 30px 20px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .sv-decoration-gra-knapp-campus {

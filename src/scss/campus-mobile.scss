@@ -248,6 +248,36 @@
                 background-color: $campus-black;
             }
         }
+
+        .af-campus-educations {
+    
+            & .af-campus-educations-filter {
+                padding: 10px 20px 20px 20px !important;
+            }
+    
+            & .af-campus-educations-items {
+                margin: 0 -5px !important; 
+    
+                & .af-campus-educations-item {
+                    width: 100% !important;
+    
+                    & a {
+    
+                        & .af-campus-educations-item-textContent {
+
+                            & .af-campus-educations-item-textContent-title {
+                                text-align: center;
+                                font-size: 18px !important;
+                            }
+
+                            & .af-campus-educations-item-textContent-desc {
+                                display: none !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         
     }
 }
