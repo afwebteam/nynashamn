@@ -3254,7 +3254,8 @@ div[role=search] {
   width: auto;
   height: auto;
   padding: 10px;
-  background-color: #cecece;
+  color: #fff;
+  background-color: #000;
 }
 
 .ai-accesskeys-links:active {
@@ -3262,7 +3263,8 @@ div[role=search] {
   width: auto;
   height: auto;
   padding: 10px;
-  background-color: #cecece;
+  color: #fff;
+  background-color: #000;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
