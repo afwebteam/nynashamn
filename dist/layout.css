@@ -303,6 +303,73 @@
   .af-campus-site header .af-toolsMenyHeader .af-searchIcon.af-center:after {
     display: none;
   }
+  .af-campus-site header .af-toolsMenyHeader .ai-googleTranslate-container-wrapper {
+    width: unset;
+    position: fixed;
+    right: 10px;
+    top: 15px;
+    left: 10px;
+  }
+  .af-campus-site header .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-header {
+    text-align: left;
+    background-color: #E97C1D;
+    padding: 10px 0;
+    position: relative;
+  }
+  .af-campus-site header .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-header h2 {
+    font-family: museo;
+    font-weight: 700;
+    font-size: 19px;
+    margin: 0;
+    color: #000 !important;
+  }
+  .af-campus-site header .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-header h2:before {
+    content: '';
+    display: inline-block;
+    background-image: url("/images/18.72401a4217531a60b6cc0b5/1603177205532/Translate_svart.svg");
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 19px;
+    background-size: 17px;
+    background-position: bottom;
+    margin-left: 22px;
+    margin-right: 10px;
+  }
+  .af-campus-site header .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-header h2 span {
+    font-family: museo;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000 !important;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+  }
+  .af-campus-site header .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-header h2 span:after {
+    content: '';
+    display: inline-block;
+    background-image: url("/images/18.72401a4217531a60b6cc0b6/1603177205546/Kryss_svart.svg");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+    margin-left: 10px;
+    background-size: 16px;
+    vertical-align: bottom;
+  }
+  .af-campus-site header .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-header h2 span:hover {
+    cursor: pointer;
+  }
+  .af-campus-site header .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-body .ai-googleTranslate-container-wrapper-body-text {
+    font-size: 16px;
+    display: block;
+    width: 100%;
+  }
+  .af-campus-site header .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-body .ai-googleTranslate-container-wrapper-body-googleContent {
+    display: block;
+    position: unset;
+    text-align: center;
+    padding-top: 15px;
+  }
   .af-campus-site header .af-toolsMenyHeader:first-of-type {
     background-color: #000;
   }
@@ -451,6 +518,99 @@
 
 .af-campus-site .af-toolsMenyHeader * {
   color: #C2C2C2 !important;
+}
+
+.af-campus-site .af-toolsMenyHeader .ai-googleTranslate-container {
+  position: relative;
+  z-index: 9;
+}
+
+.af-campus-site .af-toolsMenyHeader .ai-googleTranslate-container-wrapper {
+  width: 620px;
+  position: absolute;
+  right: -10px;
+  top: 25px;
+  display: none;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.af-campus-site .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-header {
+  text-align: left;
+  background-color: #E97C1D;
+  padding: 10px 0;
+  position: relative;
+}
+
+.af-campus-site .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-header h2 {
+  font-family: museo;
+  font-weight: 700;
+  font-size: 19px;
+  margin: 0;
+  color: #000 !important;
+}
+
+.af-campus-site .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-header h2:before {
+  content: '';
+  display: inline-block;
+  background-image: url("/images/18.72401a4217531a60b6cc0b5/1603177205532/Translate_svart.svg");
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
+  background-size: 17px;
+  background-position: bottom;
+  margin-left: 22px;
+  margin-right: 10px;
+}
+
+.af-campus-site .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-header h2 span {
+  font-family: museo;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000 !important;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+
+.af-campus-site .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-header h2 span:after {
+  content: '';
+  display: inline-block;
+  background-image: url("/images/18.72401a4217531a60b6cc0b6/1603177205546/Kryss_svart.svg");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 15px;
+  margin-left: 10px;
+  background-size: 16px;
+  vertical-align: bottom;
+}
+
+.af-campus-site .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-header h2 span:hover {
+  cursor: pointer;
+}
+
+.af-campus-site .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-body {
+  background-color: #C2C2C2;
+  text-align: left;
+  padding: 25px;
+  position: relative;
+}
+
+.af-campus-site .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-body .ai-googleTranslate-container-wrapper-body-text {
+  color: #403E41 !important;
+  font-size: 16px;
+  font-family: museo;
+  font-weight: 300;
+  width: 70%;
+  display: inline-block;
+}
+
+.af-campus-site .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-body .ai-googleTranslate-container-wrapper-body-googleContent {
+  display: inline-block;
+  position: absolute;
+  right: 25px;
+  top: 30px;
 }
 
 .af-campus-site .af-toolsMenyHeader .af-searchIcon.af-center:after {

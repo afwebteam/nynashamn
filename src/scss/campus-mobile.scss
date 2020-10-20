@@ -131,6 +131,88 @@
                 & .af-searchIcon.af-center:after {
                     display: none;
                 }
+
+                & .ai-googleTranslate-container {
+                
+                    &-wrapper {
+                        width: unset;
+                        position: fixed;
+                        right: 10px;
+                        top: 15px;
+                        left: 10px;
+                
+                        &-header {
+                            text-align: left;
+                            background-color: $campus-orange;
+                            padding: 10px 0;
+                            position: relative;
+                
+                            & h2 {
+                                font-family: museo;
+                                font-weight: 700;
+                                font-size: 19px;
+                                margin: 0;
+                                color: $campus-black !important;
+        
+                                &:before {
+                                    content: '';
+                                    display: inline-block;
+                                    background-image: url($blackTranslateIcon);
+                                    background-repeat: no-repeat;
+                                    width: 19px;
+                                    height: 19px;
+                                    background-size: 17px;
+                                    background-position: bottom;
+                                    margin-left: 22px;
+                                    margin-right: 10px;
+                                }
+                    
+                                & span {
+                                    font-family: museo;
+                                    font-weight: 500;
+                                    font-size: 15px;
+                                    color: $campus-black !important;
+                                    position: absolute;
+                                    right: 10px;
+                                    top: 12px;
+        
+                                    &:after {
+                                        content: '';
+                                        display: inline-block;
+                                        background-image: url($blackCloseIcon);
+                                        background-repeat: no-repeat;
+                                        width: 16px;
+                                        height: 16px;
+                                        margin-right: 15px;
+                                        margin-left: 10px;
+                                        background-size: 16px;
+                                        vertical-align: bottom;
+                                    }
+        
+                                    &:hover {
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+        
+                        &-body {
+
+                            & .ai-googleTranslate-container-wrapper-body-text {
+                                font-size: 16px;
+                                display: block;
+                                width: 100%;
+                            }
+        
+                            & .ai-googleTranslate-container-wrapper-body-googleContent {
+                                display: block;
+                                position: unset;
+                                text-align: center;
+                                padding-top: 15px;
+                            }
+                        }
+                    }
+                }
             } 
 
             & .af-toolsMenyHeader:first-of-type {
@@ -278,6 +360,8 @@
                 }
             }
         }
+
+
         
     }
 }

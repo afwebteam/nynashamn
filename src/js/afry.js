@@ -2295,6 +2295,43 @@ svDocReady(function () {
         });
     });
 
+    jq('.ai-googleTranslate-container').on('click', function(e){
+
+        var
+            target = jq(e.target),
+            body = target.closest('.ai-googleTranslate-container-wrapper-body'),
+            googleFrame = jq('.ai-googleTranslate-container-wrapper');
+
+        e.preventDefault();
+
+        if (body && body.length && body.length > 0) {
+           return;
+        } else if (googleFrame && googleFrame.length && googleFrame.length > 0) {
+            googleFrame.toggle();
+        }
+    });
+
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({'sv': 'en',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          autoDisplay: false}, 'ai-googleContent');
+    }
+
+    function loadGoogleTranslate() {
+        var googleTranslateScript = document.createElement('script');
+        googleTranslateScript.type = 'text/javascript';
+        googleTranslateScript.async = true;
+        googleTranslateScript.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild(googleTranslateScript);
+      }
+
+    loadGoogleTranslate();
+
+    setTimeout(function() {
+        googleTranslateElementInit();
+    }, 500);
+    
+
     AF.changeStandardSVIcons();
     AF.hideElemsAfterLoad();
     AF.removeAttribute('.sv-searchform-portlet .af-textInputField', 'aria-expanded');
