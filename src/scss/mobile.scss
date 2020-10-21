@@ -1479,6 +1479,10 @@
     
                     & span {
                         color: $white-color !important;
+
+                        &:after {
+                            background-image: url($whiteCloseIcon) !important;
+                        }
                     }
                 }
             }
@@ -1491,7 +1495,7 @@
                 &-text {
                     display: block;
                     width: 90%;
-                    padding: 25px 20px;
+                    padding: 10px 20px 25px 20px;
                 }
     
                 &-googleContent {

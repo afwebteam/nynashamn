@@ -80,6 +80,7 @@
                     background-color: $campus-orange;
                     padding: 10px 0;
                     position: relative;
+                    background-image: none !important;
         
                     & h2 {
                         font-family: museo;
@@ -135,6 +136,7 @@
                     text-align: left;
                     padding: 25px;
                     position: relative;
+                    background-image: none !important;
 
                     & .ai-googleTranslate-container-wrapper-body-text {
                         color: $nynas-darkgrey-color !important;

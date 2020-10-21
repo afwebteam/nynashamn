@@ -1128,7 +1128,7 @@ header.af-pagewidth-1366px {
             /* background-color: $nynas-darkblue-color; */
             background-image: linear-gradient(to right, $nynas-darkblue-color 65%, $nynas-comments-bg 50%, $nynas-comments-bg);
             text-align: left;
-            padding: 25px;
+            padding: 5px 25px 25px 25px;
             position: relative;
 
             &-text {
@@ -1144,7 +1144,7 @@ header.af-pagewidth-1366px {
                 display: inline-block;
                 position: absolute;
                 right: 25px;
-                top: 30px;
+                top: 13px;
             }
         }
     }

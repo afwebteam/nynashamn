@@ -347,7 +347,7 @@
   .af-campus-site header .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-header h2 span:after {
     content: '';
     display: inline-block;
-    background-image: url("/images/18.72401a4217531a60b6cc0b6/1603177205546/Kryss_svart.svg");
+    background-image: url("/images/18.72401a4217531a60b6cc0b6/1603177205546/Kryss_svart.svg") !important;
     background-repeat: no-repeat;
     width: 16px;
     height: 16px;
@@ -359,6 +359,9 @@
   .af-campus-site header .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-header h2 span:hover {
     cursor: pointer;
   }
+  .af-campus-site header .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-body {
+    padding: 15px 25px 25px 25px;
+  }
   .af-campus-site header .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-body .ai-googleTranslate-container-wrapper-body-text {
     font-size: 16px;
     display: block;
@@ -369,6 +372,7 @@
     position: unset;
     text-align: center;
     padding-top: 15px;
+    background-color: #C2C2C2;
   }
   .af-campus-site header .af-toolsMenyHeader:first-of-type {
     background-color: #000;
@@ -552,6 +556,7 @@
   background-color: #E97C1D;
   padding: 10px 0;
   position: relative;
+  background-image: none !important;
 }
 
 .af-campus-site .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-header h2 {
@@ -607,6 +612,7 @@
   text-align: left;
   padding: 25px;
   position: relative;
+  background-image: none !important;
 }
 
 .af-campus-site .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-body .ai-googleTranslate-container-wrapper-body-text {
@@ -4763,7 +4769,7 @@ header.af-pagewidth-1366px {
   /* background-color: $nynas-darkblue-color; */
   background-image: linear-gradient(to right, #002F6C 65%, #EDEBEA 50%, #EDEBEA);
   text-align: left;
-  padding: 25px;
+  padding: 5px 25px 25px 25px;
   position: relative;
 }
 
@@ -4780,7 +4786,7 @@ header.af-pagewidth-1366px {
   display: inline-block;
   position: absolute;
   right: 25px;
-  top: 30px;
+  top: 13px;
 }
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
@@ -6508,6 +6514,9 @@ header.af-pagewidth-1366px {
   .ai-googleTranslate-container-wrapper-header h2 span {
     color: #fff !important;
   }
+  .ai-googleTranslate-container-wrapper-header h2 span:after {
+    background-image: url("/images/18.72401a4217531a60b6cdf48/1603302672793/kryss_vit.svg") !important;
+  }
   .ai-googleTranslate-container-wrapper-body {
     background-color: #002F6C;
     background-image: none;
@@ -6516,7 +6525,7 @@ header.af-pagewidth-1366px {
   .ai-googleTranslate-container-wrapper-body-text {
     display: block;
     width: 90%;
-    padding: 25px 20px;
+    padding: 10px 20px 25px 20px;
   }
   .ai-googleTranslate-container-wrapper-body-googleContent {
     display: block;

@@ -179,7 +179,7 @@
                                     &:after {
                                         content: '';
                                         display: inline-block;
-                                        background-image: url($blackCloseIcon);
+                                        background-image: url($blackCloseIcon) !important;
                                         background-repeat: no-repeat;
                                         width: 16px;
                                         height: 16px;
@@ -197,6 +197,7 @@
                         }
         
                         &-body {
+                            padding: 15px 25px 25px 25px;
 
                             & .ai-googleTranslate-container-wrapper-body-text {
                                 font-size: 16px;
@@ -209,6 +210,7 @@
                                 position: unset;
                                 text-align: center;
                                 padding-top: 15px;
+                                background-color: $campus-light;
                             }
                         }
                     }
