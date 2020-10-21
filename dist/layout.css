@@ -462,6 +462,18 @@
   .af-campus-site .af-campus-educations .af-campus-educations-items .af-campus-educations-item a .af-campus-educations-item-textContent .af-campus-educations-item-textContent-desc {
     display: none !important;
   }
+  .af-campus-site .af-campus-projects-title {
+    font-size: 35px;
+  }
+  .af-campus-site .af-campus-projects-item {
+    width: 100% !important;
+  }
+  .af-campus-site .af-campus-projects-item a {
+    width: 100%;
+  }
+  .af-campus-site .af-campus-projects-item-textContent {
+    padding: 30px 20px;
+  }
 }
 
 @media screen and (max-width: 590px) {
@@ -979,6 +991,41 @@
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
+}
+
+.af-campus-site .af-campus-projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px -5px;
+}
+
+.af-campus-site .af-campus-projects-title {
+  text-align: center;
+  font-family: museo;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.af-campus-site .af-campus-projects-item {
+  width: 50%;
+}
+
+.af-campus-site .af-campus-projects-item a {
+  text-decoration: none;
+  display: block;
+  border: 5px solid #fff;
+  background-color: #EDEBEA;
+}
+
+.af-campus-site .af-campus-projects-item-img {
+  background-size: cover;
+  background-position: center;
+  padding-top: 56.25%;
+}
+
+.af-campus-site .af-campus-projects-item-textContent {
+  padding: 30px 20px;
+  background-color: #EDEBEA;
 }
 
 .sv-decoration-gra-knapp-campus {
@@ -4640,6 +4687,102 @@ header.af-pagewidth-1366px {
   padding: 0 25px;
 }
 
+.ai-googleTranslate-container {
+  position: relative;
+  z-index: 9;
+}
+
+.ai-googleTranslate-container-wrapper {
+  width: 620px;
+  position: absolute;
+  right: -10px;
+  top: 25px;
+  display: none;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.75);
+}
+
+.ai-googleTranslate-container-wrapper-header {
+  text-align: left;
+  /* background-color: $nynas-darkblue-color;*/
+  background-image: linear-gradient(to right, #002F6C 65%, #EDEBEA 50%, #EDEBEA);
+  padding: 10px 0;
+  position: relative;
+}
+
+.ai-googleTranslate-container-wrapper-header h2 {
+  font-family: museo;
+  font-weight: 700;
+  font-size: 19px;
+  margin: 0;
+  color: #fff !important;
+}
+
+.ai-googleTranslate-container-wrapper-header h2:before {
+  content: '';
+  display: inline-block;
+  background-image: url("/images/18.72401a4217531a60b6cc0b4/1603177205518/translate_vit.svg");
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
+  background-size: 17px;
+  background-position: bottom;
+  margin-left: 22px;
+  margin-right: 10px;
+}
+
+.ai-googleTranslate-container-wrapper-header h2 span {
+  font-family: museo;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000 !important;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+
+.ai-googleTranslate-container-wrapper-header h2 span:after {
+  content: '';
+  display: inline-block;
+  background-image: url("/images/18.72401a4217531a60b6cc0b6/1603177205546/Kryss_svart.svg");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 15px;
+  margin-left: 10px;
+  background-size: 16px;
+  vertical-align: bottom;
+}
+
+.ai-googleTranslate-container-wrapper-header h2 span:hover {
+  cursor: pointer;
+}
+
+.ai-googleTranslate-container-wrapper-body {
+  /* background-color: $nynas-darkblue-color; */
+  background-image: linear-gradient(to right, #002F6C 65%, #EDEBEA 50%, #EDEBEA);
+  text-align: left;
+  padding: 25px;
+  position: relative;
+}
+
+.ai-googleTranslate-container-wrapper-body-text {
+  color: #fff !important;
+  font-size: 16px;
+  font-family: museo;
+  font-weight: 300;
+  width: 70%;
+  display: inline-block;
+}
+
+.ai-googleTranslate-container-wrapper-body-googleContent {
+  display: inline-block;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+}
+
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
 /* $domain: 'https://nynashamn-ext.sitevision.se'; */
 @media screen and (min-width: 881px) and (max-width: 1060px) {
@@ -6345,6 +6488,42 @@ header.af-pagewidth-1366px {
     max-height: 55px;
     width: 150px !important;
     height: 55px !important;
+  }
+  .ai-googleTranslate-container {
+    position: relative;
+    z-index: 9;
+  }
+  .ai-googleTranslate-container-wrapper {
+    width: unset;
+    position: fixed;
+    right: 10px;
+    top: 15px;
+    left: 10px;
+    padding: 0;
+  }
+  .ai-googleTranslate-container-wrapper-header {
+    background-color: #002F6C;
+    background-image: none;
+  }
+  .ai-googleTranslate-container-wrapper-header h2 span {
+    color: #fff !important;
+  }
+  .ai-googleTranslate-container-wrapper-body {
+    background-color: #002F6C;
+    background-image: none;
+    padding: 0;
+  }
+  .ai-googleTranslate-container-wrapper-body-text {
+    display: block;
+    width: 90%;
+    padding: 25px 20px;
+  }
+  .ai-googleTranslate-container-wrapper-body-googleContent {
+    display: block;
+    position: unset;
+    text-align: center;
+    padding: 25px 20px;
+    background-color: #EDEBEA;
   }
 }
 

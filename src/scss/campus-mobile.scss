@@ -361,6 +361,25 @@
             }
         }
 
+        .af-campus-projects {
+    
+            &-title {
+                font-size: 35px;
+            }
+    
+            &-item {
+                width: 100% !important;
+    
+                & a {
+                    width: 100%;
+                }
+                
+                &-textContent {
+                    padding: 30px 20px;
+                }
+            }
+        }
+
 
         
     }

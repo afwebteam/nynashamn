@@ -561,6 +561,41 @@
         }
     }
 
+    .af-campus-projects {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px -5px;
+
+        &-title {
+            text-align: center;
+            font-family: museo;
+            font-weight: 700;
+            font-size: 35px;
+        }
+
+        &-item {
+            width: 50%;
+
+            & a {
+                text-decoration: none;
+                display: block;
+                border: 5px solid $white-color;
+                background-color: $campus-grey;
+            }
+
+            &-img {
+                background-size: cover;
+                background-position: center;
+                padding-top: 56.25%;
+            }
+            
+            &-textContent {
+                padding: 30px 20px;
+                background-color: $campus-grey;
+            }
+        }
+    }
+
 }
 
 .sv-decoration-gra-knapp-campus {

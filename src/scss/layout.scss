@@ -1051,3 +1051,101 @@ header > div:first-of-type {
 header.af-pagewidth-1366px {
     padding: 0 25px;
 }
+
+.ai-googleTranslate-container {
+    position: relative;
+    z-index: 9;
+
+    &-wrapper {
+        width: 620px;
+        position: absolute;
+        right: -10px;
+        top: 25px;
+        display: none;
+        border-radius: 6px;
+        overflow: hidden;
+        -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+
+        &-header {
+            text-align: left;
+            /* background-color: $nynas-darkblue-color;*/
+            background-image: linear-gradient(to right, $nynas-darkblue-color 65%, $nynas-comments-bg 50%, $nynas-comments-bg);
+            padding: 10px 0;
+            position: relative;
+
+            & h2 {
+                font-family: museo;
+                font-weight: 700;
+                font-size: 19px;
+                margin: 0;
+                color: $white-color !important;
+
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    background-image: url($whiteTranslateIcon);
+                    background-repeat: no-repeat;
+                    width: 19px;
+                    height: 19px;
+                    background-size: 17px;
+                    background-position: bottom;
+                    margin-left: 22px;
+                    margin-right: 10px;
+                }
+
+                & span {
+                    font-family: museo;
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: #000 !important;
+                    position: absolute;
+                    right: 10px;
+                    top: 12px;
+
+                    &:after {
+                        content: '';
+                        display: inline-block;
+                        background-image: url($blackCloseIcon);
+                        background-repeat: no-repeat;
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 15px;
+                        margin-left: 10px;
+                        background-size: 16px;
+                        vertical-align: bottom;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &-body {
+            /* background-color: $nynas-darkblue-color; */
+            background-image: linear-gradient(to right, $nynas-darkblue-color 65%, $nynas-comments-bg 50%, $nynas-comments-bg);
+            text-align: left;
+            padding: 25px;
+            position: relative;
+
+            &-text {
+                color: $white-color !important;
+                font-size: 16px;
+                font-family: museo;
+                font-weight: 300;
+                width: 70%;
+                display: inline-block;
+            }
+
+            &-googleContent {
+                display: inline-block;
+                position: absolute;
+                right: 25px;
+                top: 30px;
+            }
+        }
+    }
+}

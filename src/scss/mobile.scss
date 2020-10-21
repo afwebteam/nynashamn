@@ -1457,4 +1457,51 @@
         width: 150px !important;
         height: 55px !important;
     }
+
+
+    .ai-googleTranslate-container {
+        position: relative;
+        z-index: 9;
+    
+        &-wrapper {
+            width: unset;
+            position: fixed;
+            right: 10px;
+            top: 15px;
+            left: 10px;
+            padding: 0;
+    
+            &-header {
+                background-color: $nynas-darkblue-color;
+                background-image: none;
+                
+                & h2 {
+    
+                    & span {
+                        color: $white-color !important;
+                    }
+                }
+            }
+    
+            &-body {
+                background-color: $nynas-darkblue-color;
+                background-image: none;
+                padding: 0;
+    
+                &-text {
+                    display: block;
+                    width: 90%;
+                    padding: 25px 20px;
+                }
+    
+                &-googleContent {
+                    display: block;
+                    position: unset;
+                    text-align: center;
+                    padding: 25px 20px;
+                    background-color: $nynas-comments-bg;
+                }
+            }
+        }
+    }
 }
