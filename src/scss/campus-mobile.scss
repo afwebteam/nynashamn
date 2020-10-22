@@ -424,6 +424,28 @@
             }
         }
 
+        & .af-cookies {
+            background-color: $white-color !important;
+    
+            &--wrapper {
+    
+                & p {                    
+                    font-size: 15px !important;
+                    line-height: 24px !important;
+                }
+            }
+    
+            &--button {
+                background-color: $campus-orange !important;
+                font-size: 15px !important;
+                margin: 15px 0 0 0 !important;
+            }
+    
+            & * {
+                color: $campus-black;
+            }
+        }
+
 
         
     }

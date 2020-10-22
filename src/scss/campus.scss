@@ -636,6 +636,28 @@
         }
     }
 
+    & .af-cookies {
+        background-color: $campus-orange;
+
+        &--wrapper {
+
+            & p {
+                font-family: museo;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+
+        &--button {
+            background-color: $white-color;
+        }
+
+        & * {
+            color: $campus-black;
+        }
+    }
+
 }
 
 .sv-decoration-gra-knapp-campus {

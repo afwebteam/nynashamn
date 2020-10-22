@@ -513,6 +513,21 @@
     top: 50px;
     left: 90px;
   }
+  .af-campus-site .af-cookies {
+    background-color: #fff !important;
+  }
+  .af-campus-site .af-cookies--wrapper p {
+    font-size: 15px !important;
+    line-height: 24px !important;
+  }
+  .af-campus-site .af-cookies--button {
+    background-color: #E97C1D !important;
+    font-size: 15px !important;
+    margin: 15px 0 0 0 !important;
+  }
+  .af-campus-site .af-cookies * {
+    color: #000;
+  }
 }
 
 @media screen and (max-width: 590px) {
@@ -1105,6 +1120,25 @@
   font-weight: 700;
   font-size: 20px;
   color: #403E41;
+}
+
+.af-campus-site .af-cookies {
+  background-color: #E97C1D;
+}
+
+.af-campus-site .af-cookies--wrapper p {
+  font-family: museo;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.af-campus-site .af-cookies--button {
+  background-color: #fff;
+}
+
+.af-campus-site .af-cookies * {
+  color: #000;
 }
 
 .sv-decoration-gra-knapp-campus {
