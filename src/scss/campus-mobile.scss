@@ -382,6 +382,48 @@
             }
         }
 
+        & .ai-campus-relatedContacts {
+            margin: 40px auto 0 auto !important;
+    
+            &--items {
+                flex-direction: column;
+
+                & .ai-campus-relatedContacts--item {
+                    position: relative;
+                    padding: 20px 0;
+                    height: 40px;
+                    margin: 0 10px;
+    
+                    &-img {
+                        position: absolute;
+                        left: 20px;
+    
+                        & img {
+                            border-radius: 50%;
+                            width: 56px;
+                            height: 56px;
+                        }
+                    }
+
+                    &-name {
+                        font-size: 14px;
+                        text-align: left;
+                        position: absolute;
+                        top: 30px;
+                        left: 90px;
+                    }
+        
+                    &-title {
+                        font-size: 14px;
+                        text-align: left;
+                        position: absolute;
+                        top: 50px;  
+                        left: 90px;
+                    }
+                }
+            }
+        }
+
 
         
     }

@@ -478,6 +478,41 @@
   .af-campus-site .af-campus-projects-item-textContent {
     padding: 30px 20px;
   }
+  .af-campus-site .ai-campus-relatedContacts {
+    margin: 40px auto 0 auto !important;
+  }
+  .af-campus-site .ai-campus-relatedContacts--items {
+    flex-direction: column;
+  }
+  .af-campus-site .ai-campus-relatedContacts--items .ai-campus-relatedContacts--item {
+    position: relative;
+    padding: 20px 0;
+    height: 40px;
+    margin: 0 10px;
+  }
+  .af-campus-site .ai-campus-relatedContacts--items .ai-campus-relatedContacts--item-img {
+    position: absolute;
+    left: 20px;
+  }
+  .af-campus-site .ai-campus-relatedContacts--items .ai-campus-relatedContacts--item-img img {
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+  }
+  .af-campus-site .ai-campus-relatedContacts--items .ai-campus-relatedContacts--item-name {
+    font-size: 14px;
+    text-align: left;
+    position: absolute;
+    top: 30px;
+    left: 90px;
+  }
+  .af-campus-site .ai-campus-relatedContacts--items .ai-campus-relatedContacts--item-title {
+    font-size: 14px;
+    text-align: left;
+    position: absolute;
+    top: 50px;
+    left: 90px;
+  }
 }
 
 @media screen and (max-width: 590px) {
@@ -651,6 +686,10 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 -5px;
+}
+
+.af-campus-site .af-campus-inspiration-listing .af-campus-inspiration-items.ai-centerAlignment {
+  justify-content: center;
 }
 
 .af-campus-site .af-campus-inspiration-listing .af-campus-inspiration-items .af-campus-inspiration-item {
@@ -1032,6 +1071,40 @@
 .af-campus-site .af-campus-projects-item-textContent {
   padding: 30px 20px;
   background-color: #EDEBEA;
+}
+
+.af-campus-site .ai-campus-relatedContacts {
+  margin: 40px auto;
+}
+
+.af-campus-site .ai-campus-relatedContacts--items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.af-campus-site .ai-campus-relatedContacts--item {
+  margin: 0 20px;
+}
+
+.af-campus-site .ai-campus-relatedContacts--item img {
+  border-radius: 50%;
+  width: 210px;
+  height: 210px;
+}
+
+.af-campus-site .ai-campus-relatedContacts--item-name {
+  font-family: museo;
+  font-weight: 700;
+  font-size: 20px;
+  color: #403E41;
+}
+
+.af-campus-site .ai-campus-relatedContacts--item-title {
+  font-family: museo;
+  font-weight: 700;
+  font-size: 20px;
+  color: #403E41;
 }
 
 .sv-decoration-gra-knapp-campus {

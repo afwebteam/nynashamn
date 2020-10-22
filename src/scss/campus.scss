@@ -181,6 +181,10 @@
             flex-wrap: wrap;
             margin: 0 -5px;
 
+            &.ai-centerAlignment {
+                justify-content: center;
+            }
+
             & .af-campus-inspiration-item {
                 width: 50%;
                 margin-bottom: 10px;
@@ -594,6 +598,40 @@
             &-textContent {
                 padding: 30px 20px;
                 background-color: $campus-grey;
+            }
+        }
+    }
+
+    & .ai-campus-relatedContacts {
+        margin: 40px auto;
+
+        &--items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &--item {
+            margin: 0 20px;
+
+            & img {
+                border-radius: 50%;
+                width: 210px;
+                height: 210px;
+            }
+
+            &-name {
+                font-family: museo;
+                font-weight: 700;
+                font-size: 20px;
+                color: $nynas-darkgrey-color;
+            }
+
+            &-title {
+                font-family: museo;
+                font-weight: 700;
+                font-size: 20px;
+                color: $nynas-darkgrey-color;
             }
         }
     }
