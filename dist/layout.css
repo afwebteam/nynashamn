@@ -514,7 +514,8 @@
     left: 90px;
   }
   .af-campus-site .af-cookies {
-    background-color: #fff !important;
+    background-color: #EDEBEA !important;
+    border-top: 1px solid #000;
   }
   .af-campus-site .af-cookies--wrapper p {
     font-size: 15px !important;
