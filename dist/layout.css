@@ -539,6 +539,10 @@
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
 /* $domain: 'https://nynashamn-ext.sitevision.se'; */
+.af-campus-site .af-logo a {
+  display: inline-block;
+}
+
 .af-campus-site .af-logo .sv-svg,
 .af-campus-site .af-logo .sv-noborder {
   width: 130px !important;
@@ -684,6 +688,13 @@
 
 .af-campus-site .af-toolsMenyHeader .af-searchIcon.af-center:after {
   display: none;
+}
+
+.af-campus-site .af-subMenu {
+  position: absolute;
+  top: -70px;
+  left: 0;
+  right: 0;
 }
 
 .af-campus-site .af-subMenu a {

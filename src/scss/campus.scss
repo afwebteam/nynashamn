@@ -4,6 +4,10 @@
 
     & .af-logo {
 
+        & a {
+            display: inline-block;
+        }
+
         & .sv-svg,
         & .sv-noborder {
             width: 130px !important;
@@ -163,6 +167,10 @@
     }
 
     & .af-subMenu {
+        position: absolute;
+        top: -70px;
+        left: 0;
+        right: 0;
 
         & a {
             color: $white-color;
