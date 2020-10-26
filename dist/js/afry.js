@@ -2311,6 +2311,12 @@ svDocReady(function () {
         }
     });
 
+    jq('body').on('keypress', '.af-accordionText', function(e){
+        if (e.keyCode == 13) {
+            jq(this).trigger('click');
+        }
+    });
+
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({'sv': 'en',
           layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
