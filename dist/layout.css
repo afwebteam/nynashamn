@@ -834,6 +834,10 @@
   align-items: center;
 }
 
+.af-campus-site .sv-decoration-lank-till-kommun-webb-campus img {
+  margin-left: 25px;
+}
+
 .af-campus-site .sv-decoration-lank-till-kommun-webb-campus .sv-decoration-generell-bla-knapp--external {
   padding: 0 !important;
   margin: 0 !important;
@@ -1169,6 +1173,18 @@
 
 .af-campus-site footer * {
   color: #fff;
+}
+
+.af-campus-site footer.af-flexRow {
+  justify-content: space-between;
+}
+
+.af-campus-site footer.af-flexRow:before {
+  display: none;
+}
+
+.af-campus-site footer.af-flexRow:after {
+  display: none;
 }
 
 .sv-decoration-gra-knapp-campus {

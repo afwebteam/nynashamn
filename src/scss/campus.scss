@@ -322,6 +322,10 @@
         margin: 0 auto;
         align-items: center;
 
+        & img {
+            margin-left: 25px;
+        }
+
         & .sv-decoration-generell-bla-knapp--external {
             padding: 0 !important;
             margin: 0 !important;
@@ -684,6 +688,18 @@
 
         & * {
             color: $white-color;
+        }
+    }
+
+    & footer.af-flexRow {
+        justify-content: space-between;
+
+        &:before {
+            display: none;
+        }
+
+        &:after {
+            display: none;
         }
     }
 
