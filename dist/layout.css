@@ -825,16 +825,30 @@
 }
 
 .af-campus-site .sv-decoration-lank-till-kommun-webb-campus {
-  background-color: #D8D8D8;
-  padding-bottom: 25px;
+  background-color: transparent;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1366px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .af-campus-site .sv-decoration-lank-till-kommun-webb-campus .sv-decoration-generell-bla-knapp--external {
-  padding: 15px 20px 15px 20px;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: unset !important;
 }
 
 .af-campus-site .sv-decoration-lank-till-kommun-webb-campus .sv-decoration-generell-bla-knapp--external:after {
   display: none;
+}
+
+.af-campus-site .sv-decoration-lank-till-kommun-webb-campus .sv-decoration-generell-bla-knapp--external a {
+  background-color: #002F6C;
+  display: block;
+  padding: 15px 20px;
+  border-radius: 10px;
 }
 
 .af-campus-site .af-campus-schools .af-campus-schools-items {
@@ -1151,6 +1165,10 @@
 
 .af-campus-site .af-cookies * {
   color: #000;
+}
+
+.af-campus-site footer * {
+  color: #fff;
 }
 
 .sv-decoration-gra-knapp-campus {
@@ -7179,6 +7197,7 @@ input::placeholder {
 .af-amountEvents-3 .af-startpageEvents--event .af-image {
   background-size: cover;
   height: 100%;
+  background-position: center;
 }
 
 .af-amountEvents-3 .af-startpageEvents--event a {

@@ -314,14 +314,28 @@
     }
 
     & .sv-decoration-lank-till-kommun-webb-campus {
-        background-color: #D8D8D8;
-        padding-bottom: 25px;
+        background-color: transparent;
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1366px;
+        margin: 0 auto;
+        align-items: center;
 
         & .sv-decoration-generell-bla-knapp--external {
-            padding: 15px 20px 15px 20px;
+            padding: 0 !important;
+            margin: 0 !important;
+            background-color: unset !important;
             
             &:after {
                 display: none;
+            }
+
+            & a {
+                background-color: $nynas-darkblue-color;
+                display: block;
+                padding: 15px 20px;
+                border-radius: 10px;
             }
         }
     }
@@ -663,6 +677,13 @@
 
         & * {
             color: $campus-black;
+        }
+    }
+
+    & footer {
+
+        & * {
+            color: $white-color;
         }
     }
 
