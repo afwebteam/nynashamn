@@ -306,6 +306,12 @@
 
             & .af-campus-hero-img {
                 max-width: 100% !important;
+                background-position: center right 23% !important;
+            }
+
+            & .af-campus-hero-img.af-campus-hero-img-center {
+                max-width: 100% !important;
+                background-position: center !important;
             }
     
             & .af-campus-hero-textContent {
