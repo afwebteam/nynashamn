@@ -315,7 +315,6 @@
 
     & .sv-decoration-lank-till-kommun-webb-campus {
         background-color: transparent;
-        padding: 40px 0;
         display: flex;
         justify-content: space-between;
         max-width: 1366px;
@@ -330,16 +329,16 @@
             padding: 0 !important;
             margin: 0 !important;
             background-color: unset !important;
-            
-            &:after {
-                display: none;
-            }
 
             & a {
                 background-color: $nynas-darkblue-color;
                 display: block;
-                padding: 15px 20px;
+                padding: 15px 45px 15px 20px;
                 border-radius: 10px;
+            }
+
+            &:after {
+                top: 9px;
             }
         }
     }
@@ -685,6 +684,7 @@
     }
 
     & footer {
+        padding: 40px 20px;
 
         & * {
             color: $white-color;
@@ -700,6 +700,16 @@
 
         &:after {
             display: none;
+        }
+
+        & .sv-font-brodtext-fet {
+
+            & a {
+
+                &:after {
+                    background-image: url($whiteArrowOut);
+                }
+            }
         }
     }
 
