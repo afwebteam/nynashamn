@@ -97,6 +97,10 @@
         & header {
             margin-bottom: 0 !important;
 
+            & > div:first-of-type {
+                border-bottom: 5px solid $campus-orange;
+            }
+
             & .af-mobile-width100 {
                 background-color: #000;
 
@@ -127,7 +131,16 @@
             }
 
             & .af-toolsMenyHeader {
-                padding: 20px !important;
+                padding: 20px 0 !important;
+                margin-left: 0 !important;
+                position: unset !important;
+                float: unset !important;
+                display: flex;
+
+                & > div {
+                    margin-right: 0 !important;
+                    padding-right: 0 !important;
+                }
 
                 & .af-searchIcon.af-center {
                     padding-right: 0;
@@ -211,6 +224,7 @@
                                 font-size: 16px;
                                 display: block;
                                 width: 100%;
+                                padding: 0 !important;
                             }
         
                             & .ai-googleTranslate-container-wrapper-body-googleContent {
@@ -218,7 +232,7 @@
                                 position: unset;
                                 text-align: center;
                                 padding-top: 15px;
-                                background-color: $campus-light;
+                                background-color: #EDEBEA;
                             }
                         }
                     }
@@ -309,7 +323,6 @@
         }
 
         & .af-campus-hero {
-            border-top: 5px solid $campus-orange;
             border-bottom: 5px solid $campus-orange !important;
 
             & .af-campus-hero-img {
@@ -381,6 +394,10 @@
     
             &-title {
                 font-size: 35px;
+            }
+
+            &-earlier-title {
+                font-size: 25px !important;
             }
     
             &-item {

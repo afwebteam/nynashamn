@@ -1,6 +1,10 @@
 @import 'variables';
 
-.af-campus-site { 
+.af-campus-site {
+
+    & * {
+        font-family: museo,sans-serif;
+    }
 
     & .af-logo {
 
@@ -30,7 +34,7 @@
         & .af-startpageBigImage {
             background-repeat: no-repeat !important;
             background-size: cover !important;
-            background-position: center !important;
+            background-position: top center!important;
             height: 580px;
 
             & .af-pageWidth {
@@ -136,7 +140,8 @@
                 }
 
                 &-body {
-                    background-color: $campus-light;
+                    /* background-color: $campus-light; */
+                    background-color: #EDEBEA;
                     text-align: left;
                     padding: 25px;
                     position: relative;
@@ -451,7 +456,7 @@
 
         & .af-campus-hero-img {
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: top center;
             background-size: cover;
             height: 290px;
         }
@@ -603,6 +608,13 @@
             font-family: museo;
             font-weight: 700;
             font-size: 35px;
+        }
+
+        &-earlier-title {
+            font-family: museo, sans-serif;
+            font-weight: 700;
+            font-size: 35px;
+            text-align: center;
         }
 
         &-item {

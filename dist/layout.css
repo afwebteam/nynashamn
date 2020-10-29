@@ -274,6 +274,9 @@
   .af-campus-site header {
     margin-bottom: 0 !important;
   }
+  .af-campus-site header > div:first-of-type {
+    border-bottom: 5px solid #E97C1D;
+  }
   .af-campus-site header .af-mobile-width100 {
     background-color: #000;
   }
@@ -298,7 +301,15 @@
     margin-top: 25px;
   }
   .af-campus-site header .af-toolsMenyHeader {
-    padding: 20px !important;
+    padding: 20px 0 !important;
+    margin-left: 0 !important;
+    position: unset !important;
+    float: unset !important;
+    display: flex;
+  }
+  .af-campus-site header .af-toolsMenyHeader > div {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
   }
   .af-campus-site header .af-toolsMenyHeader .af-searchIcon.af-center {
     padding-right: 0;
@@ -372,13 +383,14 @@
     font-size: 16px;
     display: block;
     width: 100%;
+    padding: 0 !important;
   }
   .af-campus-site header .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-body .ai-googleTranslate-container-wrapper-body-googleContent {
     display: block;
     position: unset;
     text-align: center;
     padding-top: 15px;
-    background-color: #C2C2C2;
+    background-color: #EDEBEA;
   }
   .af-campus-site header .af-toolsMenyHeader:first-of-type {
     background-color: #000;
@@ -433,7 +445,6 @@
     margin: 0 30px 20px 30px;
   }
   .af-campus-site .af-campus-hero {
-    border-top: 5px solid #E97C1D;
     border-bottom: 5px solid #E97C1D !important;
   }
   .af-campus-site .af-campus-hero .af-campus-hero-img {
@@ -479,6 +490,9 @@
   }
   .af-campus-site .af-campus-projects-title {
     font-size: 35px;
+  }
+  .af-campus-site .af-campus-projects-earlier-title {
+    font-size: 25px !important;
   }
   .af-campus-site .af-campus-projects-item {
     width: 100% !important;
@@ -578,6 +592,10 @@
 
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
 /* $domain: 'https://nynashamn-ext.sitevision.se'; */
+.af-campus-site * {
+  font-family: museo,sans-serif;
+}
+
 .af-campus-site .af-logo a {
   display: inline-block;
 }
@@ -598,7 +616,7 @@
 .af-campus-site .af-theStartPage .af-startpageBigImage {
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-position: center !important;
+  background-position: top center !important;
   height: 580px;
 }
 
@@ -702,7 +720,8 @@
 }
 
 .af-campus-site .af-toolsMenyHeader .ai-googleTranslate-container-wrapper-body {
-  background-color: #C2C2C2;
+  /* background-color: $campus-light; */
+  background-color: #EDEBEA;
   text-align: left;
   padding: 25px;
   position: relative;
@@ -990,7 +1009,7 @@
 
 .af-campus-site .af-campus-hero .af-campus-hero-img {
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   height: 290px;
 }
@@ -1133,6 +1152,13 @@
   font-family: museo;
   font-weight: 700;
   font-size: 35px;
+}
+
+.af-campus-site .af-campus-projects-earlier-title {
+  font-family: museo, sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
 }
 
 .af-campus-site .af-campus-projects-item {
