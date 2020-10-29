@@ -559,6 +559,9 @@
     margin-left: 0;
     margin-bottom: 40px;
   }
+  .af-campus-site footer.sv-decoration-lank-till-kommun-webb-campus .sv-decoration-generell-bla-knapp--external {
+    margin: 25px 0 0 0 !important;
+  }
   .af-campus-site footer.sv-decoration-lank-till-kommun-webb-campus .sv-decoration-generell-bla-knapp--external a {
     padding: 15px 35px 15px 20px;
   }
@@ -871,6 +874,7 @@
 
 .af-campus-site .sv-decoration-lank-till-kommun-webb-campus img {
   margin-left: 25px;
+  margin-bottom: 0 !important;
 }
 
 .af-campus-site .sv-decoration-lank-till-kommun-webb-campus .sv-decoration-generell-bla-knapp--external {
