@@ -4,6 +4,14 @@
 
     .af-campus-site {
 
+        .pagecontent {
+            padding: 0 20px;
+        }
+
+        & .af-campus-orange-top-border {
+            border-top: 5px solid $campus-orange !important;
+        }
+
         & .sv-horizontal-column {
 
             & .af-logo {

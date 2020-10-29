@@ -219,6 +219,12 @@
 /* $domain: 'https://use-nynashamn-ext.sitevision.se'; */
 /* $domain: 'https://nynashamn-ext.sitevision.se'; */
 @media screen and (max-width: 880px) {
+  .af-campus-site .pagecontent {
+    padding: 0 20px;
+  }
+  .af-campus-site .af-campus-orange-top-border {
+    border-top: 5px solid #E97C1D !important;
+  }
   .af-campus-site .sv-horizontal-column .af-logo .sv-svg,
   .af-campus-site .sv-horizontal-column .af-logo .sv-noborder {
     width: 100px !important;
@@ -1224,6 +1230,10 @@
   background-image: url("/images/18.185e257f1754f4d3803980a/1603873251822/Pil-ikon-vit.svg");
 }
 
+.af-campus-site .af-campus-orange-top-border {
+  border-top: 10px solid #E97C1D;
+}
+
 .sv-decoration-gra-knapp-campus {
   padding: 15px 25px;
   background-color: #EDEBEA;
@@ -1273,6 +1283,18 @@
   background-repeat: no-repeat;
   background-position: left;
   background-size: 39px;
+}
+
+iframe[src*="mediaflowpro"] {
+  border: none;
+}
+
+.af-videoLink {
+  border: none !important;
+}
+
+.af-item-with-video-wrapper {
+  border: 5px solid #fff;
 }
 
 @media screen and (max-width: 880px) {

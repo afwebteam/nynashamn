@@ -713,6 +713,10 @@
         }
     }
 
+    & .af-campus-orange-top-border {
+        border-top: 10px solid $campus-orange;
+    }
+
 }
 
 .sv-decoration-gra-knapp-campus {
@@ -764,6 +768,18 @@
     background-repeat: no-repeat;
     background-position: left;
     background-size: 39px;
+}
+
+iframe[src*="mediaflowpro"] {
+    border: none;
+}
+
+.af-videoLink {
+    border: none !important;
+}
+
+.af-item-with-video-wrapper {
+    border: 5px solid #fff;
 }
 
 @media screen and (max-width: 880px) {
