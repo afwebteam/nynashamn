@@ -1082,6 +1082,10 @@
   background-size: 22px;
 }
 
+.af-campus-site .af-breadcrumb {
+  padding-left: 50px;
+}
+
 .af-campus-site .af-breadcrumb .divider {
   color: #E97C1D;
 }
