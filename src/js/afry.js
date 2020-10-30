@@ -290,9 +290,11 @@ svDocReady(function () {
         } else {
             hiddenSearchForm = jq('.af-hiddenSearchForm');
             hiddenSearchFormField = hiddenSearchForm.find('input[name="query"]');
-            hiddenSearchForm.slideToggle();
-            hiddenSearchFormField.focus();
 
+            setTimeout(function(){
+                hiddenSearchForm.toggle();
+                hiddenSearchFormField.focus();
+            }, 200);
         }
     });
 
