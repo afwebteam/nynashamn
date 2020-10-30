@@ -29,7 +29,18 @@
         }
     }
 
-    & .af-theStartPage {
+    & .af-startpage-current {
+
+        & ul.sv-channel {
+
+            & li {
+                flex: 1 1 0;
+                margin: 0 10px 20px 10px !important;
+            }
+        }
+    }
+
+    & .af-theStartPage{
 
         & .af-startpageBigImage {
             background-repeat: no-repeat !important;
@@ -430,6 +441,13 @@
         & .sv-font-stor-svart {
             background-color: $campus-superdarkgrey;
         }
+
+        & .sv-font-sidfot-rubrik {
+            font-family: museo, sans-serif;
+            font-weight: 300;
+            font-size: 35px;
+            color: $nynas-darkgrey-color;
+        }
     }
 
     & .af-contactModule {
@@ -680,7 +698,7 @@
         &--wrapper {
 
             & p {
-                font-family: museo;
+                font-family: museo, sans-serif;
                 font-weight: 300;
                 font-size: 20px;
                 line-height: 28px;

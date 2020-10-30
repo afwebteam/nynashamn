@@ -12,6 +12,13 @@
             border-top: 5px solid $campus-orange !important;
         }
 
+        & .sv-related-portlet {
+    
+            & .sv-font-sidfot-rubrik {
+                font-size: 25px !important;
+            }
+        }
+
         & .sv-horizontal-column {
 
             & .af-logo {
@@ -25,6 +32,11 @@
                     margin-bottom: 0 !important;             
                 }
             }
+        }
+
+        & .sv-multilevellink-portlet, & .af-breadcrumb {
+            padding: 30px 23px!important;
+            margin-bottom: 15px !important;
         }
 
         & .af-MobileMenu {
@@ -514,23 +526,28 @@
             }
         }
 
-        
-    }
-}
-
-@media screen and (max-width: 590px) {
-
-    .af-campus-site {
-
         & .af-popularShortcuts {
+            flex-direction: column;
+            margin: -40px 0;
 
             & .af-popularShortcuts--item {
+                max-width: unset;
+                flex-basis: unset;
+                flex-direction: row;
+                margin: 15px 0px;
 
                 & .af-popularShortcuts--itemName {
-                    width: 110px !important;
+                    margin: 18px 10px !important;
+                    width: unset !important;
+                    text-align: left;
                 }
             }
-        }
-    }
 
+            & .af-popularShortcuts--itemStyle {
+                width: 80px;
+                height: 80px;
+            }
+        }
+        
+    }
 }

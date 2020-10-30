@@ -225,6 +225,9 @@
   .af-campus-site .af-campus-orange-top-border {
     border-top: 5px solid #E97C1D !important;
   }
+  .af-campus-site .sv-related-portlet .sv-font-sidfot-rubrik {
+    font-size: 25px !important;
+  }
   .af-campus-site .sv-horizontal-column .af-logo .sv-svg,
   .af-campus-site .sv-horizontal-column .af-logo .sv-noborder {
     width: 100px !important;
@@ -232,6 +235,10 @@
     max-width: 100px !important;
     max-height: 100px !important;
     margin-bottom: 0 !important;
+  }
+  .af-campus-site .sv-multilevellink-portlet, .af-campus-site .af-breadcrumb {
+    padding: 30px 23px !important;
+    margin-bottom: 15px !important;
   }
   .af-campus-site .af-MobileMenu:before {
     color: #fff;
@@ -582,11 +589,24 @@
   .af-campus-site footer.sv-decoration-lank-till-kommun-webb-campus .sv-decoration-generell-bla-knapp--external:after {
     top: 8px;
   }
-}
-
-@media screen and (max-width: 590px) {
+  .af-campus-site .af-popularShortcuts {
+    flex-direction: column;
+    margin: -40px 0;
+  }
+  .af-campus-site .af-popularShortcuts .af-popularShortcuts--item {
+    max-width: unset;
+    flex-basis: unset;
+    flex-direction: row;
+    margin: 15px 0px;
+  }
   .af-campus-site .af-popularShortcuts .af-popularShortcuts--item .af-popularShortcuts--itemName {
-    width: 110px !important;
+    margin: 18px 10px !important;
+    width: unset !important;
+    text-align: left;
+  }
+  .af-campus-site .af-popularShortcuts .af-popularShortcuts--itemStyle {
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -611,6 +631,11 @@
 
 .af-campus-site .sv-decoration-generell-faktaruta .subheading3-utan-dragspel {
   background-color: #2D2D2D;
+}
+
+.af-campus-site .af-startpage-current ul.sv-channel li {
+  flex: 1 1 0;
+  margin: 0 10px 20px 10px !important;
 }
 
 .af-campus-site .af-theStartPage .af-startpageBigImage {
@@ -987,6 +1012,13 @@
   background-color: #2D2D2D;
 }
 
+.af-campus-site .sv-related-portlet .sv-font-sidfot-rubrik {
+  font-family: museo, sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+  color: #403E41;
+}
+
 .af-campus-site .af-contactModule .sv-font-stor-svart {
   background-color: #2D2D2D;
 }
@@ -1222,7 +1254,7 @@
 }
 
 .af-campus-site .af-cookies--wrapper p {
-  font-family: museo;
+  font-family: museo, sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
